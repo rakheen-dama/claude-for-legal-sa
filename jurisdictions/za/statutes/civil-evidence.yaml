@@ -1,0 +1,27 @@
+statute: "Civil Proceedings Evidence Act 25 of 1965"
+authority: "Department of Justice and Constitutional Development"
+last_confirmed: "2025-05-01"
+source_url: "https://www.gov.za/documents/civil-proceedings-evidence-act"
+
+sections:
+  competence_compellability:
+    ref: "Civil Proceedings Evidence Act s10-11"
+    value: true
+    effective_from: null
+    effective_until: null
+    effect: "All persons are competent and compellable to give evidence in civil proceedings, subject to the rules on privilege. A spouse is competent and compellable to give evidence for or against the other spouse."
+
+  without_prejudice_privilege:
+    ref: "Civil Proceedings Evidence Act s21"
+    value: true
+    effective_from: null
+    effective_until: null
+    effect: "Communications made without prejudice for the purpose of settling a dispute are privileged and may not be tendered in evidence to prove admissions, unless both parties consent or the court determines the privilege does not apply."
+    note: "This is a statutory confirmation of the common-law without-prejudice rule. The label 'without prejudice' creates a rebuttable presumption of settlement intent, but the court examines substance over form."
+
+  documentary_evidence:
+    ref: "Civil Proceedings Evidence Act s34-36"
+    value: true
+    effective_from: null
+    effective_until: null
+    effect: "Provides rules for the admissibility of documentary evidence, including business records, public documents, and certified copies. The maker of a document may be called to authenticate it if its admissibility is challenged."

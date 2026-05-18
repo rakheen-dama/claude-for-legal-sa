@@ -1,0 +1,13 @@
+statute: "Law of Evidence Amendment Act 45 of 1988"
+authority: "Department of Justice and Constitutional Development"
+last_confirmed: "2025-05-01"
+source_url: "https://www.gov.za/documents/law-evidence-amendment-act"
+
+sections:
+  hearsay_admissibility:
+    ref: "Law of Evidence Amendment Act s3"
+    value: "admissible in the interests of justice"
+    effective_from: "1988-10-03"
+    effective_until: null
+    effect: "Hearsay evidence may be admitted in civil proceedings if the court is satisfied it is in the interests of justice. The court considers: the nature of the proceedings, the nature of the evidence, the purpose for which it is tendered, the probative value, the reason why the original declarant is not testifying, and any prejudice to the opposing party."
+    note: "This is a departure from the common-law prohibition on hearsay. The court retains discretion and weighs the factors case by case."

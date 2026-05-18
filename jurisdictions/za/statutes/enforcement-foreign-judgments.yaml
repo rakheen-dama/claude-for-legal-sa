@@ -1,0 +1,20 @@
+statute: "Enforcement of Foreign Civil Judgments Act 32 of 1988"
+authority: "Department of Justice and Constitutional Development"
+last_confirmed: "2025-05-01"
+source_url: "https://www.gov.za/documents/enforcement-foreign-civil-judgments-act"
+
+sections:
+  registration_requirement:
+    ref: "Enforcement of Foreign Civil Judgments Act s2"
+    value: true
+    effective_from: "1988-07-08"
+    effective_until: null
+    effect: "A foreign civil judgment may be enforced in South Africa by registration in a designated court. Registration is only available for judgments from designated countries (reciprocity requirement). Undesignated countries require common-law enforcement proceedings."
+
+  grounds_for_refusal:
+    ref: "Enforcement of Foreign Civil Judgments Act s6"
+    value: true
+    effective_from: "1988-07-08"
+    effective_until: null
+    effect: "Registration may be refused if: the judgment was obtained by fraud, the judgment debtor did not receive notice and an opportunity to defend, the judgment is not final and conclusive, enforcement would be contrary to public policy, or the judgment conflicts with a prior SA judgment between the same parties."
+    note: "For countries not designated under this Act, enforcement follows common-law principles (the foreign judgment creates a cause of action, not a directly enforceable order). The creditor must institute fresh proceedings and prove the foreign judgment."
