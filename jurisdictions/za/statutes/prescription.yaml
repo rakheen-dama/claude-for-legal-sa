@@ -4,33 +4,71 @@ last_confirmed: "2025-05-01"
 source_url: "https://www.justice.gov.za/legislation/acts/1969-068.pdf"
 
 sections:
-  debt_prescription_period:
+  general_debt_prescription:
     ref: "Prescription Act s11(d)"
     value: 3
     unit: "years"
     effective_from: null
     effective_until: null
-    effect: "A debt prescribes (becomes unenforceable) after 3 years, unless a longer period applies under another provision of s11."
+    effect: "Most ordinary contractual and delictual debts prescribe after 3 years. This is the default period for the majority of civil claims."
 
-  other_debt_prescription:
+  judgment_debt_prescription:
     ref: "Prescription Act s11(a)"
+    value: 30
+    unit: "years"
+    effective_from: null
+    effective_until: null
+    effect: "Judgment debts and debts secured by mortgage bond prescribe after 30 years. A judgment remains enforceable for 30 years from the date it was granted."
+
+  tax_debt_prescription:
+    ref: "Prescription Act s11(b)"
+    value: 15
+    unit: "years"
+    effective_from: null
+    effective_until: null
+    effect: "Debts owed to the state in respect of taxes, levies, or similar impositions prescribe after 15 years."
+
+  bill_of_exchange_prescription:
+    ref: "Prescription Act s11(c)"
     value: 6
     unit: "years"
     effective_from: null
     effective_until: null
-    effect: "Any debt not falling under another provision of s11 prescribes after 6 years."
-    note: "The 6-year period applies to claims arising from breach of contract where the claim is not for a 'debt' in the narrow sense (e.g. claims for damages for breach)."
+    effect: "Debts arising from bills of exchange or other negotiable instruments, and debts arising from notarial contracts, prescribe after 6 years."
 
   prescription_begins:
     ref: "Prescription Act s12(1)"
     value: "when the debt is due"
     effective_from: null
     effective_until: null
-    effect: "Prescription begins to run as soon as the debt is due. A debt is due when the creditor has knowledge of the identity of the debtor and the facts from which the debt arises."
+    effect: "Prescription begins to run as soon as the debt is due."
+
+  knowledge_requirement:
+    ref: "Prescription Act s12(3)"
+    value: "knowledge of debtor identity and facts"
+    effective_from: null
+    effective_until: null
+    effect: "A debt is not due until the creditor has knowledge of the identity of the debtor and of the facts from which the debt arises. A creditor is deemed to have such knowledge if they could have acquired it by exercising reasonable care."
+    note: "The 'minimum facts' approach from Truter v Deysel and Stemmet v Mokhethi applies: prescription runs once the creditor knows enough facts to sustain a cause of action, even if they do not yet know the full extent of their loss."
 
   delay_of_prescription:
     ref: "Prescription Act s13(1)"
     value: true
     effective_from: null
     effective_until: null
-    effect: "If the creditor is prevented by superior force (including ignorance of facts) from interrupting prescription, the period is extended."
+    effect: "If the creditor is a minor, insane, or under curatorship, or if the debtor is outside the Republic and cannot be served, the completion of prescription is delayed until the impediment ceases, subject to maximum delay periods."
+
+  interruption_by_acknowledgement:
+    ref: "Prescription Act s14"
+    value: "prescription runs afresh"
+    effective_from: null
+    effective_until: null
+    effect: "If the debtor acknowledges liability (whether expressly or by conduct such as part payment), prescription is interrupted and begins to run afresh from the date of the acknowledgement."
+
+  interruption_by_service:
+    ref: "Prescription Act s15(1)"
+    value: "prescription runs afresh"
+    effective_from: null
+    effective_until: null
+    effect: "The service of any process whereby the creditor claims payment of the debt interrupts the running of prescription. Prescription runs afresh from the date on which the interruption ceases (typically when the litigation concludes). Issuing process alone is insufficient — service must occur."
+    note: "Service must be effected without culpable delay after issue. If summons is issued close to the prescription date but not served, the claim may still prescribe."
