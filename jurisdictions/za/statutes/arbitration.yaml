@@ -1,0 +1,41 @@
+statute: "Arbitration Act 42 of 1965"
+authority: "Department of Justice and Constitutional Development"
+last_confirmed: "2025-05-01"
+source_url: "https://www.gov.za/documents/arbitration-act-20-may-1965-0000"
+
+sections:
+  arbitration_agreement:
+    ref: "Arbitration Act s3"
+    value: true
+    effective_from: null
+    effective_until: null
+    effect: "Parties may agree to submit any existing or future dispute to arbitration. The arbitration agreement may be contained in the contract or in a separate document."
+
+  stay_of_court_proceedings:
+    ref: "Arbitration Act s6"
+    value: true
+    effective_from: null
+    effective_until: null
+    effect: "Where a party to an arbitration agreement commences court proceedings, the other party may apply for a stay of those proceedings. The court may stay the proceedings if satisfied there is no sufficient reason why the matter should not be referred to arbitration."
+    note: "The application must be made before the applicant takes any further step in the court proceedings, or it may be treated as a waiver of the right to arbitrate."
+
+  powers_of_arbitrator:
+    ref: "Arbitration Act s14-15"
+    value: true
+    effective_from: null
+    effective_until: null
+    effect: "An arbitrator may administer oaths, make interim awards, and generally conduct proceedings as they see fit, subject to the arbitration agreement and the parties' right to a fair hearing."
+
+  setting_aside_award:
+    ref: "Arbitration Act s30"
+    value: "limited grounds"
+    effective_from: null
+    effective_until: null
+    effect: "An arbitration award may be set aside by the court on limited grounds: (a) the arbitrator committed misconduct in relation to duties, (b) the arbitrator committed a gross irregularity in the conduct of the proceedings, or (c) the award was improperly obtained."
+
+  making_award_order_of_court:
+    ref: "Arbitration Act s31"
+    value: true
+    effective_from: null
+    effective_until: null
+    effect: "An arbitration award may, on application to a court of competent jurisdiction, be made an order of court. Once made an order of court, the award is enforceable as if it were a court judgment."

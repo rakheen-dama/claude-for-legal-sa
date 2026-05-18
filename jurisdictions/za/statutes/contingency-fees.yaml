@@ -1,0 +1,42 @@
+statute: "Contingency Fees Act 66 of 1997"
+authority: "Department of Justice and Constitutional Development"
+last_confirmed: "2025-05-01"
+source_url: "https://www.gov.za/documents/contingency-fees-act"
+
+sections:
+  fee_cap_percentage:
+    ref: "Contingency Fees Act s2(2)"
+    value: 25
+    unit: "percent of amount awarded"
+    effective_from: "1999-04-23"
+    effective_until: null
+    effect: "The total of any fees payable to the legal practitioner in the event of success may not exceed 25% of the total amount awarded or any amount obtained by the client in consequence of the proceedings, excluding costs."
+
+  fee_cap_multiple:
+    ref: "Contingency Fees Act s2(2)"
+    value: 2
+    unit: "times normal fee"
+    effective_from: "1999-04-23"
+    effective_until: null
+    effect: "The total of any fees payable to the legal practitioner in the event of success may not exceed double the fee which that practitioner would normally be entitled to if the matter were not on a contingency basis. The lower of the two caps (25% or double) applies."
+
+  formal_requirements:
+    ref: "Contingency Fees Act s3"
+    value: true
+    effective_from: "1999-04-23"
+    effective_until: null
+    effect: "A contingency fee agreement must be in writing and signed by both the legal practitioner and the client. It must set out the practitioner's normal fees, the contingency fees payable on success, the reasons for believing a reasonable prospect of success exists, and the client's right to a cooling-off period."
+
+  void_agreements:
+    ref: "Contingency Fees Act s5"
+    value: true
+    effective_from: "1999-04-23"
+    effective_until: null
+    effect: "An agreement that does not comply with the requirements of s2 and s3 is void. A legal practitioner who entered into a void contingency fee agreement may recover only normal fees, or no fees at all depending on the circumstances."
+
+  court_oversight_settlement:
+    ref: "Contingency Fees Act s4"
+    value: true
+    effective_from: "1999-04-23"
+    effective_until: null
+    effect: "Where proceedings subject to a contingency fee agreement are settled, the court must be satisfied the settlement is fair and reasonable having regard to the contingency fee agreement. The court may call for information about the agreement and may review its terms."

@@ -1,0 +1,28 @@
+statute: "Institution of Legal Proceedings Against Certain Organs of State Act 40 of 2002"
+authority: "Department of Justice and Constitutional Development"
+last_confirmed: "2025-05-01"
+source_url: "https://www.gov.za/documents/institution-legal-proceedings-against-certain-organs-state-act"
+
+sections:
+  notice_period:
+    ref: "Institution of Legal Proceedings Against Organs of State Act s3(2)(a)"
+    value: 6
+    unit: "months"
+    effective_from: "2002-11-28"
+    effective_until: null
+    effect: "No legal proceedings for the recovery of a debt may be instituted against an organ of state unless the creditor has given the organ of state in question notice in writing of the intended legal proceedings within 6 months from the date on which the debt became due."
+
+  notice_content:
+    ref: "Institution of Legal Proceedings Against Organs of State Act s3(2)(b)"
+    value: true
+    effective_from: "2002-11-28"
+    effective_until: null
+    effect: "The notice must set out the facts giving rise to the debt, the amount of the debt, the person to whom the debt is owed, and must be served on the organ of state."
+
+  condonation:
+    ref: "Institution of Legal Proceedings Against Organs of State Act s3(4)"
+    value: true
+    effective_from: "2002-11-28"
+    effective_until: null
+    effect: "If the creditor fails to give the required notice within the 6-month period, the court may condone the non-compliance if it is satisfied that the organ of state was not unreasonably prejudiced by the failure, and that the debt has not prescribed."
+    note: "Condonation is not automatic. The court exercises a discretion, and unreasonable delay or prejudice to the state may lead to refusal."
