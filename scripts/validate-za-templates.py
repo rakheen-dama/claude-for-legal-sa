@@ -76,7 +76,50 @@ TEMPLATE_CONFIG = {
             (r"\bDPIA\b", "DPIA"),
         ],
     },
+    "litigation-legal": {
+        "path": ROOT / "jurisdictions" / "za" / "litigation-legal" / "practice-profile-template.md",
+        "required_sections": [
+            "Litigation Practice Profile",
+            "Company profile",
+            "Practice role",
+            "Side",
+            "Outputs",
+            "Risk calibration",
+            "Landscape",
+            "House style",
+            "Costs exposure",
+            "SA court hierarchy",
+            "Prescription awareness",
+        ],
+        "sa_required_terms": [
+            "IAS 37",
+            "King IV",
+            "Uniform Rules",
+            "Rule 35",
+            "heads of argument",
+            "legal practitioner",
+            "advocate",
+            "attorney",
+            "party-and-party",
+            "without prejudice",
+        ],
+        "us_forbidden": [
+            (r"\bFRCP\b", "FRCP"),
+            (r"\bFRE 408\b", "FRE 408"),
+            (r"\bASC 450\b", "ASC 450"),
+            (r"\b10-K\b", "10-K"),
+            (r"\b10-Q\b", "10-Q"),
+            (r"\bSOX\b", "SOX"),
+            (r"\bZubulake\b", "Zubulake"),
+            (r"\bBluebook\b", "Bluebook"),
+            (r"\bFMLA\b", "FMLA"),
+            (r"\bat-will\b", "at-will"),
+        ],
+    },
 }
+
+# Key aliases: "litigation-legal" uses the same key names as other practice areas
+# (sa_required_terms / us_forbidden) so the validator loop below works unchanged.
 
 
 def find_privilege_caveat(text: str) -> str:

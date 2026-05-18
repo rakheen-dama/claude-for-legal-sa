@@ -43,6 +43,12 @@ PRACTICE_AREAS = [
         "skills_dir": REPO_ROOT / "privacy-legal" / "skills",
         "topics_dir": REPO_ROOT / "jurisdictions" / "za" / "privacy-legal" / "topics",
     },
+    {
+        "name": "litigation-legal",
+        "router": REPO_ROOT / "jurisdictions" / "za" / "litigation-legal" / "router.md",
+        "skills_dir": REPO_ROOT / "litigation-legal" / "skills",
+        "topics_dir": REPO_ROOT / "jurisdictions" / "za" / "litigation-legal" / "topics",
+    },
 ]
 
 
