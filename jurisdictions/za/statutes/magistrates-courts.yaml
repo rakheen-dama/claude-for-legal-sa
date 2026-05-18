@@ -1,0 +1,55 @@
+statute: "Magistrates' Courts Act 32 of 1944"
+authority: "Department of Justice and Constitutional Development"
+last_confirmed: "2025-05-01"
+source_url: "https://www.gov.za/documents/magistrates-courts-act-19-may-1944-0000"
+
+sections:
+  district_court_monetary_jurisdiction:
+    ref: "Magistrates' Courts Act s29(1)(a)"
+    value: 200000
+    currency: "ZAR"
+    unit: "per claim"
+    effective_from: "2019-07-01"
+    effective_until: null
+    effect: "A district magistrates' court has civil jurisdiction where the claim value does not exceed R200,000."
+    gazette_date: "2019-07-01"
+    note: "Threshold is periodically amended by Government Gazette. Verify current limit before issuing."
+
+  regional_court_monetary_jurisdiction:
+    ref: "Magistrates' Courts Act s29(1)(b)"
+    value: 400000
+    currency: "ZAR"
+    unit: "per claim"
+    effective_from: "2019-07-01"
+    effective_until: null
+    effect: "A regional magistrates' court has civil jurisdiction where the claim value does not exceed R400,000."
+    gazette_date: "2019-07-01"
+    note: "Threshold is periodically amended by Government Gazette. Verify current limit before issuing."
+
+  jurisdictional_basis:
+    ref: "Magistrates' Courts Act s28"
+    value: "residence, cause of action, or property"
+    effective_from: null
+    effective_until: null
+    effect: "A magistrates' court has jurisdiction where the defendant resides or carries on business, where the cause of action arose, or where the property in dispute is situated."
+
+  consent_to_jurisdiction:
+    ref: "Magistrates' Courts Act s45"
+    value: true
+    effective_from: null
+    effective_until: null
+    effect: "Parties may consent to the jurisdiction of a magistrates' court that would not otherwise have jurisdiction, provided the court has jurisdiction over the subject matter."
+
+  execution_against_residential_property:
+    ref: "Magistrates' Courts Act s46A"
+    value: "judicial oversight required"
+    effective_from: null
+    effective_until: null
+    effect: "Execution against a judgment debtor's residential immovable property may only proceed with court authorisation, which requires considering the debtor's circumstances, the availability of alternative means of execution, and proportionality."
+
+  judgment_debt_enforcement:
+    ref: "Magistrates' Courts Act s65A-J"
+    value: true
+    effective_from: null
+    effective_until: null
+    effect: "Provides mechanisms for enforcement of judgment debts: financial enquiries (s65A), instalment orders (s65E), emoluments attachment orders (s65J), and garnishee orders. Debtor must attend financial enquiry in person."
