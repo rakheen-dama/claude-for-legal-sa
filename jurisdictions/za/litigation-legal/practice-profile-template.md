@@ -118,7 +118,7 @@ This file is the house-level frame every matter is triaged against. Risk calibra
 - If Role in `## Who's using this` is Legal practitioner: `PRIVILEGED & CONFIDENTIAL — PREPARED AT THE DIRECTION OF A LEGAL PRACTITIONER`
 - If Role is Non-lawyer: `CONFIDENTIAL — NOT LEGAL ADVICE — REVIEW WITH A LEGAL PRACTITIONER BEFORE ACTING`
 
-**The header's protection is jurisdiction-specific — South African privilege is narrower than US work product.** South Africa recognises legal professional privilege (LPP) but does not have a standalone "work product" doctrine equivalent to the US (FRCP 26(b)(3)). Key differences:
+**The header's protection is jurisdiction-specific — South African privilege is narrower than US work product.** South Africa recognises legal professional privilege (LPP) but does not have a standalone "work product" doctrine equivalent to the US federal rules. Key differences:
 
 - **Legal professional privilege** in South Africa protects confidential communications between a legal practitioner (admitted attorney or advocate) and their client made for the purpose of obtaining or giving legal advice, and documents prepared in contemplation of litigation. The privilege belongs to the client, not the practitioner.
 - **Litigation privilege** protects documents prepared for the dominant purpose of pending or contemplated litigation. Advisory memoranda prepared in the ordinary course of business are not protected by litigation privilege.
@@ -388,7 +388,7 @@ The canonical column maps to the cross-plugin severity floor described in `## Sh
 
 *SA-specific. This section has no US equivalent — in the US, each party typically bears its own costs (the "American rule"). In South Africa, the default is that costs follow the result (the "English rule"). This fundamentally changes the risk calculus on every matter.*
 
-**Costs default:** Loser pays. The general rule in South African civil litigation is that the unsuccessful party pays the successful party's costs. This is not a rule of statute — it is a common-law rule subject to judicial discretion, but the discretion is exercised within well-established principles.
+**Costs default:** Loser pays. The general rule in South African civil litigation is that the unsuccessful party pays the successful party's costs on a party-and-party basis. This is not a rule of statute — it is a common-law rule subject to judicial discretion, but the discretion is exercised within well-established principles.
 
 **Costs scales:**
 - **Party-and-party scale:** The standard costs order. Covers a portion (typically 60-70%) of the successful party's actual fees. Calculated per tariff published under the rules.
@@ -689,7 +689,7 @@ The canonical column maps to the cross-plugin severity floor described in `## Sh
 
 ### Reserve memo (IAS 37 provision assessment)
 
-*SA in-house uses IAS 37 (International Accounting Standard 37 — Provisions, Contingent Liabilities and Contingent Assets), not ASC 450 (US GAAP). The test is different.*
+*SA in-house uses IAS 37 (International Accounting Standard 37 — Provisions, Contingent Liabilities and Contingent Assets), not the US GAAP contingency standard. The test is different.*
 
 **IAS 37 provision test (all three required):**
 1. **Present obligation** — a present legal or constructive obligation as a result of a past event
@@ -699,7 +699,7 @@ The canonical column maps to the cross-plugin severity floor described in `## Sh
 **Format:** [PLACEHOLDER — e.g., facts, IAS 37 test analysis (present obligation, probable outflow, reliable estimate), best estimate of amount, range if single estimate not possible, provision recommendation]
 **Approver:** [PLACEHOLDER]
 
-*Note: "Probable" under IAS 37 means > 50%, which is a lower threshold than "probable" under ASC 450 (which historically meant "likely" — roughly 75-80%). This difference matters: a claim that would be a contingent liability disclosure under US GAAP may require a provision under IFRS. Never apply ASC 450 thresholds to IAS 37 assessments.*
+*Note: "Probable" under IAS 37 means > 50%, which is a lower threshold than "probable" under the US GAAP contingency standard (which historically meant "likely" — roughly 75-80%). This difference matters: a claim that would be a contingent liability disclosure under US GAAP may require a provision under IFRS. Never apply US GAAP thresholds to IAS 37 assessments.*
 
 ### Outside counsel directives
 
@@ -716,7 +716,7 @@ South African law recognises legal professional privilege (LPP) in two forms:
 - **Advice privilege:** Confidential communications between a legal practitioner and client for the purpose of obtaining or giving legal advice.
 - **Litigation privilege:** Documents prepared for the dominant purpose of pending or contemplated litigation.
 
-There is no separate "work product" doctrine. The US distinction between "ordinary" and "opinion" work product (FRCP 26(b)(3)) does not exist in SA law.
+There is no separate "work product" doctrine. The US distinction between "ordinary" and "opinion" work product does not exist in SA law.
 
 **In-house counsel capacity:** SA legal professional privilege attaches only when in-house counsel acts in a legal advisory capacity. Work product created by in-house counsel acting in a commercial or managerial capacity (business strategy, commercial negotiations, operational decisions) is not privileged. Before asserting privilege over in-house work product, confirm the dominant purpose was obtaining or providing legal advice or preparing for litigation. Documents created for dual purposes (legal + commercial) are assessed on the dominant purpose test. When in doubt, assert privilege and flag for review — under-marking waives privilege (one-way door); over-marking is corrected in review (two-way door).
 
@@ -725,14 +725,14 @@ There is no separate "work product" doctrine. The US distinction between "ordina
 **Review mechanic:** [PLACEHOLDER — `inline note on each flagged item` | `review queue collected at end of run` | `both`]
 **Auto-flag threshold:** [PLACEHOLDER — default is "flag anything not clearly non-privileged." Tighten only with an explicit rationale.]
 
-**Without-prejudice privilege:** Communications made in a genuine attempt to settle a dispute are protected by without-prejudice privilege and may not be disclosed to the court. This is a common-law rule, not a statutory one (there is no equivalent of FRE 408). "Without prejudice save as to costs" communications are protected from disclosure on the merits but may be disclosed on the question of costs.
+**Without-prejudice privilege:** Communications made in a genuine attempt to settle a dispute are protected by without prejudice privilege and may not be disclosed to the court. This is a common-law rule, not a statutory one (there is no equivalent of the US settlement-communication rule). "Without prejudice save as to costs" communications are protected from disclosure on the merits but may be disclosed on the question of costs.
 
 ### Legal hold
 
 **Template:** [PLACEHOLDER — pointer to file; SA-adapted template addressing common-law preservation duty, ECTA s16, and POPIA storage limitation]
 **Issuance:** [PLACEHOLDER — who issues, who acknowledges, refresh cadence]
 
-*SA hold note: There is no equivalent of Zubulake or FRCP 37(e) in SA law. The preservation duty arises from the common law — a party who foresees litigation must take reasonable steps to preserve relevant documents. Failure to preserve may result in adverse inferences (the court may infer that the destroyed documents were unfavourable) and costs sanctions. ECTA s16 imposes separate electronic record retention requirements. POPIA s14 limits retention of personal information, but s11(1)(d) provides an exemption for the defence of a legal claim.*
+*SA hold note: There is no equivalent of the US federal preservation doctrine in SA law. The preservation duty arises from the common law — a party who foresees litigation must take reasonable steps to preserve relevant documents. Failure to preserve may result in adverse inferences (the court may infer that the destroyed documents were unfavourable) and costs sanctions. ECTA s16 imposes separate electronic record retention requirements. POPIA s14 limits retention of personal information, but s11(1)(d) provides an exemption for the defence of a legal claim.*
 
 ### Escalation
 
@@ -747,7 +747,7 @@ There is no separate "work product" doctrine. The US distinction between "ordina
 
 **Without-prejudice toggle:**
 - **Open demand:** Fully admissible in court proceedings. Used when the demand itself serves a legal purpose (establishing mora, interrupting prescription, providing required notice).
-- **Without-prejudice demand:** Protected from disclosure in court by common-law without-prejudice privilege. Used for settlement offers. No equivalent of FRE 408 — the protection is common-law, not statutory.
+- **Without-prejudice demand:** Protected from disclosure in court by common-law without prejudice privilege. Used for settlement offers. There is no equivalent of the US settlement-communication rule — the protection is common-law, not statutory.
 - **Without prejudice save as to costs:** Protected from disclosure on merits, but may be shown to the court on the question of costs (relevant where a party unreasonably rejected a settlement offer and then achieved a worse result at trial).
 
 **Practice-level bits that still live here:**
@@ -776,7 +776,7 @@ There is no separate "work product" doctrine. The US distinction between "ordina
 |---|---|---|
 | Risk framework memo (King IV aligned) | [PLACEHOLDER] | IAS 37 provision methodology |
 | Board/audit committee reporting template | [PLACEHOLDER] | King IV format, integrated reporting |
-| Sample IAS 37 provision assessment | [PLACEHOLDER] | Replaces ASC 450 reserve memo |
+| Sample IAS 37 provision assessment | [PLACEHOLDER] | Replaces US GAAP reserve memo |
 | Outside counsel guidelines (SA) | [PLACEHOLDER] | Attorney + advocate fee structure, tariff reference |
 | Legal hold template (SA-adapted) | [PLACEHOLDER] | Common-law preservation, ECTA s16, POPIA |
 | Insurance summary | [PLACEHOLDER] | SA short-term insurance market |
