@@ -222,6 +222,62 @@ Write a `## Role`, `## Who's using this`, and `## Available integrations` sectio
 
 ---
 
+## Jurisdiction fork
+
+After Part 0, check the company profile's primary jurisdiction:
+- Read `~/.claude/plugins/config/claude-for-legal/company-profile.md`
+- Check the `jurisdiction` or `Core jurisdictions` field
+
+**If PRIMARY JURISDICTION = "South Africa" (or "ZA" or matches SA):** fork to the SA interview path below.
+**Otherwise:** continue with the standard interview.
+
+---
+
+## SA Interview Path — Litigation Practice
+
+*This path runs instead of the US-specific interview when jurisdiction = ZA.*
+
+### Part 1: SA Litigation Footprint (3-5 minutes)
+
+**Q1: Province** — "Which province is your company registered in, and where are your primary operations? This determines your default High Court division."
+- Options: Gauteng, Western Cape, KwaZulu-Natal, Eastern Cape, Free State, Limpopo, Mpumalanga, North West, Northern Cape, Multiple
+- Writes to: `## Company profile — Core jurisdictions`
+
+**Q2: Listed status** — "Is your company listed on the JSE, or is it a private company?"
+- Options: JSE-listed, Private, Subsidiary of listed company
+- If JSE-listed: sets materiality framework to IAS 37 + SENS triggers + integrated reporting
+- If private: simpler reporting framework
+- Writes to: `## 1. Risk calibration — Materiality thresholds`
+
+**Q3: Legal profession structure** — "Do you use attorneys only, or do you also brief advocates (counsel) for court appearances and complex pleadings?"
+- Options: Attorneys only, Attorneys + advocates (two-tier), Varies by matter
+- Writes to: `## 2. Landscape — Outside counsel bench`
+
+**Q4: Default instructing firm** — "Do you have a default instructing firm (attorney firm) for litigation matters?"
+- Free text: firm name or "none / ad hoc"
+- Writes to: `## 2. Landscape — Outside counsel bench` (first row)
+
+**Q5: Costs posture** — "What is your general approach to costs orders: do you typically seek costs against the other party (SA default: loser pays), or do you tend to agree each party bears own costs?"
+- Options: Seek costs (loser pays default), Each party bears own (by agreement), Depends on matter
+- Writes to: `## Costs exposure`
+
+**Q6: Arbitration** — "Do you use arbitration (AFSA or ad hoc) for any categories of dispute?"
+- Options: Yes (specify which types), No, Occasionally
+- Writes to: `## Dispute resolution landscape`
+
+**Q7: Currency** — "What currency do you use for settlement authority thresholds and severity bands?"
+- Options: ZAR, USD, EUR, Other
+- Writes to: `## 1. Risk calibration — Settlement authority ladder`
+
+### Part 2: Build the configuration
+
+- Use ZA practice profile template from `jurisdictions/za/litigation-legal/practice-profile-template.md`
+- Populate sections from interview answers
+- Write to `~/.claude/plugins/config/claude-for-legal/litigation-legal/CLAUDE.md`
+- Include the overlay loading instruction: "After loading context, read `jurisdictions/za/litigation-legal/router.md` and load the listed overlays for this skill."
+
+---
+
 ## In-house path (role == `in-house`)
 
 *Skip this whole section if the user's role is `firm-associate` or `solo`.*
