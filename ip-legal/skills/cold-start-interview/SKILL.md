@@ -279,6 +279,63 @@ Record this on a `**Practice setting:**` line in `## Company profile` in the pra
 
 Write `## Who's using this` and `## Available integrations` sections immediately after the `## Company profile` section in the plugin config, and update `## Outputs` so the work-product header is conditional on role (see the practice profile template).
 
+---
+
+## Jurisdiction fork
+
+After Part 0, check the company profile's primary jurisdiction:
+- Read `~/.claude/plugins/config/claude-for-legal/company-profile.md`
+- Check the `jurisdiction` or `Primary jurisdiction` field
+
+**If PRIMARY JURISDICTION = "South Africa" (or "ZA" or matches SA):** fork to the SA interview path below.
+**Otherwise:** continue with the standard interview.
+
+---
+
+## SA Interview Path — IP Practice
+
+*This path runs instead of the US-specific interview when jurisdiction = ZA.*
+
+### Part 1: SA IP Footprint (3-5 minutes)
+
+**Q1: IP types** — "Which IP types does your SA practice cover?"
+- Options: Trademark, Patent, Design, Copyright, Trade secret, Open source, All
+- Multiple select allowed
+- Writes to: `## IP practice profile — Practice area mix`
+
+**Q2: SA registrations** — "Do you hold SA registrations at CIPC? If yes, can you provide or upload your trademark, patent, and design registration numbers?"
+- Free text or file upload
+- Writes to: `## IP portfolio`
+
+**Q3: Absolute novelty** — "Important: SA requires absolute novelty for patents — there is no 1-year grace period like the US. Any public disclosure before filing destroys novelty. Is your team aware of this requirement?"
+- Options: Yes — we have processes for this, No — we need to implement disclosure controls, Not sure
+- Writes to: `## SA patentability notes`
+
+**Q4: Outside counsel** — "Do you use patent attorneys registered with CIPC, or do you also brief advocates for Commissioner of Patents proceedings?"
+- Options: Patent attorneys only, Patent attorneys + advocates, Varies by matter
+- Writes to: `## IP practice profile — Outside counsel roster`
+
+**Q5: Enforcement posture** — "For enforcement in the SA market, do you use the Counterfeit Goods Act (criminal raids) in addition to civil interdicts?"
+- Options: Civil only (interdicts, damages), Civil + criminal (Counterfeit Goods Act), Criminal-led (raids first), Depends on the matter
+- Writes to: `## Enforcement posture`
+
+**Q6: Takedowns** — "For online copyright infringement, do you file ECTA s77 takedown notices, or do you rely on platform-specific (DMCA-style) processes?"
+- Options: ECTA s77 notices, Platform-specific (DMCA/DSA), Both depending on where hosted, Haven't needed to yet
+- Writes to: `## SA copyright and takedowns`
+
+**Q7: Currency** — "What currency do you use for IP budgets, enforcement thresholds, and settlement authority?"
+- Options: ZAR, USD, EUR, Other
+- Writes to: `## Enforcement posture — approval matrix`
+
+### Part 2: Build the configuration
+
+- Use ZA practice profile template from `jurisdictions/za/ip-legal/practice-profile-template.md`
+- Populate sections from interview answers
+- Write to `~/.claude/plugins/config/claude-for-legal/ip-legal/CLAUDE.md`
+- Include the overlay loading instruction: "After loading context, read `jurisdictions/za/ip-legal/router.md` and load the listed overlays for this skill."
+
+---
+
 ### Part 1: Practice-area mix (1-2 minutes)
 
 **What does [your company] do?** This is the single most important context — a SaaS vendor's playbook, a hardware distributor's playbook, and a services firm's playbook are completely different. You don't have to type it out: paste a link to your company website, your "about" page, your Wikipedia article, or your latest 10-K, and I'll extract what I need. Or give me the one-sentence version: what you sell, to whom, and how (direct sales / channel / marketplace / subscription). If you're a private practice firm, the same applies to the clients you do most of your IP work for.
