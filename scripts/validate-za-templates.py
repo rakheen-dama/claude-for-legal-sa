@@ -157,6 +157,33 @@ TEMPLATE_CONFIG = {
             (r"\bBluebook\b", "Bluebook"),
         ],
     },
+    "regulatory-legal": {
+        "path": ROOT / "jurisdictions" / "za" / "regulatory-legal" / "practice-profile-template.md",
+        "required_sections": [
+            "Regulatory Practice Profile", "Regulators we watch",
+            "Who's using this", "Regulatory landscape",
+            "Consultation engagement posture", "Government Gazette monitoring",
+            "Available integrations", "Policy library",
+            "Materiality threshold", "Gap response process",
+            "Feed configuration", "Outputs", "Seed documents",
+        ],
+        "sa_required_terms": [
+            "PAJA", "Government Gazette", "FSCA", "Information Regulator",
+            "Open Gazettes", "admitted attorney", "legal professional privilege",
+            "responsible party", "POPIA",
+        ],
+        "us_forbidden": [
+            (r"\bFederal Register\b", "Federal Register"),
+            (r"\bNPRM\b", "NPRM"),
+            (r"\bRegulations\.gov\b", "Regulations.gov"),
+            (r"\bCourtListener\b", "CourtListener"),
+            (r"\bFTC\b", "FTC"),
+            (r"\bSEC\b", "SEC"),
+            (r"\bCFPB\b", "CFPB"),
+            (r"\bEEOC\b", "EEOC"),
+            (r"\bOSHA\b", "OSHA"),
+        ],
+    },
 }
 
 # Key aliases: "litigation-legal" uses the same key names as other practice areas
