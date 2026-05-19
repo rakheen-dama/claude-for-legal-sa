@@ -1,0 +1,22 @@
+name: "Third-party bank document production"
+skill: subpoena-triage
+input: |
+  We need financial records from First National Bank for the past 3 years. The bank
+  is not a party to our litigation (commercial dispute in the Gauteng Division).
+  The records are critical to proving damages.
+
+expected_flags: []
+
+must_not_contain:
+  - "FRCP 45"
+  - "non-party subpoena"
+  - "100-mile rule"
+  - "cost-shifting under Rule 45"
+  - "place of compliance"
+
+notes: |
+  SA does not have FRCP 45-style pre-trial non-party subpoenas. The skill should
+  advise: (1) apply to court under Rule 35(14) for an order compelling the bank
+  to produce documents, or (2) issue a subpoena duces tecum under Rule 38 for
+  production at trial. A court application is required for pre-trial non-party
+  production — there is no self-executing right.

@@ -1,0 +1,26 @@
+name: "Pre-litigation hold with POPIA intersection"
+skill: legal-hold
+input: |
+  A customer was injured using our product 2 weeks ago. No demand letter yet, but
+  the customer's attorney has been in contact. We need to preserve relevant documents
+  including customer personal data, product testing records, quality control reports,
+  and internal communications about the product.
+
+expected_flags:
+  - "litigation hold"
+  - "preservation"
+  - "POPIA"
+
+must_not_contain:
+  - "Zubulake"
+  - "FRCP 37(e)"
+  - "safe harbor"
+  - "litigation hold trigger under Zubulake"
+  - "Sedona Conference"
+
+notes: |
+  Litigation is reasonably contemplated (attorney contact). The skill should:
+  (1) issue a hold immediately covering all identified data sources, (2) note that
+  the hold notice itself should be privileged, (3) address POPIA — the litigation
+  exception (s14) justifies extended retention of customer personal data, but scope
+  should be limited to what is relevant to the potential claim.

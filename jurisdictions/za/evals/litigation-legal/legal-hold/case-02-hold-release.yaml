@@ -1,0 +1,21 @@
+name: "Hold release after settlement with POPIA review"
+skill: legal-hold
+input: |
+  A product liability matter was settled 6 months ago. The legal hold has been in
+  place for 2 years, covering 15 custodians. We need to release the hold and
+  review our POPIA obligations regarding the held personal information.
+
+expected_flags: []
+
+must_not_contain:
+  - "FRCP 37(e) safe harbor"
+  - "proportionality factors"
+  - "Sedona Conference"
+  - "Zubulake"
+
+notes: |
+  The skill should: (1) confirm the matter is concluded and no appeal is pending,
+  (2) release the hold and notify all 15 custodians, (3) review POPIA s14 — with
+  no ongoing litigation purpose, personal information held beyond its original
+  retention period should be reviewed for deletion or de-identification, (4) document
+  the release in the hold log.

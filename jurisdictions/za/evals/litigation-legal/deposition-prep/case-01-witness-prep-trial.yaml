@@ -1,0 +1,23 @@
+name: "Witness preparation for trial — no depositions"
+skill: deposition-prep
+input: |
+  Senior employee (operations director) is the key witness in a commercial dispute
+  over a construction contract. Trial is in 6 weeks in the Gauteng Division. The
+  employee authored key emails and project reports that are in the trial bundle.
+
+expected_flags: []
+
+must_not_contain:
+  - "deposition"
+  - "FRCP 30"
+  - "deposition outline"
+  - "deponent"
+  - "videotaped"
+  - "oral examination before trial"
+
+notes: |
+  SA does not have depositions. The skill should reframe as trial preparation /
+  witness preparation. Output should be a witness preparation outline covering:
+  (1) key documents the witness should review, (2) chronology of events the witness
+  covers, (3) anticipated cross-examination topics, (4) preparation for
+  examination-in-chief and re-examination. No deposition-specific artifacts.

@@ -1,0 +1,27 @@
+name: "Missing documents discovered mid-trial preparation"
+skill: legal-hold
+input: |
+  During trial preparation, we discovered that key emails between the project manager
+  and the client were destroyed 8 months ago by routine IT email archiving. The
+  dispute was foreseeable at that time (we had already received a letter of demand).
+  No litigation hold was ever issued.
+
+expected_flags:
+  - "litigation hold"
+  - "adverse inference"
+  - "discovery"
+
+must_not_contain:
+  - "Zubulake factors"
+  - "FRCP 37(e)(1)"
+  - "FRCP 37(e)(2)"
+  - "intent to deprive"
+  - "spoliation sanctions under federal rules"
+
+notes: |
+  The failure to issue a hold when the dispute was foreseeable is a serious issue.
+  The skill should: (1) flag the risk of adverse inference if the opposing party
+  raises the destruction, (2) advise disclosing the destruction in the discovery
+  affidavit (what documents existed, when and how they were destroyed, what efforts
+  were made to retrieve them), (3) assess whether backup copies exist, (4) prepare
+  for a potential costs sanction or adverse inference application.

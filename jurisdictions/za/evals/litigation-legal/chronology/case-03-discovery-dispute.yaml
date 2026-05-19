@@ -1,0 +1,24 @@
+name: "Discovery dispute — fishing expedition objection"
+skill: chronology
+input: |
+  Opposing party has served a broad Rule 35(3) notice requesting "all documents
+  relating to the company's financial performance, strategy documents, board minutes,
+  and management reports for the past 10 years." Our pleadings relate to a specific
+  breach of a supply agreement in 2024.
+
+expected_flags:
+  - "discovery"
+
+must_not_contain:
+  - "FRCP 26(b)(1)"
+  - "proportionality"
+  - "Rule 34 request for production"
+  - "FRCP 33"
+  - "interrogatories as of right"
+
+notes: |
+  The Hartzenberg rule applies — discovery is not a fishing expedition. The skill
+  should advise that the request goes far beyond the pleaded issues (specific breach
+  of a supply agreement). Respond substantively to Rule 35(3), objecting to
+  irrelevant categories while discovering documents relevant to the pleaded issues.
+  The court will refuse oppressive or speculative requests.

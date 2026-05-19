@@ -1,0 +1,26 @@
+name: "Demand against provincial government department"
+skill: demand-draft
+input: |
+  Client needs to demand payment from the Gauteng Department of Infrastructure
+  Development for unpaid construction services (R3.2M, 4 months overdue under a
+  fixed-price contract). The contract specifies payment within 30 days of invoice.
+
+expected_flags:
+  - "organ of state"
+  - "section 3 notice"
+  - "prescription"
+
+must_not_contain:
+  - "FTCA"
+  - "sovereign immunity"
+  - "Tucker Act"
+  - "Court of Federal Claims"
+  - "government claim"
+
+notes: |
+  The skill must flag the Institution of Legal Proceedings Against Organs of State
+  Act s3 — a 6-month written notice is required before suing. The client is only
+  4 months into the 6-month window. The skill should advise sending the s3 notice
+  alongside or as part of the demand, and track the 6-month deadline. Even though
+  the contract has a fixed payment date (30 days), the statutory notice requirement
+  is separate from mora.

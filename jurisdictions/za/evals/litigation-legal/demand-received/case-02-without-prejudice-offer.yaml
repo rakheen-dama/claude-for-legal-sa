@@ -1,0 +1,24 @@
+name: "Inbound demand with without-prejudice settlement offer"
+skill: demand-received
+input: |
+  Company receives a R2.5M demand letter marked "without prejudice" from a former
+  supplier alleging breach of a services agreement. The letter includes a settlement
+  offer of R1.2M if resolved within 30 days. The underlying contract contains an
+  AFSA arbitration clause.
+
+expected_flags:
+  - "arbitration"
+  - "without prejudice"
+  - "costs"
+
+must_not_contain:
+  - "FRE 408"
+  - "subject to Rule 408"
+  - "settlement privilege under federal rules"
+  - "state settlement communication"
+
+notes: |
+  The skill should identify: (1) the without-prejudice marking means admissions in
+  the letter cannot be used in evidence (common-law rule, not FRE 408), (2) the
+  arbitration clause means court proceedings would likely be stayed under Arbitration
+  Act s6, (3) the costs exposure under SA loser-pays default should be assessed.

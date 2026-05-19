@@ -1,0 +1,26 @@
+name: "Standard payment demand requiring mora"
+skill: demand-draft
+input: |
+  Client is owed R850,000 under a services agreement. Debtor has not paid despite
+  invoice being 90 days overdue. No fixed payment date in the contract (payment is
+  "on demand" or "within a reasonable time"). No arbitration clause. Debtor is a
+  Johannesburg company.
+
+expected_flags:
+  - "mora"
+  - "prescription"
+  - "letter of demand"
+
+must_not_contain:
+  - "FRE 408"
+  - "cease and desist"
+  - "FDCPA"
+  - "state-specific demand"
+  - "Rule 408"
+
+notes: |
+  Because there is no fixed payment date, the debtor must be placed in mora by
+  interpellatio (letter of demand) before the cause of action is complete. The
+  skill should identify that a demand is a legal prerequisite, not just a
+  strategic choice. It should also flag prescription (3-year period under s11(d))
+  and calculate when the claim might prescribe.
