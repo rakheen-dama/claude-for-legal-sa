@@ -24,3 +24,64 @@ sections:
     effective_from: null
     effective_until: null
     effect: "In the case of a computer-generated literary, dramatic, musical or artistic work, the person by whom the arrangements necessary for the creation of the work were undertaken is deemed the author."
+
+  categories_of_works:
+    ref: "Copyright Act s2"
+    value: 9
+    unit: "categories"
+    effective_from: null
+    effective_until: null
+    effect: "Copyright subsists in 9 categories of works: literary works (including computer programs, tables, compilations), musical works, artistic works (drawings, photographs, architecture), cinematograph films, sound recordings, broadcasts, programme-carrying signals, published editions, and computer programs."
+
+  subsistence_conditions:
+    ref: "Copyright Act s3-4"
+    value: true
+    effective_from: null
+    effective_until: null
+    effect: "Copyright subsists if the work is original and the author is a qualified person (SA citizen or resident, or first publication in SA or a Berne Convention country). No registration is required — copyright arises automatically on creation and fixation."
+    note: "SA has no general copyright registration system (unlike the US Copyright Office). Copyright arises automatically. Some specific registers exist (e.g., cinematograph films)."
+
+  duration_literary_musical_artistic:
+    ref: "Copyright Act s3(2)(a)"
+    value: 50
+    unit: "years after death of author"
+    effective_from: null
+    effective_until: null
+    effect: "Copyright in literary, musical, and artistic works subsists for the life of the author plus 50 years from the end of the year in which the author dies."
+    note: "SA is life+50, not life+70 as in the US and EU. Some work categories have different terms (e.g., films and sound recordings: 50 years from first publication or making)."
+
+  fair_dealing:
+    ref: "Copyright Act s12"
+    value: "closed list of permitted purposes"
+    effective_from: null
+    effective_until: null
+    effect: "Fair dealing with a work is permitted for specific enumerated purposes: research or private study, personal or private use, criticism or review, reporting current events. This is a CLOSED LIST — not the open-ended US fair use test under 17 USC §107. Uses outside these purposes are infringing absent another statutory exception or a licence."
+    note: "SA fair dealing is narrower than US fair use. There is no 'transformative use' doctrine. A use that might be defensible as fair use in the US may be infringing in SA."
+
+  infringement_direct:
+    ref: "Copyright Act s23(1)"
+    value: true
+    effective_from: null
+    effective_until: null
+    effect: "Copyright is infringed by any person who, without the authority of the owner, does or causes any other person to do any act which the owner has the exclusive right to do or to authorize."
+
+  infringement_secondary:
+    ref: "Copyright Act s23(2)-(3)"
+    value: true
+    effective_from: null
+    effective_until: null
+    effect: "Secondary infringement includes: importing, selling, distributing, or possessing for trade purposes an article which the person knows or ought reasonably to know is an infringing copy."
+
+  remedies:
+    ref: "Copyright Act s24"
+    value: true
+    effective_from: null
+    effective_until: null
+    effect: "Civil remedies for copyright infringement include: interdict (injunction), damages, reasonable royalty, delivery up of infringing copies, and an account of profits. Criminal penalties also apply for commercial infringement (s25-27)."
+
+  moral_rights:
+    ref: "Copyright Act s20"
+    value: true
+    effective_from: null
+    effective_until: null
+    effect: "The author of a work has the right to claim authorship (paternity) and to object to any distortion, mutilation, or other modification of the work that would be prejudicial to the author's honour or reputation (integrity). Moral rights cannot be assigned, only waived by consent."
