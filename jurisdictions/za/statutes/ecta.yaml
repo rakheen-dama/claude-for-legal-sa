@@ -53,3 +53,11 @@ sections:
     effective_from: "2002-08-30"
     effective_until: null
     effect: "The provisions of ECTA relating to data messages, electronic signatures, and electronic transactions do not apply to these categories of agreements."
+
+  takedown_notice:
+    ref: "ECTA s77"
+    value: true
+    effective_from: "2002-08-30"
+    effective_until: null
+    effect: "A complainant may send a takedown notice to a service provider's designated agent requesting removal of infringing content. The notice must include: full contact details, description and location of the infringing material, statement of ownership or authority, and signature. Service providers that comply with takedown requests benefit from limitations on liability (safe harbour). There is no statutory counter-notice procedure — unlike the US DMCA, there is no mandatory 'put back' mechanism."
+    note: "ECTA takedowns are not limited to copyright — they can apply to any unlawful content. The absence of a counter-notice regime means ISPs often over-comply (quick removal) to preserve safe harbour. Practice varies between ISPs."
