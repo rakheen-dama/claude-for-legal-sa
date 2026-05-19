@@ -1,0 +1,80 @@
+statute: "Patents Act 57 of 1978"
+authority: "Companies and Intellectual Property Commission (CIPC)"
+last_confirmed: "2025-05-01"
+source_url: "https://www.gov.za/documents/patents-act-20-apr-1978-0000"
+
+sections:
+  patentability:
+    ref: "Patents Act s25(1)"
+    value: "new, inventive step, capable of industrial application"
+    effective_from: null
+    effective_until: null
+    effect: "An invention is patentable if it is new (novel), involves an inventive step (non-obvious), and is capable of being used or applied in trade, industry, or agriculture (industrial applicability)."
+
+  absolute_novelty:
+    ref: "Patents Act s25(1) read with s25(5)-(6)"
+    value: "worldwide, no grace period"
+    effective_from: null
+    effective_until: null
+    effect: "SA applies absolute worldwide novelty. Any prior disclosure anywhere in the world before the priority date is prior art. There is NO general 12-month grace period like the US (35 USC §102(a)(1)). Very limited exceptions exist (officially recognised exhibitions, unlawful third-party disclosure) but should not be relied upon."
+    note: "This is the single most important difference from US patent practice. Public disclosure before filing — conference presentations, demos, website launches, investor decks, academic publications, product samples — will almost certainly destroy novelty."
+
+  exclusions_as_such:
+    ref: "Patents Act s25(2)-(3)"
+    value: "excluded only as such"
+    effective_from: null
+    effective_until: null
+    effect: "The following are not deemed inventions: discoveries, scientific theories, mathematical methods, literary/dramatic/musical/artistic works, schemes for mental acts or doing business, computer programs, and presentation of information. However, s25(3) provides these are excluded ONLY 'to the extent that the application relates to that thing as such.' Claims directed to technical implementations can still be patentable."
+    note: "Similar to EPC/European approach. Software and business methods are excluded 'as such' but computer-implemented inventions with a technical character/effect can be patentable. Drafting must emphasise technical features and effects."
+
+  methods_of_treatment:
+    ref: "Patents Act s25(4)(a)"
+    value: "excluded"
+    effective_from: null
+    effective_until: null
+    effect: "Methods of treatment of the human or animal body by surgery, therapy, or diagnosis are not patentable. However, products (e.g., pharmaceutical compounds, medical devices) for use in such methods CAN be patented."
+    note: "This differs from US law, where methods of treatment ARE patentable."
+
+  patent_term:
+    ref: "Patents Act s45-46"
+    value: 20
+    unit: "years from filing date"
+    effective_from: null
+    effective_until: null
+    effect: "A patent is valid for 20 years from the filing date, subject to payment of annual renewal fees (annuities). The first annuity is due on the third anniversary of the filing date, and annually thereafter."
+
+  compulsory_licences:
+    ref: "Patents Act s56"
+    value: true
+    effective_from: null
+    effective_until: null
+    effect: "The Commissioner of Patents may grant a compulsory licence where the patentee abuses patent rights, including: failure to work the invention in SA on a scale adequate to meet demand on reasonable terms, refusal to grant licences on reasonable terms leading to anti-competitive effects, or unreasonable pricing. Also used in public health contexts consistent with TRIPS flexibilities."
+
+  infringement:
+    ref: "Patents Act s65-66"
+    value: true
+    effective_from: null
+    effective_until: null
+    effect: "Patent infringement includes: for product patents — making, using, exercising, disposing of, offering to dispose of, importing, or stocking the patented product; for process patents — using the patented process and dealing in products obtained directly by that process. SA does not have the same developed doctrine of indirect/contributory infringement as the US."
+
+  remedies:
+    ref: "Patents Act s67"
+    value: true
+    effective_from: null
+    effective_until: null
+    effect: "Remedies for patent infringement include: interdict, damages (compensatory only — no treble/enhanced damages), reasonable royalty, and delivery up. The Commissioner of Patents (a High Court judge sitting in that capacity) hears patent matters."
+
+  declaration_of_non_infringement:
+    ref: "Patents Act s68"
+    value: true
+    effective_from: null
+    effective_until: null
+    effect: "Any person may apply to the Commissioner for a declaration that a process or article does not infringe a patent. The applicant must first request and be refused or not receive a written acknowledgement from the patentee."
+
+  depository_system:
+    ref: "Patents Act (administrative practice)"
+    value: "formal examination only"
+    effective_from: null
+    effective_until: null
+    effect: "SA operates a depository patent system. Patent applications undergo formal examination only (completeness, formalities, classification) — NOT substantive examination for novelty, inventive step, or industrial applicability. A granted SA patent may therefore be invalid. Validity is tested in litigation or revocation proceedings before the Commissioner of Patents."
+    note: "Registration does NOT equal validity. Prior-art screening before relying on a patent is essential. In transactions, check the prosecution file and assess validity risk."

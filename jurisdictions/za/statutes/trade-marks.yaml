@@ -1,0 +1,77 @@
+statute: "Trade Marks Act 194 of 1993"
+authority: "Companies and Intellectual Property Commission (CIPC)"
+last_confirmed: "2025-05-01"
+source_url: "https://www.gov.za/documents/trade-marks-act"
+
+sections:
+  registrability:
+    ref: "Trade Marks Act s9"
+    value: "capable of distinguishing"
+    effective_from: null
+    effective_until: null
+    effect: "A mark is registrable as a trade mark if it is capable of distinguishing the goods or services of one person from those of another. The mark must be inherently distinctive or have acquired distinctiveness through use."
+
+  unregistrable_marks:
+    ref: "Trade Marks Act s10"
+    value: true
+    effective_from: null
+    effective_until: null
+    effect: "Marks that shall not be registered include: marks devoid of distinctive character (s10(1)), descriptive or generic marks (s10(2)), marks where the applicant has no bona fide claim to proprietorship (s10(3)), marks confusingly similar to earlier marks (s10(12), s10(14)), marks contrary to law or morality (s10(10)), and marks that would cause deception (s10(11))."
+
+  well_known_marks_registered:
+    ref: "Trade Marks Act s11"
+    value: true
+    effective_from: null
+    effective_until: null
+    effect: "A well-known trade mark as defined in the Paris Convention is entitled to protection in South Africa even if not registered. The Registrar must refuse to register a mark that conflicts with a well-known mark."
+
+  infringement_identical:
+    ref: "Trade Marks Act s34(1)(a)"
+    value: true
+    effective_from: null
+    effective_until: null
+    effect: "A registered trade mark is infringed by the unauthorized use, in the course of trade, of an identical or confusingly similar mark in relation to identical or similar goods or services, where such use is likely to cause deception or confusion."
+
+  infringement_similar:
+    ref: "Trade Marks Act s34(1)(b)"
+    value: true
+    effective_from: null
+    effective_until: null
+    effect: "A registered trade mark is infringed by the use of a similar mark on goods or services so similar to those covered by the registration that use is likely to cause deception or confusion."
+
+  infringement_dilution:
+    ref: "Trade Marks Act s34(1)(c)"
+    value: true
+    effective_from: null
+    effective_until: null
+    effect: "A well-known registered trade mark is infringed by the use of a similar mark on any goods or services (even dissimilar) where such use is likely to take unfair advantage of, or be detrimental to, the distinctive character or repute of the registered mark. No need to show confusion."
+
+  well_known_unregistered:
+    ref: "Trade Marks Act s35"
+    value: true
+    effective_from: null
+    effective_until: null
+    effect: "A mark entitled to protection under the Paris Convention as a well-known trade mark is protected even if unregistered in South Africa and even if the owner has no local business, provided the mark is well known in the relevant sector of the SA public. Allows infringement actions and opposition/cancellation of conflicting marks."
+
+  defences:
+    ref: "Trade Marks Act s36"
+    value: true
+    effective_from: null
+    effective_until: null
+    effect: "Statutory defences to infringement include: honest use of one's own name or the name of a predecessor in business (bona fide use of name), use of indications of kind, quality, or geographical origin (descriptive use), and use of the trade mark to indicate the intended purpose of goods or services (e.g., spare parts, compatible products)."
+
+  duration_and_renewal:
+    ref: "Trade Marks Act s37"
+    value: 10
+    unit: "years"
+    effective_from: null
+    effective_until: null
+    effect: "A trade mark registration is valid for 10 years from the filing date and may be renewed indefinitely for further 10-year periods. Renewal can be filed from 6 months before expiry. A 6-month grace period with penalty fee applies after expiry."
+
+  confusion_test:
+    ref: "Trade Marks Act s34 (case law)"
+    value: "global appreciation"
+    effective_from: null
+    effective_until: null
+    effect: "SA courts apply a global appreciation test for likelihood of confusion, considering: visual, aural, and conceptual similarity of marks as wholes; comparison of goods/services; the average consumer with imperfect recollection; distinctiveness and strength of the earlier mark; and overall impression. This is NOT the US multi-factor test (du Pont, Polaroid, Sleekcraft)."
+    note: "SA confusion analysis draws on UK/EU case law. Factors are similar in substance to US tests but less formally enumerated — more 'global and impressionistic' than factor-by-factor."
