@@ -1,0 +1,24 @@
+name: "Subpoena duces tecum served on non-party company"
+skill: subpoena-triage
+input: |
+  Our company (a technology services provider) has been served with a subpoena
+  duces tecum to produce financial records and client communications at a trial
+  between two other parties in 3 weeks. Some of the requested documents may
+  contain privileged legal advice from our attorneys.
+
+expected_flags:
+  - "privilege"
+
+must_not_contain:
+  - "FRCP 45"
+  - "motion to quash under Rule 45(d)"
+  - "place of compliance limit"
+  - "100-mile rule"
+  - "undue burden under federal rules"
+
+notes: |
+  The skill should: (1) identify the subpoena was issued by the registrar under
+  Rule 38, (2) advise reviewing the requested documents for privilege before
+  producing, (3) if privileged documents are included, advise applying to court
+  to limit the subpoena scope or asserting privilege over specific documents,
+  (4) note that non-compliance is contempt of court.

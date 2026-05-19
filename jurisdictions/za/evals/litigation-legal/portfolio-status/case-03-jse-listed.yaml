@@ -1,0 +1,27 @@
+name: "Quarterly portfolio review for JSE-listed company"
+skill: portfolio-status
+input: |
+  Quarterly litigation portfolio review for a JSE-listed financial services company.
+  12 active matters: 3 with exposure above R10M (a class action, a regulatory
+  investigation by the FSCA, and a commercial dispute), 5 medium-exposure matters,
+  4 low-exposure matters. Annual results are due in 6 weeks.
+
+expected_flags:
+  - "SENS"
+  - "IAS 37"
+  - "King IV"
+
+must_not_contain:
+  - "ASC 450"
+  - "10-Q Item 103"
+  - "SEC risk factors"
+  - "SOX"
+  - "Sarbanes-Oxley"
+  - "PCAOB"
+
+notes: |
+  The skill should: (1) classify each matter under IAS 37 (provision / contingent
+  liability / remote), (2) flag any developments requiring SENS announcements
+  (price-sensitive information), (3) prepare audit/risk committee reporting under
+  King IV, (4) for the 3 high-exposure matters, assess whether provisions should be
+  recognised or notes updated in the upcoming annual financial statements.

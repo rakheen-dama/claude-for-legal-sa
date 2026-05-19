@@ -1,0 +1,23 @@
+name: "Briefing senior counsel for High Court trial"
+skill: oc-status
+input: |
+  We need to brief a senior advocate (SC) for a 5-day High Court trial in the
+  Gauteng Division starting in 8 weeks. Our instructing attorneys (a Johannesburg
+  firm) have been managing the matter. We need to budget for both attorney fees
+  and advocate fees, and prepare a status update for the board.
+
+expected_flags: []
+
+must_not_contain:
+  - "partner billing rate"
+  - "associate rate"
+  - "LEDES billing"
+  - "AFA under ABA guidelines"
+  - "BigLaw"
+
+notes: |
+  The skill should model the two-tier fee structure: (1) instructing attorney
+  fees (hourly or fixed for trial preparation and attendance), (2) advocate fees
+  (brief fee + daily refresher for 5 trial days + consultation fees + marking
+  fee). Budget should separate the two. Status update format should follow King IV
+  / board reporting conventions, not US-style quarterly litigation reports.

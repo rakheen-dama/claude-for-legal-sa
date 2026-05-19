@@ -1,0 +1,25 @@
+name: "New matter intake — R180k contract claim, forum selection"
+skill: matter-intake
+input: |
+  Client wants to sue for R180,000 breach of a supply contract. The defendant is
+  a company registered and operating in Johannesburg. The contract has no forum
+  selection or arbitration clause. Client is based in Cape Town.
+
+expected_flags:
+  - "forum"
+  - "jurisdiction"
+
+must_not_contain:
+  - "small claims court limit"
+  - "federal diversity jurisdiction"
+  - "amount in controversy"
+  - "Erie doctrine"
+  - "removal"
+
+notes: |
+  R180,000 is within the district Magistrates' Court limit (R200,000). The skill
+  should flag: (1) Magistrates' Court has jurisdiction (R180k < R200k limit), (2)
+  High Court also has jurisdiction but costs may be disproportionate, (3) territorial
+  jurisdiction — defendant is in Johannesburg, so the Johannesburg Magistrates'
+  Court or Gauteng Division would have jurisdiction. Cape Town courts would need a
+  jurisdictional basis (cause of action arising there, or consent).

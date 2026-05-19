@@ -1,0 +1,24 @@
+name: "Partial disclosure waiver — opinion annexed to affidavit"
+skill: privilege-log-review
+input: |
+  Our client annexed a legal opinion from external counsel to a founding affidavit
+  in support of an urgent interdict application. The opinion addressed the merits
+  of the underlying claim. Opposing party now demands all related legal advice on
+  the same subject matter, arguing waiver by partial disclosure.
+
+expected_flags:
+  - "privilege"
+  - "waiver"
+
+must_not_contain:
+  - "FRE 502"
+  - "FRE 502(a)"
+  - "selective waiver"
+  - "subject matter waiver under federal rules"
+
+notes: |
+  SA common law: partial disclosure of privileged communications waives privilege
+  over the remainder on the same subject matter. By annexing the opinion, the
+  client has likely waived privilege over all related advice on that subject. The
+  skill should assess whether the waiver extends to all advice on the underlying
+  claim or only the specific topic of the annexed opinion.

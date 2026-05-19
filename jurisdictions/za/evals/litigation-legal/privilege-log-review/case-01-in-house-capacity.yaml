@@ -1,0 +1,27 @@
+name: "In-house counsel capacity issue — product recall report"
+skill: privilege-log-review
+input: |
+  In-house legal counsel drafted a report on a product recall. The report includes
+  legal analysis of potential liability under the Consumer Protection Act, as well
+  as recommendations for the marketing team's communications strategy. The report
+  was circulated to the marketing director and the head of operations for input.
+
+expected_flags:
+  - "privilege"
+  - "in-house capacity"
+  - "waiver"
+
+must_not_contain:
+  - "work product doctrine"
+  - "FRCP 26(b)(3)"
+  - "opinion work product"
+  - "ordinary work product"
+  - "substantial need test"
+
+notes: |
+  The skill should identify: (1) the legal analysis portions may be privileged
+  (advice privilege) but the commercial/marketing portions are not, (2) circulation
+  to non-legal stakeholders for business input risks waiver, (3) the dominant
+  purpose test applies — if the dominant purpose was legal advice, privilege
+  attaches; if commercial, it does not. The in-house counsel capacity distinction
+  is the key SA-specific issue.

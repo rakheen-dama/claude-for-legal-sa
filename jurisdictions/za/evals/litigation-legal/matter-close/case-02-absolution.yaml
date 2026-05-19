@@ -1,0 +1,26 @@
+name: "Matter close — absolution from the instance"
+skill: matter-close
+input: |
+  Trial concluded in the Gauteng Division. The judge granted absolution from the
+  instance at the close of the plaintiff's case, finding that the plaintiff had
+  not made out a prima facie case on causation. We are the plaintiff. Need to
+  close the matter and assess options.
+
+expected_flags:
+  - "leave to appeal"
+  - "prescription"
+
+must_not_contain:
+  - "directed verdict"
+  - "JMOL"
+  - "Rule 50(a)"
+  - "summary judgment at trial"
+  - "res judicata"
+
+notes: |
+  Absolution from the instance = dismissal WITHOUT PREJUDICE. The plaintiff may
+  re-institute (subject to prescription). The skill should: (1) explain absolution
+  is not a final judgment on the merits — it means the plaintiff failed to make a
+  prima facie case, (2) assess leave to appeal under s17 — reasonable prospect of
+  success on the causation finding, (3) assess whether re-institution with better
+  evidence is viable (check prescription), (4) record costs order.

@@ -1,0 +1,24 @@
+name: "Heads of argument for delictual claim — construction defect"
+skill: brief-section-drafter
+input: |
+  Draft heads of argument for a High Court trial in the Gauteng Division. Delictual
+  (negligence) damages claim arising from a construction defect in a commercial
+  building. R4.5M claimed for repair costs and consequential loss of rental income.
+  Defendant is the main contractor.
+
+expected_flags:
+  - "costs"
+
+must_not_contain:
+  - "negligence per se"
+  - "Restatement of Torts"
+  - "CACI jury instructions"
+  - "comparative fault statute"
+  - "brief"
+
+notes: |
+  The output should be structured as heads of argument (not a brief). It must use
+  SA delict elements: conduct (what the contractor did/failed to do), wrongfulness
+  (breach of duty of care — objective reasonableness), fault (negligence — would
+  reasonable contractor have foreseen?), causation (but-for + legal causation),
+  harm (R4.5M damages). SA citation conventions must be used.

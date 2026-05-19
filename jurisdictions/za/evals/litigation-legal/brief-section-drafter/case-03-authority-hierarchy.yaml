@@ -1,0 +1,24 @@
+name: "Citation with conflicting High Court decisions"
+skill: brief-section-drafter
+input: |
+  Draft a section of heads of argument addressing a contractual interpretation
+  point. The Gauteng Division (Johannesburg) and the Western Cape Division have
+  reached conflicting conclusions on the interpretation of a standard force
+  majeure clause. The SCA has not ruled on the point.
+
+expected_flags: []
+
+must_not_contain:
+  - "circuit split"
+  - "en banc"
+  - "SCOTUS cert petition"
+  - "Bluebook"
+  - "federal vs state law"
+
+notes: |
+  This tests SA authority hierarchy handling. Conflicting High Court divisions are
+  the SA equivalent of a US circuit split. Neither division binds the other. The
+  skill should: (1) present both positions, (2) argue which is more persuasive,
+  (3) note that the SCA has not resolved the conflict, (4) use SA citation format
+  (SA Law Reports or neutral citations), (5) if appropriate, suggest this may
+  warrant a full bench referral or SCA appeal to resolve.

@@ -1,0 +1,24 @@
+name: "Witness non-attendance — contempt risk"
+skill: subpoena-triage
+input: |
+  A former employee who is a key witness has been served with a subpoena ad
+  testificandum to attend trial in the Western Cape Division next week. The
+  former employee has informed us (through their attorney) that they do not
+  intend to attend, citing personal inconvenience.
+
+expected_flags: []
+
+must_not_contain:
+  - "material witness warrant"
+  - "body attachment"
+  - "FRCP 45(g)"
+  - "federal contempt statute"
+  - "deposition in lieu of appearance"
+
+notes: |
+  The skill should: (1) confirm the subpoena was properly served, (2) advise
+  that failure to comply with a lawful subpoena is contempt of court — the
+  witness may face a fine or imprisonment, (3) "personal inconvenience" is not
+  a valid excuse, (4) the court may issue a warrant for the arrest of the
+  defaulting witness, (5) consider whether approaching the witness's attorney
+  to negotiate attendance or a statement is a practical alternative.

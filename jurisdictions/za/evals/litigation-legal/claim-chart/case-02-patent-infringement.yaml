@@ -1,0 +1,25 @@
+name: "SA patent claim chart — infringement analysis"
+skill: claim-chart
+input: |
+  Prepare a claim chart mapping our client's SA patent claims (registered under
+  Patents Act 57 of 1978) against an accused product. The patent covers a novel
+  water purification membrane. The accused product is manufactured and sold in
+  South Africa by a Johannesburg-based company.
+
+expected_flags: []
+
+must_not_contain:
+  - "Markman hearing"
+  - "claim construction order"
+  - "CAFC"
+  - "FRCP"
+  - "jury verdict form"
+  - "enhanced damages"
+  - "treble damages"
+
+notes: |
+  SA patent litigation is heard by the Commissioner of Patents (a High Court judge).
+  No Markman hearing — claim construction is done at trial. Remedies are interdict
+  (not injunction), actual damages, reasonable royalty. No enhanced or treble
+  damages. No civil jury. The claim chart should map claim elements against the
+  accused product using SA claim construction principles (purposive interpretation).

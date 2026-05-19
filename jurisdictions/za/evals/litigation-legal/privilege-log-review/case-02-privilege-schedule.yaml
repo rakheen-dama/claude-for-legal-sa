@@ -1,0 +1,21 @@
+name: "Privilege schedule preparation for complex commercial matter"
+skill: privilege-log-review
+input: |
+  Complex commercial litigation in the Gauteng Division. We are withholding 450
+  documents on privilege grounds in our Rule 35(2) discovery affidavit. Opposing
+  counsel has requested a detailed privilege schedule.
+
+expected_flags: []
+
+must_not_contain:
+  - "FRCP 26(b)(5)(A)"
+  - "privilege log requirements under federal rules"
+  - "Vaughn index"
+
+notes: |
+  There is no mandatory privilege log under SA rules (no FRCP 26(b)(5)(A)).
+  However, a de facto privilege schedule is best practice in complex matters. The
+  skill should produce a schedule with: document date, author/recipient, document
+  type/description (without revealing content), and basis of privilege (advice,
+  litigation, without-prejudice). The discovery affidavit must list and describe
+  withheld documents sufficiently for the court to assess the claim.
