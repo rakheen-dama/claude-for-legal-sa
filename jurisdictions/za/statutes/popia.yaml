@@ -181,3 +181,31 @@ sections:
     effective_until: null
     effect: "All security compromise notifications must be submitted via the Information Regulator's eServices portal. Email submissions are no longer accepted for breach reporting."
     note: "Mandatory since 1 April 2025. Portal URL: https://eservices.inforegulator.org.za"
+
+  enforcement_powers_assessment:
+    ref: "POPIA s73"
+    value: "Regulator may conduct assessment of compliance by responsible party"
+    effective_from: "2021-07-01"
+    effective_until: null
+    effect: "Information Regulator may conduct an assessment of processing of personal information by a responsible party to determine compliance with conditions for lawful processing"
+
+  enforcement_notice:
+    ref: "POPIA s74"
+    value: "enforcement notice requiring responsible party to take or cease steps"
+    effective_from: "2021-07-01"
+    effective_until: null
+    effect: "Information Regulator may serve enforcement notice on a responsible party requiring it to take specified steps or cease specified processing within a specified period"
+
+  code_of_conduct_submission:
+    ref: "POPIA s60"
+    value: "responsible party or industry body may submit code of conduct to Regulator"
+    effective_from: "2021-07-01"
+    effective_until: null
+    effect: "Any responsible party or body representing a category of responsible parties may submit a code of conduct to the Information Regulator for approval — code must apply the conditions for lawful processing to the specific sector"
+
+  code_of_conduct_approval:
+    ref: "POPIA s65"
+    value: "Regulator may issue or approve code of conduct"
+    effective_from: "2021-07-01"
+    effective_until: null
+    effect: "Information Regulator may approve a submitted code of conduct after public comment process, or may itself issue a code of conduct for a sector if no adequate code has been submitted"

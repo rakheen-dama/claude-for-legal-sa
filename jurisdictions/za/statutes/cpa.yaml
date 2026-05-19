@@ -63,3 +63,24 @@ sections:
     effective_from: "2011-04-01"
     effective_until: null
     effect: "The National Consumer Tribunal may impose an administrative fine not exceeding the greater of R1,000,000 or 10% of the respondent's annual turnover."
+
+  ncc_complaint_procedure:
+    ref: "CPA s71"
+    value: "consumer may file complaint with NCC"
+    effective_from: "2011-04-01"
+    effective_until: null
+    effect: "Consumer may file complaint with National Consumer Commission alleging contravention of CPA; NCC must investigate and may issue compliance notice or refer to National Consumer Tribunal"
+
+  product_safety_recall:
+    ref: "CPA s60"
+    value: "Minister or NCC may order product recall"
+    effective_from: "2011-04-01"
+    effective_until: null
+    effect: "If goods are unsafe, the NCC may require supplier to recall, repair, replace, or refund; supplier must notify consumers and implement recall within prescribed timeframes"
+
+  industry_codes:
+    ref: "CPA s82"
+    value: "industry body may apply to NCC for approval of industry code"
+    effective_from: "2011-04-01"
+    effective_until: null
+    effect: "Industry body may apply to NCC for approval of an industry code of conduct; approved codes supplement CPA and industry ombud schemes may be established to resolve complaints"

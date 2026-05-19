@@ -54,3 +54,24 @@ sections:
     effective_from: "2017-04-01"
     effective_until: null
     effect: "For procurement of goods and services with a rand value above R50 million, 90 points are allocated for price and 10 points for the bidder's B-BBEE status level."
+
+  commission_investigation:
+    ref: "B-BBEE Act s13F"
+    value: "B-BBEE Commission may investigate fronting practices"
+    effective_from: "2014-10-24"
+    effective_until: null
+    effect: "B-BBEE Commission may investigate any person suspected of a fronting practice on own initiative or on receipt of a complaint — may summon persons and require production of documents"
+
+  fronting_offence:
+    ref: "B-BBEE Act s13O(1)"
+    value: "fronting practice is a criminal offence"
+    effective_from: "2014-10-24"
+    effective_until: null
+    effect: "Person found to have knowingly engaged in a fronting practice is guilty of an offence and liable on conviction to a fine or imprisonment not exceeding 10 years or both"
+
+  sector_code_process:
+    ref: "B-BBEE Act s9(1)"
+    value: "sector code gazetted by Minister after consultation"
+    effective_from: "2014-10-24"
+    effective_until: null
+    effect: "Minister may publish sector-specific codes of good practice in the Government Gazette after consultation with the relevant sector charter council and the B-BBEE Advisory Council"

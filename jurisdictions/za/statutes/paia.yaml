@@ -34,3 +34,26 @@ sections:
     effective_until: null
     effect: "Both public and private bodies must submit annual PAIA reports to the Information Regulator showing how they handle requests for information."
     note: "Compliance is extremely low: 33% of public bodies and less than 2% of private bodies submitted reports in 2023/24. The IR is increasing monitoring and enforcement."
+
+  internal_appeal_timeline:
+    ref: "PAIA s74(1)"
+    value: 60
+    unit: "days"
+    effective_from: "2001-03-09"
+    effective_until: null
+    effect: "Third party or requester who is aggrieved by a decision of the information officer of a public body may lodge an internal appeal within 60 days of notification of the decision"
+
+  information_regulator_complaint:
+    ref: "PAIA s77A"
+    value: "complaint to Information Regulator within 180 days"
+    effective_from: "2021-06-30"
+    effective_until: null
+    effect: "A requester or third party may submit a complaint to the Information Regulator within 180 days of the decision, if dissatisfied with the information officer's decision or outcome of internal appeal"
+    note: "Information Regulator took over complaint jurisdiction from SAHRC"
+
+  deemed_refusal:
+    ref: "PAIA s27"
+    value: "failure to respond within 30 days is deemed refusal"
+    effective_from: "2001-03-09"
+    effective_until: null
+    effect: "If information officer of a public body fails to give notice of decision within 30 days (or extended period), the request is deemed refused"

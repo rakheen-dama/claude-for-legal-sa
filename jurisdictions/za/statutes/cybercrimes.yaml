@@ -48,3 +48,11 @@ sections:
     effective_from: "2021-12-01"
     effective_until: null
     effect: "A magistrate or judge may direct any person to preserve data that may be relevant to an investigation for a specified period."
+
+  csirt_reporting_obligation:
+    ref: "Cybercrimes Act s54"
+    value: "electronic communications service providers and financial institutions must report cyber offences to CSIRT"
+    effective_from: null
+    effective_until: null
+    effect: "ESPs and financial institutions must report certain cyber security incidents to national CSIRT within prescribed timeframe once section is brought into force"
+    note: "Section 54 NOT YET IN FORCE — awaiting proclamation. Monitor Government Gazette for commencement date"

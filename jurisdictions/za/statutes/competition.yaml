@@ -32,3 +32,33 @@ sections:
     effective_from: "1999-09-01"
     effective_until: null
     effect: "The Competition Tribunal may impose an administrative penalty not exceeding 10% of the firm's annual turnover in South Africa during its preceding financial year."
+
+  intermediate_merger_threshold:
+    ref: "Competition Act s11(1), GN 216 GG 44453"
+    value: "combined turnover/assets R600m+ and target turnover/assets R100m+"
+    effective_from: "2021-04-01"
+    effective_until: null
+    effect: "Intermediate merger: parties must notify Competition Commission and may not implement until approved — combined turnover or asset value at or above R600 million and target at or above R100 million"
+    note: "Thresholds set by regulation — verify current amounts"
+
+  large_merger_threshold:
+    ref: "Competition Act s13(1), GN 216 GG 44453"
+    value: "combined turnover/assets R6.6bn+ and target turnover/assets R190m+"
+    effective_from: "2021-04-01"
+    effective_until: null
+    effect: "Large merger: parties must notify Competition Commission and Competition Tribunal must approve — combined turnover or asset value at or above R6.6 billion and target at or above R190 million"
+    note: "Thresholds set by regulation — verify current amounts"
+
+  investigation_powers:
+    ref: "Competition Act s49A-49D"
+    value: "Commission may summon, search, and seize"
+    effective_from: "2009-08-28"
+    effective_until: null
+    effect: "Competition Commission may summon persons to appear and produce documents (s49A), enter and search premises with warrant (s49B), and seize documents or electronic records (s49C)"
+
+  leniency_policy:
+    ref: "Competition Act s49B(2A), Corporate Leniency Policy"
+    value: "immunity or reduced penalty for first cartel member to disclose"
+    effective_from: "2008-02-01"
+    effective_until: null
+    effect: "First member of a cartel to approach the Commission and make full disclosure may receive immunity from prosecution or a recommendation for no or reduced administrative penalty"
