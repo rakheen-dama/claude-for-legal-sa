@@ -49,6 +49,12 @@ PRACTICE_AREAS = [
         "skills_dir": REPO_ROOT / "litigation-legal" / "skills",
         "topics_dir": REPO_ROOT / "jurisdictions" / "za" / "litigation-legal" / "topics",
     },
+    {
+        "name": "ip-legal",
+        "router": REPO_ROOT / "jurisdictions" / "za" / "ip-legal" / "router.md",
+        "skills_dir": REPO_ROOT / "ip-legal" / "skills",
+        "topics_dir": REPO_ROOT / "jurisdictions" / "za" / "ip-legal" / "topics",
+    },  # Phase 5
 ]
 
 
