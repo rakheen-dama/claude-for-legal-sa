@@ -1,0 +1,25 @@
+name: "Invention disclosure — prior conference presentation"
+skill: invention-intake
+input: |
+  An engineer at our Johannesburg office presented the invention at an
+  industry conference 3 months ago. The presentation included technical
+  details of the invention. No patent application has been filed. The
+  engineer now wants to file a patent in South Africa.
+
+expected_flags:
+  - "absolute novelty"
+  - "bar date"
+  - "prior disclosure"
+
+must_not_contain:
+  - "one-year grace period"
+  - "§102(a)(1)"
+  - "inventor's own disclosure exception"
+  - "35 USC"
+
+notes: |
+  SA requires absolute novelty. The conference presentation 3 months ago
+  is a public disclosure that almost certainly destroys novelty. There is
+  NO 1-year grace period. The skill must flag this as a critical issue and
+  advise that SA patent rights are likely lost. Foreign filing options may
+  also be compromised.

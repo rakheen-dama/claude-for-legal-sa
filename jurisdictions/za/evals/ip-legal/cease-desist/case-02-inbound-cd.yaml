@@ -1,0 +1,23 @@
+name: "Inbound C&D from SA rights holder"
+skill: cease-desist
+input: |
+  Our company received a cease-and-desist letter from a SA law firm alleging
+  trademark infringement under Trade Marks Act s34(1)(a). They claim our mark
+  is confusingly similar to their client's registered mark on identical goods.
+  They demand we cease use within 14 days or they will apply for an interdict.
+
+expected_flags:
+  - "costs"
+  - "s34"
+
+must_not_contain:
+  - "TTAB cancellation"
+  - "Lanham Act §32"
+  - "federal registration"
+  - "US district court"
+
+notes: |
+  The skill should triage the C&D under SA law: assess s34(1)(a) using the
+  global appreciation test (not US multi-factor), flag loser-pays costs
+  exposure, note that the threat is an interdict (SA term, not injunction),
+  and present response options (cease, negotiate, defend, counterclaim).

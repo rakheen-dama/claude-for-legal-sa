@@ -1,0 +1,23 @@
+name: "Passing off claim — unregistered mark"
+skill: infringement-triage
+input: |
+  A competitor has been using a confusingly similar trading name for their
+  coffee shop chain in Johannesburg for 5 years. They have no trademark
+  registration. Our client has used their name for 8 years and wants to
+  assert rights.
+
+expected_flags:
+  - "passing off"
+  - "reputation"
+
+must_not_contain:
+  - "Lanham Act §43(a)"
+  - "federal unfair competition"
+  - "state unfair competition statute"
+  - "TTAB"
+
+notes: |
+  SA passing off is a common-law delict (not statutory). The skill should
+  assess: (1) reputation/goodwill in SA (8 years of use), (2) misrepresentation
+  by the competitor (confusingly similar name), (3) damage or likelihood of
+  damage. Remedies: interdict and damages.

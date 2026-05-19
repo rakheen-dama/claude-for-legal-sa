@@ -1,0 +1,26 @@
+name: "ECTA s77 takedown notice for copyright infringement"
+skill: takedown
+input: |
+  Our client's copyrighted product photographs are being used without
+  permission on a South African-hosted e-commerce website. The client
+  wants to send a takedown notice to have the images removed.
+
+expected_flags:
+  - "ECTA"
+  - "takedown"
+  - "s77"
+
+must_not_contain:
+  - "DMCA §512(c)(3)"
+  - "designated DMCA agent"
+  - "§512(f)"
+  - "Lenz v Universal"
+  - "counter-notice"
+  - "17 USC"
+
+notes: |
+  SA uses ECTA Chapter XI s77, not DMCA §512. The skill should draft the
+  notice with all required elements: full contact details, precise URL,
+  description of infringed right, statement of ownership, signature. Flag
+  that there is no statutory counter-notice regime — ISPs tend to
+  over-comply with removal.

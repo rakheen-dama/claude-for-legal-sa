@@ -1,0 +1,23 @@
+name: "Fair dealing edge case — comparative review"
+skill: infringement-triage
+input: |
+  A SA company wants to use excerpts from a competitor's technical manual
+  in a comparative product review published on their commercial website.
+  They claim this is fair use.
+
+expected_flags:
+  - "fair dealing"
+  - "s12"
+
+must_not_contain:
+  - "fair use four-factor test"
+  - "transformative use"
+  - "§107"
+  - "Campbell v Acuff-Rose"
+
+notes: |
+  SA has fair dealing (s12), not fair use. The permitted purposes are a
+  closed list: research/private study, criticism/review, news reporting.
+  "Criticism or review" may cover a comparative review, but it must be
+  genuinely critical/analytical, not just commercial use of competitor
+  content. The skill must NOT apply the US 4-factor fair use test.

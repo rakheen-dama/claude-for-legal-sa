@@ -1,0 +1,19 @@
+name: "AGPL copyleft in SA SaaS context"
+skill: oss-review
+input: |
+  Our SA SaaS company has discovered AGPL-licensed code in the backend of
+  our payment processing service. We don't distribute binaries — the
+  service is accessed over a network by SA customers.
+
+expected_flags: []
+
+must_not_contain:
+  - "fair use defence to copyleft"
+  - "§107 applies to licence obligations"
+
+notes: |
+  OSS licensing analysis is largely jurisdiction-neutral. AGPL's network
+  interaction trigger applies regardless of jurisdiction. The skill should
+  analyse the copyleft obligation (source code disclosure for network
+  users) without invoking US fair use as a defence to licence terms. SA
+  fair dealing (s12) would not provide a defence to copyleft obligations.

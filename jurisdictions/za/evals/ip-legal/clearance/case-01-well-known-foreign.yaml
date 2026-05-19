@@ -1,0 +1,26 @@
+name: "Clearance with well-known foreign mark"
+skill: clearance
+input: |
+  Client wants to launch "AURORA" for cosmetics in South Africa. A search of
+  the CIPC register shows no identical or similar marks in class 3. However,
+  Aurora is a well-known international cosmetics brand with significant online
+  presence and SA consumer awareness.
+
+expected_flags:
+  - "well-known mark"
+  - "passing off"
+  - "s35"
+
+must_not_contain:
+  - "du Pont factors"
+  - "Polaroid test"
+  - "Sleekcraft"
+  - "likelihood of confusion under Lanham Act"
+  - "TTAB"
+
+notes: |
+  The CIPC register is clear but the well-known international brand creates a
+  conflict risk under Trade Marks Act s35 (Paris Convention). The skill should
+  flag that register-only clearance is insufficient and that SA protects
+  well-known foreign marks even without local registration. Common-law passing
+  off is also a risk if the foreign brand has SA reputation.

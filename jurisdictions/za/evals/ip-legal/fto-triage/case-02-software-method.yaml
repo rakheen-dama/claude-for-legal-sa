@@ -1,0 +1,27 @@
+name: "FTO triage — software payment method"
+skill: fto-triage
+input: |
+  Our fintech startup wants to launch a new payment processing method in
+  South Africa. A competitor holds a SA patent (granted under the depository
+  system) on a related software-implemented payment method. We need to
+  assess freedom to operate.
+
+expected_flags:
+  - "depository patent"
+  - "validity"
+
+must_not_contain:
+  - "Alice/Mayo test"
+  - "35 USC §101"
+  - "abstract idea"
+  - "CAFC"
+  - "doctrine of equivalents"
+  - "willfulness"
+  - "treble damages"
+
+notes: |
+  The skill should flag that SA patents are granted without substantive
+  examination (depository system) — the competitor's patent may be invalid.
+  For software patents, SA uses the "as such" exclusion (s25(2)-(3)) with
+  a European-style technical effect test. Infringement analysis uses
+  purposive claim construction (no Markman hearing). No treble damages.

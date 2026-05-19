@@ -1,0 +1,24 @@
+name: "Compulsory licence risk — pharma patent"
+skill: fto-triage
+input: |
+  A foreign pharmaceutical company holds a SA patent for a critical
+  medication but only imports the finished product — no local manufacture.
+  A SA generic manufacturer is threatening to apply for a compulsory
+  licence under Patents Act s56 on grounds of failure to work the patent
+  in South Africa.
+
+expected_flags:
+  - "compulsory licence"
+  - "s56"
+
+must_not_contain:
+  - "Hatch-Waxman"
+  - "ANDA"
+  - "Paragraph IV certification"
+  - "FDA Orange Book"
+
+notes: |
+  The skill should assess the compulsory licence risk under s56: failure
+  to work the patent in SA on a scale adequate to meet demand. Import-only
+  may constitute failure to work. The patentee should document commercial
+  rationale and consider local manufacturing or licensing strategies.
