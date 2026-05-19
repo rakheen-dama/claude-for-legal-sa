@@ -1,0 +1,41 @@
+statute: "National Credit Act 34 of 2005"
+authority: "Department of Trade, Industry and Competition"
+last_confirmed: "2026-05-20"
+source_url: "https://www.thedtic.gov.za/financial-and-consumer-services/consumer-and-corporate-regulation/national-credit-act/"
+
+sections:
+  credit_provider_registration:
+    ref: "NCA s40"
+    value: "credit providers above threshold must register with the NCR"
+    effective_from: "2007-06-01"
+    effective_until: null
+    effect: "A person may not carry on business as a credit provider unless that person is registered with the National Credit Regulator. Registration thresholds apply based on the number of credit agreements or total principal debt outstanding."
+
+  reckless_credit:
+    ref: "NCA s80-81"
+    value: "credit is reckless if granted without proper assessment or despite negative assessment"
+    effective_from: "2007-06-01"
+    effective_until: null
+    effect: "A credit agreement is reckless if the credit provider failed to conduct a proper assessment of the consumer's ability to afford the credit, or if the assessment disclosed that the consumer did not understand the risks and costs, or that the credit would make the consumer over-indebted, but the provider granted the credit regardless."
+
+  ncr_enforcement:
+    ref: "NCA s150-151"
+    value: "NCR may issue compliance notices for contraventions of the Act"
+    effective_from: "2007-06-01"
+    effective_until: null
+    effect: "The National Credit Regulator may investigate complaints and contraventions of the Act, and issue compliance notices requiring a person to cease a contravention, take specified corrective steps, and pay an administrative fine."
+
+  administrative_fines:
+    ref: "NCA s151"
+    value: "administrative fine up to R1 million or 10 percent of annual turnover"
+    effective_from: "2007-06-01"
+    effective_until: null
+    effect: "The National Consumer Tribunal may impose an administrative fine not exceeding R1 million or 10 percent of the respondent's annual turnover in the preceding financial year, whichever is the greater, for contraventions of the National Credit Act."
+
+  interest_rate_caps:
+    ref: "NCA s105, Regulations Table A"
+    value: "maximum interest rates and fees prescribed by regulation for each credit type"
+    effective_from: "2016-05-06"
+    effective_until: null
+    effect: "Maximum prescribed interest rates apply to different categories of credit agreement: mortgage agreements (RR + 12%), credit facilities (RR + 14%), unsecured credit transactions (RR + 21%), short-term credit transactions (5% per month), and other credit agreements (RR + 17%). Fees are separately capped."
+    note: "RR = repo rate; rates effective per 2016 regulations — verify current amounts"

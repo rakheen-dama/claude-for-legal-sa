@@ -1,0 +1,42 @@
+statute: "National Environmental Management Act 107 of 1998"
+authority: "Department of Forestry, Fisheries and the Environment"
+last_confirmed: "2026-05-20"
+source_url: "https://www.dffe.gov.za/legislation/acts/nema"
+
+sections:
+  eia_requirement:
+    ref: "NEMA s24"
+    value: "environmental authorisation required for listed activities before commencement"
+    effective_from: "1999-01-29"
+    effective_until: null
+    effect: "No person may commence an activity listed in terms of s24(2) without first obtaining an environmental authorisation from the competent authority. The environmental impact assessment process must be followed to obtain authorisation."
+
+  duty_of_care:
+    ref: "NEMA s28"
+    value: "every person must take reasonable measures to prevent environmental degradation"
+    effective_from: "1999-01-29"
+    effective_until: null
+    effect: "Every person who causes, has caused, or may cause significant pollution or environmental degradation must take reasonable measures to prevent such pollution or degradation from occurring, continuing, or recurring, and to rehabilitate the environment."
+
+  compliance_notice:
+    ref: "NEMA s31L"
+    value: "Environmental Management Inspector may issue compliance notice requiring remediation"
+    effective_from: "2014-06-02"
+    effective_until: null
+    effect: "An Environmental Management Inspector who has reasonable grounds to believe that a provision of an environmental management Act has been or is being contravened may issue a compliance notice to the responsible person, directing them to take specified steps to remedy the contravention within a specified period."
+
+  eia_comment_period:
+    ref: "EIA Regulations GN R326 reg 41"
+    value: 30
+    unit: "days minimum"
+    effective_from: "2017-04-07"
+    effective_until: null
+    effect: "Interested and affected parties must be given a minimum of 30 days to comment on an environmental impact assessment report or basic assessment report during the public participation process. The competent authority may extend this period."
+    gazette_date: "2017-04-07"
+
+  administrative_fines:
+    ref: "NEMA s24G"
+    value: "administrative fine for commencing listed activity without authorisation"
+    effective_from: "2014-06-02"
+    effective_until: null
+    effect: "A person who commences a listed activity without the required environmental authorisation may apply for rectification under s24G. The competent authority may impose an administrative fine and require the applicant to take specified remedial measures."

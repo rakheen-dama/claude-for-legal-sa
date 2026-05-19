@@ -1,0 +1,41 @@
+statute: "Occupational Health and Safety Act 85 of 1993"
+authority: "Department of Employment and Labour"
+last_confirmed: "2026-05-20"
+source_url: "https://www.labour.gov.za/legislation/acts/occupational-health-and-safety/occupational-health-and-safety-act"
+
+sections:
+  general_duties_employer:
+    ref: "OHSA s8"
+    value: "employer must provide and maintain safe and healthy working environment"
+    effective_from: "1994-01-01"
+    effective_until: null
+    effect: "Every employer must, as far as reasonably practicable, provide and maintain a working environment that is safe and without risk to the health of employees. This includes providing safe systems of work, hazard identification, risk assessment, and appropriate safety equipment."
+
+  ceo_duty:
+    ref: "OHSA s16(1)"
+    value: "CEO personally liable to ensure compliance with the Act"
+    effective_from: "1994-01-01"
+    effective_until: null
+    effect: "Every chief executive officer is personally responsible for ensuring compliance with the Act in the workplace, unless the responsibility has been assigned in writing to a management representative. Personal liability of the CEO is not excluded by delegation."
+
+  incident_reporting:
+    ref: "OHSA s24"
+    value: "serious incidents and injuries must be reported to the inspector"
+    effective_from: "1994-01-01"
+    effective_until: null
+    effect: "An employer must report to an inspector any incident that results in the death, unconsciousness, or serious injury or illness of an employee, or the serious injury or illness of a person not in the employer's employment that occurred at the workplace."
+
+  incident_report_deadline:
+    ref: "OHSA General Administrative Regulations reg 9"
+    value: 7
+    unit: "days"
+    effective_from: "1994-01-01"
+    effective_until: null
+    effect: "An employer must, in addition to the immediate notification of an inspector, submit a written report to the inspector within 7 days of an incident referred to in s24 of the Act, using the prescribed form."
+
+  prohibition_notice:
+    ref: "OHSA s30"
+    value: "inspector may issue prohibition notice stopping unsafe activity or use"
+    effective_from: "1994-01-01"
+    effective_until: null
+    effect: "An inspector who finds that any article, substance, plant, machinery, or working environment poses an imminent risk to the health or safety of any person may issue a prohibition notice, prohibiting the use of the article, substance, plant, machinery, or workplace until the risk has been eliminated."

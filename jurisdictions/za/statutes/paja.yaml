@@ -1,0 +1,49 @@
+statute: "Promotion of Administrative Justice Act 3 of 2000"
+authority: "Department of Justice and Constitutional Development"
+last_confirmed: "2026-05-20"
+source_url: "https://www.gov.za/documents/promotion-administrative-justice-act"
+
+sections:
+  procedural_fairness_individual:
+    ref: "PAJA s3"
+    value: "adequate notice, reasonable opportunity to make representations, clear statement of action"
+    effective_from: "2000-11-30"
+    effective_until: null
+    effect: "An administrator taking administrative action that materially and adversely affects the rights or legitimate expectations of any person must give that person a procedurally fair process, including adequate notice of the action, a reasonable opportunity to make representations, and a clear statement of the action."
+
+  public_participation:
+    ref: "PAJA s4"
+    value: "notice-and-comment, public inquiry, advisory committee, or combination"
+    effective_from: "2000-11-30"
+    effective_until: null
+    effect: "Administrative action affecting the public or a group or class of the public must be preceded by a public participation process, which may take the form of notice-and-comment, a public inquiry, the use of an advisory committee, or any combination of these procedures."
+
+  written_reasons:
+    ref: "PAJA s5"
+    value: "90 days to request, 90 days to furnish"
+    effective_from: "2000-11-30"
+    effective_until: null
+    effect: "Any person whose rights are adversely affected by administrative action and who has not been given reasons may request written reasons. The administrator must furnish adequate written reasons within 90 days of receiving the request."
+
+  judicial_review_grounds:
+    ref: "PAJA s6(2)"
+    value: "unauthorised, error of law, procedurally unfair, unreasonable, bad faith, ulterior purpose, irrelevant considerations, failure to consider relevant considerations, action not rationally connected to purpose"
+    effective_from: "2000-11-30"
+    effective_until: null
+    effect: "A court may review administrative action on the grounds listed in s6(2), including that the action was taken by an unauthorised person, involved an error of law, was procedurally unfair, was unreasonable, or was otherwise unconstitutional or unlawful."
+
+  internal_remedies:
+    ref: "PAJA s7(2)"
+    value: true
+    effective_from: "2000-11-30"
+    effective_until: null
+    effect: "No court may review administrative action in terms of this Act unless any internal remedy provided for in any other law has first been exhausted. A court may exempt an applicant from this requirement where it is in the interests of justice."
+
+  judicial_review_time_limit:
+    ref: "PAJA s7(1)"
+    value: 180
+    unit: "days"
+    effective_from: "2000-11-30"
+    effective_until: null
+    effect: "Proceedings for judicial review must be instituted without unreasonable delay and not later than 180 days after the person concerned has been informed of the administrative action or became aware of it."
+    note: "Court may extend on application if interests of justice require"

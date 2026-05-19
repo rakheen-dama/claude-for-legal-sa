@@ -1,0 +1,42 @@
+statute: "Prevention and Combating of Corrupt Activities Act 12 of 2004"
+authority: "Department of Justice and Constitutional Development"
+last_confirmed: "2026-05-20"
+source_url: "https://www.justice.gov.za/legislation/acts/2004-012.pdf"
+
+sections:
+  general_offence:
+    ref: "PRECCA s3"
+    value: "corruptly giving or receiving any gratification to influence another person in their duties"
+    effective_from: "2004-07-27"
+    effective_until: null
+    effect: "Any person who corruptly gives, offers, agrees to give, accepts, or agrees to accept any gratification to influence another person to act in an unauthorised manner, or to use their position or authority improperly, is guilty of the offence of corruption."
+
+  reporting_duty:
+    ref: "PRECCA s34(1)"
+    value: "persons in positions of authority must report corrupt activities to SAPS"
+    effective_from: "2004-07-27"
+    effective_until: null
+    effect: "Any person who holds a position of authority and who knows or ought reasonably to have known or suspected that any other person has committed an offence under PRECCA involving an amount of R100 000 or more must report this to the South African Police Service."
+
+  reporting_threshold:
+    ref: "PRECCA s34(1)"
+    value: 100000
+    currency: ZAR
+    effective_from: "2004-07-27"
+    effective_until: null
+    effect: "The mandatory reporting obligation under s34 is triggered where the corrupt activity involves an amount of R100 000 or more, or where the value of the gratification is equivalent to or exceeds R100 000."
+    note: "Threshold has not been adjusted since commencement"
+
+  penalties:
+    ref: "PRECCA s26"
+    value: "imprisonment up to life imprisonment and unlimited fine"
+    effective_from: "2004-07-27"
+    effective_until: null
+    effect: "A person convicted of an offence under PRECCA is liable to imprisonment for a period not exceeding the period specified for the relevant offence, which may in serious cases be imprisonment for life, and may also be liable to a fine with no upper limit specified in the Act."
+
+  positions_of_authority:
+    ref: "PRECCA s34(4)"
+    value: "directors, partners, CEOs, senior managers, and equivalent officers"
+    effective_from: "2004-07-27"
+    effective_until: null
+    effect: "Persons who hold a position of authority for purposes of the s34 reporting duty include directors of companies, members of close corporations, partners in partnerships, chief executive officers, financial officers, senior managers, and any person who exercises managerial or executive authority in respect of an organisation."

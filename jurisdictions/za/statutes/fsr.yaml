@@ -1,0 +1,41 @@
+statute: "Financial Sector Regulation Act 9 of 2017"
+authority: "National Treasury"
+last_confirmed: "2026-05-20"
+source_url: "https://www.treasury.gov.za/legislation/acts/2017/FSR%20Act%209%20of%202017.pdf"
+
+sections:
+  pa_standards_making:
+    ref: "FSR Act s98-106"
+    value: "Prudential Authority may make prudential standards for financial institutions it supervises"
+    effective_from: "2018-04-01"
+    effective_until: null
+    effect: "The Prudential Authority has power to make, amend, and revoke prudential standards applicable to financial institutions under its supervision. Standards may prescribe requirements relating to capital adequacy, liquidity, governance, risk management, and other prudential matters."
+
+  fsca_conduct_standards:
+    ref: "FSR Act s107-115"
+    value: "Financial Sector Conduct Authority may make conduct standards for financial institutions and financial products"
+    effective_from: "2018-04-01"
+    effective_until: null
+    effect: "The Financial Sector Conduct Authority has power to make, amend, and revoke conduct standards governing how financial institutions conduct business, treat customers, and market financial products and services."
+
+  joint_standards:
+    ref: "FSR Act s126"
+    value: "PA and FSCA may make joint standards on matters within both regulators' mandates"
+    effective_from: "2018-04-01"
+    effective_until: null
+    effect: "The Prudential Authority and the Financial Sector Conduct Authority may jointly make standards on matters that fall within both their regulatory mandates. Joint standards are binding on the relevant financial institutions."
+
+  consultation_procedure:
+    ref: "FSR Act s131-136"
+    value: "publish draft standard and invite comment; 30-60 days typical comment period"
+    effective_from: "2018-04-01"
+    effective_until: null
+    effect: "Before making a standard, the relevant regulator must publish a draft and invite interested persons to submit comments within a specified period. The regulator must consider submissions received and may hold public hearings. Final standards must be published in the Gazette."
+    note: "The Act does not fix a minimum comment period; 30-60 days is the regulators' standard practice"
+
+  regulatory_strategy:
+    ref: "FSR Act s144"
+    value: "annual regulatory strategy must be published by each regulator"
+    effective_from: "2018-04-01"
+    effective_until: null
+    effect: "The Prudential Authority and the Financial Sector Conduct Authority must each publish an annual regulatory strategy setting out their regulatory priorities, planned standards, and supervisory focus areas for the coming year."

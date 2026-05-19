@@ -1,0 +1,51 @@
+statute: "Financial Intelligence Centre Act 38 of 2001"
+authority: "Financial Intelligence Centre"
+last_confirmed: "2026-05-20"
+source_url: "https://www.fic.gov.za/resources/pages/legislation.aspx"
+
+sections:
+  rmcp_requirement:
+    ref: "FICA s42"
+    value: "accountable institutions must adopt and implement a risk management and compliance programme"
+    effective_from: "2017-10-02"
+    effective_until: null
+    effect: "Every accountable institution must adopt and implement a risk management and compliance programme that identifies, assesses, monitors, and manages the money laundering and terrorist financing risks to which it is exposed. The programme must be approved by senior management."
+    note: "s42 replaced earlier s21 RMCP requirements via 2017 amendment"
+
+  beneficial_ownership:
+    ref: "FICA s21B"
+    value: "must establish and verify the identity of beneficial owners of legal persons and trusts"
+    effective_from: "2022-12-19"
+    effective_until: null
+    effect: "Accountable institutions must identify and take reasonable steps to verify the identity of the beneficial owners of legal persons and trusts that are clients. This includes understanding the ownership and control structure of the client."
+
+  suspicious_transaction_reporting:
+    ref: "FICA s29"
+    value: "must report suspicious and unusual transactions to the FIC"
+    effective_from: "2003-02-01"
+    effective_until: null
+    effect: "An accountable institution, reporting institution, or any person carrying on a business must report to the Financial Intelligence Centre any transaction or series of transactions where there is knowledge, suspicion, or reasonable grounds to suspect that the transaction involves proceeds of unlawful activities or relates to money laundering or terrorist financing."
+
+  cash_threshold_reporting:
+    ref: "FICA s28"
+    value: 24999.99
+    currency: ZAR
+    effective_from: "2010-12-01"
+    effective_until: null
+    effect: "Accountable institutions and reporting institutions must report to the FIC any cash transaction where the amount involved equals or exceeds R25 000. The threshold triggers reporting regardless of whether the transaction is suspicious."
+
+  accountable_institutions:
+    ref: "FICA Schedule 1"
+    value: "categories of accountable institutions subject to FICA obligations"
+    effective_from: "2003-02-01"
+    effective_until: null
+    effect: "Schedule 1 lists the categories of accountable institutions subject to the full suite of FICA customer due diligence, record keeping, and reporting obligations. Categories include banks, insurers, estate agents, attorneys, accountants, motor vehicle dealers, and others."
+    note: "Schedule expanded multiple times — crypto-asset service providers added 2022"
+
+  administrative_sanctions:
+    ref: "FICA s45C"
+    value: "administrative sanctions up to R50 million"
+    currency: ZAR
+    effective_from: "2017-10-02"
+    effective_until: null
+    effect: "The Financial Intelligence Centre may impose administrative sanctions on accountable institutions and their senior managers for contraventions of FICA obligations. Sanctions include cautions, reprimands, restrictions on business, and administrative financial penalties of up to R50 million."
