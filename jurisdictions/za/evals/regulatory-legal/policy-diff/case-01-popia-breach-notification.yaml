@@ -1,0 +1,24 @@
+name: "Straightforward policy diff — POPIA breach notification amendment"
+skill: policy-diff
+input: |
+  New POPIA regulation strengthening breach notification requirements:
+  72-hour hard deadline for notification to Information Regulator via
+  eServices portal. User's existing data breach response policy
+  references "as soon as reasonably possible" notification timeline.
+expected_flags:
+  - "POPIA breach notification failure — gap between existing 'as soon as reasonably possible' and new 72-hour hard deadline"
+  - "Gap type: partial"
+expected_statutes:
+  - "POPIA s22"
+  - "POPIA 2025 regulations"
+must_not_contain:
+  - "GDPR"
+  - "72-hour GDPR"
+  - "HHS"
+  - "HIPAA"
+  - "data controller"
+notes: |
+  Tests straightforward policy gap detection. The 72-hour requirement
+  is a POPIA requirement, not GDPR — skill must not reference GDPR
+  even though the number is the same. Uses SA terminology: "responsible
+  party" not "data controller."

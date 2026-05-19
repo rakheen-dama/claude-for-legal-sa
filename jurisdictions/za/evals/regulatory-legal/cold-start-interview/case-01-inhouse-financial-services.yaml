@@ -1,0 +1,25 @@
+name: "In-house regulatory counsel at mid-size insurance company"
+skill: cold-start-interview
+input: |
+  User selects full setup. Role: admitted attorney under Legal
+  Practice Act 28 of 2014. Practice setting: in-house. Industry:
+  financial services (insurance). Jurisdiction: South Africa.
+expected_flags:
+  - "ZA fork activates"
+  - "SA regulators referenced: FSCA, PA/SARB, Information Regulator"
+  - "Feed configuration: Open Gazettes and Laws.Africa, not Federal Register"
+  - "SA privilege header used"
+  - "Industry body question offers ASISA/SAIA"
+expected_statutes:
+  - "FSR Act"
+  - "POPIA"
+must_not_contain:
+  - "Federal Register API"
+  - "CourtListener"
+  - "Thomson Reuters Regulatory Intelligence"
+  - "state bar"
+notes: |
+  Tests full ZA fork activation for a financial services in-house
+  counsel. All references must be SA-specific. Feed sources must be
+  SA sources (Open Gazettes, Laws.Africa), not US (Federal Register,
+  CourtListener).

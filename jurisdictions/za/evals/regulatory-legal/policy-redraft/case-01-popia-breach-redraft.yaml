@@ -1,0 +1,24 @@
+name: "Straightforward redraft — POPIA breach notification policy update"
+skill: policy-redraft
+input: |
+  GAP from policy-diff: existing breach policy says "notify as soon
+  as reasonably possible." New POPIA regulation requires 72-hour
+  notification via Information Regulator eServices portal. Gap type:
+  partial. Approved policy text provided.
+expected_flags:
+  - "Smallest-possible edit to breach notification section"
+  - "Add 72-hour timeline and eServices portal requirement"
+  - "Carry verify tags from upstream"
+  - "Write to new file, NOT source policy"
+expected_statutes:
+  - "POPIA s22"
+  - "POPIA 2025 regulations"
+must_not_contain:
+  - "GDPR"
+  - "data controller"
+  - "HHS"
+  - "supervisory authority"
+notes: |
+  Tests minimal policy redraft for an SA regulatory change. The
+  redraft must use "responsible party" (POPIA), not "data controller"
+  (GDPR). Must not write to the source policy document.

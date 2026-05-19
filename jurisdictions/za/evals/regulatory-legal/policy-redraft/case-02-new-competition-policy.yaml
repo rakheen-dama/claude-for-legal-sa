@@ -1,0 +1,23 @@
+name: "New policy needed — competition compliance policy"
+skill: policy-redraft
+input: |
+  GAP from policy-diff: no competition compliance policy exists.
+  New Competition Act merger notification thresholds published.
+  Gap type: new-policy.
+expected_flags:
+  - "Propose new competition compliance policy section"
+  - "Cover merger notification thresholds, prohibited practices, leniency"
+  - "Flag entire draft as review — new policy needs attorney sign-off"
+expected_statutes:
+  - "Competition Act s4-5"
+  - "Competition Act s8-9"
+  - "Competition Act s11-13"
+must_not_contain:
+  - "Sherman Act"
+  - "Clayton Act"
+  - "FTC Act"
+  - "Hart-Scott-Rodino"
+notes: |
+  Tests new policy drafting. The redraft should propose a complete
+  competition compliance section using SA competition law exclusively.
+  Must not reference US antitrust statutes.

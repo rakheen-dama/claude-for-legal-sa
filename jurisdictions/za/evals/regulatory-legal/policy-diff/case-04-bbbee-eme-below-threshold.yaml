@@ -1,0 +1,20 @@
+name: "Below-threshold entity — B-BBEE code revision for EME"
+skill: policy-diff
+input: |
+  Revised generic B-BBEE Codes of Good Practice published in
+  Government Gazette, changing skills development element scoring.
+  User is an Exempted Micro-Enterprise (annual turnover below R10
+  million) — exempt from most B-BBEE scoring requirements.
+expected_flags: []
+expected_statutes:
+  - "B-BBEE Act"
+  - "Codes of Good Practice"
+must_not_contain:
+  - "affirmative action"
+  - "EEOC"
+  - "Title VII"
+notes: |
+  Tests threshold-aware gap analysis. An EME is largely exempt from
+  B-BBEE scoring, so a code revision should not trigger compliance
+  gaps. "Affirmative action" is a US concept; SA uses "employment
+  equity" and "broad-based black economic empowerment."

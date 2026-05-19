@@ -1,0 +1,19 @@
+name: "Overdue verified gap — POPIA information officer registration"
+skill: gap-surfacer
+input: |
+  Gap tracker contains GAP-005: POPIA information officer
+  registration requirement. Due date was 60 days ago.
+  status_verified: true. Status: open. Owner assigned.
+expected_flags:
+  - "Overdue classification (red) — verified rule, deadline passed"
+  - "Route reminder to gap owner"
+expected_statutes:
+  - "POPIA s55-56"
+must_not_contain:
+  - "GDPR DPO"
+  - "data protection officer"
+notes: |
+  Tests overdue gap classification for a verified SA regulation.
+  Since status_verified is true, the gap should be classified as
+  overdue. POPIA uses "information officer" not "DPO" or "data
+  protection officer."

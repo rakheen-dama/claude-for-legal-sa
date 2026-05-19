@@ -1,0 +1,20 @@
+name: "Unverified rule — must NOT classify as overdue"
+skill: gap-surfacer
+input: |
+  Gap tracker contains GAP-008 for a regulation with
+  status_verified: false. Due date passed 30 days ago.
+  Status: open.
+expected_flags:
+  - "Review needed (yellow) — NOT overdue"
+  - "Route to watch bucket"
+  - "Note: if rule is in force as published, would be overdue by 30 days"
+expected_statutes:
+  - "PAJA s6"
+must_not_contain:
+  - "Federal Register docket"
+  - "overdue"
+notes: |
+  Tests the critical rule that unverified regulations must NEVER
+  be classified as overdue. The gap must be routed to the watch
+  bucket with a conditional note, not to the active overdue bucket.
+  Verifying rule status is an SA-specific concern (PAJA s6 review).

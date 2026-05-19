@@ -1,0 +1,23 @@
+name: "Watch item promotion — draft regulation becomes final"
+skill: gap-surfacer
+input: |
+  Gap tracker contains a watch item for a draft FICA amendment
+  (gap_type: watch). reg-feed-watcher detects the final regulation
+  published in the Government Gazette with a 6-month compliance
+  deadline.
+expected_flags:
+  - "Promote from watch to full gap"
+  - "Set new due date from Gazette compliance deadline"
+  - "Set status_verified: true"
+  - "Trigger policy-diff for final version"
+expected_statutes:
+  - "FICA"
+must_not_contain:
+  - "Federal Register"
+  - "NPRM"
+  - "final rule"
+notes: |
+  Tests gap lifecycle management. When a watched draft regulation
+  becomes final, the gap must be promoted from watch to active with
+  a verified status and new due date. SA uses "final regulation" or
+  "published regulation," not "final rule" (US term).

@@ -1,0 +1,22 @@
+name: "Straightforward Gazette catch — new FSCA conduct standard"
+skill: reg-feed-watcher
+input: |
+  Government Gazette notice publishing a final FSCA conduct standard on
+  retirement fund governance, effective 90 days from publication date.
+  User watchlist includes FSCA as "leading" regulator.
+expected_flags:
+  - "Gazette commencement trap — check if 90-day window is sufficient"
+  - "Materiality: Always material tier"
+expected_statutes:
+  - "FSR Act s107-115"
+must_not_contain:
+  - "Federal Register"
+  - "NPRM"
+  - "CFR"
+  - "SEC"
+  - "FTC"
+notes: |
+  Tests basic feed detection and materiality classification for an SA
+  regulatory change. The 90-day window should trigger a commencement
+  check but is not a trap (reasonable lead time). Skill must use SA
+  regulatory process terminology, not US equivalents.

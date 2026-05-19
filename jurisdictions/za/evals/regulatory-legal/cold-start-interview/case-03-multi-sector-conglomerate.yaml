@@ -1,0 +1,26 @@
+name: "Multi-sector conglomerate — financial services, mining, consumer, environmental"
+skill: cold-start-interview
+input: |
+  User selects full setup. Multiple regulatory domains selected:
+  financial services, mining and resources, consumer protection,
+  environmental. Jurisdiction: South Africa.
+expected_flags:
+  - "ZA fork activates"
+  - "Watchlist includes 8+ regulators from different domains"
+  - "Provincial regulatory exposure question triggered"
+  - "Multiple regulator RSS feeds configured"
+  - "Multiple industry body memberships captured"
+expected_statutes:
+  - "FSR Act"
+  - "MPRDA"
+  - "CPA"
+  - "NEMA"
+must_not_contain:
+  - "Federal Register"
+  - "EPA"
+  - "OSHA"
+notes: |
+  Tests multi-domain ZA configuration. With 4+ domains selected,
+  the watchlist should be extensive. Environmental domain should
+  trigger the provincial exposure question. Must use OHSA (SA)
+  not OSHA (US), NEMA/DFFE not EPA.

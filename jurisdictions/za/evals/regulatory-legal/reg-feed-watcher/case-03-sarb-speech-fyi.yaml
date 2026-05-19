@@ -1,0 +1,16 @@
+name: "Below-threshold filter — SARB Governor speech"
+skill: reg-feed-watcher
+input: |
+  SARB Governor delivers speech on monetary policy outlook and
+  financial stability. User materiality threshold classifies
+  regulator speeches as "FYI."
+expected_flags: []
+expected_statutes: []
+must_not_contain:
+  - "Federal Register"
+  - "NPRM"
+  - "material escalation"
+notes: |
+  Tests materiality filtering. A regulator speech classified as FYI
+  should appear in the digest but not trigger flags, gap creation,
+  or escalation. No statutes expected since this is informational.

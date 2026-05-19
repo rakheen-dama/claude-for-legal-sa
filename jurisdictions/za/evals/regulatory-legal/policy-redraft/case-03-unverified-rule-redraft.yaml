@@ -1,0 +1,20 @@
+name: "Rule status unverified — redraft with caveat"
+skill: policy-redraft
+input: |
+  GAP from policy-diff: regulation under PAJA s6 judicial review
+  challenge. status_verified: false. User requests redraft anyway.
+expected_flags:
+  - "RULE STATUS UNVERIFIED banner"
+  - "Do not apply this redraft until rule status confirmed"
+  - "All dates tagged as unverified"
+expected_statutes:
+  - "PAJA s6"
+must_not_contain:
+  - "Federal Register docket"
+  - "stays"
+  - "injunctions"
+notes: |
+  Tests redraft behaviour when rule status is unverified. The skill
+  must produce the redraft but with prominent RULE STATUS UNVERIFIED
+  caveat. SA rule-status concepts only (PAJA s6, Constitutional
+  Court, regulator withdrawal).

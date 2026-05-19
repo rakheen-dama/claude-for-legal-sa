@@ -1,0 +1,20 @@
+name: "Non-lawyer compliance officer at manufacturing company"
+skill: cold-start-interview
+input: |
+  User selects quick setup. Role: non-lawyer with attorney access.
+  Industry: manufacturing. Jurisdiction: South Africa.
+expected_flags:
+  - "ZA fork activates"
+  - "Quick setup runs Q1, Q2, Q4 with SA defaults"
+  - "Non-lawyer output mode configured"
+  - "SA non-lawyer header used"
+  - "Industry body: SACCI or relevant manufacturing body"
+expected_statutes: []
+must_not_contain:
+  - "Federal Register"
+  - "licensed attorney"
+notes: |
+  Tests quick ZA fork for a non-lawyer user. Must use "admitted
+  attorney or advocate" not "licensed attorney." Quick setup should
+  capture regulatory domains, regulator watchlist, and consultation
+  posture with defaults for the rest.

@@ -1,0 +1,21 @@
+name: "Industry body coordination — BUSA filing on Companies Act regulations"
+skill: comments
+input: |
+  Draft Companies Act beneficial ownership regulations published
+  in the Government Gazette for 30-day comment period. User's
+  industry body (BUSA) is known to be coordinating a joint
+  business submission.
+expected_flags:
+  - "Industry body submission divergence — review BUSA draft position"
+  - "Dual-approach question: contribute to joint submission, file separately, or both"
+expected_statutes:
+  - "Companies Act s56"
+must_not_contain:
+  - "SEC"
+  - "Dodd-Frank"
+  - "SOX"
+notes: |
+  Tests industry body coordination flagging. SA businesses often
+  participate in regulatory consultations through industry bodies
+  (especially BUSA for cross-cutting regulation). The skill should
+  surface the dual-approach question.

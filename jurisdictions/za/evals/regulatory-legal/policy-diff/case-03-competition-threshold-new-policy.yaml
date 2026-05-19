@@ -1,0 +1,20 @@
+name: "New policy needed — Competition Act merger threshold change"
+skill: policy-diff
+input: |
+  Competition Commission publishes new merger notification thresholds
+  via Government Gazette. User has no competition compliance policy
+  in their policy library.
+expected_flags:
+  - "Competition law threshold breach — new merger notification thresholds"
+  - "Gap type: new-policy"
+expected_statutes:
+  - "Competition Act s11-13"
+must_not_contain:
+  - "Hart-Scott-Rodino"
+  - "HSR"
+  - "FTC merger guidelines"
+  - "DOJ"
+notes: |
+  Tests new-policy gap detection. When no existing policy covers the
+  regulatory change, gap type should be "new-policy." Must use SA
+  competition law terminology, not US merger control references.

@@ -1,0 +1,22 @@
+name: "Edge case — regulation with unverified status under PAJA s6 challenge"
+skill: policy-diff
+input: |
+  A regulation published 14 months ago is subject to a known PAJA s6
+  judicial review challenge. User asks to diff the regulation against
+  their policy library.
+expected_flags:
+  - "Regulation status unverified — RULE STATUS UNVERIFIED banner required"
+  - "Gap status_verified: false"
+expected_statutes:
+  - "PAJA s6"
+  - "PAJA s7"
+must_not_contain:
+  - "Federal Register docket"
+  - "stays"
+  - "injunctions"
+  - "vacatur"
+notes: |
+  Tests SA-specific rule-status verification. When a regulation is
+  under PAJA s6 challenge, the skill must emit the RULE STATUS
+  UNVERIFIED banner and mark any gaps as status_verified: false.
+  Must not use US judicial concepts (stays, injunctions, vacatur).

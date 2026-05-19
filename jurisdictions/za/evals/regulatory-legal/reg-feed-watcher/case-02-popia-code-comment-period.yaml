@@ -1,0 +1,21 @@
+name: "Comment period detection — draft POPIA code of conduct"
+skill: reg-feed-watcher
+input: |
+  Gazette notice inviting 30-day public comment on draft Information
+  Regulator code of conduct for direct marketing under POPIA s60.
+  User watchlist includes Information Regulator.
+expected_flags:
+  - "Comment period closing — surface to comments tracker"
+  - "Materiality: Review-worthy tier"
+expected_statutes:
+  - "POPIA s60-65"
+must_not_contain:
+  - "FTC"
+  - "CAN-SPAM"
+  - "CCPA"
+  - "Regulations.gov"
+notes: |
+  Tests comment period detection for SA regulatory consultations. The
+  skill must create a CMT entry in the comment tracker and surface the
+  comment deadline. Must not reference US consumer/privacy regulators
+  or comment submission systems.

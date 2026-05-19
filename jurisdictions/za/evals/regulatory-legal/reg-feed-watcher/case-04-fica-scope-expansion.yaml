@@ -1,0 +1,25 @@
+name: "Multi-regulator — FICA amendment expanding accountable institution scope"
+skill: reg-feed-watcher
+input: |
+  Government Gazette publishes FICA Schedule 1 amendment adding
+  crypto-asset service providers as accountable institutions,
+  effective immediately. User is a fintech company providing
+  crypto-asset trading services.
+expected_flags:
+  - "AML/CFT compliance gap — entity may be newly in scope as accountable institution"
+  - "Licence/registration gap — check if new FICA registration required"
+  - "Materiality: Always material tier"
+expected_statutes:
+  - "FICA s21"
+  - "FICA Schedule 1"
+  - "FSR Act"
+must_not_contain:
+  - "BSA"
+  - "Bank Secrecy Act"
+  - "FinCEN"
+  - "SEC crypto"
+notes: |
+  Tests multi-flag detection when a regulatory change has cascading
+  compliance implications. The FICA amendment creates both an AML/CFT
+  compliance gap (new RMCP requirements) and a potential licensing gap.
+  Must use SA AML/CFT terminology, not US equivalents.

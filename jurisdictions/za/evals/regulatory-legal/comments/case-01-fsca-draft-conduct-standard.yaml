@@ -1,0 +1,21 @@
+name: "Material comment period — FSCA draft conduct standard"
+skill: comments
+input: |
+  FSCA publishes draft conduct standard on insurance product
+  governance with a 45-business-day comment period. User is an
+  insurance company with FSCA listed as "leading" regulator.
+expected_flags:
+  - "Comment period closing — auto-create CMT entry"
+  - "Notify comment decision owner"
+expected_statutes:
+  - "FSR Act s107-115"
+  - "FSR Act s133"
+must_not_contain:
+  - "NPRM"
+  - "Regulations.gov"
+  - "Federal Register docket"
+notes: |
+  Tests comment period tracking for SA regulatory consultations.
+  FSCA publishes draft conduct standards under FSR Act s107-115
+  with consultation requirements under s131-136. Comment submission
+  is directly to FSCA, not via a centralised portal.
