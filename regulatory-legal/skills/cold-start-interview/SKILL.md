@@ -177,6 +177,138 @@ Then ask the escalation question in plain English:
 
 Record the practice setting in the practice profile under `## Who's using this`.
 
+### Jurisdiction check — South African overlay
+
+After writing the Part 0 sections, check the company profile for jurisdiction:
+
+- Read `~/.claude/plugins/config/claude-for-legal/company-profile.md` → `Primary jurisdiction`
+- If the primary jurisdiction is **South Africa** (or ZA, or the user's company is SA-based based on the company profile answers):
+
+**Fork to the SA interview path.** The rest of this interview (Parts 1-3) uses SA-specific questions. The output writes to the ZA practice profile template at `${CLAUDE_PLUGIN_ROOT}/../../../jurisdictions/za/regulatory-legal/practice-profile-template.md` instead of the US template at `${CLAUDE_PLUGIN_ROOT}/CLAUDE.md`.
+
+If the primary jurisdiction is NOT South Africa, continue with the US interview path below (Parts 1-3 as written).
+
+---
+
+#### SA Part 1: Regulatory domains and watchlist (3-5 min)
+
+> South African regulatory monitoring centres on the Government Gazette and a network of sector-specific regulators. Unlike the US, there is no single structured API (like the Federal Register API) — monitoring requires a combination of Open Gazettes feeds, direct regulator subscriptions, and Laws.Africa for structured legislation.
+
+**Regulatory domains:**
+
+> 1. **Which SA regulatory domains does your organisation need to monitor?** Select all that apply:
+>    - Financial services (banking, insurance, asset management, credit)
+>    - Consumer protection
+>    - Data protection / privacy (POPIA)
+>    - Competition
+>    - Environmental
+>    - Health & safety (OHS)
+>    - Tax & revenue
+>    - Employment & labour
+>    - B-BBEE / transformation
+>    - Telecoms / ICT
+>    - Mining & resources
+>    - Energy & electricity
+>    - Healthcare / pharmaceuticals
+>    - Other: ___
+
+*This is the highest-leverage question — it determines which of the 12 core SA regulators land on the watchlist and which statute files are active.*
+
+**Regulator watchlist:**
+
+> 2. **Based on your domains, here are the SA regulators I'd put on your watchlist.** [Auto-populate from the domain → regulator mapping in `jurisdictions/za/regulatory-legal/topics/regulators.md`.] Confirm each, and for each one:
+>    - **Leading** (drives policy impact — you want to see everything from this regulator)
+>    - **Monitor** (track but lower priority — only material items surface)
+>    - **Remove** (not relevant)
+>
+> Want to add any regulators not on this list? (e.g., sector-specific: NERSA, ICASA, CMS, SAHPRA, DMRE, DFFE)
+
+**Government Gazette monitoring:**
+
+> 3. **How do you want to monitor the Government Gazette?**
+>    - **Check cadence:** Daily scan / Weekly digest / Both (daily alerts for high-priority, weekly digest for everything)
+>    - **Filter approach:** By regulator (only Gazettes from your watchlist regulators) / By keyword (specific terms you care about) / Broad (scan all, filter by materiality)
+>    - **Gazette types:** National only / National + provincial (if you have operations in multiple provinces)
+
+#### SA Part 2: Consultation and engagement (2-3 min)
+
+**Consultation engagement posture:**
+
+> 4. **Does your organisation engage in regulatory consultations — filing comments on draft regulations published in the Government Gazette?**
+>    - Yes, actively — we file comments on material draft regulations
+>    - Through industry bodies — we participate via our industry association(s)
+>    - Both — industry body submissions plus direct firm comments on material issues
+>    - Rarely / only if directly affected
+>    - No — we monitor only, don't submit
+>
+> If you engage: what's your default stance when a material draft regulation is published?
+>    - Always evaluate whether to comment
+>    - Only if it directly impacts our business
+>    - Only if our industry body flags it
+
+**Industry body memberships:**
+
+> 5. **Which industry bodies or business associations does your organisation belong to that coordinate regulatory submissions?** (e.g., BUSA, BASA, ASISA, Minerals Council SA, CGCSA, ISPA, SAICA, a chamber of commerce)
+>
+> This helps me flag when your industry body is likely coordinating a submission on a draft regulation.
+
+**Materiality calibration:**
+
+> 6. **Let's calibrate what "material" means for your organisation.** I'll propose SA-specific examples — tell me if these tiers match how your team triages, or adjust:
+>
+> **Always material (act immediately):**
+> - New regulation in Government Gazette with compliance deadline affecting your sector
+> - Regulator enforcement action against a company in your sector
+> - Draft regulation published for comment that directly affects your business model
+>
+> **Review-worthy (assess and decide):**
+> - Draft regulation in a related sector
+> - Regulator guidance note or interpretation notice
+> - B-BBEE code amendment or sector code revision
+>
+> **FYI (note, no action):**
+> - Regulator media statement or speech
+> - Industry body commentary on a regulatory trend
+> - Academic or legal commentary on regulatory developments
+>
+> Do these tiers match, or should I adjust?
+
+#### SA Part 3: Nice-to-have (full setup only)
+
+*Skip these for quick setup. Default values are fine to start.*
+
+> 7. **Are there any current or recent regulatory inquiries, enforcement actions, inspections, or compliance remediation projects?** (These would seed the gap tracker with known open items.)
+
+> 8. **What's your current B-BBEE status?** (Only if B-BBEE selected in domains)
+>    - B-BBEE level: ___
+>    - Sector code or generic codes?
+>    - Verification agency: ___
+>    - Next verification date: ___
+
+> 9. **Feed source configuration:**
+>    - Do you have access to a **Laws.Africa API** key? (If yes, I'll configure it as a Tier 2 source.)
+>    - Do you already have **regulator email subscriptions** set up? (FSCA newsletters, SARS updates, etc.)
+>    - **Open Gazettes** is free and always active — I'll configure it as Tier 1 by default.
+
+> 10. **Do you have operations in multiple provinces?** (Only if Environmental or provincial regulation relevant)
+>     Some environmental, liquor, and planning regulations are provincial. Which provinces?
+
+#### SA Part 4: Seed documents
+
+> The documents that make the biggest difference for SA regulatory monitoring are your **internal policy library** and any **existing regulatory register**. Everything else improves accuracy but isn't required to start.
+
+> **Must-have:**
+> - Policy library — paste a link to your compliance policies folder, or list the key policies. These are what `/regulatory-legal:policy-diff` diffs against.
+
+> **Nice-to-have (paste or skip):**
+> - Existing regulatory register or compliance calendar
+> - B-BBEE certificate or scorecard
+> - POPIA compliance framework or privacy policy
+> - Industry body membership details
+> - Recent regulatory correspondence or enforcement notices
+
+---
+
 ### Part 1: The watchlist (2-3 min)
 
 *(This feeds `/regulatory-legal:reg-feed-watcher` and the `reg-change-monitor` agent — the feed only pulls from regulators on this list. Anything not on the list is invisible to the plugin until you paste it in via `/regulatory-legal:policy-diff`.)*
