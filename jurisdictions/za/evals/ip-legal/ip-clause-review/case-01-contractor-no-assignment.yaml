@@ -1,0 +1,26 @@
+name: "Contractor agreement missing IP assignment"
+skill: ip-clause-review
+input: |
+  Reviewing a software development agreement with an independent contractor
+  in Cape Town. The contract covers development of a custom e-commerce
+  platform. There is no IP assignment clause. Payment terms are specified
+  but nothing about IP ownership.
+
+expected_flags:
+  - "assignment"
+  - "ownership"
+  - "s22(3)"
+  - "moral rights"
+
+must_not_contain:
+  - "work made for hire"
+  - "17 USC §101"
+  - "work for hire categories"
+  - "employer owns under US copyright"
+
+notes: |
+  Under SA law, payment does not equal ownership. The contractor (not the
+  client) owns the copyright unless there is a written assignment (Copyright
+  Act s22(3)). The skill must flag the missing assignment clause as critical
+  and recommend: express written assignment, moral rights waiver (s20),
+  and definition of background vs foreground IP.

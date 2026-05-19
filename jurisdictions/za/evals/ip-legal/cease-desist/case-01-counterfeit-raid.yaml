@@ -1,0 +1,27 @@
+name: "Counterfeit goods — combined civil and criminal enforcement"
+skill: cease-desist
+input: |
+  Large-scale counterfeiting of our client's trademarked clothing brand
+  has been discovered at a market in Johannesburg. Multiple vendors are
+  selling counterfeit goods bearing our client's registered trade mark.
+  The client wants to take enforcement action using both civil and
+  criminal channels.
+
+expected_flags:
+  - "counterfeit"
+  - "raid"
+  - "enforcement"
+
+must_not_contain:
+  - "customs seizure under 19 USC"
+  - "ITC exclusion order"
+  - "Section 337 investigation"
+  - "CBP"
+
+notes: |
+  The skill should recommend a combined strategy: (1) Counterfeit Goods
+  Act criminal enforcement — lay complaint, obtain search warrant, conduct
+  raid with inspectors/SAPS, seize goods; (2) civil proceedings — apply
+  for interdict under Trade Marks Act s34, claim damages, seek delivery up.
+  Flag: need sufficient evidence before raid, proper warrant, chain of
+  custody, and budget for follow-through.

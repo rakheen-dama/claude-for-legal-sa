@@ -1,0 +1,24 @@
+name: "Design registration — aesthetic and functional dual filing"
+skill: portfolio
+input: |
+  Our client has a new product with both aesthetic appeal (a distinctive
+  curved shape) and functional features (ventilation slots that improve
+  airflow). We need to register the design in South Africa.
+
+expected_flags:
+  - "design category"
+  - "aesthetic"
+  - "functional"
+  - "dual filing"
+
+must_not_contain:
+  - "US design patent"
+  - "35 USC §171"
+  - "ornamental design"
+  - "utility patent"
+
+notes: |
+  SA has two design categories: aesthetic (Part A, up to 15 years) and
+  functional (Part F, up to 10 years). The skill should recommend dual
+  filing (both Part A and Part F) to protect both the visual appeal and
+  the functional features. Misclassification is a common pitfall.

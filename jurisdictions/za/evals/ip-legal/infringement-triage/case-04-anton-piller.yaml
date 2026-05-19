@@ -1,0 +1,26 @@
+name: "Anton Piller order for trade secret preservation"
+skill: infringement-triage
+input: |
+  A former senior developer left our SA company and joined a competitor.
+  We believe they took proprietary source code and customer data. There
+  is a risk they will destroy the evidence if we notify them of legal
+  proceedings. We need to preserve the evidence.
+
+expected_flags:
+  - "trade secret"
+  - "Anton Piller"
+  - "evidence preservation"
+
+must_not_contain:
+  - "TRO under DTSA"
+  - "ex parte seizure under 18 USC §1836"
+  - "federal trade secret injunction"
+  - "inevitable disclosure"
+
+notes: |
+  The skill should recommend an Anton Piller order (ex parte search and
+  seizure) from the High Court. Requirements: (1) strong prima facie case
+  of misappropriation, (2) serious potential damage, (3) clear evidence
+  respondent has the material, (4) real risk of destruction. A supervising
+  attorney is required. Also consider: urgent interdict to prevent further
+  use, NDA/employment contract review for restraint clauses.

@@ -1,0 +1,22 @@
+name: "SA trademark renewal approaching"
+skill: portfolio
+input: |
+  Our SA trademark registration (CIPC) is expiring in 4 months. We need
+  to confirm the renewal process, deadline, and fees.
+
+expected_flags:
+  - "renewal"
+  - "deadline"
+
+must_not_contain:
+  - "§8 declaration"
+  - "§8 and §9 affidavit"
+  - "USPTO TSDR"
+  - "Section 8 maintenance"
+  - "Section 9 renewal"
+
+notes: |
+  SA TM renewal: 10-year term, can file from 6 months before expiry,
+  6-month grace period with penalty after expiry. Administrative process
+  at CIPC — form plus fee, per class. No re-examination. The skill should
+  NOT reference US §8 declarations or USPTO TSDR.
