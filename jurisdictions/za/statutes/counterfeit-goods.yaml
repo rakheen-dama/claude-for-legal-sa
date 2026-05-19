@@ -1,0 +1,33 @@
+statute: "Counterfeit Goods Act 37 of 1997"
+authority: "Department of Trade, Industry and Competition"
+last_confirmed: "2025-05-01"
+source_url: "https://www.gov.za/documents/counterfeit-goods-act"
+
+sections:
+  counterfeit_definition:
+    ref: "Counterfeit Goods Act s1"
+    value: true
+    effective_from: "1998-01-01"
+    effective_until: null
+    effect: "Counterfeit goods are goods bearing, without authorization, a trade mark identical or substantially similar to a registered trade mark, or goods that are copies of copyright-protected works made without the owner's consent."
+
+  search_and_seizure:
+    ref: "Counterfeit Goods Act s4-6"
+    value: true
+    effective_from: "1998-01-01"
+    effective_until: null
+    effect: "Inspectors (appointed under the Act), SAPS, and customs officials may search premises and seize suspected counterfeit goods. Search warrants may be obtained ex parte. Rights holders may lay complaints initiating enforcement action."
+
+  criminal_offences:
+    ref: "Counterfeit Goods Act s2-3"
+    value: true
+    effective_from: "1998-01-01"
+    effective_until: null
+    effect: "It is a criminal offence to manufacture, produce, package, sell, offer for sale, distribute, or possess for trade purposes goods that the person knows or reasonably suspects are counterfeit. Penalties include fines and imprisonment."
+
+  civil_enforcement_complement:
+    ref: "Counterfeit Goods Act (practice)"
+    value: true
+    effective_from: "1998-01-01"
+    effective_until: null
+    effect: "Rights holders commonly combine Counterfeit Goods Act criminal enforcement (raids, seizures, prosecution) with civil proceedings (interdicts, damages, delivery up) under the Trade Marks Act or Copyright Act. The criminal route provides supply-chain disruption; the civil route provides compensation."

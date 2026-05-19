@@ -1,0 +1,56 @@
+statute: "Designs Act 195 of 1993"
+authority: "Companies and Intellectual Property Commission (CIPC)"
+last_confirmed: "2025-05-01"
+source_url: "https://www.gov.za/documents/designs-act"
+
+sections:
+  aesthetic_design:
+    ref: "Designs Act s1"
+    value: "appearance judged by the eye"
+    effective_from: null
+    effective_until: null
+    effect: "An aesthetic design is any design applied to an article primarily for aesthetic appeal — features judged solely by the eye, irrespective of the article's function. Registered under Part A of the register."
+
+  functional_design:
+    ref: "Designs Act s1"
+    value: "features necessitated by function"
+    effective_from: null
+    effective_until: null
+    effect: "A functional design has features necessitated by the function that the article is to perform. Registered under Part F of the register."
+
+  registrability_aesthetic:
+    ref: "Designs Act s14 (aesthetic)"
+    value: "new and original"
+    effective_from: null
+    effective_until: null
+    effect: "An aesthetic design is registrable if it is new and original. The design must not have been published or used in SA before the filing date."
+
+  registrability_functional:
+    ref: "Designs Act s14 (functional)"
+    value: "new and not commonplace"
+    effective_from: null
+    effective_until: null
+    effect: "A functional design is registrable if it is new and not commonplace in the art. The threshold for functional designs is lower than for aesthetic designs (not commonplace vs original)."
+
+  term_aesthetic:
+    ref: "Designs Act s27 (aesthetic)"
+    value: 15
+    unit: "years from filing date"
+    effective_from: null
+    effective_until: null
+    effect: "An aesthetic design registration is valid for up to 15 years from the filing date, subject to periodic renewal."
+
+  term_functional:
+    ref: "Designs Act s27 (functional)"
+    value: 10
+    unit: "years from filing date"
+    effective_from: null
+    effective_until: null
+    effect: "A functional design registration is valid for up to 10 years from the filing date, subject to periodic renewal."
+
+  infringement:
+    ref: "Designs Act s20-21"
+    value: true
+    effective_from: null
+    effective_until: null
+    effect: "The registered proprietor has the exclusive right to use the design. Infringement occurs when any person, without authority, uses the registered design for commercial purposes. Remedies include interdict, damages, reasonable royalty, and delivery up."
