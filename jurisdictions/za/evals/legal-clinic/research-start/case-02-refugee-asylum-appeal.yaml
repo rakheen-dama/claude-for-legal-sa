@@ -1,0 +1,49 @@
+name: "Research roadmap — refugee asylum rejection appeal"
+skill: research-start
+input: |
+  A refugee client's asylum application has been rejected by the
+  Refugee Status Determination Officer.  The client is from the DRC
+  and fears persecution based on political opinion.  What are the
+  appeal options and procedures?
+
+expected_flags: []
+
+expected_statutes:
+  - "Refugees Act s24"
+  - "PAJA s6"
+
+must_not_contain:
+  - "ABA"
+  - "FRCP"
+  - "at-will"
+  - "EEOC"
+  - "NLRB"
+  - "FMLA"
+  - "FLSA"
+  - "VAWA"
+  - "FDCPA"
+  - "USCIS"
+  - "INA"
+  - "Chapter 7"
+  - "Chapter 13"
+  - "Section 8"
+  - "HUD"
+  - "Title IV-D"
+  - "42 USC"
+  - "qualified immunity"
+  - "Westlaw"
+  - "CourtListener"
+  - "Cal. Rules"
+  - "state bar"
+  - "BIA"
+  - "asylum officer"
+  - "immigration judge"
+  - "EOIR"
+
+notes: |
+  Research roadmap: (1) Refugees Act s24 — appeal to Refugee Appeal
+  Authority (now Refugee Appeal Board).  (2) If appeal fails,
+  administrative review under PAJA s6 in the High Court.  (3) SAFLII
+  search terms for relevant case law on refugee status determination.
+  (4) Constitutional right to dignity and life (ss10, 11).  Must NOT
+  reference US immigration system (BIA, USCIS, asylum officer).

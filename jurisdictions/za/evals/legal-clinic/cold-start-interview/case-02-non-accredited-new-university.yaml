@@ -1,0 +1,48 @@
+name: "Non-accredited new university clinic — consumer law only"
+skill: cold-start-interview
+input: |
+  Set up the legal-clinic plugin for a newly established law clinic at
+  a small university.  The clinic is not yet LPC-accredited.  There is
+  1 supervising legal practitioner (admitted attorney) and 3 candidate
+  legal practitioners.  The clinic handles consumer law matters only
+  (CPA and NCA complaints).  Located in Limpopo province, Polokwane
+  Magistrate's Court.  Languages: English, Sepedi, Tshivenda.
+
+expected_flags:
+  - "LPC accreditation warning"
+
+expected_statutes:
+  - "LPA s34(8)"
+  - "LPC Rule 36"
+
+must_not_contain:
+  - "ABA"
+  - "FRCP"
+  - "at-will"
+  - "EEOC"
+  - "NLRB"
+  - "FMLA"
+  - "FLSA"
+  - "VAWA"
+  - "FDCPA"
+  - "USCIS"
+  - "INA"
+  - "Chapter 7"
+  - "Chapter 13"
+  - "Section 8"
+  - "HUD"
+  - "Title IV-D"
+  - "42 USC"
+  - "qualified immunity"
+  - "Westlaw"
+  - "CourtListener"
+  - "Cal. Rules"
+  - "state bar"
+
+notes: |
+  Key flag: clinic is not LPC-accredited.  Candidates' time may not
+  count toward PVTC.  The practice profile should note this prominently.
+  Supervision ratio: 3/1 = within cap.  Consumer-only practice area —
+  no mandatory reporting trigger (no children/DVA matters).  Narrow
+  practice breadth may trigger LPC Rule 37.1.5 concern (reasonably wide
+  range of work required).

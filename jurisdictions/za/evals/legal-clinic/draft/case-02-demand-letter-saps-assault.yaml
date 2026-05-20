@@ -1,0 +1,53 @@
+name: "Letter of demand — SAPS assault during arrest"
+skill: draft
+input: |
+  Draft a letter of demand for a client who was assaulted by SAPS
+  members during arrest on 15 August 2024.  The client sustained a
+  broken arm and facial injuries.  Medical expenses total R35,000.
+  The client was arrested at a roadblock in Tembisa, Gauteng.  The
+  charges were subsequently withdrawn.
+
+expected_flags:
+  - "State organ notice period"
+  - "prescription check"
+
+expected_statutes:
+  - "Act 40 of 2002 s3"
+  - "Prescription Act s11(d)"
+  - "Constitution s12"
+
+must_not_contain:
+  - "ABA"
+  - "FRCP"
+  - "at-will"
+  - "EEOC"
+  - "NLRB"
+  - "FMLA"
+  - "FLSA"
+  - "VAWA"
+  - "FDCPA"
+  - "USCIS"
+  - "INA"
+  - "Chapter 7"
+  - "Chapter 13"
+  - "Section 8"
+  - "HUD"
+  - "Title IV-D"
+  - "42 USC"
+  - "qualified immunity"
+  - "Westlaw"
+  - "CourtListener"
+  - "Cal. Rules"
+  - "state bar"
+  - "Section 1983"
+  - "Bivens"
+
+notes: |
+  Two critical flags: (1) State organ notice — SAPS is an organ of
+  state.  Act 40 of 2002 s3 requires 6-month written notice before
+  proceedings.  If client approached clinic on 2026-05-20, notice
+  deadline from awareness may already have passed or be imminent.
+  URGENT assessment needed.  (2) Prescription — 3 years from
+  2024-08-15 = 2027-08-15.  The letter must comply with Act 40
+  notice requirements (facts giving rise to debt, nature and extent).
+  30-day waiting period after notice before summons.

@@ -1,0 +1,57 @@
+name: "LPC-accredited Wits Law Clinic setup"
+skill: cold-start-interview
+input: |
+  Set up the legal-clinic plugin for the Wits Law Clinic.  The clinic
+  is LPC-accredited under Rule 36.  There are 4 supervising legal
+  practitioners (all admitted attorneys) overseeing 18 candidate legal
+  practitioners across 5 units: Family/Gender/Child, General, Labour,
+  Property, and Criminal Law/Delict.  The clinic is in Gauteng province,
+  primarily appearing in the Johannesburg Magistrate's Court and the
+  Gauteng Division of the High Court.  Languages served: English,
+  isiZulu, Sesotho, Setswana.  Active referral relationship with
+  Legal Aid SA Johannesburg Justice Centre.
+
+expected_flags:
+  - "mandatory reporting acknowledgment"
+
+expected_statutes:
+  - "LPA s34(8)"
+  - "LPC Rule 36"
+  - "LPC Rule 37"
+
+must_not_contain:
+  - "ABA"
+  - "FRCP"
+  - "at-will"
+  - "EEOC"
+  - "NLRB"
+  - "FMLA"
+  - "FLSA"
+  - "VAWA"
+  - "FDCPA"
+  - "USCIS"
+  - "INA"
+  - "Chapter 7"
+  - "Chapter 13"
+  - "Section 8"
+  - "HUD"
+  - "Title IV-D"
+  - "42 USC"
+  - "qualified immunity"
+  - "Westlaw"
+  - "CourtListener"
+  - "Cal. Rules"
+  - "state bar"
+  - "student practice rule"
+  - "professor"
+  - "bar admission"
+
+notes: |
+  LPC accreditation confirmed.  Supervision ratio: 18 candidates / 4
+  supervisors = 4.5 average, well within Rule 37 cap of 6.  Practice
+  areas include family/children matters, so mandatory reporting
+  acknowledgment under Children's Act s110 must be triggered.  Clinic
+  handles labour matters — cross-reference employment-legal overlay
+  should be noted.  Languages: 4 of 11 official languages served
+  directly.  Legal Aid SA relationship: active referral to JHB Justice
+  Centre.

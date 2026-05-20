@@ -1,0 +1,54 @@
+name: "IRAC memo — maintenance claim by unmarried mother"
+skill: memo
+input: |
+  Can an unmarried mother claim maintenance from the biological
+  father of her child?  The parents were never married or in a
+  civil union.  The father has acknowledged paternity but has
+  never contributed to the child's expenses.  The child is 3
+  years old.
+
+expected_flags: []
+
+expected_statutes:
+  - "Maintenance Act s2"
+  - "Children's Act s18"
+  - "Children's Act s21"
+
+must_not_contain:
+  - "ABA"
+  - "FRCP"
+  - "at-will"
+  - "EEOC"
+  - "NLRB"
+  - "FMLA"
+  - "FLSA"
+  - "VAWA"
+  - "FDCPA"
+  - "USCIS"
+  - "INA"
+  - "Chapter 7"
+  - "Chapter 13"
+  - "Section 8"
+  - "HUD"
+  - "Title IV-D"
+  - "42 USC"
+  - "qualified immunity"
+  - "Westlaw"
+  - "CourtListener"
+  - "Cal. Rules"
+  - "state bar"
+  - "UIFSA"
+  - "child support guidelines"
+  - "family court"
+
+notes: |
+  Analysis: (1) Maintenance Act s2 — duty to maintain exists between
+  parents and children regardless of marital status.  (2) Children's
+  Act s21 — unmarried father who acknowledged paternity has acquired
+  parental responsibilities including maintenance.  (3) Procedure:
+  lodge maintenance complaint with maintenance officer at Magistrate's
+  Court (Maintenance Act s6).  Officer investigates, mediates, refers
+  to court if unsettled.  (4) Court considers needs, means, standard
+  of living, earning capacity (s16).  (5) Non-compliance with
+  maintenance order is criminal (s31).  IRAC scaffolding should use
+  SA statutory framework, not US child support guidelines.

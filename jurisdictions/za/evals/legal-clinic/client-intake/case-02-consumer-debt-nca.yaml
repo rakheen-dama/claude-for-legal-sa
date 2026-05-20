@@ -1,0 +1,53 @@
+name: "Consumer debt intake — credit agreement, debt collector"
+skill: client-intake
+input: |
+  Client owes R45,000 on a retail credit agreement with a major
+  clothing retailer.  A debt collector has been calling daily and
+  threatening legal action.  The client earns R8,000 per month and
+  has two other credit agreements.  The original credit agreement
+  was signed in 2021.
+
+expected_flags:
+  - "prescription check"
+
+expected_statutes:
+  - "NCA s86"
+  - "CPA"
+  - "Prescription Act s11(d)"
+
+must_not_contain:
+  - "ABA"
+  - "FRCP"
+  - "at-will"
+  - "EEOC"
+  - "NLRB"
+  - "FMLA"
+  - "FLSA"
+  - "VAWA"
+  - "FDCPA"
+  - "USCIS"
+  - "INA"
+  - "Chapter 7"
+  - "Chapter 13"
+  - "Section 8"
+  - "HUD"
+  - "Title IV-D"
+  - "42 USC"
+  - "qualified immunity"
+  - "Westlaw"
+  - "CourtListener"
+  - "Cal. Rules"
+  - "state bar"
+  - "bankruptcy"
+  - "CFPB"
+
+notes: |
+  Key analysis: (1) NCA debt counselling referral — client appears
+  over-indebted (R45k debt on R8k income plus other agreements),
+  s86 application to registered debt counsellor.  (2) Check for
+  reckless credit (NCA s80-83) — was affordability assessment done?
+  (3) Prescription check — agreement from 2021, debt arising from
+  contract prescribes in 3 years (Prescription Act s11(d)).  If
+  default was in 2021, prescription may be approaching.
+  (4) Magistrate's Court jurisdiction: R45k falls within district
+  court (under R200k).

@@ -1,0 +1,48 @@
+name: "Research roadmap — eviction rights after 6+ month occupation"
+skill: research-start
+input: |
+  Research question: Does a landlord's right to evict survive if
+  the tenant has occupied the land for more than six months?  The
+  occupiers have been on the property for 2 years without a formal
+  lease agreement.
+
+expected_flags: []
+
+expected_statutes:
+  - "PIE Act s4"
+  - "Constitution s26"
+
+must_not_contain:
+  - "ABA"
+  - "FRCP"
+  - "at-will"
+  - "EEOC"
+  - "NLRB"
+  - "FMLA"
+  - "FLSA"
+  - "VAWA"
+  - "FDCPA"
+  - "USCIS"
+  - "INA"
+  - "Chapter 7"
+  - "Chapter 13"
+  - "Section 8"
+  - "HUD"
+  - "Title IV-D"
+  - "42 USC"
+  - "qualified immunity"
+  - "Westlaw"
+  - "CourtListener"
+  - "Cal. Rules"
+  - "state bar"
+  - "adverse possession"
+  - "squatter's rights"
+
+notes: |
+  Research roadmap must use SAFLII search terms.  Key authorities:
+  PIE Act s4 — court order required for any eviction regardless of
+  duration.  For occupiers of 6+ months, court must consider whether
+  land has been made available by an organ of state (s4(7)).  Relevant
+  case law: Ndlovu v Ngcobo, Blue Moonlight Properties v Occupiers.
+  Constitution s26 — right of access to adequate housing.  Must NOT
+  reference US adverse possession or squatter's rights concepts.

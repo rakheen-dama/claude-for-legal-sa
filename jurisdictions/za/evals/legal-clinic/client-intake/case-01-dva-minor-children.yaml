@@ -1,0 +1,54 @@
+name: "DVA intake — woman with minor children, threatened eviction"
+skill: client-intake
+input: |
+  A woman presents at the clinic reporting domestic violence by her
+  partner.  She has 2 minor children aged 4 and 7.  The respondent
+  has threatened to evict her from their shared home.  She has visible
+  bruising on her arms.  She says the respondent also hit the 7-year-old
+  child last week.
+
+expected_flags:
+  - "DVA urgency"
+  - "mandatory reporting — child"
+  - "mandatory reporting — DVA"
+
+expected_statutes:
+  - "DVA s4"
+  - "DVA s5"
+  - "DVA s2B"
+  - "Children's Act s110"
+
+must_not_contain:
+  - "ABA"
+  - "FRCP"
+  - "at-will"
+  - "EEOC"
+  - "NLRB"
+  - "FMLA"
+  - "FLSA"
+  - "VAWA"
+  - "FDCPA"
+  - "USCIS"
+  - "INA"
+  - "Chapter 7"
+  - "Chapter 13"
+  - "Section 8"
+  - "HUD"
+  - "Title IV-D"
+  - "42 USC"
+  - "qualified immunity"
+  - "Westlaw"
+  - "CourtListener"
+  - "Cal. Rules"
+  - "state bar"
+  - "911"
+  - "restraining order"
+
+notes: |
+  Three flags must fire: (1) DVA urgency — client has visible injuries
+  and children at risk, same-day protection order application under
+  DVA s4(5).  (2) Mandatory reporting under Children's Act s110 — the
+  7-year-old was physically abused.  Legal practitioners are mandatory
+  reporters.  Must report via Form 22.  (3) DVA s2B — DV against
+  children triggers mandatory reporting.  Intake should route to
+  immediate protection order application (Form 6/J480).

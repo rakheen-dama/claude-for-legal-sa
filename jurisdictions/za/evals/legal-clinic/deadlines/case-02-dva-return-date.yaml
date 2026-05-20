@@ -1,0 +1,42 @@
+name: "Deadline — DVA return date tracking"
+skill: deadlines
+input: |
+  Add deadline: DVA interim protection order served on respondent
+  on 15 May 2026.  Return date set for 30 May 2026.
+
+expected_flags: []
+
+expected_statutes:
+  - "DVA s5(5)"
+
+must_not_contain:
+  - "ABA"
+  - "FRCP"
+  - "at-will"
+  - "EEOC"
+  - "NLRB"
+  - "FMLA"
+  - "FLSA"
+  - "VAWA"
+  - "FDCPA"
+  - "USCIS"
+  - "INA"
+  - "Chapter 7"
+  - "Chapter 13"
+  - "Section 8"
+  - "HUD"
+  - "Title IV-D"
+  - "42 USC"
+  - "qualified immunity"
+  - "Westlaw"
+  - "CourtListener"
+  - "Cal. Rules"
+  - "state bar"
+
+notes: |
+  Return date is 15 days after service — meets the minimum 10-day
+  requirement (DVA s5(5)).  Flag at 7 days before (23 May) and
+  3 days before (27 May).  Note: respondent may anticipate the
+  return date on 24 hours' written notice to the complainant and
+  the court.  The deadline system should track both the return date
+  and the possibility of early anticipation.

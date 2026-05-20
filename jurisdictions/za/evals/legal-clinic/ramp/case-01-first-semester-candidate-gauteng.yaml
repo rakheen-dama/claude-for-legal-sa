@@ -1,0 +1,48 @@
+name: "First-semester candidate onboarding — Gauteng family and DVA"
+skill: ramp
+input: |
+  Onboard a new candidate legal practitioner starting their first
+  semester at a Gauteng clinic.  The clinic handles family law and
+  domestic violence matters.  The candidate has completed their LLB
+  and is serving under a 24-month PVTC.
+
+expected_flags: []
+
+expected_statutes:
+  - "LPA s34(8)"
+  - "Children's Act s110"
+  - "DVA s4"
+  - "DVA s5"
+
+must_not_contain:
+  - "ABA"
+  - "FRCP"
+  - "at-will"
+  - "EEOC"
+  - "NLRB"
+  - "FMLA"
+  - "FLSA"
+  - "VAWA"
+  - "FDCPA"
+  - "USCIS"
+  - "INA"
+  - "Chapter 7"
+  - "Chapter 13"
+  - "Section 8"
+  - "HUD"
+  - "Title IV-D"
+  - "42 USC"
+  - "qualified immunity"
+  - "Westlaw"
+  - "CourtListener"
+  - "Cal. Rules"
+  - "state bar"
+  - "law student"
+
+notes: |
+  Onboarding must cover: LPA obligations for candidate practitioners,
+  direct personal supervision requirement (Rule 37.1.1), mandatory
+  reporting under Children's Act s110 and DVA s2B, DVA urgency
+  procedures (s4(5) after-hours applications), Magistrate's Court
+  basics, SAFLII research introduction.  Must use SA terminology
+  throughout — "candidate legal practitioner" not "law student."

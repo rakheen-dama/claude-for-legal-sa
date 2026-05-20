@@ -1,0 +1,46 @@
+name: "Supervisor guide for Housing and Eviction unit"
+skill: build-guide
+input: |
+  Author a practice-area guide for the Housing and Eviction unit.
+  Pedagogy posture: guide.  The unit handles eviction matters under
+  the PIE Act, rental disputes via the Rental Housing Tribunal, and
+  property-related litigation in the Magistrate's Court.
+
+expected_flags: []
+
+expected_statutes:
+  - "PIE Act s4"
+  - "Rental Housing Act"
+
+must_not_contain:
+  - "ABA"
+  - "FRCP"
+  - "at-will"
+  - "EEOC"
+  - "NLRB"
+  - "FMLA"
+  - "FLSA"
+  - "VAWA"
+  - "FDCPA"
+  - "USCIS"
+  - "INA"
+  - "Chapter 7"
+  - "Chapter 13"
+  - "Section 8"
+  - "HUD"
+  - "Title IV-D"
+  - "42 USC"
+  - "qualified immunity"
+  - "Westlaw"
+  - "CourtListener"
+  - "Cal. Rules"
+  - "state bar"
+  - "habitability"
+  - "tenant protection act"
+
+notes: |
+  Guide must reference PIE Act s4 (court order required for any
+  eviction), Rental Housing Tribunal (free, no legal representation
+  required), and Magistrate's Court procedure.  Supervisor review
+  required for all court filings.  Pedagogy "guide" mode: skill drafts
+  structure, candidate fills substance, skill gives feedback.

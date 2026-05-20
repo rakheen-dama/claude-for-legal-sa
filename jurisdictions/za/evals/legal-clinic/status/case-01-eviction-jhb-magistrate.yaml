@@ -1,0 +1,47 @@
+name: "Court-ready status — eviction, Johannesburg Magistrate's Court"
+skill: status
+input: |
+  Generate a court-ready status for the pending eviction matter.
+  Case: Johannesburg Magistrate's Court, Case No 2026/4521.
+  Applicant: City of Johannesburg Metropolitan Municipality.
+  Respondents: 15 families occupying vacant land in Diepsloot.
+  PIE Act proceedings.  Next hearing: 15 June 2026.
+
+expected_flags: []
+
+expected_statutes:
+  - "PIE Act s4"
+
+must_not_contain:
+  - "ABA"
+  - "FRCP"
+  - "at-will"
+  - "EEOC"
+  - "NLRB"
+  - "FMLA"
+  - "FLSA"
+  - "VAWA"
+  - "FDCPA"
+  - "USCIS"
+  - "INA"
+  - "Chapter 7"
+  - "Chapter 13"
+  - "Section 8"
+  - "HUD"
+  - "Title IV-D"
+  - "42 USC"
+  - "qualified immunity"
+  - "Westlaw"
+  - "CourtListener"
+  - "Cal. Rules"
+  - "state bar"
+  - "UNITED STATES DISTRICT COURT"
+  - "SUPERIOR COURT OF"
+  - "unlawful detainer"
+
+notes: |
+  Court caption must use SA format: "IN THE MAGISTRATE'S COURT FOR
+  THE DISTRICT OF JOHANNESBURG, HELD AT JOHANNESBURG, Case No:
+  2026/4521."  Status must reference PIE Act s4 (court order required),
+  note that this is a State organ applicant (municipality), and
+  summarise procedural posture for the hearing.

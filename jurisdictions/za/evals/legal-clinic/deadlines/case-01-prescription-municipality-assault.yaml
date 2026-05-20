@@ -1,0 +1,49 @@
+name: "Deadline — prescription for personal injury claim vs municipality"
+skill: deadlines
+input: |
+  Add deadline: Client was assaulted by metro police officers on
+  15 August 2024.  The client approached the clinic on 20 May 2026.
+  The claim is for personal injury damages against the municipality
+  (City of Ekurhuleni).
+
+expected_flags:
+  - "State organ notice period"
+  - "prescription approaching"
+
+expected_statutes:
+  - "Prescription Act s11(d)"
+  - "Act 40 of 2002 s3"
+
+must_not_contain:
+  - "ABA"
+  - "FRCP"
+  - "at-will"
+  - "EEOC"
+  - "NLRB"
+  - "FMLA"
+  - "FLSA"
+  - "VAWA"
+  - "FDCPA"
+  - "USCIS"
+  - "INA"
+  - "Chapter 7"
+  - "Chapter 13"
+  - "Section 8"
+  - "HUD"
+  - "Title IV-D"
+  - "42 USC"
+  - "qualified immunity"
+  - "Westlaw"
+  - "CourtListener"
+  - "Cal. Rules"
+  - "state bar"
+
+notes: |
+  Two deadlines: (1) Prescription — 3 years from 2024-08-15 =
+  2027-08-15.  (2) State organ notice — 6 months from awareness.
+  If client became aware on date of assault (2024-08-15), the
+  6-month notice deadline was 2025-02-15 — ALREADY PASSED.  This
+  is URGENT.  The clinic must assess whether notice was ever sent,
+  whether the court can condone late notice, or whether the claim
+  is time-barred on the notice requirement.  Plausibility check
+  should flag the expired notice period immediately.

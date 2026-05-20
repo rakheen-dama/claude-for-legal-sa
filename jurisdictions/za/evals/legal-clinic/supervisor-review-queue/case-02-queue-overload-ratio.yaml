@@ -1,0 +1,48 @@
+name: "Supervisor review queue — overload and ratio warning"
+skill: supervisor-review-queue
+input: |
+  The supervisor review queue shows 8 pending items for a single
+  supervising legal practitioner.  This supervisor currently oversees
+  6 candidate legal practitioners.  The queue items include: 2 DVA
+  protection order applications, 1 maintenance complaint, 3 client
+  letters, 1 court filing, and 1 research memo.
+
+expected_flags:
+  - "supervision ratio at cap"
+
+expected_statutes:
+  - "LPC Rule 37"
+
+must_not_contain:
+  - "ABA"
+  - "FRCP"
+  - "at-will"
+  - "EEOC"
+  - "NLRB"
+  - "FMLA"
+  - "FLSA"
+  - "VAWA"
+  - "FDCPA"
+  - "USCIS"
+  - "INA"
+  - "Chapter 7"
+  - "Chapter 13"
+  - "Section 8"
+  - "HUD"
+  - "Title IV-D"
+  - "42 USC"
+  - "qualified immunity"
+  - "Westlaw"
+  - "CourtListener"
+  - "Cal. Rules"
+  - "state bar"
+  - "professor"
+  - "student"
+
+notes: |
+  Supervision ratio is at the LPC Rule 37 cap of 6 candidates per
+  supervisor.  Flag this — any additional candidate would breach the
+  rule.  Queue should prioritise by risk level: DVA applications and
+  court filing first (higher risk), then client letters and research
+  memo.  If a second supervisor is available, suggest delegation.
+  Must not use US clinic supervision terminology.

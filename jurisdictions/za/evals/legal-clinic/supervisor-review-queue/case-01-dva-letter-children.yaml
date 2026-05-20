@@ -1,0 +1,52 @@
+name: "Supervisor review — DVA client letter involving 3 children"
+skill: supervisor-review-queue
+input: |
+  A candidate legal practitioner has submitted a draft client letter
+  for review.  The matter involves a DVA protection order application
+  for a client with 3 minor children (ages 2, 5, and 9).  The letter
+  informs the client about the interim protection order that was
+  granted and the upcoming return date.
+
+expected_flags:
+  - "mandatory reporting check"
+  - "supervision review required"
+
+expected_statutes:
+  - "DVA"
+  - "Children's Act s110"
+  - "LPA s34(8)"
+
+must_not_contain:
+  - "ABA"
+  - "FRCP"
+  - "at-will"
+  - "EEOC"
+  - "NLRB"
+  - "FMLA"
+  - "FLSA"
+  - "VAWA"
+  - "FDCPA"
+  - "USCIS"
+  - "INA"
+  - "Chapter 7"
+  - "Chapter 13"
+  - "Section 8"
+  - "HUD"
+  - "Title IV-D"
+  - "42 USC"
+  - "qualified immunity"
+  - "Westlaw"
+  - "CourtListener"
+  - "Cal. Rules"
+  - "state bar"
+  - "professor"
+  - "student"
+
+notes: |
+  Mandatory review triggers: (1) DVA matter — always review.
+  (2) Children involved — verify mandatory reporting compliance
+  under s110.  (3) Client letter — check plain language, candidate
+  identification, supervising practitioner identified.  (4) Verify
+  letter does not disclose privileged information.  Review must use
+  SA terminology — "candidate legal practitioner" not "student",
+  "supervising legal practitioner" not "professor."

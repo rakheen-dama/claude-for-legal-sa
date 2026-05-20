@@ -1,0 +1,54 @@
+name: "Draft DVA protection order application (Form 6/J480)"
+skill: draft
+input: |
+  Draft a protection order application for the client from intake
+  case 2.1.  The client (Nomsa Dlamini) is applying for protection
+  against her partner (Sipho Mthembu) at the Johannesburg Magistrate's
+  Court.  They share a residence at 15 Main Road, Soweto.  Two minor
+  children reside with them.  The most recent incident was yesterday —
+  respondent struck the complainant and the 7-year-old child.
+
+expected_flags:
+  - "DVA urgency"
+
+expected_statutes:
+  - "DVA s4"
+  - "DVA s5"
+  - "DVA s6"
+
+must_not_contain:
+  - "ABA"
+  - "FRCP"
+  - "at-will"
+  - "EEOC"
+  - "NLRB"
+  - "FMLA"
+  - "FLSA"
+  - "VAWA"
+  - "FDCPA"
+  - "USCIS"
+  - "INA"
+  - "Chapter 7"
+  - "Chapter 13"
+  - "Section 8"
+  - "HUD"
+  - "Title IV-D"
+  - "42 USC"
+  - "qualified immunity"
+  - "Westlaw"
+  - "CourtListener"
+  - "Cal. Rules"
+  - "state bar"
+  - "IN THE SUPERIOR COURT"
+  - "UNITED STATES"
+  - "restraining order"
+
+notes: |
+  Output must use Form 6 (J480) structure.  Court caption must be
+  SA format: "IN THE MAGISTRATE'S COURT FOR THE DISTRICT OF
+  JOHANNESBURG."  Application must address: DVA s4(1) complainant
+  application, s5(2) interim order requirements (prima facie evidence
+  of DV + undue hardship), terms sought (non-molestation, exclusive
+  occupation of shared residence, no contact with children pending
+  return date).  Return date minimum 10 days after service (s5(5)).
+  Must request suspended warrant of arrest (s8).
