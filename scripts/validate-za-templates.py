@@ -184,6 +184,33 @@ TEMPLATE_CONFIG = {
             (r"\bOSHA\b", "OSHA"),
         ],
     },
+    "legal-clinic": {
+        "path": ROOT / "jurisdictions" / "za" / "legal-clinic" / "practice-profile-template.md",
+        "required_sections": [
+            "Who's using this", "LPC compliance", "Clinic profile",
+            "Jurisdiction", "SA court system", "Supervision style",
+            "Mandatory reporting obligations", "Practice-area templates",
+            "Legal Aid SA interface", "Language access", "Seed documents",
+            "Outputs",
+        ],
+        "sa_required_terms": [
+            "LPC", "LPA", "candidate legal practitioner", "Magistrate",
+            "SAFLII", "admitted attorney", "s34(8)",
+        ],
+        "us_forbidden": [
+            (r"\bABA\b", "ABA"),
+            (r"\bFRCP\b", "FRCP"),
+            (r"Cal\.\s*Rules", "Cal. Rules"),
+            (r"\bVAWA\b", "VAWA"),
+            (r"\bFDCPA\b", "FDCPA"),
+            (r"\bUSCIS\b", "USCIS"),
+            (r"\bat-will\b", "at-will"),
+            (r"\bEEOC\b", "EEOC"),
+            (r"\bNLRB\b", "NLRB"),
+            (r"\bFMLA\b", "FMLA"),
+            (r"\bFLSA\b", "FLSA"),
+        ],
+    },
 }
 
 # Key aliases: "litigation-legal" uses the same key names as other practice areas
