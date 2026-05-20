@@ -26,3 +26,26 @@ sections:
     effective_until: null
     effect: "If the creditor fails to give the required notice within the 6-month period, the court may condone the non-compliance if it is satisfied that the organ of state was not unreasonably prejudiced by the failure, and that the debt has not prescribed."
     note: "Condonation is not automatic. The court exercises a discretion, and unreasonable delay or prejudice to the state may lead to refusal."
+
+  notice_before_proceedings:
+    ref: "Institution of Legal Proceedings Against Certain Organs of State Act 40 of 2002, s3"
+    value: 6
+    unit: "months from date debt became due"
+    effective_from: null
+    effective_until: null
+    effect: "No legal proceedings may be instituted against an organ of state unless the creditor has given the organ written notice of the intention to institute proceedings within 6 months from the date the debt became due. Failure to give notice within 6 months may result in the claim being time-barred."
+
+  notice_content_act40:
+    ref: "Act 40 of 2002 s3(2)"
+    value: "Notice must set out facts giving rise to debt, nature and extent of debt"
+    effective_from: null
+    effective_until: null
+    effect: "The written notice must contain the facts giving rise to the debt and the nature and extent of the debt or claim."
+
+  waiting_period_after_notice:
+    ref: "Act 40 of 2002 s3(4)"
+    value: 30
+    unit: "days after notice before summons may be served"
+    effective_from: null
+    effective_until: null
+    effect: "No summons may be served on an organ of state within 30 days after service of the notice of intended legal proceedings."
