@@ -1,0 +1,40 @@
+statute: "Criminal Procedure Act 51 of 1977"
+authority: "Department of Justice and Constitutional Development"
+last_confirmed: "2026-05-20"
+source_url: "https://www.saflii.org/za/legis/consol_act/cpa1977188/"
+
+sections:
+  bail_application:
+    ref: "CPA s60"
+    value: "An accused may apply for bail at any stage of proceedings. Court must consider interests of justice."
+    effective_from: null
+    effective_until: null
+    effect: "Bail applications may be brought at any stage. The court weighs flight risk, interference with evidence/witnesses, danger to community, and the interests of justice. Schedule 5 and 6 offences have reverse onus."
+
+  plea_procedure:
+    ref: "CPA s112"
+    value: "Accused pleads to charge. Court questions accused to confirm understanding and voluntariness."
+    effective_from: null
+    effective_until: null
+    effect: "On a guilty plea, the court must question the accused to satisfy itself the accused understands the charge and the plea is voluntary. Court may refuse to accept a guilty plea."
+
+  right_to_legal_representation:
+    ref: "Constitution s35(3)(f), CPA"
+    value: "Every accused has right to legal representation; if substantial injustice would result, to state-funded representation"
+    effective_from: null
+    effective_until: null
+    effect: "Constitutional right to legal representation in criminal proceedings. If accused cannot afford representation and substantial injustice would result, the State must provide it (via Legal Aid SA)."
+
+  appeal_magistrate_court:
+    ref: "CPA s309"
+    value: "Appeal from Magistrate's Court lies to High Court on questions of fact and law"
+    effective_from: null
+    effective_until: null
+    effect: "An appeal from a Magistrate's Court conviction or sentence lies to the High Court. Notice of appeal must be filed within 14 days of sentence."
+
+  suspended_sentence:
+    ref: "CPA s297"
+    value: "Court may suspend sentence wholly or partly on conditions for up to 5 years"
+    effective_from: null
+    effective_until: null
+    effect: "The court may suspend all or part of a sentence on conditions. If conditions are breached during the suspension period (up to 5 years), the suspended portion may be put into operation."

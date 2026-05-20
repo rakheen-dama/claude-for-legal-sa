@@ -1,0 +1,40 @@
+statute: "Maintenance Act 99 of 1998"
+authority: "Department of Justice and Constitutional Development"
+last_confirmed: "2026-05-20"
+source_url: "https://www.gov.za/documents/maintenance-act"
+
+sections:
+  duty_to_maintain:
+    ref: "Maintenance Act s2"
+    value: "Parent, person who assumed obligation, or any other person with legal duty to maintain another"
+    effective_from: null
+    effective_until: null
+    effect: "A duty of support exists between parents and children (regardless of marital status of parents), and between any persons where a legal duty to maintain exists."
+
+  maintenance_complaint:
+    ref: "Maintenance Act s6"
+    value: "Any person having interest may lodge complaint with maintenance officer at Magistrate's Court"
+    effective_from: null
+    effective_until: null
+    effect: "A maintenance complaint is lodged with the maintenance officer at the Magistrate's Court. The officer must investigate and attempt mediation before referring to court."
+
+  maintenance_investigation:
+    ref: "Maintenance Act s6(1)(a)-(c)"
+    value: "Maintenance officer must investigate, obtain information from respondent, and if matter cannot be settled, refer to court"
+    effective_from: null
+    effective_until: null
+    effect: "The maintenance officer investigates the complaint, obtains financial information from the respondent, attempts mediation, and refers unsettled matters to court for a hearing."
+
+  maintenance_order:
+    ref: "Maintenance Act s16"
+    value: "Court may make maintenance order after considering needs, means, standard of living, and earning capacity"
+    effective_from: null
+    effective_until: null
+    effect: "The court considers the needs of the dependant, the means and obligations of both parties, the standard of living, and earning capacity in making a maintenance order."
+
+  enforcement:
+    ref: "Maintenance Act s31"
+    value: "Failure to comply with maintenance order is a criminal offence — fine or imprisonment up to 1 year"
+    effective_from: null
+    effective_until: null
+    effect: "Non-compliance with a maintenance order is a criminal offence. The defaulter may be fined or imprisoned for up to one year, or both."

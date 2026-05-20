@@ -1,0 +1,77 @@
+statute: "Domestic Violence Act 116 of 1998"
+authority: "Department of Justice and Constitutional Development"
+last_confirmed: "2026-05-20"
+source_url: "https://www.saflii.org/za/legis/consol_act/dva1998178/"
+
+sections:
+  protection_order_application:
+    ref: "DVA s4(1)"
+    value: "Any complainant may apply to the court for a protection order in the prescribed manner"
+    effective_from: null
+    effective_until: null
+    effect: "Any person in a domestic relationship who is or has been subjected to domestic violence may apply for a protection order at the Magistrate's Court."
+
+  application_on_behalf:
+    ref: "DVA s4(3)"
+    value: "Application may be brought by any person with material interest in wellbeing of complainant — counsellor, health provider, SAPS member, social worker, teacher"
+    effective_from: null
+    effective_until: null
+    effect: "A protection order application may be brought on behalf of the complainant by another person with material interest, with written consent (consent not required for minors, mentally retarded, unconscious, or unable persons)."
+
+  urgent_application:
+    ref: "DVA s4(5)"
+    value: "Application may be brought outside ordinary court hours or on non-court days if undue hardship would result from delay"
+    effective_from: null
+    effective_until: null
+    effect: "Urgent DVA applications can be filed after hours or on weekends/holidays. The court must deal with the application immediately if satisfied the complainant may suffer undue hardship from delay."
+
+  interim_protection_order:
+    ref: "DVA s5(2)"
+    value: "Court must issue interim order if prima facie evidence of DV and undue hardship without immediate order"
+    effective_from: null
+    effective_until: null
+    effect: "If the court is satisfied there is prima facie evidence of domestic violence and the complainant may suffer undue hardship without immediate protection, it must issue an interim protection order without notice to the respondent."
+
+  return_date_minimum:
+    ref: "DVA s5(5)"
+    value: 10
+    unit: "days minimum after service"
+    effective_from: null
+    effective_until: null
+    effect: "The return date on an interim protection order may not be less than 10 days after service on the respondent. The respondent may anticipate the return date on 24 hours' written notice."
+
+  saps_service_interim:
+    ref: "DVA Regulations"
+    value: 24
+    unit: "hours for SAPS to serve interim order"
+    effective_from: null
+    effective_until: null
+    effect: "SAPS must serve a domestic violence interim protection order within 24 hours of issue."
+
+  final_protection_order:
+    ref: "DVA s6(1)"
+    value: "Court must issue final order if respondent does not appear on return date, proper service proved, and prima facie evidence exists"
+    effective_from: null
+    effective_until: null
+    effect: "If the respondent fails to appear and the court is satisfied of proper service and prima facie evidence of DV, the court must issue a final protection order."
+
+  mandatory_reporting:
+    ref: "DVA s2B"
+    value: "Adult who knows or reasonably believes child, older person, or disabled person is experiencing DV must report to social worker or SAPS"
+    effective_from: null
+    effective_until: null
+    effect: "Mandatory reporting obligation for domestic violence against children, older persons, or persons with disability. Must report to a social worker or SAPS as soon as possible."
+
+  warrant_of_arrest:
+    ref: "DVA s8"
+    value: "Court must issue suspended warrant of arrest when issuing protection order"
+    effective_from: null
+    effective_until: null
+    effect: "A suspended warrant of arrest is issued simultaneously with the protection order. Breach of the order requires SAPS to arrest the respondent immediately."
+
+  jurisdiction:
+    ref: "DVA s12"
+    value: "Magistrate's Court in area where complainant or respondent resides, works, studies, or where DV occurred"
+    effective_from: null
+    effective_until: null
+    effect: "Application may be made at the Magistrate's Court covering the area where complainant or respondent resides, works, studies, carries on business, or where the DV took place."

@@ -1,0 +1,36 @@
+statute: "Small Claims Courts Act 61 of 1984"
+authority: "Department of Justice and Constitutional Development"
+last_confirmed: "2026-05-20"
+source_url: "https://www.saflii.org/za/legis/consol_act/scca1984214/"
+
+sections:
+  monetary_jurisdiction:
+    ref: "Small Claims Courts Act s15, GG 42282 GoN 296"
+    value: 20000
+    currency: "ZAR"
+    unit: "maximum claim amount"
+    effective_from: "2019-04-01"
+    effective_until: null
+    effect: "Small Claims Courts may hear claims not exceeding R20,000. Previous limit was R15,000."
+    gazette_date: "2019-03-05"
+
+  no_legal_representation:
+    ref: "Small Claims Courts Act s7"
+    value: "No party to proceedings may be assisted or represented by any person acting for or in expectation of any fee, commission or reward"
+    effective_from: null
+    effective_until: null
+    effect: "Legal representation is not permitted in Small Claims Court. Clinics may advise and prepare documents but candidates may not appear on behalf of the client."
+
+  natural_persons_only:
+    ref: "Small Claims Courts Act s14(2)"
+    value: "No action may be instituted against the State in a court"
+    effective_from: null
+    effective_until: null
+    effect: "Only natural persons may bring claims. Companies, close corporations, trusts, and the State are excluded. Claims against the State are not permitted."
+
+  excluded_matters:
+    ref: "Small Claims Courts Act s15"
+    value: "Excluded: divorce, wills, mental capacity, specific performance without damages alternative, defamation, malicious prosecution, wrongful arrest, seduction, breach of promise"
+    effective_from: null
+    effective_until: null
+    effect: "Certain categories of claims are excluded regardless of monetary value, including family law, defamation, and specific performance matters."

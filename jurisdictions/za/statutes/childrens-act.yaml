@@ -1,0 +1,54 @@
+statute: "Children's Act 38 of 2005"
+authority: "Department of Social Development"
+last_confirmed: "2026-05-20"
+source_url: "https://www.saflii.org/za/legis/consol_act/ca2005104/"
+
+sections:
+  mandatory_reporting:
+    ref: "Children's Act s110(1)"
+    value: "Listed professionals who on reasonable grounds conclude a child has been physically abused, sexually abused, or deliberately neglected must report to DCPO, provincial DSD, or police"
+    effective_from: "2010-04-01"
+    effective_until: null
+    effect: "Legal practitioners are mandatory reporters. Must report via Form 22 to a designated child protection organisation, provincial DSD, or SAPS. Good faith reporting = no civil liability. Failure to report = criminal offence, up to 10 years imprisonment."
+
+  mandatory_reporting_sexual_offences:
+    ref: "Sexual Offences Act s54"
+    value: "Any person who knows a sexual offence was committed against a child must report to police immediately"
+    effective_from: null
+    effective_until: null
+    effect: "All persons (not just listed professionals) must immediately report known sexual offences against children to SAPS. Failure = criminal offence."
+
+  parental_responsibilities:
+    ref: "Children's Act s18"
+    value: "Parental responsibilities and rights include care, contact, guardianship, and maintenance"
+    effective_from: null
+    effective_until: null
+    effect: "Every parent has responsibilities and rights comprising care of the child, maintaining contact, acting as guardian, and contributing to maintenance."
+
+  unmarried_father_rights:
+    ref: "Children's Act s21"
+    value: "Biological father not married to mother acquires parental rights if he consents to being identified, contributes to upbringing, or contributes to expenses"
+    effective_from: null
+    effective_until: null
+    effect: "An unmarried biological father acquires full parental responsibilities and rights if he was living with the mother at birth, consented to identification as father, contributed to upbringing for a reasonable period, or contributed to child-related expenses."
+
+  childrens_court:
+    ref: "Children's Act s45"
+    value: "Every Magistrate's Court is a children's court for its area of jurisdiction"
+    effective_from: null
+    effective_until: null
+    effect: "Every Magistrate's Court has jurisdiction as a children's court. Matters involving care, contact, guardianship, and child protection are heard in the children's court."
+
+  child_in_need_of_care:
+    ref: "Children's Act s150"
+    value: "A child is in need of care and protection if abandoned, neglected, abused, exploited, living in circumstances that may seriously harm physical/mental/social well-being"
+    effective_from: null
+    effective_until: null
+    effect: "Triggers investigation and possible removal of child. Social workers must investigate and, if confirmed, bring the matter to the children's court."
+
+  best_interests_standard:
+    ref: "Children's Act s7"
+    value: "In all matters concerning the care, protection, and well-being of a child, the child's best interests are of paramount importance"
+    effective_from: null
+    effective_until: null
+    effect: "The best interests of the child standard is the paramount consideration in all decisions. Section 7 lists the factors to consider."
