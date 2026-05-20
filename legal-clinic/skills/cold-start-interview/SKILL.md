@@ -164,6 +164,101 @@ You don't need all of these. Core features — intake, draft, client letter, res
 
 Write Part 0 answers to the plugin config under `## Who's using this` and `## Available integrations`. If a populated CLAUDE.md exists at the old cache path `~/.claude/plugins/cache/claude-for-legal/legal-clinic/*/CLAUDE.md` but not here, copy it forward first.
 
+### Jurisdiction check — South African overlay
+
+After writing the Part 0 sections, check the company profile for jurisdiction:
+
+- Read `~/.claude/plugins/config/claude-for-legal/company-profile.md` → `Primary jurisdiction`
+- If the primary jurisdiction is **South Africa** (or ZA, or the user's clinic is SA-based based on the company profile answers):
+
+**Fork to the SA interview path.** The rest of this interview uses SA-specific questions. The output writes to the ZA practice profile template at `${CLAUDE_PLUGIN_ROOT}/../../../jurisdictions/za/legal-clinic/practice-profile-template.md` instead of the US template.
+
+If the primary jurisdiction is NOT South Africa, continue with the US interview path below.
+
+---
+
+#### ZA-1: LPC accreditation status (1 min)
+
+"Is this clinic accredited by the Legal Practice Council under Rule 36?"
+
+Options: Yes / In progress / No (university clinic not requiring accreditation)
+
+If accredited: record status, note candidates can count clinic time toward PVTC.
+If not: flag that candidates' time may not count toward PVTC. Note this in the practice profile.
+
+#### ZA-2: Supervising legal practitioner(s) (2 min)
+
+"Who are the supervising legal practitioners?"
+
+For each supervisor, capture:
+- Full name
+- LPC enrollment number
+- Date of admission
+- Attorney or advocate?
+- Current number of candidate legal practitioners under supervision (max 6 per LPC Rule 37)
+
+Flag if any supervisor is at or above 6 candidates.
+
+#### ZA-3: Province and courts (1 min)
+
+"Which province is the clinic in? Which Magistrate's Court(s) and High Court division does the clinic primarily appear in?"
+
+Capture: Province, primary Magistrate's Court(s) (district name), High Court division, any specialist courts used (Small Claims, Equality Court, Children's Court).
+
+#### ZA-4: Practice areas (1 min)
+
+"Which practice areas does the clinic handle?"
+
+Options (multi-select): Family & DVA / Housing & eviction / Consumer & debt / Criminal & delict / Refugee & migration / Labour / General civil / Other
+
+For each selected area, load the corresponding section in the practice-area templates.
+
+#### ZA-5: Supervision model (2 min)
+
+"Under LPA s34(8), all clinic work must be under the direct personal supervision of an admitted attorney. How do you want to operationalise that supervision within the plugin?"
+
+Present the three models (formal review queue / configurable flags / lighter-touch) with SA-specific framing. If formal or configurable: capture trigger conditions.
+
+#### ZA-6: Mandatory reporting acknowledgment (1 min)
+
+Only if practice areas include Family & DVA, Criminal, or any area likely to involve children:
+
+"You and your candidates have mandatory reporting obligations under Children's Act s110 and DVA s2B. The plugin will flag potential triggers during intake and case status. Is this understood and accepted?"
+
+Capture acknowledgment. This is a non-overridable gate — the plugin flags regardless of response, but the acknowledgment is recorded.
+
+#### ZA-7: Languages (1 min)
+
+"Which of South Africa's 11 official languages can the clinic serve? Do you have interpreter access for others?"
+
+Capture: list of languages served directly + interpreter availability.
+
+#### ZA-8: Legal Aid SA interface (1 min)
+
+"Does the clinic have a relationship with Legal Aid South Africa?"
+
+Options: Active referral partnership / Informal referrals / No relationship
+If active or informal: "Which justice centre do you refer to?"
+
+#### ZA-9: Seed documents (3 min)
+
+"Upload your clinic's key documents. Target: 10-20 items. SA-specific documents I'd especially like to see:
+- Clinic handbook or operating manual
+- Standard intake forms
+- DVA Form 6 (J480) blank template
+- Magistrates' Courts Rules or practice directives for your division
+- Common template letters (demand letters, court correspondence)
+- Legal Aid SA means test guide
+- Example case file (scrubbed)"
+
+#### ZA-10: Nice-to-haves (if time)
+
+If the supervisor has time, ask about: CaseLines/e-filing, academic calendar, plain-language preferences, Small Claims Court approach, community service hours tracking.
+
+---
+
+Write the completed answers to the ZA practice profile template. Confirm with the supervisor before finalising.
+
 ### Opening
 
 > This is the one-time setup for your clinic. Ten to fifteen minutes. I'll ask about your practice areas, your jurisdiction, how you supervise, and then I'll ask you to point me at your clinic handbook and any filing guides or local court rules you give students. Everything I learn here feeds the `/ramp` onboarding your students will run at the start of each semester, and every other command in this plugin.
