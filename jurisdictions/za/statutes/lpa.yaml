@@ -1,0 +1,52 @@
+statute: "Legal Practice Act 28 of 2014"
+authority: "Department of Justice and Constitutional Development"
+last_confirmed: "2026-05-20"
+source_url: "https://www.saflii.org/za/legis/consol_act/lpa2014120.pdf"
+
+sections:
+  law_clinic_definition:
+    ref: "LPA s34(8)"
+    value: "A law clinic attached to a university faculty of law that renders legal services under supervision of attorneys, accessible to the public, free of charge except disbursements"
+    effective_from: null
+    effective_until: null
+    effect: "Law clinics must be attached to a university, render services under attorney supervision, be publicly accessible, and provide services free of charge (may recover disbursements only)."
+
+  law_clinic_supervision:
+    ref: "LPA s34(8)(b)(i)"
+    value: "Services rendered by or under the supervision of attorneys"
+    effective_from: null
+    effective_until: null
+    effect: "All legal services rendered by a law clinic must be rendered by or under the direct supervision of admitted attorneys."
+
+  community_service_practitioners:
+    ref: "LPA s29, Regulation 4B"
+    value: 40
+    unit: "hours per calendar year"
+    effective_from: "2024-01-01"
+    effective_until: null
+    effect: "Practising legal practitioners must complete 40 hours of community service or pro bono legal services per calendar year to maintain good standing with the LPC."
+    gazette_date: "2023-08-11"
+
+  community_service_candidates:
+    ref: "LPA s29, Regulation 4A"
+    value: 8
+    unit: "hours per calendar year"
+    effective_from: "2024-01-01"
+    effective_until: null
+    effect: "Candidate legal practitioners must complete 8 hours of community service per calendar year as a component of practical vocational training. Must be supervised by principal."
+    gazette_date: "2023-08-11"
+
+  admission_requirements:
+    ref: "LPA s26(1)"
+    value: "LLB degree or recognised equivalent, practical vocational training, competency-based examination"
+    effective_from: null
+    effective_until: null
+    effect: "A person must hold an LLB (or recognised equivalent), complete practical vocational training as a candidate legal practitioner, and pass the LPC competency examination before admission."
+
+  practical_vocational_training_attorney:
+    ref: "LPA s26(1)(c), Regulation 6(1)"
+    value: 24
+    unit: "months (or 12 months with 400hr coursework)"
+    effective_from: null
+    effective_until: null
+    effect: "Candidate attorneys must serve under a PVTC for 24 uninterrupted months (with 150hr coursework during or within 12 months after), or 12 months if 400hr coursework completed beforehand."

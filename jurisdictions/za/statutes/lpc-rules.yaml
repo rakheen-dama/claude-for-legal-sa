@@ -1,0 +1,81 @@
+statute: "South African Legal Practice Council Rules (GG 41781, 20 July 2018) and Code of Conduct (GG 42127, 14 December 2018)"
+authority: "South African Legal Practice Council"
+last_confirmed: "2026-05-20"
+source_url: "https://www.lssa.org.za/wp-content/uploads/2020/01/LPC-Rules-9-July-2018.pdf"
+
+sections:
+  law_clinic_establishment:
+    ref: "LPC Rule 36.1"
+    value: "Council may grant annual recognition to a law clinic if it complies with LPA s34(8)(a), is properly constituted, organised and controlled"
+    effective_from: null
+    effective_until: null
+    effect: "Law clinics require annual LPC recognition. Must comply with LPA s34(8)(a), be properly constituted and organised to the Council's satisfaction."
+
+  candidate_engagement_supervision:
+    ref: "LPC Rule 37.1.1"
+    value: "Candidate must be under direct personal supervision of the engaging legal practitioner or another legal practitioner who is a member of the professional staff"
+    effective_from: null
+    effective_until: null
+    effect: "Candidates at law clinics must work under direct personal supervision of the supervising legal practitioner or another professional staff attorney."
+
+  candidate_max_per_supervisor:
+    ref: "LPC Rule 37 proviso"
+    value: 6
+    unit: "candidate legal practitioners per supervisor"
+    effective_from: null
+    effective_until: null
+    effect: "No legal practitioner at a law clinic may engage more than six candidate legal practitioners at any one time."
+
+  clinic_operating_hours:
+    ref: "LPC Rule 37.1.2"
+    value: 11
+    unit: "months per year minimum"
+    effective_from: null
+    effective_until: null
+    effect: "A law clinic engaging candidates must be open for business during normal business hours for not less than eleven months in any year."
+
+  clinic_practice_breadth:
+    ref: "LPC Rule 37.1.5"
+    value: "Reasonably wide range of work to give candidate exposure to problems a newly qualified practitioner would expect to encounter"
+    effective_from: null
+    effective_until: null
+    effect: "The clinic must handle a reasonably wide range of work. The Council may direct the clinic to require candidates to attend approved training courses in areas not adequately covered."
+
+  annual_fee_practitioner:
+    ref: "LPC Rule 4.1.1"
+    value: 2500
+    currency: "ZAR"
+    unit: "per year"
+    effective_from: null
+    effective_until: null
+    effect: "Practising legal practitioners pay R2,500 annual fee to the Council. First-year practitioners pay R1,500."
+
+  annual_fee_first_year:
+    ref: "LPC Rule 4.1.1 proviso"
+    value: 1500
+    currency: "ZAR"
+    unit: "per year"
+    effective_from: null
+    effective_until: null
+    effect: "Legal practitioners in their first year of practice pay a reduced annual fee of R1,500."
+
+  duty_to_report_dishonest_conduct:
+    ref: "LPC Rule 54.36"
+    value: "Every legal practitioner is required to report dishonest or irregular conduct relating to trust money handling"
+    effective_from: null
+    effective_until: null
+    effect: "Legal practitioners must report to the Council any dishonest or irregular conduct by another trust account practitioner in relation to handling or accounting for trust money."
+
+  code_competence_timeliness:
+    ref: "LPC Code of Conduct clause 3.11"
+    value: "Legal practitioner must use best efforts to carry out work in a competent and timely manner"
+    effective_from: null
+    effective_until: null
+    effect: "Failure to attend to a client's matter competently and timeously is professional misconduct. The most common basis for LPC disciplinary complaints."
+
+  code_no_disrepute:
+    ref: "LPC Code of Conduct clause 3.15"
+    value: "Legal practitioner must not bring the legal profession into disrepute"
+    effective_from: null
+    effective_until: null
+    effect: "Conduct that brings the profession into disrepute — including allowing claims to prescribe — is a disciplinary offence."

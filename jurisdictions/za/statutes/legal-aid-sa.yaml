@@ -1,0 +1,41 @@
+statute: "Legal Aid South Africa Act 39 of 2014"
+authority: "Legal Aid South Africa"
+last_confirmed: "2026-05-20"
+source_url: "https://legal-aid.co.za/wp-content/uploads/2023/10/Legal-Aid-SA-Act-with-effect-from-02-August-2017.pdf"
+
+sections:
+  objects:
+    ref: "Legal Aid SA Act s3"
+    value: "Render or make available legal aid and legal advice; provide legal representation at state expense; provide education and information concerning legal rights"
+    effective_from: "2015-03-01"
+    effective_until: null
+    effect: "Legal Aid South Africa exists to render legal aid, provide state-funded legal representation, and educate people about legal rights."
+
+  client_privilege_protection:
+    ref: "Legal Aid SA Act s19"
+    value: "Information and documents shared with Legal Aid SA for quality assessment remain privileged against other parties as attorney-client information"
+    effective_from: "2015-03-01"
+    effective_until: null
+    effect: "When a private practitioner instructed by Legal Aid SA shares file documents for quality assessment, those documents remain privileged against third parties."
+
+  court_directed_representation:
+    ref: "Legal Aid SA Act s22"
+    value: "Court may direct legal representation at state expense in criminal proceedings after considering personal circumstances, nature and gravity of charge, available representation"
+    effective_from: "2015-03-01"
+    effective_until: null
+    effect: "A criminal court may direct Legal Aid SA to provide representation at state expense, considering the accused's circumstances, charge severity, and existing representation."
+
+  civil_legal_aid_criteria:
+    ref: "Legal Aid SA Regulations reg 9"
+    value: "Legal Aid SA may grant civil legal aid if good prospects of success, good prospects of enforcement, and resources available"
+    effective_from: "2017-07-26"
+    effective_until: null
+    effect: "Civil legal aid requires Legal Aid SA to be satisfied the matter has merit, an enforceable outcome is likely, and resources exist. Based on written merit report."
+
+  means_test:
+    ref: "Legal Aid SA Regulations"
+    value: "Household income and asset thresholds determine eligibility"
+    effective_from: "2017-07-26"
+    effective_until: null
+    effect: "Legal aid applicants must meet a means test based on household income and assets. Thresholds are updated periodically by regulation."
+    note: "Exact thresholds updated periodically — verify against current Legal Aid Manual"
