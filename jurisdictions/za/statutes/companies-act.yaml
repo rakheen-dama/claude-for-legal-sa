@@ -1,0 +1,224 @@
+statute: "Companies Act 71 of 2008"
+authority: "Companies and Intellectual Property Commission"
+last_confirmed: "2026-05-21"
+source_url: "https://www.gov.za/documents/companies-act"
+
+sections:
+  solvency_and_liquidity_test:
+    ref: "Companies Act s4"
+    value: "both limbs: assets fairly valued exceed liabilities, and company can pay debts as they become due in ordinary course for next 12 months"
+    effective_from: "2011-05-01"
+    effective_until: null
+    effect: "A company satisfies the solvency and liquidity test if, considering all reasonably foreseeable financial circumstances, its assets fairly valued equal or exceed its liabilities fairly valued, and it appears that it will be able to pay its debts as they become due in the ordinary course of business for the 12 months following the date of the test."
+
+  annual_returns_deadline:
+    ref: "Companies Act s33, Reg 30"
+    value: 30
+    unit: "business days after anniversary date"
+    effective_from: "2011-05-01"
+    effective_until: null
+    effect: "Every company must file an annual return with the CIPC within 30 business days after the anniversary of its date of incorporation. Failure to file triggers penalties and may lead to deregistration."
+
+  annual_return_fee_tier_1:
+    ref: "Companies Act Reg 30"
+    value: 100
+    currency: ZAR
+    unit: "per annum, turnover < R1m, within 30 BD"
+    effective_from: "2011-05-01"
+    effective_until: null
+    effect: "Companies with annual turnover below R1 million must pay an annual return filing fee of R100 if the return is filed within the 30 business day deadline."
+
+  annual_return_fee_tier_2:
+    ref: "Companies Act Reg 30"
+    value: 450
+    currency: ZAR
+    unit: "per annum, turnover R1m–R10m, within 30 BD"
+    effective_from: "2011-05-01"
+    effective_until: null
+    effect: "Companies with annual turnover between R1 million and R10 million must pay an annual return filing fee of R450 if the return is filed within the 30 business day deadline."
+
+  annual_return_fee_tier_3:
+    ref: "Companies Act Reg 30"
+    value: 2000
+    currency: ZAR
+    unit: "per annum, turnover R10m–R25m, within 30 BD"
+    effective_from: "2011-05-01"
+    effective_until: null
+    effect: "Companies with annual turnover between R10 million and R25 million must pay an annual return filing fee of R2,000 if the return is filed within the 30 business day deadline."
+
+  annual_return_fee_tier_4:
+    ref: "Companies Act Reg 30"
+    value: 3000
+    currency: ZAR
+    unit: "per annum, turnover R25m+, within 30 BD"
+    effective_from: "2011-05-01"
+    effective_until: null
+    effect: "Companies with annual turnover of R25 million or above must pay an annual return filing fee of R3,000 if the return is filed within the 30 business day deadline."
+
+  deregistration_trigger:
+    ref: "Companies Act s82(3)"
+    value: "2 successive years non-filing of annual returns"
+    effective_from: "2011-05-01"
+    effective_until: null
+    effect: "The CIPC may deregister a company if it fails to file annual returns for 2 successive years. Deregistration results in the company losing its legal personality and all its assets vesting in the state."
+
+  beneficial_ownership_declaration:
+    ref: "Companies Act s56 read with General Laws Amendment Act 22 of 2022"
+    value: "mandatory with annual returns; within 10 business days of incorporation or change"
+    effective_from: "2024-07-01"
+    effective_until: null
+    effect: "Every company must file a beneficial ownership declaration with the CIPC as part of its annual return, and within 10 business days of incorporation or any change in beneficial ownership. The CIPC maintains a beneficial ownership register that is accessible to competent authorities."
+    note: "Hard stop: cannot file annual return without BO declaration since July 2024"
+
+  distributions_board_authority:
+    ref: "Companies Act s46"
+    value: "board must apply s4 solvency and liquidity test and authorise by resolution"
+    effective_from: "2011-05-01"
+    effective_until: null
+    effect: "A company may not make any distribution unless the board has, by resolution, authorised the distribution and the board is satisfied that the company will satisfy the solvency and liquidity test in section 4 immediately after completing the proposed distribution."
+
+  board_authority:
+    ref: "Companies Act s66(1)"
+    value: "business and affairs of company managed by or under direction of board"
+    effective_from: "2011-05-01"
+    effective_until: null
+    effect: "The business and affairs of a company must be managed by or under the direction of its board, which has the authority to exercise all of the powers and perform any of the functions of the company except to the extent that the Act or the company's MOI provides otherwise."
+
+  board_meetings:
+    ref: "Companies Act s73"
+    value: "directors may determine time and place; quorum is majority of directors unless MOI provides otherwise"
+    effective_from: "2011-05-01"
+    effective_until: null
+    effect: "The directors of a company may determine the time and place for any meeting of the board. A majority of directors constitutes a quorum for a board meeting unless the company's MOI provides otherwise. Each director has one vote and a majority of votes cast is sufficient to approve a matter."
+
+  directors_acting_without_meeting:
+    ref: "Companies Act s74"
+    value: "round-robin written resolution signed by majority of directors (or number specified in MOI)"
+    effective_from: "2011-05-01"
+    effective_until: null
+    effect: "A resolution that could be voted on at a board meeting may instead be submitted for consideration to the directors by written consent, and adopted by written consent of a majority of the directors or the number specified in the company's MOI. The resolution is effective as of the date on which the last required director signs."
+
+  shareholders_acting_without_meeting:
+    ref: "Companies Act s60"
+    value: "requires sufficient holders to constitute quorum AND meet resolution threshold; MOI may restrict"
+    effective_from: "2011-05-01"
+    effective_until: null
+    effect: "A resolution that could be voted on at a shareholders meeting may instead be submitted for consideration to shareholders by written consent, provided sufficient shareholders to constitute a quorum have signed and the resolution receives sufficient votes to meet the applicable threshold. The company's MOI may restrict or prohibit the adoption of resolutions by written consent."
+
+  personal_financial_interest_declaration:
+    ref: "Companies Act s75"
+    value: "director must declare personal financial interest at each meeting; interested director may not vote; failure to declare invalidates resolution"
+    effective_from: "2011-05-01"
+    effective_until: null
+    effect: "A director who has a personal financial interest in respect of a matter to be considered at a meeting of the board must disclose the interest and its general nature before the matter is considered, and must not participate in the discussion or vote on the matter. A decision by the board that was materially affected by the failure of a director to make disclosure is voidable at the instance of the company."
+
+  directors_conduct:
+    ref: "Companies Act s76(3)"
+    value: "must exercise powers in good faith, for proper purpose, in best interests of company, with care skill and diligence reasonably expected"
+    effective_from: "2011-05-01"
+    effective_until: null
+    effect: "A director must exercise the powers and perform the functions of director in good faith and for a proper purpose, in the best interests of the company, and with the degree of care, skill and diligence that may reasonably be expected of a person carrying out the same functions and having the general knowledge, skill and experience of that director."
+
+  business_judgment_rule:
+    ref: "Companies Act s76(4)"
+    value: "director satisfies s76(3) obligations if: took reasonably diligent steps to become informed, had no material personal financial interest (or complied with s75), and had rational basis for believing decision was in best interests of company"
+    effective_from: "2011-05-01"
+    effective_until: null
+    effect: "A director is deemed to have satisfied the obligations in section 76(3) with respect to a particular matter if the director took reasonably diligent steps to become informed about the matter, had no material personal financial interest in the matter or complied with the disclosure requirements of section 75, and had a rational basis for believing, and did believe, that the decision was in the best interests of the company."
+
+  director_liability:
+    ref: "Companies Act s77(2)"
+    value: "personal liability for breach of fiduciary duty or other duty under s75/s76; liability is joint and several with any other person liable for same act"
+    effective_from: "2011-05-01"
+    effective_until: null
+    effect: "A director is liable for any loss, damages or costs sustained by the company as a direct or indirect consequence of the director having acted in the name of the company despite knowing that he or she lacked authority, having acquiesced in the carrying on of the company's business in a reckless or fraudulent manner, or having been a party to an act or omission by the company despite knowing that the act or omission was calculated to defraud a creditor, employee or holder of the company's securities. Liability is joint and several."
+
+  audit_committee:
+    ref: "Companies Act s94"
+    value: "mandatory for public companies, state-owned companies, and companies with public interest score above prescribed threshold; minimum 3 members, all non-executive, majority independent"
+    effective_from: "2011-05-01"
+    effective_until: null
+    effect: "A public company, state-owned company, or any other company that has a public interest score above the threshold prescribed by the Minister must appoint an audit committee comprising at least 3 members, all of whom must be non-executive directors and the majority of whom must be independent. The audit committee must be elected by shareholders at each annual general meeting."
+
+  social_ethics_committee:
+    ref: "Companies Act s72(4), Reg 43"
+    value: "mandatory for listed public companies, state-owned companies, and companies with public interest score of 500 or more in any 2 of previous 5 years"
+    effective_from: "2011-05-01"
+    effective_until: null
+    effect: "A listed public company, state-owned company, or any other company that had a public interest score of 500 or more points in any 2 of the preceding 5 years must appoint a social and ethics committee. The committee monitors the company's activities relating to social and economic development, good corporate citizenship, the environment, health and safety, consumer relationships, and labour and employment."
+    note: "2024 amendment (effective 27 Dec 2024): majority of members must be non-executive directors"
+
+  disposal_of_assets_threshold:
+    ref: "Companies Act s112"
+    value: "more than 50% of gross assets fairly valued irrespective of liabilities, or more than 50% of value of entire undertaking fairly valued"
+    effective_from: "2011-05-01"
+    effective_until: null
+    effect: "A company may not dispose of all or the greater part of its assets or undertaking except pursuant to a special resolution of its shareholders. The greater part means more than 50% of the gross assets fairly valued irrespective of liabilities, or more than 50% of the value of the entire undertaking of the company fairly valued."
+
+  amalgamation_or_merger:
+    ref: "Companies Act s113"
+    value: "transaction combining assets and liabilities of 2 or more companies; requires merger agreement, solvency and liquidity test per s4, special resolution per s115"
+    effective_from: "2011-05-01"
+    effective_until: null
+    effect: "Two or more companies may amalgamate or merge by entering into a written agreement setting out the terms of the amalgamation or merger. Each party to the agreement must satisfy the solvency and liquidity test in section 4, and the agreement must be approved by a special resolution of each company's shareholders in accordance with section 115."
+
+  scheme_of_arrangement:
+    ref: "Companies Act s114"
+    value: "arrangement between company and holders of any class of securities; requires special resolution per s115; most common structure for public company acquisitions"
+    effective_from: "2011-05-01"
+    effective_until: null
+    effect: "A company's board may propose and implement any arrangement between the company and holders of any class of its securities. The arrangement must be approved by a special resolution of each class of security holders whose rights will be affected. This is the most common structure used for public company acquisitions in South Africa."
+
+  shareholder_approval_fundamental:
+    ref: "Companies Act s115(2)"
+    value: "special resolution requiring 75% or more of voting rights exercised; quorum of at least 25% of all voting rights entitled to be exercised; acquiring party votes excluded"
+    effective_from: "2011-05-01"
+    effective_until: null
+    effect: "A fundamental transaction under sections 112, 113 or 114 requires approval by a special resolution adopted by at least 75% of the voting rights exercised at a meeting where a quorum of at least 25% of all voting rights entitled to be exercised is present. Voting rights held by the acquiring party and related or inter-related persons are excluded."
+
+  court_review_trigger:
+    ref: "Companies Act s115(3)"
+    value: "if 15% or more of voting rights exercised opposed resolution, any dissenter may within 5 business days require company to seek court approval; or within 10 business days any dissenter may apply to court for leave to review"
+    effective_from: "2011-05-01"
+    effective_until: null
+    effect: "If 15% or more of the voting rights exercised at the meeting were exercised against the special resolution, any person who voted against the resolution may within 5 business days require the company to seek court approval. Alternatively, any dissenting shareholder may within 10 business days apply to a court for leave to apply for a review of the transaction."
+
+  mandatory_offer_threshold:
+    ref: "Companies Act s123"
+    value: 35
+    unit: "percent of voting securities"
+    effective_from: "2011-05-01"
+    effective_until: null
+    effect: "Any person who, alone or together with a related or inter-related person or persons acting in concert, acquires a beneficial interest in sufficient securities of a regulated company such that the person holds 35% or more of the voting rights must make a mandatory offer to all remaining holders."
+    note: "Concert party holdings aggregated; notice to remaining shareholders within 1 business day of crossing threshold"
+
+  squeeze_out_threshold:
+    ref: "Companies Act s124"
+    value: 90
+    unit: "percent acceptance within 4 months of offer opening"
+    effective_from: "2011-05-01"
+    effective_until: null
+    effect: "If, within 4 months after the date of a mandatory or comparable offer, the offeror has received acceptances in respect of 90% or more of the securities to which the offer relates, the offeror may compulsorily acquire the remaining securities within the next 2 months on the same terms as the original offer."
+    note: "Compulsory acquisition within next 2 months; dissenting shareholder may apply to court within 30 business days"
+
+  frustrating_action_restrictions:
+    ref: "Companies Act s126"
+    value: "board must not issue shares, grant options, dispose material assets, enter non-ordinary-course contracts, or make abnormal distributions without TRP and shareholder approval"
+    effective_from: "2011-05-01"
+    effective_until: null
+    effect: "Once an affected transaction has been announced or the board of a regulated company has reason to believe an offer is imminent, the board must not take or permit any action that could effectively frustrate a bona fide offer, including issuing shares, granting options, disposing of material assets, entering into contracts outside the ordinary course of business, or making abnormal distributions, without TRP and shareholder approval."
+
+  appraisal_rights:
+    ref: "Companies Act s164"
+    value: "dissenting shareholders who voted against fundamental transaction may demand payment of fair value for shares; court determines fair value if parties disagree"
+    effective_from: "2011-05-01"
+    effective_until: null
+    effect: "A shareholder who gave notice of objection to a fundamental transaction and voted against the resolution, or who was not present at the meeting and is entitled to vote, may demand that the company pay fair value for all of that shareholder's shares. If the company and the shareholder cannot agree on fair value, a court must determine the fair value."
+
+  regulated_company_private:
+    ref: "Companies Act s118(1)(c)(i)"
+    value: "private company with more than 10% of issued securities transferred between unrelated persons within 24 months before date of affected transaction"
+    effective_from: "2011-05-01"
+    effective_until: null
+    effect: "A private company is a regulated company for the purposes of Chapter 5 (fundamental transactions) if more than 10% of its issued securities of any class have been transferred, other than between related or inter-related persons, within the 24-month period before the date of an affected transaction."
+    note: "Threshold changing under Companies Amendment Act 16 of 2024 to: 10+ shareholders AND Minister-determined financial threshold. Not yet in force as of May 2026."
