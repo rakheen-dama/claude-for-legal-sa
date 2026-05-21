@@ -1,0 +1,80 @@
+statute: "Companies Regulations, 2011"
+authority: "Department of Trade, Industry and Competition"
+last_confirmed: "2026-05-21"
+source_url: "https://www.gov.za/sites/default/files/gcis_document/201409/34239rg9526gon351.pdf"
+
+sections:
+  social_ethics_committee_functions:
+    ref: "Companies Regulations Reg 43(5)"
+    value: "prescribed monitoring functions: social and economic development, good corporate citizenship, environment health and safety, consumer relationships, labour and employment"
+    effective_from: "2011-05-01"
+    effective_until: null
+    effect: "The social and ethics committee must monitor the company's activities with regard to social and economic development (including the UNGC principles, the OECD recommendations, and the ILO protocols), good corporate citizenship, the environment, health and public safety, consumer relationships, and labour and employment, and report to the shareholders at the annual general meeting."
+
+  acting_in_concert:
+    ref: "Companies Regulations Reg 84"
+    value: "persons who pursuant to an agreement or understanding cooperate to obtain or consolidate control of a company; Form TRP 84 disclosure required"
+    effective_from: "2011-05-01"
+    effective_until: null
+    effect: "Persons are acting in concert if, pursuant to an agreement, understanding or commitment, whether formal or informal, they cooperate to obtain or consolidate control of a company or to act jointly in relation to an affected transaction. Parties acting in concert must file Form TRP 84 with the Takeover Regulation Panel."
+
+  mandatory_offer_mechanics:
+    ref: "Companies Regulations Reg 86"
+    value: "offer within 1 business day of crossing 35% threshold; cash consideration at not less than highest price paid in previous 6 months; irrevocable bank guarantee or escrow confirmation required"
+    effective_from: "2011-05-01"
+    effective_until: null
+    effect: "A person who crosses the 35% mandatory offer threshold must make a written offer to all remaining holders within 1 business day. The cash consideration must be not less than the highest price paid by the offeror or any concert party for securities of that class in the 6 months prior to the announcement. An irrevocable unconditional bank guarantee or escrow confirmation must accompany the offer."
+
+  change_of_control_pyramids:
+    ref: "Companies Regulations Reg 85 read with s112"
+    value: "change of control in a pyramid or intermediate pyramid triggers offer to holders of securities of subsidiary regulated company"
+    effective_from: "2011-05-01"
+    effective_until: null
+    effect: "Where a change of control occurs in a company that is a controlling company in a pyramid of companies or an intermediate pyramid, and the effect is to give the acquiring party effective control of a subsidiary that is a regulated company, the acquirer must make a mandatory offer to the holders of securities in the regulated subsidiary."
+
+  independent_expert_opinion:
+    ref: "Companies Regulations Reg 110"
+    value: "independent board must obtain opinion from independent expert on whether offer is fair and reasonable; split opinion required if fair but not reasonable or vice versa"
+    effective_from: "2011-05-01"
+    effective_until: null
+    effect: "The independent board of the offeree regulated company must appoint an independent expert to provide an opinion on whether the offer consideration is fair and reasonable. If the expert considers the offer fair but not reasonable or vice versa, a split opinion must be provided explaining each conclusion separately."
+
+  offer_timetable:
+    ref: "Companies Regulations Reg 102"
+    value: 30
+    unit: "business days minimum offer period from posting"
+    effective_from: "2011-05-01"
+    effective_until: null
+    effect: "A mandatory or comparable offer must remain open for acceptance for a minimum period of 30 business days from the date of posting the offer document to holders of securities."
+
+  break_fee_cap:
+    ref: "TRP Guideline 1/2013"
+    value: 1
+    unit: "percent of total offer value"
+    effective_from: "2013-01-01"
+    effective_until: null
+    effect: "Any break fee arrangement in connection with an affected transaction is limited to 1% of the total offer value. Break fees exceeding this threshold require the prior approval of the Takeover Regulation Panel."
+    note: "Break fees exceeding 1% require TRP approval"
+
+  cash_confirmation:
+    ref: "Companies Regulations Reg 111(4)"
+    value: "cash offer requires irrevocable unconditional guarantee from SA registered bank or irrevocable unconditional confirmation that sufficient cash held in escrow"
+    effective_from: "2011-05-01"
+    effective_until: null
+    effect: "Where a mandatory or comparable offer includes a cash consideration, the offeror must provide either an irrevocable unconditional guarantee from a South African registered bank or an irrevocable unconditional confirmation that sufficient cash is held in escrow to satisfy the full cash consideration payable under the offer."
+
+  trp_filing_fee_listed:
+    ref: "Companies Regulations Reg 122"
+    value: "schedule of fees based on transaction value for listed regulated companies"
+    effective_from: "2011-05-01"
+    effective_until: null
+    effect: "The Takeover Regulation Panel charges filing fees on a sliding scale based on the total value of the affected transaction for listed regulated companies. The fee schedule is prescribed in the regulations and is payable upon filing of the required documents."
+
+  trp_filing_fee_unlisted:
+    ref: "Companies Regulations Reg 122(4)"
+    value: 11400
+    currency: ZAR
+    unit: "additional fee VAT inclusive for unlisted regulated companies"
+    effective_from: "2011-05-01"
+    effective_until: null
+    effect: "For affected transactions involving unlisted regulated companies, an additional fee of R11,400 inclusive of VAT is payable to the Takeover Regulation Panel over and above the standard filing fee."

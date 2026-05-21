@@ -1,0 +1,61 @@
+statute: "Close Corporations Act 69 of 1984"
+authority: "Companies and Intellectual Property Commission"
+last_confirmed: "2026-05-21"
+source_url: "https://www.cipc.co.za/?page_id=2721"
+
+sections:
+  annual_return_deadline:
+    ref: "Close Corporations Act s15A, Reg 16"
+    value: "from first day of anniversary month up to end of month thereafter"
+    effective_from: "2008-09-01"
+    effective_until: null
+    effect: "A close corporation must file its annual return from the first day of the month in which its anniversary of registration falls up to the end of the following month. Failure to file within this window attracts late lodgment penalties."
+    note: "CCs rolled out for annual returns September 2008"
+
+  annual_return_fee_under_50m:
+    ref: "Close Corporations Act Reg 16"
+    value: 100
+    currency: ZAR
+    unit: "turnover under R50m, within 2 months of anniversary"
+    effective_from: "2008-09-01"
+    effective_until: null
+    effect: "Close corporations with annual turnover under R50 million must pay an annual return filing fee of R100 if filed within the 2-month window from the anniversary month."
+    note: "R150 penalty per late lodgment"
+
+  annual_return_fee_over_50m:
+    ref: "Close Corporations Act Reg 16"
+    value: 4000
+    currency: ZAR
+    unit: "turnover R50m and above, within 2 months of anniversary"
+    effective_from: "2008-09-01"
+    effective_until: null
+    effect: "Close corporations with annual turnover of R50 million and above must pay an annual return filing fee of R4,000 if filed within the 2-month window from the anniversary month."
+    note: "R150 penalty per late lodgment"
+
+  conversion_to_company:
+    ref: "Close Corporations Act read with Companies Act"
+    value: "Form CoR18.1; no annual return obligation for current year if conversion received before anniversary month"
+    effective_from: "2011-05-01"
+    effective_until: null
+    effect: "A close corporation may convert to a company by filing Form CoR18.1 with the CIPC. If the conversion application is received before the anniversary month, the close corporation has no annual return obligation for the current year. Conversion does not affect existing contractual obligations or legal proceedings."
+
+  member_governance:
+    ref: "Close Corporations Act s46"
+    value: "members agreement governs internal relations; all members have equal say in management unless agreement provides otherwise; no board of directors"
+    effective_from: "1985-01-01"
+    effective_until: null
+    effect: "The internal relations of a close corporation are governed by an association agreement between its members. In the absence of an agreement to the contrary, all members have an equal say in the management of the corporation. A close corporation does not have a board of directors; management authority vests in its members."
+
+  deregistration:
+    ref: "Close Corporations Act read with Companies Act s82"
+    value: "same deregistration process as companies; CIPC bulk deregistrations apply equally to CCs"
+    effective_from: "2011-05-01"
+    effective_until: null
+    effect: "Close corporations are subject to the same deregistration process as companies under section 82 of the Companies Act. The CIPC may deregister a close corporation that has failed to file annual returns for 2 or more successive years, and bulk deregistration notices apply equally to close corporations."
+
+  beneficial_ownership:
+    ref: "Close Corporations Act read with General Laws Amendment Act 22 of 2022"
+    value: "same beneficial ownership declaration requirements as companies since July 2024"
+    effective_from: "2024-07-01"
+    effective_until: null
+    effect: "Close corporations are subject to the same beneficial ownership declaration requirements as companies since July 2024. A beneficial ownership declaration must be filed with the annual return, and the CIPC will not accept an annual return that does not include a compliant beneficial ownership declaration."
