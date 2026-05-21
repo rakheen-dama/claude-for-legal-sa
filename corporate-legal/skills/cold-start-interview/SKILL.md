@@ -193,6 +193,67 @@ Write `## Who's using this`, `## Available integrations`, and `## Outputs` secti
 
 ---
 
+### Jurisdiction check — South African overlay
+
+After writing the Part 0 sections, check the company profile for jurisdiction:
+
+- Read `~/.claude/plugins/config/claude-for-legal/company-profile.md` → `Primary jurisdiction`
+- If the primary jurisdiction is **South Africa** (or ZA, or the user's company is SA-based based on the company profile answers):
+
+**Fork to the SA interview path.** The SA-specific questions below replace the US-default module questions. The output writes to the ZA practice profile template sourced from `jurisdictions/za/corporate-legal/practice-profile-template.md` instead of the US template.
+
+If the primary jurisdiction is NOT South Africa, continue with the US interview path below (Part 0.5 onwards as written).
+
+---
+
+#### SA Part 0.5: Module selection
+
+Same as US Part 0.5 — the 4 modules (M&A, Board & Secretary, Public Company, Entity Management) apply equally. Proceed with module selection, then branch to SA-specific questions per module below.
+
+#### SA Part 1: Statutory footprint (must-have, ~3 min)
+
+These 8 questions anchor the SA overlay. Ask them in order:
+
+1. **Company type and listing status:** "What type of company is this — Pty Ltd, Ltd, SOC, NPC, or personal liability (Inc)? And is it JSE-listed (Main Board, AltX, or unlisted)?"
+2. **MOI governance:** "Is the MOI standard (Table 1 — CoR15.1A/B) or customised? Any non-standard governance provisions I should know about — entrenched provisions, special voting thresholds, restrictions on board consent in lieu of meetings, pre-emptive rights?"
+3. **B-BBEE status:** "What is the company's current B-BBEE level and applicable sector code? (Level 1-8, non-compliant, or exempt EME/QSE — and generic codes or sector-specific?)"
+4. **Deal size relative to Competition thresholds:** "What's the typical deal size relative to Competition Act merger thresholds? Below lower threshold (small), intermediate (combined R600m+ and target R100m+), or large (combined R6.6b+ and target R190m+)?"
+5. **Cross-border element:** "Do deals typically involve a cross-border element requiring SARB exchange control approval? (Inbound, outbound, both, no, or occasionally?)"
+6. **Social & ethics committee:** "Is a social & ethics committee in place? (Required under s72(4) + Reg 43, exempted, voluntarily established, or not in place?)"
+7. **Entity portfolio:** "What does the entity portfolio look like? How many entities, what types (Pty Ltd, CC, Ltd, NPC, external company), and what's the CIPC compliance status — all current, some overdue, or unknown?"
+8. **Written consent practice:** "How are board resolutions typically passed outside of meetings? (s74 round-robin resolutions routinely, occasionally, not used because MOI restricts, or don't know?)"
+
+If the user seems knowledgeable and time permits, ask the nice-to-have questions:
+
+9. "Is the company TRP-regulated? (For private companies: have 10%+ of shares been transferred between unrelated parties in the last 24 months?)"
+10. "Is a company secretary appointed?"
+11. "Who is the auditor / audit firm?"
+12. "Does the company apply King IV? (Mandatory if JSE-listed/SOC, voluntarily, or not applied?)"
+
+#### SA Part 2: Seed documents
+
+Ask for these (must-have first, then nice-to-have):
+
+**Must-have:**
+- Prior board minutes (1-2 examples) — to learn house format
+- MOI (Memorandum of Incorporation) — governance provisions
+
+**Nice-to-have (based on active modules):**
+- Prior written consent (if Board module active)
+- Prior M&A issues memo (if M&A module active)
+- Diligence request list (if M&A module active)
+- Entity org chart or subsidiary register (if Entity module active)
+- CIPC company search printout (if Entity module active)
+
+#### SA Part 3: Build configuration
+
+- Use the ZA practice profile template at `jurisdictions/za/corporate-legal/practice-profile-template.md`
+- Populate from interview answers + seed documents
+- Write to `~/.claude/plugins/config/claude-for-legal/corporate-legal/CLAUDE.md`
+- Show tailored capability summary listing the 8 SA-overlaid skills: board-minutes, closing-checklist, diligence-issue-extraction, entity-compliance, integration-management, material-contract-schedule, written-consent (plus cold-start-interview itself for re-configuration)
+
+---
+
 ### Part 0.5: Module selection (1–2 min)
 
 Ask which of the following apply. More than one is common. All four is not unusual for a GC.
