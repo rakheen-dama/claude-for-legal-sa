@@ -62,3 +62,64 @@ sections:
     effective_from: "2008-02-01"
     effective_until: null
     effect: "First member of a cartel to approach the Commission and make full disclosure may receive immunity from prosecution or a recommendation for no or reduced administrative penalty"
+
+  intermediate_merger_filing_fee:
+    ref: "Competition Commission Rules"
+    value: 165000
+    currency: ZAR
+    unit: "per filing"
+    effective_from: "2017-10-01"
+    effective_until: null
+    effect: "Filing fee payable for notification of an intermediate merger to the Competition Commission."
+
+  large_merger_filing_fee:
+    ref: "Competition Commission Rules"
+    value: 550000
+    currency: ZAR
+    unit: "per filing"
+    effective_from: "2017-10-01"
+    effective_until: null
+    effect: "Filing fee payable for notification of a large merger to the Competition Commission."
+
+  intermediate_investigation_timeline:
+    ref: "Competition Act s14(1)"
+    value: "20 business days initial period; extension once to 40 business days at Commission discretion"
+    effective_from: "1999-09-01"
+    effective_until: null
+    effect: "The Competition Commission must make its determination on an intermediate merger within 20 business days of all parties fulfilling notification requirements, extendable once to 40 business days."
+
+  large_investigation_timeline:
+    ref: "Competition Act s14A(1)"
+    value: "40 business days initial period; extensions of maximum 15 business days each with Tribunal consent"
+    effective_from: "1999-09-01"
+    effective_until: null
+    effect: "The Competition Commission must issue its recommendation on a large merger within 40 business days, with extensions of up to 15 business days each requiring Competition Tribunal consent."
+
+  public_interest_assessment:
+    ref: "Competition Act s12A(3)"
+    value: "equal status to competition assessment"
+    effective_from: "1999-09-01"
+    effective_until: null
+    effect: "The Competition Commission must assess the effect of every merger on public interest grounds: employment, ability of SMMEs to become competitive, ability of firms in specific sector or region to compete, ability of national industries to compete internationally, and promotion of a greater spread of ownership."
+
+  greater_spread_of_ownership:
+    ref: "Competition Act s12A(3)(e)"
+    value: "positive effect required"
+    effective_from: "1999-09-01"
+    effective_until: null
+    effect: "The Competition Commission interprets the requirement to promote a greater spread of ownership as requiring every transaction to have a positive effect on this consideration. A neutral or negative effect requires a remedy such as an employee share ownership plan or disposal of shares to historically disadvantaged persons."
+    note: "Increasingly aggressive enforcement; remedy may be required even for transactions with no competition concerns"
+
+  small_merger_call_in:
+    ref: "Competition Act s13(3)"
+    value: "Commission may require notification within 6 months of implementation"
+    effective_from: "1999-09-01"
+    effective_until: null
+    effect: "The Competition Commission may require parties to a small merger to notify the merger within 6 months after implementation if the Commission is of the opinion that the merger may substantially prevent or lessen competition or cannot be justified on public interest grounds."
+
+  national_security_review:
+    ref: "Competition Act s18A"
+    value: "Minister may prohibit merger on national security grounds"
+    effective_from: "2019-02-13"
+    effective_until: null
+    effect: "The Minister may publish a notice in the Government Gazette prohibiting the implementation of a merger on national security grounds. Section 18A(12) expressly prohibits the Competition Commission or Competition Tribunal from approving a merger so prohibited."

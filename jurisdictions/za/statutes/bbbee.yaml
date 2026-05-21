@@ -75,3 +75,40 @@ sections:
     effective_from: "2014-10-24"
     effective_until: null
     effect: "Minister may publish sector-specific codes of good practice in the Government Gazette after consultation with the relevant sector charter council and the B-BBEE Advisory Council"
+
+  ownership_element_ma:
+    ref: "B-BBEE Codes of Good Practice, Statement 100"
+    value: "25% plus 1 vote black ownership equals maximum ownership points; flow-through principle applies to indirect ownership"
+    effective_from: "2019-05-01"
+    effective_until: null
+    effect: "The ownership element of the B-BBEE scorecard measures the percentage of economic interest and voting rights held by black people. Maximum points are achieved at 25% plus 1 vote. Indirect ownership through intermediary entities is recognised using the flow-through principle."
+
+  equity_equivalents:
+    ref: "B-BBEE Codes of Good Practice, Statement 103"
+    value: "available to multinationals and entities unable to sell equity"
+    effective_from: "2019-05-01"
+    effective_until: null
+    effect: "Multinational companies and entities that are unable to achieve direct black ownership due to global ownership structures may use equity equivalent contributions as an alternative to direct ownership. These contributions must be directed to enterprise and supplier development beneficiaries."
+
+  mining_charter_existing:
+    ref: "Mining Charter 2018, clause 2.1"
+    value: 26
+    unit: "percent minimum BEE shareholding"
+    effective_from: "2018-09-27"
+    effective_until: null
+    effect: "Existing holders of mining rights must maintain a minimum 26% BEE shareholding for the duration of the mining right. Failure to maintain this level puts the mining right at risk of suspension or cancellation by the Department of Mineral Resources."
+
+  mining_charter_new_applicant:
+    ref: "Mining Charter 2018, clause 2.1"
+    value: 30
+    unit: "percent minimum BEE shareholding"
+    effective_from: "2018-09-27"
+    effective_until: null
+    effect: "New applicants for a mining or prospecting right must have a minimum 30% BEE shareholding at the time of application."
+
+  competition_merger_conditions:
+    ref: "Competition Act s12A(3)(e) read with B-BBEE Act"
+    value: "B-BBEE ownership conditions increasingly imposed on mergers"
+    effective_from: "2019-01-01"
+    effective_until: null
+    effect: "The Competition Commission increasingly imposes B-BBEE ownership conditions on merger approvals as part of the public interest assessment. A replacement BEE shareholder may be required where an existing BEE shareholder exits as part of the transaction. This applies to mergers across all sectors, not only those with sector-specific BEE requirements."
