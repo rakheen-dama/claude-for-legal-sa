@@ -211,6 +211,29 @@ TEMPLATE_CONFIG = {
             (r"\bFLSA\b", "FLSA"),
         ],
     },
+    "corporate-legal": {
+        "path": ROOT / "jurisdictions" / "za" / "corporate-legal" / "practice-profile-template.md",
+        "required_sections": [
+            "Company profile", "Who's using this", "Statutory baseline",
+            "Entity landscape", "M&A regulatory landscape",
+            "Board governance framework", "B-BBEE and ownership",
+            "Escalation", "Outputs", "Seed documents",
+        ],
+        "sa_required_terms": [
+            "CIPC", "Companies Act", "King IV", "MOI", "TRP",
+            "Competition Commission", "B-BBEE", "admitted attorney",
+            "legal professional privilege", "solvency and liquidity",
+        ],
+        "us_forbidden": [
+            (r"\bDGCL\b", "DGCL"), (r"\bDelaware\b", "Delaware"),
+            (r"\bHSR\b", "HSR"), (r"\bHart-Scott-Rodino\b", "Hart-Scott-Rodino"),
+            (r"\b§16\b", "§16"), (r"\bForm 4\b", "Form 4"),
+            (r"\bSEC\b", "SEC"), (r"\bNYSE\b", "NYSE"),
+            (r"\bNasdaq\b", "Nasdaq"), (r"\bFRCP\b", "FRCP"),
+            (r"\bat-will\b", "at-will"), (r"\bFMLA\b", "FMLA"),
+            (r"\bFLSA\b", "FLSA"), (r"\bbylaws?\b", "bylaw(s)"),
+        ],
+    },
 }
 
 # Key aliases: "litigation-legal" uses the same key names as other practice areas
