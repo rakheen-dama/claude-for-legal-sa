@@ -1,0 +1,34 @@
+name: "Entity deregistered in CIPC bulk action — reinstatement needed"
+skill: entity-compliance
+input: |
+  A Pty Ltd subsidiary was deregistered by CIPC in the January 2025 bulk
+  deregistration action for failure to file annual returns and beneficial
+  ownership declarations. The company has active contracts, employees, and a
+  bank account that has been frozen. Directors need to reinstate the entity
+  urgently.
+
+expected_flags:
+  - "CIPC deregistration consequences — legal personality withdrawn"
+  - "Bank accounts frozen"
+  - "Directors personally liable for company debts"
+  - "Reinstatement application required — CoR40.5"
+  - "Evidence of economic activity required"
+  - "30 business days to file all outstanding after reinstatement"
+
+expected_statutes:
+  - "Companies Act s82(3)"
+  - "Companies Act s82(4)"
+  - "CIPC Practice Note 1 of 2022"
+
+must_not_contain:
+  - "dissolution under state corporation law"
+  - "revival petition"
+  - "certificate of good standing"
+
+notes: |
+  Jan 2025 bulk action deregistered approximately 800,000 entities.
+  Consequences are severe — legal personality withdrawn, bank accounts frozen
+  by banks, directors personally liable. Reinstatement via CoR40.5 requires
+  evidence of economic activity at time of deregistration. Once approved, all
+  outstanding annual returns and BO declarations must be filed within 30 BD or
+  status reverts. Not guaranteed — discretionary.

@@ -1,0 +1,28 @@
+name: "PA defines Material Contract with government and CoC focus"
+skill: material-contract-schedule
+input: |
+  Purchase agreement defines Material Contract as any contract with annual
+  value exceeding R5 million, any government contract regardless of value, any
+  contract containing a change-of-control clause, and any contract with a
+  related party. Target has 80 contracts. VDR documents uploaded.
+
+expected_flags:
+  - "Apply PA Material Contract definition mechanically"
+  - "Government contracts flagged for B-BBEE scoring impact"
+  - "Change-of-control clauses flagged for consent requirements"
+  - "Related party contracts flagged for s75 conflict analysis"
+
+expected_statutes:
+  - "Companies Act s112"
+
+must_not_contain:
+  - "dollar-denominated thresholds"
+  - "federal contract novation rules"
+  - "FAR"
+
+notes: |
+  PA definition is the governing standard — apply mechanically to all 80
+  contracts. Government contracts are material regardless of value because
+  B-BBEE level affects eligibility. CoC clauses require consent before
+  closing — timing may affect critical path. Related party contracts need s75
+  analysis. All monetary thresholds in ZAR.

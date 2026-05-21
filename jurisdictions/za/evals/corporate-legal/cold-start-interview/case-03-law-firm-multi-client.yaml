@@ -1,0 +1,26 @@
+name: "Law firm with multi-client practice"
+skill: cold-start-interview
+input: |
+  Corporate partner at a mid-size law firm (personal liability company — Inc).
+  Board and Entity modules active. Firm advises multiple clients on M&A and
+  board governance. Needs matter workspaces enabled for client isolation.
+
+expected_flags:
+  - "Matter workspaces must be enabled"
+  - "Personal liability company type"
+  - "Conflicts management required"
+  - "Per-deal matter context"
+
+expected_statutes:
+  - "Companies Act s19(3)"
+
+must_not_contain:
+  - "in-house counsel references"
+  - "single-company assumptions"
+  - "SEC"
+
+notes: |
+  Personal liability company (Inc) is a valid SA company type under s19(3).
+  Law firm needs matter workspaces for client isolation. The interview should
+  detect private practice setting and enable matter workspaces. Should not
+  assume single-company context — each client/deal is a separate matter.

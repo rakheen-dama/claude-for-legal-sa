@@ -1,0 +1,34 @@
+name: "Government contracts with B-BBEE scoring and change-of-control clauses"
+skill: diligence-issue-extraction
+input: |
+  Target supplies IT services to 3 national government departments under
+  preferential procurement contracts. Contracts require minimum B-BBEE Level
+  3. Two contracts have change-of-control clauses requiring 30 days written
+  notice. Target is currently Level 2. Acquirer is a US-based company with no
+  SA B-BBEE rating.
+
+expected_flags:
+  - "Government contract B-BBEE minimum at risk"
+  - "Change-of-control consent required"
+  - "Preferential procurement scoring impact"
+  - "Competition Commission public interest — greater spread of ownership"
+  - "B-BBEE level may drop below contract minimum post-acquisition"
+
+expected_statutes:
+  - "B-BBEE Act s10"
+  - "Competition Act s12A(3)"
+  - "PPPFA"
+
+must_not_contain:
+  - "FAR"
+  - "DFARS"
+  - "SBA"
+  - "government contract novation"
+  - "GSA schedule"
+
+notes: |
+  US acquirer with no SA B-BBEE rating will cause target's B-BBEE level to
+  drop (ownership element zeroes out). Contracts requiring Level 3 minimum are
+  at risk of cancellation. CoC clauses require 30-day notice. Competition
+  Commission will assess public interest including greater spread of
+  ownership — foreign acquirer may face B-BBEE condition.

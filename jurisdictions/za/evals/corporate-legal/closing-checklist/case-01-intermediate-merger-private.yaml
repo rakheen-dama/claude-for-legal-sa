@@ -1,0 +1,35 @@
+name: "Private company acquisition — intermediate merger threshold"
+skill: closing-checklist
+input: |
+  Acquisition of a private Pty Ltd company. Combined turnover R800 million,
+  target turnover R150 million. Target is not TRP-regulated (fewer than 10% of
+  shares transferred in 24 months). No cross-border element. Target has 120
+  employees.
+
+expected_flags:
+  - "Competition Commission intermediate merger notification required"
+  - "20 business day investigation timeline"
+  - "R165,000 filing fee"
+  - "Solvency and liquidity test required"
+  - "No TRP compliance certificate needed"
+  - "LRA s197 automatic employee transfer"
+
+expected_statutes:
+  - "Competition Act s13"
+  - "Competition Act s12A"
+  - "Companies Act s4"
+  - "LRA s197"
+
+must_not_contain:
+  - "HSR"
+  - "FTC"
+  - "Hart-Scott-Rodino"
+  - "state attorney general"
+
+notes: |
+  Combined R800m exceeds R600m lower threshold, target R150m exceeds R100m.
+  This is an intermediate merger — mandatory notification to Competition
+  Commission. 20 BD investigation period. No TRP because target is not a
+  regulated company. s197 applies because employees transfer automatically on
+  acquisition of business as going concern. Public interest assessment includes
+  employment impact.

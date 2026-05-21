@@ -1,0 +1,40 @@
+name: "Public company scheme of arrangement — TRP-regulated, large merger"
+skill: closing-checklist
+input: |
+  Scheme of arrangement to acquire all shares of a JSE-listed public company.
+  Combined assets R8 billion, target assets R500 million. Foreign acquirer
+  (UK-based). Target has B-BBEE Level 2 with 30% black ownership. Independent
+  board formed, independent expert appointed.
+
+expected_flags:
+  - "TRP compliance certificate required"
+  - "Competition Commission large merger notification"
+  - "SARB exchange control approval required"
+  - "Shareholder special resolution 75% required"
+  - "Appraisal rights risk"
+  - "Independent expert opinion required"
+  - "B-BBEE ownership dilution risk"
+  - "Greater spread of ownership condition likely"
+
+expected_statutes:
+  - "Companies Act s114"
+  - "Companies Act s115"
+  - "Companies Act s118"
+  - "Companies Act s119(4)"
+  - "Companies Act s164"
+  - "Competition Act s14A"
+  - "B-BBEE Act"
+
+must_not_contain:
+  - "SEC approval"
+  - "CFIUS"
+  - "Delaware appraisal statute"
+  - "proxy statement"
+
+notes: |
+  JSE-listed = TRP-regulated. Combined R8b exceeds R6.6b, target R500m exceeds
+  R190m = large merger (40 BD + Tribunal). Foreign acquirer = SARB exchange
+  control. Scheme requires 75% shareholder approval per s115. Appraisal rights
+  available per s164. B-BBEE 30% black ownership at risk if foreign acquirer
+  takes 100% — replacement BEE shareholder or Competition condition likely.
+  Independent expert must opine fair and reasonable.

@@ -1,0 +1,36 @@
+name: "Mandatory offer triggered by concert party crossing 35%"
+skill: closing-checklist
+input: |
+  Two related investment funds (acting in concert) collectively hold 30% of
+  voting shares in a public company. Fund A acquires additional 6% on the open
+  market, bringing combined holding to 36%. No prior TRP engagement. The
+  public company has 3 classes of shares.
+
+expected_flags:
+  - "Mandatory offer triggered at 35% threshold"
+  - "Concert party aggregation applies"
+  - "Notice to remaining shareholders within 1 business day"
+  - "Cash consideration at highest price paid in previous 6 months"
+  - "Bank guarantee or escrow confirmation required"
+  - "Form TRP 84 concert party disclosure"
+  - "Comparable offers required for other share classes"
+
+expected_statutes:
+  - "Companies Act s123"
+  - "Companies Regulations Reg 84"
+  - "Companies Regulations Reg 86"
+  - "Companies Regulations Reg 111(4)"
+  - "Companies Act s125"
+
+must_not_contain:
+  - "Williams Act"
+  - "tender offer rules"
+  - "Schedule 14D-9"
+  - "Schedule TO"
+
+notes: |
+  Concert party holdings aggregated (Reg 84). 30% + 6% = 36% crosses 35%
+  threshold. Mandatory offer to all remaining shareholders within 1 BD. Cash
+  at highest price in previous 6 months. Bank guarantee required. Multiple
+  share classes trigger comparable offer requirements under s125. Form TRP 84
+  disclosure required for concert party arrangement.

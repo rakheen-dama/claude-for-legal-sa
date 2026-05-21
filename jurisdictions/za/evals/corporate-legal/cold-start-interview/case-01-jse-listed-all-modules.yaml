@@ -1,0 +1,36 @@
+name: "JSE-listed in-house counsel with all modules active"
+skill: cold-start-interview
+input: |
+  In-house corporate counsel at a JSE Main Board listed company (Ltd). All 4
+  modules active (M&A, Board & Secretary, Public Company, Entity Management).
+  Company has 8 subsidiaries, social and ethics committee in place, King IV
+  applied.
+
+expected_flags:
+  - "King IV mandatory for JSE-listed"
+  - "Social and ethics committee mandatory"
+  - "TRP-regulated as public company"
+  - "CIPC annual returns for all 9 entities"
+  - "JSE Listings Requirements apply"
+
+expected_statutes:
+  - "Companies Act s66"
+  - "Companies Act s73"
+  - "Companies Act s94"
+  - "Companies Act s72(4)"
+  - "Companies Act s33"
+  - "Companies Act s118"
+
+must_not_contain:
+  - "SEC filer status"
+  - "Delaware franchise tax"
+  - "NYSE"
+  - "Nasdaq"
+  - "Form 4"
+  - "§16"
+
+notes: |
+  JSE listing triggers: King IV mandatory, TRP regulation, JSE LR compliance.
+  All 9 entities (holding + 8 subs) need CIPC annual returns and BO
+  declarations. Interview should ask SA-specific questions about MOI, B-BBEE
+  level, Competition thresholds, entity types.

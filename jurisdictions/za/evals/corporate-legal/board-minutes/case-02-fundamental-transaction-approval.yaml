@@ -1,0 +1,32 @@
+name: "Board approving disposal of greater part of subsidiary assets"
+skill: board-minutes
+input: |
+  Board meeting of a holding company (Ltd) to approve disposal of more than
+  50% of assets of its wholly-owned subsidiary. The disposal constitutes
+  disposal of all or greater part of the holding company's assets on a
+  consolidated basis. Two of seven directors have indirect financial interests
+  in the acquiring entity.
+
+expected_flags:
+  - "s112 disposal threshold exceeded"
+  - "s115(2)(b) holding company shareholder approval required"
+  - "s75 conflict declarations for two directors"
+  - "Acquiring party votes excluded from shareholder resolution"
+
+expected_statutes:
+  - "Companies Act s112"
+  - "Companies Act s115(2)(b)"
+  - "Companies Act s75"
+  - "Companies Act s4"
+
+must_not_contain:
+  - "Hart-Scott-Rodino"
+  - "authorized under bylaws"
+  - "Delaware General Corporation Law"
+
+notes: |
+  Because the subsidiary disposal constitutes disposal of all or greater part
+  of the holding company's assets on a consolidated basis, s115(2)(b) requires
+  a special resolution of the holding company's shareholders. Two directors
+  with indirect interests must declare under s75 and may not vote. Appraisal
+  rights (s164) available to dissenting shareholders.

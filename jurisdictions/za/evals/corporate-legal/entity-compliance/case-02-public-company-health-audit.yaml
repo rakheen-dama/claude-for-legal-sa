@@ -1,0 +1,33 @@
+name: "Public company with 12 subsidiaries — compliance health audit"
+skill: entity-compliance
+input: |
+  Public company (Ltd) listed on JSE with 12 subsidiaries across 4 provinces.
+  Mix of Pty Ltd (8), NPC (2), and external company (2). Audit committee and
+  social and ethics committee in place. Request for a full compliance health
+  audit across all 13 entities.
+
+expected_flags:
+  - "CIPC annual returns for all 13 entities"
+  - "Audited AFS mandatory for public company"
+  - "Beneficial ownership declarations for all entities"
+  - "Public interest score assessment needed"
+  - "Social and ethics committee compliance check"
+
+expected_statutes:
+  - "Companies Act s33"
+  - "Companies Act s30"
+  - "Companies Act s94"
+  - "Companies Act s72(4)"
+
+must_not_contain:
+  - "state-by-state filing"
+  - "franchise tax methods"
+  - "authorized shares method"
+  - "assumed par value"
+
+notes: |
+  Public company requires audited AFS. Each of 13 entities needs its own
+  annual return (30 BD after respective anniversary dates — different dates for
+  each entity). BO declarations mandatory for all since July 2024. PI score
+  determines audit requirements for subsidiaries. External companies have same
+  filing obligations. NPC entities may have different PI score thresholds.

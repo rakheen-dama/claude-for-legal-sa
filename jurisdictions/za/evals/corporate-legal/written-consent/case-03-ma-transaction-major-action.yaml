@@ -1,0 +1,39 @@
+name: "Written consent approving M&A transaction — major action"
+skill: written-consent
+input: |
+  Draft a written consent for the board to approve entering into a share
+  purchase agreement to acquire 100% of a target company for R200 million.
+  The acquisition constitutes an intermediate merger under the Competition
+  Act. Two of six directors have indirect interests in the target. The
+  company's MOI requires a 75% director majority for resolutions approving
+  transactions above R50 million.
+
+expected_flags:
+  - "Major action — M&A transaction"
+  - "s75 conflicts for two directors"
+  - "Solvency and liquidity test"
+  - "MOI requires enhanced majority — 75% of directors"
+  - "Competition Commission notification required as condition"
+  - "Transaction may trigger s112 or s113 depending on structure"
+
+expected_statutes:
+  - "Companies Act s112"
+  - "Companies Act s113"
+  - "Companies Act s115"
+  - "Companies Act s75"
+  - "Companies Act s4"
+  - "Competition Act s13"
+
+must_not_contain:
+  - "authorized under charter and bylaws"
+  - "Delaware board approval"
+  - "Hart-Scott-Rodino"
+
+notes: |
+  M&A transactions are major actions requiring outside counsel review flag.
+  Two directors with indirect interests must be excluded from vote under s75.
+  MOI specifies 75% director threshold — higher than the statutory majority
+  default in s73. Solvency and liquidity test needed. Competition Commission
+  notification is a condition precedent (intermediate merger). The consent
+  should note that shareholder approval under s115 may be required depending
+  on whether the transaction constitutes a fundamental transaction.

@@ -1,0 +1,32 @@
+name: "Group with Pty Ltd companies and CCs, one CC two years overdue"
+skill: entity-compliance
+input: |
+  Group of 5 Pty Ltd companies and 2 close corporations. One CC has not filed
+  annual returns for 2 consecutive years. All Pty Ltd companies are current.
+  One Pty Ltd has not filed its beneficial ownership declaration. The overdue
+  CC has annual turnover of R8 million.
+
+expected_flags:
+  - "CC at risk of CIPC deregistration"
+  - "Beneficial ownership non-compliance blocks annual return filing"
+  - "CC conversion option available"
+  - "Different filing deadlines for CC vs Pty Ltd"
+
+expected_statutes:
+  - "Companies Act s33"
+  - "Companies Act s82"
+  - "Close Corporations Act s15A"
+  - "General Laws Amendment Act 22 of 2022"
+
+must_not_contain:
+  - "Delaware franchise tax"
+  - "state annual report"
+  - "CT Corp"
+  - "registered agent"
+
+notes: |
+  2 consecutive years of non-filing triggers deregistration process under s82.
+  CC filing deadline is anniversary month + 1 month (different from Pty Ltd's
+  30 BD). BO declaration is a hard stop since July 2024 — the Pty Ltd cannot
+  file its annual return until BO is filed. CC turnover R8m means R100 annual
+  return fee. CC conversion to Pty Ltd (CoR18.1) should be considered.

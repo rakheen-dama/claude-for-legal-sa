@@ -1,0 +1,37 @@
+name: "Target with B-BBEE Level 4, mining rights, and environmental authorisations"
+skill: diligence-issue-extraction
+input: |
+  Target holds 3 mining rights under MPRDA, has NEMA environmental
+  authorisations, water use licences, and a B-BBEE Level 4 certificate
+  expiring in 3 months. Acquirer is a foreign (Australian) mining company.
+  Target has 26% BEE shareholding currently. Acquisition would result in 100%
+  foreign ownership.
+
+expected_flags:
+  - "B-BBEE ownership dilution below Mining Charter 26% minimum"
+  - "MPRDA change-of-control approval required"
+  - "NEMA authorisation transfer"
+  - "Water use licence transfer"
+  - "SARB exchange control for foreign acquirer"
+  - "B-BBEE certificate expiry imminent"
+  - "Mining rights at risk of suspension"
+
+expected_statutes:
+  - "B-BBEE Act"
+  - "MPRDA"
+  - "NEMA"
+  - "Exchange Control Regulations"
+
+must_not_contain:
+  - "EPA"
+  - "OSHA"
+  - "CERCLA"
+  - "Clean Water Act"
+
+notes: |
+  100% foreign ownership eliminates 26% BEE shareholding — Mining Charter
+  non-compliance puts mining rights at risk of suspension or cancellation.
+  MPRDA requires ministerial approval for change of control of mining right
+  holder. NEMA authorisations and water use licences must be transferred. SARB
+  approval required for foreign acquirer. B-BBEE certificate expiring in 3
+  months adds urgency — re-verification needed post-close.

@@ -1,0 +1,34 @@
+name: "Government supply contracts with B-BBEE procurement requirements"
+skill: material-contract-schedule
+input: |
+  Target has 5 supply contracts with Eskom (SOC), 3 with Department of Public
+  Works, and 2 with Gauteng Provincial Government. All contracts require
+  minimum B-BBEE Level 3 under preferential procurement policy. Target is
+  Level 2 but acquirer is an unlisted foreign company with no B-BBEE rating.
+
+expected_flags:
+  - "Government contract B-BBEE minimums at risk"
+  - "Preferential procurement scoring will change post-acquisition"
+  - "B-BBEE level likely to drop below Level 3 minimum"
+  - "Contracts may be cancelled or not renewed"
+  - "Competition Commission public interest condition likely"
+
+expected_statutes:
+  - "B-BBEE Act s10"
+  - "PPPFA"
+  - "Competition Act s12A(3)(e)"
+
+must_not_contain:
+  - "FAR"
+  - "DFARS"
+  - "SBA set-aside"
+  - "Buy American Act"
+  - "GSA"
+
+notes: |
+  Foreign acquirer with no B-BBEE rating means ownership element zeroes out —
+  Level 2 will drop significantly. All 10 government contracts require minimum
+  Level 3 — at risk of cancellation or non-renewal. SOC (Eskom) and
+  government departments apply B-BBEE strictly. PPPFA governs preferential
+  procurement. Competition Commission will impose B-BBEE conditions as part of
+  public interest assessment.

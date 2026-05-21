@@ -1,0 +1,31 @@
+name: "Social and ethics committee meeting — prescribed functions"
+skill: board-minutes
+input: |
+  Draft minutes for a social and ethics committee meeting of a JSE-listed
+  public company. Agenda: (1) B-BBEE compliance report — company dropped from
+  Level 3 to Level 4, (2) employment equity progress report, (3) environmental
+  compliance — NEMA authorisation renewal, (4) consumer complaints summary.
+  Committee has 4 members, majority non-executive per 2024 amendment.
+
+expected_flags:
+  - "B-BBEE level drop requires remedial action"
+  - "King IV apply-and-explain reporting required"
+  - "Reg 43(5) prescribed monitoring functions"
+
+expected_statutes:
+  - "Companies Act s72(4)"
+  - "Companies Regulations Reg 43"
+  - "B-BBEE Act"
+
+must_not_contain:
+  - "compensation committee"
+  - "SEC"
+  - "Sarbanes-Oxley"
+
+notes: |
+  Social and ethics committee is mandatory for listed public companies
+  (s72(4)). 2024 amendment requires majority non-executive directors.
+  Prescribed functions under Reg 43(5) include monitoring social/economic
+  development (including B-BBEE), environment/health/safety, and consumer
+  relationships. Committee must report to shareholders at AGM. B-BBEE level
+  drop from 3 to 4 affects government procurement eligibility.

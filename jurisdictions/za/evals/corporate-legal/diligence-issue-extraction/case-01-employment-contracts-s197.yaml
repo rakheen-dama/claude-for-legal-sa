@@ -1,0 +1,33 @@
+name: "Employment contracts and property leases with 200 employees"
+skill: diligence-issue-extraction
+input: |
+  Target company VDR contains employment contracts for 200 employees, service
+  agreements with key suppliers, and commercial property leases in
+  Johannesburg and Cape Town. Target is being acquired as a going concern.
+  Several employees have restraint of trade clauses. One employee earns above
+  the BCEA earnings threshold.
+
+expected_flags:
+  - "LRA s197 automatic employee transfer applies"
+  - "Restraint of trade clauses require reasonableness assessment"
+  - "BCEA earnings threshold distinction"
+  - "Property lease cession requires landlord consent"
+
+expected_statutes:
+  - "LRA s197"
+  - "BCEA"
+  - "Companies Act s112"
+
+must_not_contain:
+  - "WARN Act"
+  - "COBRA"
+  - "at-will employment"
+  - "FLSA"
+  - "ERISA"
+
+notes: |
+  Going-concern acquisition triggers s197 — all 200 employees transfer
+  automatically on same terms. Restraint of trade enforceable if reasonable
+  (Basson v Chilwan factors). BCEA earnings threshold relevant for employee
+  above threshold (excluded from certain BCEA protections). Property leases
+  require cession analysis — anti-cession clauses enforceable in SA.

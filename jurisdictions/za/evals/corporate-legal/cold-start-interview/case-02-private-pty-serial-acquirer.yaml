@@ -1,0 +1,32 @@
+name: "Private Pty Ltd serial acquirer with CC subsidiaries"
+skill: cold-start-interview
+input: |
+  In-house counsel at a private Pty Ltd company. M&A and Entity Management
+  modules active. Company does 3-4 acquisitions per year, typically
+  intermediate merger size. Group has 2 Pty Ltd subsidiaries and 1 close
+  corporation (CC). CIPC compliance status unknown.
+
+expected_flags:
+  - "Competition Act intermediate thresholds apply"
+  - "CIPC filing calendar needed for Pty Ltd and CC"
+  - "CC annual return deadline differs from company"
+  - "CC conversion option available"
+  - "B-BBEE scoring needed for deal pipeline"
+
+expected_statutes:
+  - "Companies Act s33"
+  - "Close Corporations Act s15A"
+  - "Competition Act s11"
+
+must_not_contain:
+  - "public company references"
+  - "§16 reporting"
+  - "insider trading windows"
+  - "NYSE"
+
+notes: |
+  Private Pty Ltd — not automatically TRP-regulated (check s118(1)(c)(i)
+  threshold). Serial acquirer needs Competition Act thresholds as standard
+  reference. CC has different annual return deadline (anniversary month + 1
+  month vs 30 BD). Unknown CIPC status is a risk flag — entity-compliance
+  skill should audit.

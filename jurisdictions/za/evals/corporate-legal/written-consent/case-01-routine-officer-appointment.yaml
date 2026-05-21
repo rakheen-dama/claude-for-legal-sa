@@ -1,0 +1,27 @@
+name: "Routine written consent — officer appointment and auditor"
+skill: written-consent
+input: |
+  Draft a written consent of the board of a Pty Ltd company to appoint a new
+  CFO and confirm the appointment of the annual auditor. Five directors, no
+  conflicts of interest. MOI permits round-robin resolutions under s74.
+  Company is below audit threshold but voluntarily appoints an auditor.
+
+expected_flags:
+  - "s74 round-robin resolution permitted"
+  - "Check MOI for any restrictions on consent"
+  - "No s75 conflict expected"
+
+expected_statutes:
+  - "Companies Act s74"
+  - "Companies Act s90"
+
+must_not_contain:
+  - "DGCL §141(f)"
+  - "unanimous written consent"
+  - "Delaware"
+
+notes: |
+  s74 permits directors to act without meeting via round-robin resolution
+  signed by majority. MOI must be checked for any restrictions. 2024 amendment
+  changed auditor appointment rules for private companies — no longer requires
+  AGM. No conflicts = no s75 declaration needed.

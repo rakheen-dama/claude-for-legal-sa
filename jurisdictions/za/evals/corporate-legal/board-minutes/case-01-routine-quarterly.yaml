@@ -1,0 +1,29 @@
+name: "Routine quarterly board meeting with standard resolutions"
+skill: board-minutes
+input: |
+  Quarterly board meeting of a Pty Ltd. Agenda: (1) officer appointment — new
+  CFO, (2) approval of AFS, (3) declaration of interim dividend of R500,000.
+  Five directors present, quorum met per MOI. One director has personal
+  financial interest in CFO appointment (candidate is family member).
+
+expected_flags:
+  - "s75 personal financial interest declaration required"
+  - "Solvency and liquidity test for distribution"
+  - "Interested director cannot vote on CFO appointment"
+
+expected_statutes:
+  - "Companies Act s73"
+  - "Companies Act s75"
+  - "Companies Act s46"
+  - "Companies Act s4"
+
+must_not_contain:
+  - "Robert's Rules"
+  - "DGCL"
+  - "bylaws"
+  - "Delaware"
+
+notes: |
+  Director with family connection must declare under s75. Interested director
+  cannot vote. Dividend requires s4 solvency/liquidity test and s46 board
+  resolution. Minutes reference MOI for quorum, not bylaws.

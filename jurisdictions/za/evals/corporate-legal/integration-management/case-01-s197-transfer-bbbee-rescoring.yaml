@@ -1,0 +1,35 @@
+name: "Post-close integration — s197 employee transfer and B-BBEE re-scoring"
+skill: integration-management
+input: |
+  Post-close integration of an acquired target with 150 employees. All
+  employees transferred under LRA s197. Target had B-BBEE Level 2 with 26%
+  black ownership which has now changed to 0% under new ownership. CIPC
+  director changes needed. Target had 3 collective agreements with trade
+  unions.
+
+expected_flags:
+  - "LRA s197 terms and conditions preserved"
+  - "12-month joint liability period"
+  - "Collective agreements binding on new employer"
+  - "B-BBEE re-scoring urgent — level will drop significantly"
+  - "CIPC CoR39 director changes within 10 business days"
+  - "B-BBEE replacement ownership structure needed"
+
+expected_statutes:
+  - "LRA s197"
+  - "B-BBEE Act"
+  - "Companies Act"
+
+must_not_contain:
+  - "WARN Act"
+  - "COBRA"
+  - "I-9 reverification"
+  - "ERISA"
+
+notes: |
+  s197: employees transfer on same terms, cannot be dismissed by reason of
+  transfer, joint liability for 12 months for pre-transfer obligations.
+  Collective agreements survive for remaining term. B-BBEE ownership dropping
+  from 26% to 0% is a critical issue — level will drop from 2 to potentially
+  8 or non-compliant. CIPC CoR39 must be filed within 10 BD of director
+  changes.

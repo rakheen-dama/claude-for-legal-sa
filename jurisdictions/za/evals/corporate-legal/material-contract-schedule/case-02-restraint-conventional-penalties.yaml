@@ -1,0 +1,30 @@
+name: "Contracts with restraint of trade and conventional penalties"
+skill: material-contract-schedule
+input: |
+  Target's material contracts include 12 executive employment agreements with
+  restraint of trade clauses (2-year restraint, nationwide, no solicitation
+  and no competition). Target also has supplier agreements with conventional
+  penalty clauses for late delivery (5% of contract value per week, capped at
+  50%). One supplier contract has a non-cession clause.
+
+expected_flags:
+  - "Restraint of trade clauses — Basson v Chilwan reasonableness assessment needed"
+  - "Conventional penalties — court may reduce if disproportionate"
+  - "Non-cession clause is enforceable — may block contract transfer"
+
+expected_statutes:
+  - "Conventional Penalties Act 15 of 1962"
+  - "Companies Act"
+
+must_not_contain:
+  - "non-compete enforceability by state"
+  - "liquidated damages"
+  - "UCC"
+
+notes: |
+  SA restraint of trade: enforceable if reasonable. Basson v Chilwan factors:
+  protectable interest, reasonable necessity, prejudice to employee, public
+  interest. 2-year nationwide may be challenged as overbroad. Conventional
+  Penalties Act s3: court may reduce penalty if disproportionate to actual
+  prejudice. Non-cession clause enforceable in SA — distinguishes cession of
+  rights from delegation of obligations.

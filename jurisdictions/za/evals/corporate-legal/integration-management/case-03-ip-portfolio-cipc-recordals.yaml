@@ -1,0 +1,32 @@
+name: "IP portfolio integration — CIPC trademark and patent recordals"
+skill: integration-management
+input: |
+  Post-close integration of target's IP portfolio: 15 registered trademarks
+  (CIPC), 3 patents (CIPC), 2 registered designs (CIPC), and 5 pending
+  trademark applications. Assignment agreements executed at closing. Target
+  also has registered domain names (.co.za).
+
+expected_flags:
+  - "CIPC trademark assignment recordals required"
+  - "CIPC patent assignment recordals required"
+  - "CIPC design assignment recordals required"
+  - "Pending trademark applications — assignment must be recorded"
+  - "Domain name transfers (.co.za registry)"
+
+expected_statutes:
+  - "Trade Marks Act 194 of 1993"
+  - "Patents Act 57 of 1978"
+  - "Designs Act 195 of 1993"
+
+must_not_contain:
+  - "USPTO assignment recordal"
+  - "TTAB"
+  - "Madrid Protocol"
+
+notes: |
+  All IP assignments must be recorded at CIPC. Trademarks: Form TM16 for
+  assignment recordal. Patents: prescribed form for patent assignment. Designs:
+  prescribed form. Pending applications must also have assignments recorded to
+  ensure continuity. Domain name transfers through .co.za registry
+  (ZADNA/registry.net.za). CIPC is the registrar for trademarks, patents, and
+  designs in SA.

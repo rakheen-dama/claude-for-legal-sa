@@ -1,0 +1,32 @@
+name: "Competition Commission imposed 3-year employment moratorium"
+skill: integration-management
+input: |
+  Competition Commission approved a large merger with conditions: no
+  merger-specific retrenchments for 3 years, establishment of a R50 million
+  enterprise development fund for black-owned SMEs, and quarterly reporting to
+  the Competition Commission on employment levels and fund disbursements.
+
+expected_flags:
+  - "Competition condition monitoring required"
+  - "3-year retrenchment moratorium"
+  - "Enterprise development fund tracking"
+  - "Quarterly reporting to Competition Commission"
+  - "Breach of conditions may result in reopening of merger assessment"
+
+expected_statutes:
+  - "Competition Act s12A(3)"
+  - "Competition Act s15"
+
+must_not_contain:
+  - "FTC consent decree"
+  - "DOJ behavioral remedies"
+  - "HSR"
+
+notes: |
+  Competition Commission public interest conditions are legally binding.
+  Breach may result in the Commission reopening the merger assessment or
+  seeking administrative penalties. The 3-year moratorium is a common
+  condition — employment levels must be tracked at entity level. Enterprise
+  development fund conditions reflect B-BBEE "greater spread of ownership"
+  requirement. Quarterly reporting is standard — must maintain records for
+  Commission audit.

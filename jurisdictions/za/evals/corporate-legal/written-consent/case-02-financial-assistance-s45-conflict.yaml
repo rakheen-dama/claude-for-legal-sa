@@ -1,0 +1,32 @@
+name: "Written consent for financial assistance to subsidiary — director conflict"
+skill: written-consent
+input: |
+  Draft a written consent for the board of a holding company to approve
+  financial assistance (loan of R10 million) to a wholly-owned subsidiary
+  under s45. One of four directors is also a director of the subsidiary and
+  holds a 10% personal shareholding in the subsidiary.
+
+expected_flags:
+  - "s45 financial assistance requires board resolution"
+  - "Solvency and liquidity test mandatory"
+  - "s75 personal financial interest — director with subsidiary shareholding must declare"
+  - "Interested director cannot sign consent for this resolution"
+  - "Board resolution must be within 2 years preceding provision of assistance"
+
+expected_statutes:
+  - "Companies Act s45"
+  - "Companies Act s4"
+  - "Companies Act s75"
+
+must_not_contain:
+  - "upstream guarantee analysis under state law"
+  - "Delaware safe harbor"
+
+notes: |
+  s45 financial assistance to related/interrelated companies requires: board
+  satisfied company will pass s4 test immediately after, and for ensuing 12
+  months; terms are fair and reasonable; any conditions or restrictions in MOI
+  are satisfied. Director with 10% subsidiary shareholding has personal
+  financial interest — must declare under s75 and cannot participate in the
+  resolution. s45(3): board resolution must have been passed within 2 years
+  before the financial assistance is given.
