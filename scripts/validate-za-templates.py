@@ -234,6 +234,30 @@ TEMPLATE_CONFIG = {
             (r"\bFLSA\b", "FLSA"), (r"\bbylaws?\b", "bylaw(s)"),
         ],
     },
+    "product-legal": {
+        "path": ROOT / "jurisdictions" / "za" / "product-legal" / "practice-profile-template.md",
+        "required_sections": [
+            "Who we are", "Who's using this", "Regulatory posture",
+            "B-BBEE considerations", "CPA compliance posture",
+            "Promotional competitions", "Review framework",
+            "Risk calibration", "Marketing claims",
+            "Escalation", "Outputs", "Seed reviews",
+        ],
+        "sa_required_terms": [
+            "CPA", "POPIA", "ARB", "NCC", "B-BBEE",
+            "admitted attorney", "legal professional privilege",
+            "Information Regulator", "Consumer Tribunal",
+        ],
+        "us_forbidden": [
+            (r"\bFTC\b", "FTC"), (r"\bNAD\b", "NAD"),
+            (r"\bCCPA\b", "CCPA"), (r"\bCOPPA\b", "COPPA"),
+            (r"\bHIPAA\b", "HIPAA"), (r"\bGLBA\b", "GLBA"),
+            (r"\bCFPB\b", "CFPB"), (r"\bCAN-SPAM\b", "CAN-SPAM"),
+            (r"\bTCPA\b", "TCPA"), (r"\bROSCA\b", "ROSCA"),
+            (r"\bFMLA\b", "FMLA"), (r"\bFLSA\b", "FLSA"),
+            (r"\bat-will\b", "at-will"),
+        ],
+    },
 }
 
 # Key aliases: "litigation-legal" uses the same key names as other practice areas
