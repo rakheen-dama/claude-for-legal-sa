@@ -388,7 +388,7 @@ When a skill doesn't know which matter is active and workspaces are enabled, it 
 7. [PLACEHOLDER — Marketing]
 8. [PLACEHOLDER — AI governance (use case in registry? AIA done? Vendor AI terms reviewed?) — skip if no AI component detected]
 
-When jurisdiction = ZA, each category references SA statutes and regulators via the overlay system. The sector overlay table in `sector-regulatory-map.md` replaces the US sector hints.
+When jurisdiction = ZA, each category references SA statutes and regulators via the overlay system. Core statutes (CPA, ECTA, POPIA, Competition Act) are loaded for every skill; sector-specific statutes (NCA, FICA) load conditionally. The sector overlay table in `sector-regulatory-map.md` replaces the US sector hints.
 
 ---
 

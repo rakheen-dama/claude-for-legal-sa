@@ -244,7 +244,7 @@ TEMPLATE_CONFIG = {
             "Escalation", "Outputs", "Seed reviews",
         ],
         "sa_required_terms": [
-            "CPA", "POPIA", "ARB", "NCC", "B-BBEE",
+            "CPA", "POPIA", "ECTA", "ARB", "NCC", "B-BBEE",
             "admitted attorney", "legal professional privilege",
             "Information Regulator", "Consumer Tribunal",
         ],
