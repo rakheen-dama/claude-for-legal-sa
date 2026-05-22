@@ -198,6 +198,114 @@ Use this to branch later questions:
 
 Record the practice setting in the practice profile under `## Who's using this`.
 
+<!-- ZA JURISDICTION FORK — START -->
+
+### Jurisdiction check — South African overlay
+
+After writing the Part 0 sections, check the company profile for jurisdiction:
+
+- Read `~/.claude/plugins/config/claude-for-legal/company-profile.md` → `Primary jurisdiction`
+- If the primary jurisdiction is **South Africa** (or ZA, or the user's company is SA-based based on the company profile answers):
+
+**Fork to the SA interview path.** The rest of this interview (Parts 1-4) uses SA-specific questions. The output writes to the ZA practice profile template at `${CLAUDE_PLUGIN_ROOT}/../../../jurisdictions/za/product-legal/practice-profile-template.md` instead of the US template at `${CLAUDE_PLUGIN_ROOT}/CLAUDE.md`.
+
+**Router instruction:** Include in the configuration preamble: `JURISDICTION OVERLAY: When jurisdiction = ZA, after loading this configuration, read the router at jurisdictions/za/product-legal/router.md and load the topic overlays and statute files listed for the active skill.`
+
+If the primary jurisdiction is NOT South Africa, continue with the US interview path below (Parts 1-4 as written).
+
+---
+
+#### SA Part 1: Product-legal specifics (3-4 min)
+
+> South African product law operates differently from the US. The Consumer Protection Act (CPA) is the central statute — it governs product liability, unfair terms, marketing practices, promotional competitions, and consumer rights across most B2C transactions. Your regulatory footprint depends on your product verticals and customer base.
+
+**Must-have questions (8):**
+
+Ask these in order. These configure the SA-specific sections of the practice profile.
+
+> 1. **Role:** "Are you an admitted attorney or advocate under the Legal Practice Act, or a non-lawyer?"
+
+→ Populates `## Who's using this → Role` and determines work-product header
+
+> 2. **CPA applicability:** "Does your company sell to consumers (B2C), businesses (B2B), or both?"
+>
+>    Follow-up if B2C or both: "Are your business customers juristic persons above the CPA R2 million threshold, or does the CPA apply to your customer base?"
+
+→ Populates `## CPA compliance posture`
+
+> 3. **Regulatory interactions:** "Which SA regulators has your company interacted with or been contacted by? NCC, Information Regulator, Competition Commission, ARB, ICASA, SAHPRA, FSCA, NGB/FPB — or none?"
+
+→ Populates `## Regulatory posture`
+
+> 4. **Product verticals:** "Does your product involve any of these verticals? Fintech/payments/credit, health-tech, children/minors, gaming/gamification, content/UGC platforms, telecom/OTT. Select all that apply, or 'none — general tech/SaaS'."
+
+→ Determines conditional topic loading in router and sector overlay activation
+
+> 5. **Promotional competitions:** "Does your company run promotional competitions (prize draws, sweepstakes, giveaways) as part of product marketing?"
+
+→ Populates `## Promotional competitions`
+
+> 6. **B-BBEE level:** "What is your company's B-BBEE level? Level 1-8, non-compliant, exempted micro-enterprise, or unknown?"
+
+→ Populates `## B-BBEE considerations`
+
+> 7. **Launch review gate:** "Is your launch review process a formal gate (legal must sign off before ship) or advisory (legal reviews but doesn't block)?"
+
+→ Populates `## Launch review process → Sign-off`
+
+> 8. **Escalation contacts:** "Who handles regulatory matters? Specifically: NCC complaints, Information Regulator queries, Competition Commission inquiries, ARB complaints? Give me names or roles — internal or external counsel."
+
+→ Populates `## Escalation`
+
+**Nice-to-have questions (4):**
+
+After the must-haves, offer: "A few more questions that help me give better advice — skip any you don't know."
+
+> 9. "Is your company a member of the ARB or DMASA (Direct Marketing Association of SA)?"
+
+→ Populates `## Regulatory posture` and `## Marketing claims`
+
+> 10. "Does your company have a substantiation file — pre-cleared marketing claims with supporting evidence? If so, where is it?"
+
+→ Populates `## Marketing claims → Substantiation standard`
+
+> 11. "Has your company faced any NCC, ARB, or Competition Commission complaints or rulings in the past?"
+
+→ Seed data for `## Risk calibration`
+
+> 12. "Does your product process personal information of children under 18?"
+
+→ Triggers conditional topic loading for content-and-minors overlay
+
+#### SA Part 2: Seed documents
+
+> "Now I'd like to read some past work to learn your team's style and calibration. Share what you have — even 2-3 documents help significantly:"
+>
+> 1. **Past launch review memos** (3-5 if available) — I'll learn what blocks vs. ships at your company
+> 2. **Marketing claims review examples** — I'll learn your substantiation standards
+> 3. **Standard product T&Cs / Terms of Service** — baseline for unfair terms analysis
+> 4. **Promotional competition T&C template** (if you run competitions)
+> 5. **Company privacy policy** — POPIA compliance baseline
+> 6. **Any ARB complaint or ruling** your company has received
+
+If they skip seed documents: flag every section built without seed documents with `[NO SEED — defaults used; accuracy improves with your launch review memos and T&Cs]`.
+
+#### SA Part 3: Build the configuration
+
+Use the ZA practice profile template. Populate all sections from the interview answers and seed documents. Write to `~/.claude/plugins/config/claude-for-legal/product-legal/CLAUDE.md`, creating parent directories as needed.
+
+After writing, show the tailored capability list:
+
+> **Here's what I can help with in SA product law:**
+>
+> - **Launch review with SA risk flags** — CPA unfair terms, NCC compliance, promotional competition rules, POPIA data processing. Try: `/product-legal:launch-review`
+> - **Marketing claims review (SA framework)** — CPA s29 misleading marketing, ARB Code compliance, substantiation standards, comparative claims against Competition Act. Try: `/product-legal:marketing-claims-review`
+> - **Fast triage on product questions** — "Is this a CPA issue?" gets a same-minute fine / needs a real look / stop. Try: `/product-legal:is-this-a-problem`
+
+Then continue with the standard close (integration probing for launch tracker, document storage, Slack; calibration table building from seed reviews; configuration path; "you can change anything later"; "your practice profile learns").
+
+<!-- ZA JURISDICTION FORK — END -->
+
 ### Part 1: The company (3-4 min)
 
 **What does [your company] do?** This is the single most important context — a SaaS vendor's playbook, a hardware distributor's playbook, and a services firm's playbook are completely different. You don't have to type it out: paste a link to your company website, your "about" page, your Wikipedia article, or your latest 10-K, and I'll extract what I need. Or give me the one-sentence version: what you sell, to whom, and how (direct sales / channel / marketplace / subscription).
