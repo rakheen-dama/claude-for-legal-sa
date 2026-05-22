@@ -1,0 +1,14 @@
+name: "Can we use customer logos on the pricing page?"
+skill: is-this-a-problem
+input: |
+  Can we use customer logos on the pricing page?
+expected_flags:
+  - "Needs a look — logo use is separate permission from contract relationship"
+expected_statutes:
+  - "CPA s11"
+must_not_contain:
+  - "Lanham Act"
+  - "right of publicity"
+notes: |
+  Tests basic triage with SA framing. CPA s11 (right to restrict
+  unwanted marketing) is the SA anchor, not Lanham Act.

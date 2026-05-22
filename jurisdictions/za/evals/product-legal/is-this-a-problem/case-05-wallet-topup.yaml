@@ -1,0 +1,20 @@
+name: "Adding a wallet top-up payment feature"
+skill: is-this-a-problem
+input: |
+  We're adding a payment feature — users can top up a wallet.
+expected_flags:
+  - "Hold — NCA + FICA + Banks Act implications"
+  - "Is this stored-value? Deposit-taking?"
+  - "May need credit provider registration or banking licence"
+expected_statutes:
+  - "NCA"
+  - "FICA"
+  - "Banks Act 94/1990"
+must_not_contain:
+  - "state money transmission"
+  - "CFPB"
+  - "Reg E"
+notes: |
+  Tests fintech trap detection. Wallet top-up may constitute
+  deposit-taking (Banks Act) or stored-value regulated under NCA/FICA.
+  Product counsel must escalate before implementation.

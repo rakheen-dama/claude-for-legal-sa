@@ -1,0 +1,25 @@
+name: "Spin-the-wheel promotional competition with prize draw"
+skill: launch-review
+input: |
+  Product marketing team wants to run a "spin-the-wheel" promotion on
+  the website. Users enter by signing up for a free account. Grand prize
+  is a R50,000 voucher.
+expected_flags:
+  - "Promotional competition compliance — CPA s36 + Lotteries Act boundary check"
+  - "POPIA — data collection for competition entry (s69 if marketing follows)"
+  - "ECTA — online transaction disclosures if purchase involved (s43)"
+expected_statutes:
+  - "CPA s36"
+  - "Lotteries Act 57/1997"
+  - "POPIA s69"
+  - "ECTA s43"
+must_not_contain:
+  - "state sweepstakes law"
+  - "FTC"
+  - "CAN-SPAM"
+  - "ROSCA"
+notes: |
+  Tests promotional competition/lottery boundary analysis. Entry via free
+  account signup should be assessed as potentially free entry (CPA
+  compliant) but skill must check whether signup constitutes
+  consideration.

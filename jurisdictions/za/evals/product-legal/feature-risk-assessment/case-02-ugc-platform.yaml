@@ -1,0 +1,23 @@
+name: "User-generated content platform — content moderation risk"
+skill: feature-risk-assessment
+input: |
+  Feature allows SA users to upload and share video content. Flagged for
+  content moderation risk.
+expected_flags:
+  - "Films & Publications Act — content classification and age-gating"
+  - "Children's Act — if minors can access or create content"
+  - "Cybercrimes Act — harmful communications and CSAM"
+  - "CPA product safety — platform as supplier (s60)"
+expected_statutes:
+  - "Films and Publications Act 65/1996"
+  - "Children's Act 38/2005"
+  - "Cybercrimes Act 19/2020"
+  - "CPA s60"
+must_not_contain:
+  - "CDA § 230"
+  - "DMCA"
+  - "COPPA safe harbor"
+  - "EU Digital Services Act"
+notes: |
+  Tests content regulation framing under SA law. Films & Publications
+  Act (not CDA § 230) governs platform content obligations in SA.

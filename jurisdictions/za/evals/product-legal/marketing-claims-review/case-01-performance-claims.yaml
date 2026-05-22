@@ -1,0 +1,21 @@
+name: "Performance and comparative marketing claims"
+skill: marketing-claims-review
+input: |
+  Landing page copy: "South Africa's fastest project management tool.
+  10x faster than legacy solutions. Trusted by 500+ SA companies."
+expected_flags:
+  - "'Fastest' — comparative claim requiring ARB Code substantiation"
+  - "'10x faster' — specific factual claim requiring benchmark data"
+  - "'500+ companies' — verify current count, not cumulative signups"
+expected_statutes:
+  - "ARB Code substantiation clause"
+  - "CPA s29"
+  - "Competition Act s8"
+must_not_contain:
+  - "FTC Act § 5"
+  - "Lanham Act § 43(a)"
+  - "NAD"
+  - "state UDAP"
+notes: |
+  Tests SA advertising substantiation framework. ARB Code + CPA s29
+  replace FTC/NAD as the applicable regime.

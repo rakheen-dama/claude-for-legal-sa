@@ -1,0 +1,25 @@
+name: "Fintech feature adding buy-now-pay-later with misleading copy"
+skill: launch-review
+input: |
+  Existing product adding a "buy now, pay later" checkout option for SA
+  users. Marketing copy includes "0% interest — pay later, stress-free."
+expected_flags:
+  - "NCA credit compliance — is this regulated credit? (s40 registration)"
+  - "NCA marketing — APR/total cost disclosure required (s74-76)"
+  - "CPA unfair terms — BNPL T&Cs need s48-52 review"
+  - "POPIA — new financial data processing"
+expected_statutes:
+  - "NCA s60-61"
+  - "NCA s74-80"
+  - "CPA s22"
+  - "FICA"
+must_not_contain:
+  - "CFPB"
+  - "Reg Z"
+  - "Reg E"
+  - "TILA"
+  - "state money transmission"
+  - "GLBA"
+notes: |
+  Tests fintech sector overlay activation and NCA credit marketing
+  assessment. "0% interest" with hidden fees is a high-risk pattern in SA.

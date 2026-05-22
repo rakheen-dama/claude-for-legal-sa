@@ -1,0 +1,21 @@
+name: "IoT firmware update — product liability risk after prior bricking incident"
+skill: feature-risk-assessment
+input: |
+  OTA firmware update for smart home devices. Previous update bricked
+  200 units. Assessing risk of next rollout.
+expected_flags:
+  - "CPA strict product liability (s61) — defective goods, inadequate warnings"
+  - "Product safety monitoring (s60) — prior incident establishes awareness"
+  - "Class-style exposure — 200 affected consumers"
+  - "Insurance coverage question — software-related product liability"
+expected_statutes:
+  - "CPA s55-61"
+  - "ECTA"
+must_not_contain:
+  - "US product liability (Restatement Third)"
+  - "CPSC"
+  - "state lemon laws"
+notes: |
+  Tests CPA s61 strict product liability for IoT/firmware. Prior
+  bricking incident + knowledge = heightened liability. SA does not have
+  a Restatement or CPSC equivalent.

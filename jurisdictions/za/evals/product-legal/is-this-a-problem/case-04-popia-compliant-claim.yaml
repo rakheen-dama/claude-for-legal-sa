@@ -1,0 +1,17 @@
+name: "Can we say we're POPIA compliant on our website?"
+skill: is-this-a-problem
+input: |
+  Can we say we're POPIA compliant on our website?
+expected_flags:
+  - "Needs a look — regulatory compliance claim (high-risk flag #11)"
+  - "ARB has ruled against unsubstantiated compliance claims"
+expected_statutes:
+  - "CPA s29"
+  - "ARB Code"
+must_not_contain:
+  - "FTC"
+  - "SEC"
+  - "SOX"
+notes: |
+  Tests flag #11 detection — asserting regulatory compliance as
+  marketing claim needs substantiation under both CPA s29 and ARB Code.

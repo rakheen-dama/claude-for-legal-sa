@@ -1,0 +1,19 @@
+name: "Auto-enroll users in premium tier with converting free trial"
+skill: is-this-a-problem
+input: |
+  Can we auto-enroll existing users in the new premium tier with a free
+  trial that converts to paid?
+expected_flags:
+  - "Hold — dark pattern risk under CPA s48 unfair terms"
+  - "ECTA cooling-off must be honoured"
+  - "Conversion must be clearly disclosed"
+expected_statutes:
+  - "CPA s48"
+  - "ECTA s44"
+must_not_contain:
+  - "FTC dark patterns"
+  - "ROSCA"
+  - "state auto-renewal laws"
+notes: |
+  Tests trap detection for dark patterns. CPA s48 (unfair terms) and
+  ECTA s44 (cooling-off) are the SA framework, not FTC/ROSCA.

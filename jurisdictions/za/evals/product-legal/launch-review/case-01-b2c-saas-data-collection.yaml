@@ -1,0 +1,26 @@
+name: "B2C SaaS launch with new data collection and AI marketing claim"
+skill: launch-review
+input: |
+  SaaS product launching a new feature that collects location data from
+  SA consumers for personalized recommendations. Product is below CPA
+  juristic person threshold. Marketing says "AI-powered."
+expected_flags:
+  - "Privacy — POPIA new data collection (s9-14)"
+  - "CPA product safety — digital product quality obligations (s55)"
+  - "AI governance — 'AI-powered' feature requires registry check"
+  - "Marketing claims — 'AI-powered' needs substantiation (ARB Code + CPA s29)"
+expected_statutes:
+  - "POPIA s9-14"
+  - "CPA s29"
+  - "CPA s55"
+must_not_contain:
+  - "FTC"
+  - "CCPA"
+  - "COPPA"
+  - "HIPAA"
+  - "state-specific"
+  - "FRCP 26(b)(3)"
+notes: |
+  Tests basic SA launch review with privacy, consumer protection, and
+  marketing overlays. Skill must use SA regulatory frameworks, not US
+  equivalents.

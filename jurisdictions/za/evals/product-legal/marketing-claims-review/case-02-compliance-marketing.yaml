@@ -1,0 +1,22 @@
+name: "Regulatory compliance claims in marketing"
+skill: marketing-claims-review
+input: |
+  Ad copy: "Fully POPIA compliant. FSCA approved. Your data is 100%
+  safe with us."
+expected_flags:
+  - "'POPIA compliant' — regulatory compliance claim needing substantiation (high-risk flag #11)"
+  - "'FSCA approved' — must match actual registration/approval status"
+  - "'100% safe' — absolute claim, never defensible"
+expected_statutes:
+  - "CPA s29"
+  - "CPA s41"
+  - "ARB Code"
+  - "FAIS/FSCA registration"
+must_not_contain:
+  - "FTC Endorsement Guides"
+  - "SEC"
+  - "FINRA"
+notes: |
+  Tests the high-risk flag #11 pattern — asserting regulatory compliance
+  as a marketing claim. ARB has ruled against unsubstantiated compliance
+  claims.

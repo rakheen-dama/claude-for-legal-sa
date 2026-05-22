@@ -1,0 +1,24 @@
+name: "AI recommendation engine — automated decision-making risk"
+skill: feature-risk-assessment
+input: |
+  Feature uses ML to recommend products to consumers based on browsing
+  behavior. Flagged from launch review as novel risk.
+expected_flags:
+  - "POPIA automated decision-making (s71 profiling)"
+  - "CPA s29 — 'personalized for you' claims"
+  - "Cross-border data transfer if model hosted outside SA (POPIA s72)"
+  - "Product safety — algorithmic harm potential"
+expected_statutes:
+  - "POPIA s11"
+  - "POPIA s71"
+  - "POPIA s72"
+  - "CPA s55-58"
+must_not_contain:
+  - "CCPA opt-out"
+  - "GDPR Art. 22"
+  - "Colorado AI Act"
+  - "EU AI Act"
+notes: |
+  Tests SA regulatory framing for AI features. POPIA is the governing
+  framework for automated decision-making in SA, not GDPR or state AI
+  laws.

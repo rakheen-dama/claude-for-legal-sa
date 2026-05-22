@@ -1,0 +1,17 @@
+name: "Lucky draw for users who refer friends"
+skill: is-this-a-problem
+input: |
+  We want to run a lucky draw for users who refer friends.
+expected_flags:
+  - "Needs a look — promotional competition compliance (CPA s36 + Lotteries Act)"
+expected_statutes:
+  - "CPA s36"
+  - "Lotteries Act 57/1997"
+must_not_contain:
+  - "state sweepstakes law"
+  - "FTC"
+  - "no-purchase-necessary"
+notes: |
+  Tests promotional competition/lottery boundary detection. Is referral
+  a form of consideration? Entry must be genuinely free to avoid
+  unlawful lottery.

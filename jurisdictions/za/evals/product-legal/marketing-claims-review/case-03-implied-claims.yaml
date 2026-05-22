@@ -1,0 +1,19 @@
+name: "Implied claims with competitor and health-tech reference"
+skill: marketing-claims-review
+input: |
+  Email campaign: "Finally, a secure alternative to [Competitor]. Built
+  for healthcare."
+expected_flags:
+  - "'Secure alternative' — implies competitor is insecure (comparative claim)"
+  - "'Built for healthcare' — implies SAHPRA/health regulatory compliance"
+expected_statutes:
+  - "ARB Code comparative advertising rules"
+  - "CPA s29"
+  - "Medicines Act 101/1965"
+must_not_contain:
+  - "HIPAA"
+  - "FDA SaMD"
+  - "FTC Health Breach Notification Rule"
+notes: |
+  Tests implied claim detection with SA regulatory framing. "Built for
+  healthcare" must trigger Medicines Act/SAHPRA assessment, not HIPAA.
