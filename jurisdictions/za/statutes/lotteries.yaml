@@ -1,0 +1,33 @@
+statute: "Lotteries Act 57 of 1997"
+authority: "National Lotteries Commission"
+last_confirmed: "2026-05-22"
+source_url: "https://www.gov.za/documents/lotteries-act"
+
+sections:
+  lottery_definition:
+    ref: "Lotteries Act s1"
+    value: "any scheme for distributing prizes by lot or chance for consideration"
+    effective_from: null
+    effective_until: null
+    effect: "Defines a lottery as any scheme for the distribution of prizes by lot or chance where participants pay consideration to enter, establishing the statutory boundary between lawful and unlawful games of chance."
+
+  unlawful_lottery:
+    ref: "Lotteries Act s54"
+    value: "any lottery not authorised under this Act is unlawful"
+    effective_from: null
+    effective_until: null
+    effect: "Any lottery that is not authorised under the Lotteries Act constitutes an unlawful lottery, and conducting, promoting, or participating in an unlawful lottery is a criminal offence."
+
+  promotional_competition_boundary:
+    ref: "Lotteries Act s54 read with CPA s36"
+    value: "CPA promotional competitions exempt if entry does not require consideration beyond normal costs"
+    effective_from: "2011-04-01"
+    effective_until: null
+    effect: "Promotional competitions regulated under the Consumer Protection Act are exempt from the Lotteries Act prohibition provided entry does not require consideration beyond the normal cost of accessing the competition, including the cost of a phone call at normal rates or the price of the product."
+
+  criminal_penalties:
+    ref: "Lotteries Act s57"
+    value: "fine or imprisonment for contraventions"
+    effective_from: null
+    effective_until: null
+    effect: "Any person convicted of a contravention of the Lotteries Act is liable to a fine or imprisonment, or both, as determined by the court."

@@ -1,0 +1,40 @@
+statute: "Films and Publications Act 65 of 1996"
+authority: "Film and Publication Board"
+last_confirmed: "2026-05-22"
+source_url: "https://www.gov.za/documents/films-and-publications-act"
+
+sections:
+  content_classification:
+    ref: "Films and Publications Act s16"
+    value: "films, games, and certain publications must be classified before distribution"
+    effective_from: null
+    effective_until: null
+    effect: "Films, games, and certain publications must be submitted to the Film and Publication Board for classification before they may be distributed in South Africa; distributing unclassified content is an offence."
+
+  online_content_regulation:
+    ref: "Films and Publications Act s24A-24C, amended 2019"
+    value: "online distributors may need to register and comply with classification requirements"
+    effective_from: "2019-10-01"
+    effective_until: null
+    effect: "Online content distributors, including streaming services and user-generated content platforms, may be required to register with the Film and Publication Board and ensure that content accessible in South Africa complies with the classification framework."
+
+  age_gating_requirements:
+    ref: "Films and Publications Act s16 read with Classification Guidelines"
+    value: "age-restricted content must not be accessible to underage persons"
+    effective_from: null
+    effective_until: null
+    effect: "Content classified with age restrictions must not be made accessible to persons below the specified age; distributors must implement appropriate age-gating mechanisms to prevent minors from accessing restricted material."
+
+  prohibited_content:
+    ref: "Films and Publications Act s24B"
+    value: "child sexual abuse material and bestiality are absolutely prohibited"
+    effective_from: null
+    effective_until: null
+    effect: "Child sexual abuse material (CSAM) and depictions of bestiality are absolutely prohibited; possession, creation, distribution, or facilitation of access to such material constitutes a serious criminal offence with no classification exception."
+
+  takedown_obligations:
+    ref: "Films and Publications Act s24C"
+    value: "platforms must comply with FPB takedown notices"
+    effective_from: "2019-10-01"
+    effective_until: null
+    effect: "Online platforms and internet service providers must comply with takedown notices issued by the Film and Publication Board directing the removal of content that contravenes the Act, including unclassified, prohibited, or incorrectly classified material."

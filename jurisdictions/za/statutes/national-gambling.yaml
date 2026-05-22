@@ -1,0 +1,41 @@
+statute: "National Gambling Act 7 of 2004"
+authority: "National Gambling Board"
+last_confirmed: "2026-05-22"
+source_url: "https://www.gov.za/documents/national-gambling-act"
+
+sections:
+  gambling_game_definition:
+    ref: "National Gambling Act s1"
+    value: "a game or scheme for determining a winner by lot, chance, or both"
+    effective_from: null
+    effective_until: null
+    effect: "Defines a gambling game as any game, scheme, arrangement, system, or competition for determining a winner or allocation of a prize by lot, chance, or any other method of determining a result that includes an element of chance."
+
+  closed_list_permitted_forms:
+    ref: "National Gambling Act s3"
+    value: "only casinos, bingo, betting, limited payout machines, and the national lottery are permitted"
+    effective_from: null
+    effective_until: null
+    effect: "Establishes a closed list of permitted gambling activities in South Africa limited to casinos, bingo, betting, limited payout machines (LPMs), and the national lottery; any form of gambling not on this list is prohibited."
+
+  online_gambling_prohibition:
+    ref: "National Gambling Act s11"
+    value: "interactive gambling generally prohibited except licensed online sports betting"
+    effective_from: null
+    effective_until: null
+    effect: "Interactive gambling conducted via the internet is generally prohibited except where specifically licensed for online sports betting under applicable provincial legislation."
+
+  advertising_restrictions:
+    ref: "National Gambling Act s16"
+    value: "gambling advertising must not target minors or promote irresponsible gambling"
+    effective_from: null
+    effective_until: null
+    effect: "Gambling advertising must not be directed at minors, must not promote irresponsible gambling behaviour, and must comply with prescribed codes of conduct for responsible gambling advertising."
+
+  loot_box_and_gamification_risk:
+    ref: "National Gambling Act s1 read with s3, s11"
+    value: "loot boxes with real-money redemption may constitute gambling; no SA court ruling yet"
+    effective_from: null
+    effective_until: null
+    effect: "Loot boxes, gacha mechanics, and similar gamification features that involve real-money purchase and offer prizes redeemable for real-world value may fall within the statutory definition of a gambling game; no South African court has ruled on this issue to date, creating regulatory uncertainty for digital products."
+    note: "This is an emerging risk area. The NGB has not issued formal guidance on loot boxes as of 2026. Products with these features should be assessed on a case-by-case basis against the s1 definition."

@@ -1,0 +1,33 @@
+statute: "Merchandise Marks Act 17 of 1941"
+authority: "Department of Trade, Industry and Competition"
+last_confirmed: "2026-05-22"
+source_url: "https://www.gov.za/documents/merchandise-marks-act"
+
+sections:
+  false_trade_description:
+    ref: "Merchandise Marks Act s2(1)"
+    value: "applying a false trade description to goods is a criminal offence"
+    effective_from: null
+    effective_until: null
+    effect: "Any person who applies a false trade description to goods, or causes a false trade description to be applied, commits a criminal offence punishable by fine or imprisonment."
+
+  origin_claims:
+    ref: "Merchandise Marks Act s2(1)(a)"
+    value: "false origin indications prohibited"
+    effective_from: null
+    effective_until: null
+    effect: "False indications as to the origin of goods are prohibited; claims such as 'Made in South Africa' must be accurate and substantiated, and misleading country-of-origin labelling constitutes a criminal offence."
+
+  protected_marks_and_symbols:
+    ref: "Merchandise Marks Act s15"
+    value: "national flags, coats of arms, and official marks restricted"
+    effective_from: null
+    effective_until: null
+    effect: "The use of national flags, coats of arms, official emblems, and other protected marks or symbols on merchandise or in trade descriptions is restricted and requires authorisation; unauthorised use is a criminal offence."
+
+  quality_certification_claims:
+    ref: "Merchandise Marks Act s2(1) read with Standards Act 8 of 2008"
+    value: "claiming SABS or NRCS certification without authorisation is prohibited"
+    effective_from: null
+    effective_until: null
+    effect: "Claiming that goods bear SABS (South African Bureau of Standards) or NRCS (National Regulator for Compulsory Specifications) certification marks without having obtained the relevant authorisation constitutes a false trade description and is a criminal offence under the Merchandise Marks Act read with the Standards Act."
