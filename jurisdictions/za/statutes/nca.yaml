@@ -39,3 +39,26 @@ sections:
     effective_until: null
     effect: "Maximum prescribed interest rates apply to different categories of credit agreement: mortgage agreements (RR + 12%), credit facilities (RR + 14%), unsecured credit transactions (RR + 21%), short-term credit transactions (5% per month), and other credit agreements (RR + 17%). Fees are separately capped."
     note: "RR = repo rate; rates effective per 2016 regulations — verify current amounts"
+
+  credit_marketing_advertising:
+    ref: "NCA s74-76"
+    value: "credit marketing must comply with disclosure and fairness requirements"
+    effective_from: "2007-06-01"
+    effective_until: null
+    effect: "Credit marketing and advertising must disclose the annual percentage rate, all fees and charges, and total cost of credit; misleading credit claims are prohibited; all credit advertising must include prescribed disclosures"
+    note: "Particularly relevant for fintech buy-now-pay-later (BNPL) products that may constitute credit agreements"
+
+  credit_disclosure_plain_language:
+    ref: "NCA s63-66"
+    value: "pre-agreement statements and quotations must be in plain language"
+    effective_from: "2007-06-01"
+    effective_until: null
+    effect: "Credit providers must deliver pre-agreement statements and quotations in plain language, enabling the consumer to understand the costs, risks, and obligations of the proposed credit agreement"
+
+  reckless_credit_assessment:
+    ref: "NCA s80-81"
+    value: "credit provider must conduct an affordability assessment before granting credit"
+    effective_from: "2007-06-01"
+    effective_until: null
+    effect: "A credit provider must conduct a thorough affordability assessment before granting credit; credit granted without such assessment or despite a negative assessment is reckless and may be set aside by a court or the National Consumer Tribunal"
+    note: "Highest-risk provision for fintech BNPL providers who may be granting credit without conducting proper affordability assessments"

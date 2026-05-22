@@ -84,3 +84,60 @@ sections:
     effective_from: "2011-04-01"
     effective_until: null
     effect: "Industry body may apply to NCC for approval of an industry code of conduct; approved codes supplement CPA and industry ombud schemes may be established to resolve complaints"
+
+  plain_language:
+    ref: "CPA s22"
+    value: "notices, documents and visual representations must be in plain and understandable language"
+    effective_from: "2011-04-01"
+    effective_until: null
+    effect: "All consumer-facing notices, documents, and visual representations must be in plain and understandable language as defined in s22, enabling an ordinary consumer of the relevant class to understand the content without undue effort"
+
+  misleading_marketing:
+    ref: "CPA s29(b)"
+    value: "marketing must not be misleading, fraudulent or deceptive in any way"
+    effective_from: "2011-04-01"
+    effective_until: null
+    effect: "Suppliers are prohibited from marketing goods or services in a manner that is misleading, fraudulent, or deceptive in any way including by omission"
+
+  bait_marketing:
+    ref: "CPA s30"
+    value: "advertising goods at a price the supplier does not intend to offer in reasonable quantities is prohibited"
+    effective_from: "2011-04-01"
+    effective_until: null
+    effect: "A supplier must not advertise goods or services at a specified price if the supplier does not intend to offer those goods or services at that price for a reasonable period and in reasonable quantities"
+
+  promotional_competitions:
+    ref: "CPA s36"
+    value: "promotional competitions must comply with prescribed requirements"
+    effective_from: "2011-04-01"
+    effective_until: null
+    effect: "Promotional competitions must have written rules, may not charge entry fees beyond standard communication costs, must disclose prizes and their values, and must be subject to independent verification of results"
+
+  false_representations:
+    ref: "CPA s41"
+    value: "false, misleading or deceptive representations are prohibited"
+    effective_from: "2011-04-01"
+    effective_until: null
+    effect: "A supplier must not make false, misleading, or deceptive representations concerning any material fact to a consumer, whether by words, depiction, or conduct"
+
+  unfair_contract_terms:
+    ref: "CPA s48-52"
+    value: "unfair, unreasonable or unjust contract terms are prohibited"
+    effective_from: "2011-04-01"
+    effective_until: null
+    effect: "Section 48 prohibits unfair, unreasonable, or unjust contract terms; s49 requires adequate notice of unusual or onerous terms; s51 lists specifically prohibited terms including waiver of CPA rights and exclusion of s61 strict product liability"
+
+  product_quality_safety:
+    ref: "CPA s55-58"
+    value: "consumers have the right to safe, good quality goods"
+    effective_from: "2011-04-01"
+    effective_until: null
+    effect: "Section 55 grants the right to receive goods that are reasonably suitable and of good quality; s56 creates an implied warranty of quality for 6 months after delivery; s58 requires safety warnings and trade descriptions"
+
+  strict_product_liability:
+    ref: "CPA s61"
+    value: "strict, no-fault liability for harm caused by defective goods"
+    effective_from: "2011-04-01"
+    effective_until: null
+    effect: "Joint and several strict liability applies to the producer, importer, distributor, and retailer for any harm caused by defective goods, a failure in goods, a hazard in goods, or inadequate instructions or warnings; liability cannot be excluded by contract per s51(1)(c)"
+    note: "Application to pure software and SaaS products is untested in South African courts"

@@ -123,3 +123,18 @@ sections:
     effective_from: "2019-02-13"
     effective_until: null
     effect: "The Minister may publish a notice in the Government Gazette prohibiting the implementation of a merger on national security grounds. Section 18A(12) expressly prohibits the Competition Commission or Competition Tribunal from approving a merger so prohibited."
+
+  abuse_of_dominance_exclusionary:
+    ref: "Competition Act s8(1)(d)"
+    value: "dominant firms must not engage in exclusionary acts"
+    effective_from: "1999-09-01"
+    effective_until: null
+    effect: "A dominant firm must not engage in exclusionary acts such as self-preferencing, restricting interoperability, or tying services, unless the firm can show technological, efficiency, or other pro-competitive gains that outweigh the anti-competitive effect"
+    note: "Competition Commission has conducted digital platform inquiries examining these practices in online markets"
+
+  comparative_advertising_competition:
+    ref: "Competition Act s8(1)(d) read with CPA s29"
+    value: "comparative advertising by dominant firms may constitute exclusionary conduct"
+    effective_from: "1999-09-01"
+    effective_until: null
+    effect: "Comparative advertising by a dominant firm may amount to an exclusionary act under the Competition Act where it substantially prevents or lessens competition, read together with the CPA prohibition on misleading marketing"

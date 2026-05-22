@@ -49,3 +49,18 @@ sections:
     effective_from: "2017-10-02"
     effective_until: null
     effect: "The Financial Intelligence Centre may impose administrative sanctions on accountable institutions and their senior managers for contraventions of FICA obligations. Sanctions include cautions, reprimands, restrictions on business, and administrative financial penalties of up to R50 million."
+
+  accountable_institution_definition:
+    ref: "FICA Schedule 1"
+    value: "banks, financial services providers, and other designated entities are accountable institutions"
+    effective_from: "2003-02-01"
+    effective_until: null
+    effect: "Schedule 1 designates the categories of entities that qualify as accountable institutions and are subject to the full range of FICA obligations including customer due diligence, record keeping, and reporting"
+    note: "Crypto asset service providers were brought into FICA as accountable institutions under the updated Schedule 1"
+
+  customer_due_diligence:
+    ref: "FICA s21"
+    value: "accountable institutions must identify and verify the identity of clients"
+    effective_from: "2017-10-02"
+    effective_until: null
+    effect: "Accountable institutions must establish and verify the identity of every client before concluding a transaction or establishing a business relationship; KYC requirements directly impact product onboarding flows, user registration, and ongoing monitoring processes"

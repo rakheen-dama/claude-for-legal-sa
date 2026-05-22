@@ -69,3 +69,43 @@ sections:
     effective_until: null
     effect: "Cryptography service providers must register with the Department of Communications before providing cryptography products or services in South Africa"
     note: "Registration requirements largely dormant but section remains in force"
+
+  ecommerce_mandatory_disclosures:
+    ref: "ECTA s43(1)"
+    value: "online suppliers must display specified information on their website"
+    effective_from: "2002-08-30"
+    effective_until: null
+    effect: "Online suppliers must disclose on their website: full name and legal status, physical address, telephone number, email address, terms and conditions, pricing including delivery costs, payment and security mechanisms, and privacy policy"
+    note: "Non-compliance is a criminal offence under s43(5)"
+
+  ecommerce_review_and_correct:
+    ref: "ECTA s43(2)"
+    value: "consumer must be given opportunity to review and correct errors before placing order"
+    effective_from: "2002-08-30"
+    effective_until: null
+    effect: "An online supplier must provide the consumer with an opportunity to review the entire transaction and correct any errors before finally placing an order"
+
+  ecommerce_cooling_off:
+    ref: "ECTA s44"
+    value: 7
+    unit: "days"
+    effective_from: "2002-08-30"
+    effective_until: null
+    effect: "A natural person who has concluded an electronic transaction may cancel the transaction within 7 days of receiving the goods or services, without reason or penalty; the supplier must refund all payments within 30 days of cancellation"
+    note: "More generous than CPA s16 cooling-off period of 5 business days"
+
+  ecommerce_performance:
+    ref: "ECTA s46"
+    value: 30
+    unit: "days"
+    effective_from: "2002-08-30"
+    effective_until: null
+    effect: "A supplier must execute an electronic transaction within 30 days of receiving the order, unless the parties have agreed otherwise; if unable to perform, the supplier must notify the consumer and refund all payments within 30 days"
+
+  spam_unsolicited_communications:
+    ref: "ECTA s45"
+    value: "unsolicited electronic communications must include opt-out and source identification"
+    effective_from: "2002-08-30"
+    effective_until: null
+    effect: "Unsolicited electronic communications must contain an opt-out mechanism enabling the recipient to cancel the subscription, and must identify the source and sender of the communication"
+    note: "Overlaps with POPIA s69 regulation of direct marketing by electronic means"
