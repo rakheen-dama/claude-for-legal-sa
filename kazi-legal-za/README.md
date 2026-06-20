@@ -17,13 +17,16 @@ and a full read audit trail.
 
 | Skill | Does | Status |
 |---|---|---|
-| `/kazi-legal-za:connect-kazi` | Connect, confirm consent, load house style, write config | **shipped (E1)** |
-| `/kazi-legal-za:fee-note-run` | Draft LSSA-tariff-aware fee notes from unbilled time | planned (E3) |
-| `/kazi-legal-za:trust-reconciliation` | §86 trust-ledger anomaly report (read-only) | planned (E4) |
-| `/kazi-legal-za:fica-gap-review` | Identify missing FICA/KYC docs, draft the client request | planned (E5) |
-| `/kazi-legal-za:matter-brief` | Plain-language, client-ready matter status update | planned (E6) |
-| `/kazi-legal-za:intake-triage` | Triage a new matter against templates + recent conflicts | planned (E6) |
-| `/kazi-legal-za:kazi-bridge` | Run upstream `claude-for-legal` skills against Kazi data | planned (E7) |
+| `/kazi-legal-za:connect-kazi` | Connect, confirm consent, load house style, write config | ✅ |
+| `/kazi-legal-za:fee-note-run` | Draft fee notes from unbilled time (house style + contingency caps) | ✅ |
+| `/kazi-legal-za:fica-gap-review` | Identify missing FICA/KYC docs, draft the client request | ✅ |
+| `/kazi-legal-za:matter-brief` | Plain-language, client-ready matter status update | ✅ |
+| `/kazi-legal-za:intake-triage` | Triage a new matter — conflicts, forum, governing law, deadlines | ✅ |
+| `/kazi-legal-za:trust-reconciliation` | §86 trust-account **anomaly screen** (read-only) | ✅ ⚠️ statute refs pending attorney sign-off |
+| `/kazi-legal-za:kazi-bridge` | Run upstream `claude-for-legal` skills against Kazi data | ✅ |
+
+> A future **v2** adds gated write-back (Claude proposes → attorney approves in Kazi). The contract is
+> reserved in [`docs/v2-write-back-contract.md`](docs/v2-write-back-contract.md); v1 is read-only.
 
 ## Prerequisites
 
@@ -61,6 +64,30 @@ and a full read audit trail.
 
    It confirms the ping, checks consent, loads your firm's house style, and writes your practice profile
    to `~/.claude/plugins/config/claude-for-legal/kazi-legal-za/CLAUDE.md` (survives plugin updates).
+
+## First run — a walkthrough
+
+Once connected, a typical first session:
+
+1. **Confirm the link.** `/kazi-legal-za:connect-kazi` → "Connected to <firm> as <you> (<role>). Consent:
+   GRANTED." If consent is not granted, enable it in Kazi Settings → Integrations → MCP first.
+2. **Draft this month's fee notes.** `/kazi-legal-za:fee-note-run` → it lists clients with unbilled time,
+   you pick some, and it drafts a fee note per matter in your house style. **Review, itemise, and
+   finalise each one in Kazi** — the drafts are matter-level (line items live in Kazi).
+3. **Close a compliance gap.** `/kazi-legal-za:fica-gap-review "Acme (Pty) Ltd"` → it reads the client's
+   FICA checklist, lists what's outstanding, and drafts the document-request email. Send it from Kazi.
+4. **Brief a client.** `/kazi-legal-za:matter-brief "Acme lease renewal"` → a plain-language status update
+   from the matter's recent activity. Edit and send from Kazi.
+5. **Triage a new enquiry.** `/kazi-legal-za:intake-triage "debt claim, R180k, against an existing
+   client"` → possible conflicts, likely forum, prescription clock, fee options.
+6. **Screen the trust account.** `/kazi-legal-za:trust-reconciliation <trust-account-id>` → a read-only
+   anomaly screen (debit balances, odd movements). **Not** a formal reconciliation, and its statutory
+   refs are pending attorney sign-off — see the skill's caveat.
+7. **Use your other legal skills on Kazi data.** `/kazi-legal-za:kazi-bridge "contract-review on matter
+   Acme MSA"` → pulls the document from Kazi and runs the upstream `commercial-legal` review on it.
+
+Every output is a **draft for attorney review**, committed back in Kazi by hand. Nothing is written to
+Kazi by the plugin.
 
 ### Claude Desktop / claude.ai vs Claude Code
 

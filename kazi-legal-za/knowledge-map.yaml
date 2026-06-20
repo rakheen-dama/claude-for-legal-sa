@@ -41,7 +41,7 @@ skills:
       - "LSSA party-and-party / attorney-and-client tariff is not in jurisdictions/za. Until a tariff overlay is added, fee-note narratives rely on firm house style (from kazi://firm-profile) plus the Contingency Fees Act caps."
 
   trust-reconciliation:
-    status: planned
+    status: built
     mcp: [get_trust_balance, list_trust_transactions, list_matters]
     za_knowledge:
       - lpa.yaml#fidelity_fund_certificate
@@ -63,12 +63,17 @@ skills:
       - fica.yaml#cash_threshold_reporting
 
   matter-brief:
-    status: planned
+    status: built
     mcp: [get_matter, get_matter_activity, search_documents]
     za_knowledge: []
 
+  kazi-bridge:
+    status: built
+    mcp: [get_matter, search_documents, get_document_url, get_matter_activity]
+    za_knowledge: []
+
   intake-triage:
-    status: planned
+    status: built
     mcp: [list_clients, list_matters, firm-profile]
     za_knowledge:
       - magistrates-courts.yaml#district_court_monetary_jurisdiction
