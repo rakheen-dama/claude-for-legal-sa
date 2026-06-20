@@ -41,11 +41,17 @@ skills:
       - "LSSA party-and-party / attorney-and-client tariff is not in jurisdictions/za. Until a tariff overlay is added, fee-note narratives rely on firm house style (from kazi://firm-profile) plus the Contingency Fees Act caps."
 
   trust-reconciliation:
-    status: blocked
+    status: planned
     mcp: [get_trust_balance, list_trust_transactions, list_matters]
-    za_knowledge: []
-    knowledge_gaps:
-      - "Legal Practice Act s86 trust-accounting duties and LPC Rule 54 trust rules are NOT in jurisdictions/za. lpa.yaml and lpc-rules.yaml currently cover law-clinic and admission provisions only. E4 needs a /jurisdiction-expansion pass to add s86 + Rule 54 sections before this skill can be grounded."
+    za_knowledge:
+      - lpa.yaml#fidelity_fund_certificate
+      - lpa.yaml#trust_banking_account
+      - lpa.yaml#trust_investment_client_instruction
+      - lpc-rules.yaml#trust_funds_sufficiency
+      - lpc-rules.yaml#no_trust_debit
+      - lpc-rules.yaml#monthly_trust_reconciliation
+    caveats:
+      - "Trust-accounting sections (LPA s84/s86/s87, LPC Rules 54.14.8/54.14.9/54.15.1/54.10) were web-sourced and authored 2026-06-20 to unblock this skill. They are flagged PENDING ATTORNEY CONFIRMATION in lpa.yaml / lpc-rules.yaml and must be sign-off-confirmed before E4 ships client-facing trust output. The skill must carry the [model knowledge — verify] source tag until then."
 
   fica-gap-review:
     status: planned
