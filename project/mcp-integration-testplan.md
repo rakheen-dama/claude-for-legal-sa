@@ -20,7 +20,16 @@ plan targets that surface instead.
 ## Prerequisites (once, in order)
 
 - [ ] **P1 — Stack up.** `bash compose/scripts/dev-up.sh` then `bash compose/scripts/svc.sh start backend gateway frontend`. Confirm `svc.sh status` shows backend `:8080`, gateway `:8443`, frontend `:3000`, Keycloak `:8180` healthy. Backend must include PR #1465 (RFC 9728 metadata fix) — restart if it predates 2026-06-19.
-- [ ] **P2 — Seed a legal tenant.** Use (or provision) a **legal-vertical** tenant; the demo seeders (`backend/.../demo/seed/LegalDemoDataSeeder`) populate matters, clients, time entries, a trust account, and compliance checklists. Log into `:3000` as the tenant's Keycloak user and **confirm in the UI** that there are: ≥2 matters, ≥1 client (one a company/trust for beneficial-ownership), unbilled time, a trust account with transactions, and a client with open FICA gaps. **Record the ids** you'll need: one matter id, one client id, the trust-account id.
+- [ ] **P2 — Provision a `legal-za` demo tenant (with seeded data).** Use the platform-admin demo-provision endpoint: `POST /api/platform-admin/demo/provision` (platform-admin JWT) with `{"organizationName":"...","verticalProfile":"legal-za","adminEmail":"...","seedDemoData":true}`. The profile **must be `legal-za`** (the canonical id — `"legal"` falls back to generic and installs no FICA pack). `LegalDemoDataSeeder` then populates the complete dataset the skills need (requires Kazi PR #1471, "seed trust + FICA checklist + unbilled time"):
+  - **Matters** — *Dlamini — Property Transfer*, *Naidoo — Commercial Lease Review*, *Botha — Estate Administration*, *Dlamini — Labour Dispute*, etc.
+  - **Clients** — incl. **Dlamini Property Trust** (`TRUST` type → drives beneficial-ownership) and four companies.
+  - **Unbilled time** — ~20% of entries left unbilled (for `fee-note-run`).
+  - **Trust account** — one `SECTION_86` account + 4 transactions, with **one creditor left in debit** (−R3k → the Rule 54.14.9 anomaly for `trust-reconciliation`).
+  - **FICA checklist** — the `legal-za-trust-client-onboarding` checklist instantiated for Dlamini Property Trust with required items PENDING (the gaps for `fica-gap-review`).
+
+  Log into `:3000` as the tenant's Keycloak user and **confirm in the UI** the above exist. **Record the ids** you'll need: one matter id, the Dlamini Property Trust client id, and the trust-account id.
+
+  > If you can't reach the platform-admin endpoint, the seeded shape is verified by `LegalDemoDataSeederTest` (trust+debit, unbilled time, FICA checklist on `legal-za`) — but a live tenant is still needed for the OAuth + MCP read tests below.
 - [ ] **P3 — Enable MCP + consent.** Settings → Integrations → MCP → **Enable** (POPIA consent). Or API: `POST /api/integrations/mcp/enable` body `{"consentVersion":"popia-egress-v1"}` (member JWT). Verify `GET /api/integrations/mcp/status` shows enabled + consented.
 - [ ] **P4 — Install the plugin.** Install `kazi-legal-za` into your Claude client (Claude Code: `/plugin`; or local marketplace). Set `KAZI_MCP_URL=http://localhost:8080/mcp`.
 - [ ] **P5 — Doctor.** Run `python3 "$CLAUDE_PLUGIN_ROOT/scripts/kazi-doctor.py"` → **PASS** (metadata advertises the Keycloak auth server; `/mcp` returns 401 unauth). This proves the unauthenticated hops before you sign in.
