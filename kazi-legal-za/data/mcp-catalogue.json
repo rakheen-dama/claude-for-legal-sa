@@ -1,0 +1,25 @@
+{
+  "_comment": "Authoritative Kazi MCP read catalogue (Phase 78, read-only). Source of truth lives in the Kazi backend (io.b2mash.b2b.b2bstrawman.mcp). The grounding linter (scripts/validate-kazi-skill-grounding.py) validates every skill's tool/resource reference against this list. When the backend catalogue changes, update this file and re-run the linter.",
+  "tools": [
+    "kazi_ping",
+    "list_matters",
+    "get_matter",
+    "get_matter_activity",
+    "list_clients",
+    "get_client",
+    "get_unbilled_time",
+    "list_invoices",
+    "get_invoice",
+    "get_trust_balance",
+    "list_trust_transactions",
+    "list_compliance_gaps",
+    "search_documents",
+    "get_document_url",
+    "get_audit_events"
+  ],
+  "resources": [
+    { "name": "firm-profile", "uri": "kazi://firm-profile" },
+    { "name": "client", "uri": "kazi://client/{id}" },
+    { "name": "matter", "uri": "kazi://matter/{id}" }
+  ]
+}

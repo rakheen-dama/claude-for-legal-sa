@@ -1,0 +1,48 @@
+statute: "Superior Courts Act 10 of 2013"
+authority: "Department of Justice and Constitutional Development"
+last_confirmed: "2025-05-01"
+source_url: "https://www.gov.za/documents/superior-courts-act"
+
+sections:
+  leave_to_appeal_time_limit:
+    ref: "Superior Courts Act s17(1)"
+    value: 15
+    unit: "court days"
+    effective_from: "2013-08-23"
+    effective_until: null
+    effect: "Application for leave to appeal must be made within 15 court days of the order or judgment appealed against. Court days exclude weekends, public holidays, and court recess periods."
+
+  leave_to_appeal_test:
+    ref: "Superior Courts Act s17(1)(a)"
+    value: "reasonable prospect of success or compelling reason"
+    effective_from: "2013-08-23"
+    effective_until: null
+    effect: "Leave to appeal may only be granted where the judge is of the opinion that the appeal would have a reasonable prospect of success, or there is some other compelling reason why the appeal should be heard (e.g. conflicting judgments, important question of law of general public importance)."
+
+  execution_suspension_on_appeal:
+    ref: "Superior Courts Act s18(1)"
+    value: true
+    effective_from: "2013-08-23"
+    effective_until: null
+    effect: "The operation and execution of a decision which is the subject of an application for leave to appeal or of an appeal is suspended pending the decision of the application or appeal, unless the court orders otherwise."
+
+  execution_suspension_exception:
+    ref: "Superior Courts Act s18(3)"
+    value: "exceptional circumstances"
+    effective_from: "2013-08-23"
+    effective_until: null
+    effect: "A court may only order that the operation or execution of a decision is not suspended if exceptional circumstances exist, and the applicant would suffer irreversible harm if the order is not made, and the other party would not suffer irreversible harm if the order is made."
+
+  high_court_jurisdiction:
+    ref: "Superior Courts Act s19"
+    value: "inherent jurisdiction"
+    effective_from: "2013-08-23"
+    effective_until: null
+    effect: "The High Court has inherent jurisdiction over all persons and matters within the area of its division, subject to the Constitution. It has original jurisdiction in all civil and criminal matters, except where jurisdiction is excluded by law."
+
+  sca_jurisdiction:
+    ref: "Superior Courts Act s21"
+    value: "appeal jurisdiction"
+    effective_from: "2013-08-23"
+    effective_until: null
+    effect: "The Supreme Court of Appeal has jurisdiction to hear and determine an appeal against any decision of a High Court. It is the highest court of appeal except in constitutional matters."
