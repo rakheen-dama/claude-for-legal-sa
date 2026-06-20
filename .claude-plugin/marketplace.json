@@ -1,9 +1,9 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
-  "name": "claude-for-legal",
-  "description": "Reference agents, skills, and data connectors for the legal workflows we see most — in-house commercial, privacy, product, corporate, employment, litigation, regulatory, AI governance, IP, and the learning side of the practice (law school clinics and students).",
+  "name": "claude-for-legal-sa",
+  "description": "South African fork of Anthropic's claude-for-legal: the upstream legal plugins plus a ZA jurisdiction overlay and the b2mash-published kazi-legal-za plugin (grounds your own Claude in your live Kazi data over MCP).",
   "owner": {
-    "name": "Anthropic"
+    "name": "b2mash"
   },
   "plugins": [
     {

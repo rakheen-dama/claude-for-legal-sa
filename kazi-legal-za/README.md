@@ -38,7 +38,7 @@ and a full read audit trail.
 
 ## Install & connect
 
-1. Install this plugin from the `claude-for-legal` marketplace (`/plugin`).
+1. Install this plugin from the `claude-for-legal-sa` marketplace (`/plugin`).
 2. Point it at your tenant by setting the `KAZI_MCP_URL` environment variable to your MCP endpoint:
 
    ```bash
