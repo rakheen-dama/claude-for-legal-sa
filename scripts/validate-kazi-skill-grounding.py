@@ -143,9 +143,11 @@ def main() -> None:
             if age is not None and age > FRESHNESS_DAYS:
                 warn(skill, f"{fname} last_confirmed {last_confirmed} is {age}d old (>{FRESHNESS_DAYS}d) — re-confirm")
 
-        # --- knowledge gaps (tracked) ---
+        # --- knowledge gaps + caveats (tracked) ---
         for gap in spec.get("knowledge_gaps") or []:
             warn(skill, f"knowledge gap: {gap}")
+        for caveat in spec.get("caveats") or []:
+            warn(skill, f"caveat: {caveat}")
 
         # --- built skills must exist and name their grounding ---
         if status == "built":
