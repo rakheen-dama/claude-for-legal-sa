@@ -32,7 +32,7 @@ skills:
     za_knowledge: []
 
   fee-note-run:
-    status: planned
+    status: built
     mcp: [list_matters, get_unbilled_time, get_matter, firm-profile]
     za_knowledge:
       - contingency-fees.yaml#fee_cap_percentage
