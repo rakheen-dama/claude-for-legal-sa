@@ -54,7 +54,7 @@ skills:
       - "Trust-accounting sections (LPA s84/s86/s87, LPC Rules 54.14.8/54.14.9/54.15.1/54.10) were web-sourced and authored 2026-06-20 to unblock this skill. They are flagged PENDING ATTORNEY CONFIRMATION in lpa.yaml / lpc-rules.yaml and must be sign-off-confirmed before E4 ships client-facing trust output. The skill must carry the [model knowledge — verify] source tag until then."
 
   fica-gap-review:
-    status: planned
+    status: built
     mcp: [list_compliance_gaps, get_client, get_matter]
     za_knowledge:
       - fica.yaml#customer_due_diligence
