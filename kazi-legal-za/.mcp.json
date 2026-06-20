@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "kazi": {
+      "type": "http",
+      "url": "${KAZI_MCP_URL}",
+      "title": "Kazi — your firm's data",
+      "description": "Read-only access to your firm's matters, clients, unbilled time, trust ledger, and FICA/compliance state in Kazi. Requires OAuth sign-in (authorization-code + PKCE) and data-egress consent enabled in Kazi Settings → Integrations → MCP."
+    }
+  },
+  "recommendedCategories": [
+    "legal",
+    "practice-management"
+  ]
+}

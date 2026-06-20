@@ -103,6 +103,14 @@
       }
     },
     {
+      "name": "kazi-legal-za",
+      "source": "./kazi-legal-za",
+      "description": "Grounds your firm's own Claude in your live Kazi data over a read-only MCP connection: drafts monthly fee notes from unbilled time, runs section 86 trust-reconciliation checks, reviews FICA/KYC gaps, briefs matter status, and triages new-matter intake. Tuned for South African legal practice. Every output is a draft for attorney review, committed back in Kazi by hand.",
+      "author": {
+        "name": "b2mash"
+      }
+    },
+    {
       "name": "cocounsel-legal",
       "source": "./external_plugins/cocounsel-legal",
       "description": "CoCounsel Legal delivers comprehensive Westlaw Deep Research reports with inline, linked citations to Westlaw and Practical Law sources.",
