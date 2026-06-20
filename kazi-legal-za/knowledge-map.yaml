@@ -1,0 +1,71 @@
+# Grounding contract for the kazi-legal-za skills.
+#
+# Each skill declares (a) the Kazi MCP tools/resources it calls and (b) the
+# jurisdictions/za statute knowledge it cites. This is the single source the
+# tooling reads:
+#
+#   scripts/sync-kazi-knowledge.py            bundles every cited statute file
+#                                             from jurisdictions/za into
+#                                             kazi-legal-za/data/za/ so it ships
+#                                             with the plugin (repo-root dirs do
+#                                             NOT ship inside a plugin).
+#   scripts/validate-kazi-skill-grounding.py  enforces that every reference
+#                                             resolves: each `mcp` entry exists
+#                                             in data/mcp-catalogue.json, each
+#                                             `za_knowledge` "file#section" exists
+#                                             in both the source and the bundle,
+#                                             the bundle matches source (no drift),
+#                                             and cited statutes aren't stale.
+#
+# `status`:  built   skill exists under skills/<name>/ and is wired up.
+#            planned  grounding is verified ahead of the skill being written.
+#            blocked  cannot be grounded until a knowledge gap is filled.
+#
+# `knowledge_gaps`: honest notes about SA knowledge the skill needs that is NOT
+# yet in jurisdictions/za. Surfaced by the linter as warnings so they are tracked,
+# never silently ignored.
+
+skills:
+  connect-kazi:
+    status: built
+    mcp: [kazi_ping, firm-profile]
+    za_knowledge: []
+
+  fee-note-run:
+    status: planned
+    mcp: [list_matters, get_unbilled_time, get_matter, firm-profile]
+    za_knowledge:
+      - contingency-fees.yaml#fee_cap_percentage
+      - contingency-fees.yaml#formal_requirements
+    knowledge_gaps:
+      - "LSSA party-and-party / attorney-and-client tariff is not in jurisdictions/za. Until a tariff overlay is added, fee-note narratives rely on firm house style (from kazi://firm-profile) plus the Contingency Fees Act caps."
+
+  trust-reconciliation:
+    status: blocked
+    mcp: [get_trust_balance, list_trust_transactions, list_matters]
+    za_knowledge: []
+    knowledge_gaps:
+      - "Legal Practice Act s86 trust-accounting duties and LPC Rule 54 trust rules are NOT in jurisdictions/za. lpa.yaml and lpc-rules.yaml currently cover law-clinic and admission provisions only. E4 needs a /jurisdiction-expansion pass to add s86 + Rule 54 sections before this skill can be grounded."
+
+  fica-gap-review:
+    status: planned
+    mcp: [list_compliance_gaps, get_client, get_matter]
+    za_knowledge:
+      - fica.yaml#customer_due_diligence
+      - fica.yaml#beneficial_ownership
+      - fica.yaml#rmcp_requirement
+      - fica.yaml#cash_threshold_reporting
+
+  matter-brief:
+    status: planned
+    mcp: [get_matter, get_matter_activity, search_documents]
+    za_knowledge: []
+
+  intake-triage:
+    status: planned
+    mcp: [list_clients, list_matters, firm-profile]
+    za_knowledge:
+      - magistrates-courts.yaml#district_court_monetary_jurisdiction
+      - superior-courts.yaml#high_court_jurisdiction
+      - prescription.yaml#general_debt_prescription
+      - contingency-fees.yaml#fee_cap_percentage
