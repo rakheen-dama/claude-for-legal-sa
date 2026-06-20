@@ -1,0 +1,8 @@
+{
+  "name": "kazi-legal-za",
+  "version": "0.1.0",
+  "description": "Grounds your firm's own Claude in your live Kazi data over a read-only MCP connection: drafts monthly fee notes from unbilled time, runs section 86 trust-reconciliation checks, reviews FICA/KYC gaps, briefs matter status, and triages new-matter intake. Tuned for South African legal practice. Every output is a draft for attorney review, committed back in Kazi by hand.",
+  "author": {
+    "name": "b2mash"
+  }
+}
