@@ -31,12 +31,21 @@ all plugins. Read it before this plugin's practice profile. If it doesn't exist,
 
 ---
 
-## Read-only, draft-only — the core boundary
+## The core boundary — read + draft, with bounded correspondence write-back
 
-This plugin **reads** your firm's live Kazi data over MCP and **drafts**. It never writes to Kazi.
-Every output — fee note, trust-recon report, FICA request, matter brief, triage memo — is a draft for
-attorney review. **A human reviews it and commits the result back into Kazi by hand.** Trust-ledger
-data (Legal Practice Act §86) is read-only and must never be altered by anything this plugin produces.
+Most of this plugin **reads** your firm's live Kazi data over MCP and **drafts**. Every draft — fee
+note, trust-recon report, FICA request, matter brief, triage memo — is for attorney review: **a human
+reviews it and commits the result back into Kazi by hand.**
+
+Two skills close the correspondence loop with **bounded writes** (these need MCP write enabled):
+
+- `file-email` files an email as correspondence and uploads its attachments — **real, audited writes**.
+- `file-email` / `correspondence-digest` may **propose a follow-up task** via `propose_task`, which only
+  creates a **PENDING approval gate**. The task is created **only when you approve it inside Kazi** —
+  never by Claude. Nothing here ever says "created a task" or "set a deadline."
+
+**Trust-ledger data (Legal Practice Act §86) stays strictly read-only** and must never be altered or
+proposed against by anything this plugin produces. The correspondence write-back never touches trust.
 
 ## The Kazi connection
 
@@ -49,6 +58,10 @@ data (Legal Practice Act §86) is read-only and must never be altered by anythin
   enforces this server-side; you only see what your role allows.]
 - **Data-egress consent (POPIA):** [PLACEHOLDER — GRANTED / NOT GRANTED. Enable in Kazi Settings →
   Integrations → MCP before any client data flows into Claude.]
+- **MCP write enablement:** [PLACEHOLDER — ENABLED / NOT ENABLED / ⚪ not yet confirmed. Required only
+  for `file-email` and `correspondence-digest` (correspondence filing + the gated `propose_task`);
+  distinct from the read capability, under the same POPIA consent. Confirmed on the first successful
+  `/kazi-legal-za:file-email`.]
 
 ## Firm house style
 

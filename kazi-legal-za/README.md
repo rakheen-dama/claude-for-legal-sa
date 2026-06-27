@@ -1,17 +1,21 @@
 # Kazi-Grounded Legal Plugin (South Africa)
 
-Brings your firm's own Claude into your live [Kazi](https://heykazi.com) data over a **read-only** MCP
-connection. Your Claude reads your matters, unbilled time, trust ledger, and FICA/compliance state, and
-**drafts** — monthly fee notes, §86 trust-reconciliation checks, FICA/KYC gap reviews, client-ready
-matter briefs, new-matter triage. A lawyer reviews each draft and commits the result back into Kazi by
-hand.
+Brings your firm's own Claude into your live [Kazi](https://heykazi.com) data over MCP. Your Claude
+reads your matters, unbilled time, trust ledger, and FICA/compliance state, and **drafts** — monthly
+fee notes, §86 trust-reconciliation checks, FICA/KYC gap reviews, client-ready matter briefs,
+new-matter triage. It also **files correspondence**: file an email into the right matter and surface
+what needs a reply. A lawyer reviews each draft and commits the result back into Kazi.
 
 **Bring your own Claude — Kazi provides the grounded context.** Your firm's own Claude subscription pays
 the token bill; Kazi just exposes your data over MCP, with per-user authorisation, POPIA egress consent,
-and a full read audit trail.
+and a full audit trail.
 
-> **Read-only, draft-only.** This plugin never writes to Kazi. Trust-ledger data (Legal Practice Act
-> §86) is read-only and never altered. Every output is a draft for attorney review.
+> **Mostly read + draft, with bounded correspondence write-back.** The fee-note / trust / FICA / brief /
+> triage skills never write to Kazi — every output is a draft for attorney review. Two correspondence
+> skills do write: `file-email` files an email (and its attachments) into a matter, and both
+> correspondence skills may **propose** a follow-up task — a PENDING gate the attorney approves **inside
+> Kazi**, never created by Claude. **Trust-ledger data (Legal Practice Act §86) stays strictly
+> read-only** and is never altered or proposed against.
 
 ## What's in v1
 
@@ -24,9 +28,14 @@ and a full read audit trail.
 | `/kazi-legal-za:intake-triage` | Triage a new matter — conflicts, forum, governing law, deadlines | ✅ |
 | `/kazi-legal-za:trust-reconciliation` | §86 trust-account **anomaly screen** (read-only) | ✅ ⚠️ statute refs pending attorney sign-off |
 | `/kazi-legal-za:kazi-bridge` | Run upstream `claude-for-legal` skills against Kazi data | ✅ |
+| `/kazi-legal-za:file-email` | File an email into the right matter (+ attachments); optionally propose a follow-up task | ✅ ✍️ writes (needs MCP write enabled) |
+| `/kazi-legal-za:correspondence-digest` | Read filed correspondence back — what needs a reply, gone quiet, deadlines | ✅ ✍️ gated propose only |
 
-> A future **v2** adds gated write-back (Claude proposes → attorney approves in Kazi). The contract is
-> reserved in [`docs/v2-write-back-contract.md`](docs/v2-write-back-contract.md); v1 is read-only.
+> **Write-back is live, and bounded.** `file-email` / `correspondence-digest` consume Kazi's gated
+> correspondence write tools: filing is a direct audited write; tasks are only ever **proposed**
+> (PENDING gate → attorney approves in Kazi). The original design is in
+> [`docs/v2-write-back-contract.md`](docs/v2-write-back-contract.md) (Kazi shipped `propose_task`, not
+> the other `propose_*` tools that doc sketched). Trust write-back is deliberately excluded.
 
 ## Prerequisites
 
@@ -35,6 +44,11 @@ and a full read audit trail.
 2. **A Claude client** that supports remote MCP over HTTP with OAuth: Claude Code, Claude Desktop, or
    claude.ai.
 3. **Your tenant's MCP endpoint**, e.g. `https://yourfirm.heykazi.com/mcp`.
+4. **For the correspondence skills only:** **MCP write enabled** for your member (Kazi Settings →
+   Integrations → MCP) — a stricter posture than read-only, under the same POPIA consent. The read-and-
+   draft skills don't need it. Filing attachments via `file-email` also needs a client that can perform
+   an HTTP upload (Claude Code, via `curl`) and the attachment as a local file; on the bare paste path
+   the email body files fine and you attach documents in Kazi.
 
 ## Install & connect
 
@@ -86,8 +100,24 @@ Once connected, a typical first session:
 7. **Use your other legal skills on Kazi data.** `/kazi-legal-za:kazi-bridge "contract-review on matter
    Acme MSA"` → pulls the document from Kazi and runs the upstream `commercial-legal` review on it.
 
-Every output is a **draft for attorney review**, committed back in Kazi by hand. Nothing is written to
-Kazi by the plugin.
+### Close the correspondence loop (the write-back skills)
+
+Enable **MCP write** for your member in Kazi Settings → Integrations → MCP first, then:
+
+8. **File an email.** Forward or paste a client email and run `/kazi-legal-za:file-email`. It resolves
+   the sender to a client + matter (asking you to disambiguate if needed), **files** it as
+   correspondence, uploads any attachments, and — if the email implies a dated action — **proposes a
+   task**. Re-running the same email is safe (it reports "already filed").
+9. **Approve the follow-up in Kazi.** The proposed task is a **PENDING gate** — open it in Kazi and
+   approve; only then is the task created and linked to the correspondence. Claude never creates it.
+10. **Digest what's filed.** `/kazi-legal-za:correspondence-digest "Acme lease renewal"` → across the
+    matter's filed correspondence: what's awaiting a reply, what's gone quiet, and deadlines stated in
+    the bodies (optionally proposed as tasks, same approve-in-Kazi gate). It reads what's **filed** in
+    Kazi, not your live mailbox.
+
+The read-and-draft skills write nothing to Kazi — every output is a draft committed by hand. The
+correspondence skills file directly (audited) but only ever **propose** tasks; you approve them in Kazi.
+Trust is never written or proposed against.
 
 ### Claude Desktop / claude.ai vs Claude Code
 
@@ -102,8 +132,12 @@ through whichever client you're in.
   server-side. You see only what your Kazi role lets you see — the plugin can't widen that.
 - **POPIA consent.** Client data only flows after your firm grants egress consent in Kazi; revoking it
   is one click and the server stops returning data.
-- **Read audit trail.** Every MCP read is logged in Kazi, so the firm has a POPIA-defensible record of
-  what AI touched which client data.
+- **Read + write audit trail.** Every MCP read is logged in Kazi; every correspondence write
+  (`mcp.write.*` — filed email, attached document, proposed task) is logged too, so the firm has a
+  POPIA-defensible record of what AI touched — and proposed — for which client.
+- **Writes are bounded and gated.** Only `file-email` / `correspondence-digest` write, only after MCP
+  write is enabled. Filing is direct and audited; tasks are only **proposed** (a PENDING gate approved
+  in Kazi). No skill writes to the trust ledger.
 - **SA-grounded.** Drafts cite South African statute knowledge from the `claude-for-legal-sa` overlay
   (`jurisdictions/za/...`) — FICA, the Legal Practice Act, LSSA tariffs — not generic boilerplate.
 

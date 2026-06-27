@@ -1,8 +1,31 @@
-# v2 write-back contract (spec only — NOT built)
+# v2 write-back contract — partly superseded by Kazi Phase 81
 
-v1 of `kazi-legal-za` is **read-only**: Claude drafts, a human commits the result back into Kazi by hand.
-This document reserves the design for v2 — gated write-back — so it isn't reinvented when its turn comes.
-**Nothing here is implemented.** v1 ships no write tools.
+> **Status update.** This was the reserved spec for gated write-back. Kazi **Phase 81** then shipped a
+> *correspondence* write-back slice, and `kazi-legal-za` now consumes it in two skills
+> (`file-email`, `correspondence-digest`). What actually shipped differs from the sketch below — read
+> this section first:
+>
+> - Kazi built exactly **one** gated proposal tool, **`propose_task`** (create a task from a filed
+>   correspondence, via a PENDING `AiExecutionGate`). The four `propose_*` tools tabled below
+>   (`propose_fee_note`, `propose_kyc_request`, `propose_matter_update`, `propose_intake_decision`)
+>   **were not built and no skill calls them** — do not assume they exist.
+> - Phase 81 also added **direct, ungated Tier-1 writes** for correspondence: `file_correspondence`
+>   (idempotent on `messageId`) and `attach_document` (two-phase presigned upload), plus the read helper
+>   `resolve_matter_by_email`. Phase 82 added correspondence **read-back** (`list_correspondence`,
+>   `get_correspondence`).
+> - `propose_task`'s reach is **deliberately limited** to the two correspondence skills. The other five
+>   skills stay read-only/draft-only — do **not** retrofit `propose_task` (or any write) into them.
+> - The principle below still holds exactly: a proposal creates a PENDING gate; approval happens only in
+>   Kazi; trust is never a write/proposal target.
+>
+> The original spec is retained below for the design rationale and for the contract requirements, which
+> the shipped tools satisfy.
+
+---
+
+The rest of this document is the original v2 reservation. Claude drafts, a human commits the result back
+into Kazi by hand. It reserved the design for gated write-back so it wasn't reinvented when its turn
+came — that turn became Phase 81 (correspondence only, as noted above).
 
 ## Principle: a write does not mutate state — it proposes
 
