@@ -1,5 +1,5 @@
 {
-  "_comment": "Authoritative Kazi MCP read catalogue (Phase 78, read-only). Source of truth lives in the Kazi backend (io.b2mash.b2b.b2bstrawman.mcp). The grounding linter (scripts/validate-kazi-skill-grounding.py) validates every skill's tool/resource reference against this list. When the backend catalogue changes, update this file and re-run the linter.",
+  "_comment": "Authoritative Kazi MCP catalogue mirroring the Kazi backend (io.b2mash.b2b.b2bstrawman.mcp). Phase 78 = read-only. Phase 81 adds correspondence write-back (resolve_matter_by_email, file_correspondence, attach_document, propose_task). Phase 82 adds correspondence read-back (list_correspondence, get_correspondence). The grounding linter (scripts/validate-kazi-skill-grounding.py) validates every skill's tool/resource reference against this list. When the backend catalogue changes, update this file and re-run the linter.",
   "tools": [
     "kazi_ping",
     "list_matters",
@@ -7,6 +7,7 @@
     "get_matter_activity",
     "list_clients",
     "get_client",
+    "resolve_matter_by_email",
     "get_unbilled_time",
     "list_invoices",
     "get_invoice",
@@ -15,7 +16,12 @@
     "list_compliance_gaps",
     "search_documents",
     "get_document_url",
-    "get_audit_events"
+    "get_audit_events",
+    "list_correspondence",
+    "get_correspondence",
+    "file_correspondence",
+    "attach_document",
+    "propose_task"
   ],
   "resources": [
     { "name": "firm-profile", "uri": "kazi://firm-profile" },

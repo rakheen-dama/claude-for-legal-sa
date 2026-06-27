@@ -80,3 +80,20 @@ skills:
       - superior-courts.yaml#high_court_jurisdiction
       - prescription.yaml#general_debt_prescription
       - contingency-fees.yaml#fee_cap_percentage
+
+  # Correspondence loop (Kazi Phase 81 write-back + Phase 82 read-back). These two
+  # skills carry only light SA grounding (advisory prescription awareness for phrasing
+  # proposed-task dates) — they are workflow skills, not statute-drafting skills.
+  # propose_task's reach is deliberately limited to these two skills; do not retrofit
+  # it into the five read-only/draft-only skills above.
+  file-email:
+    status: built
+    mcp: [resolve_matter_by_email, file_correspondence, attach_document, propose_task]
+    za_knowledge:
+      - prescription.yaml#general_debt_prescription   # advisory, for proposed-task dates only
+
+  correspondence-digest:
+    status: built
+    mcp: [list_correspondence, get_correspondence, propose_task, search_documents, get_document_url]
+    za_knowledge:
+      - prescription.yaml#general_debt_prescription   # advisory, for sanity-checking spotted dates

@@ -26,6 +26,16 @@ Three things must all be true before any other skill should run:
 3. **Consent granted** — POPIA data-egress consent is `GRANTED` in Kazi (Settings → Integrations → MCP).
    Without it the server refuses to return client data. This plugin never bypasses that.
 
+The read-and-draft skills need only the three above. Two skills also **write** to Kazi —
+`/kazi-legal-za:file-email` and `/kazi-legal-za:correspondence-digest` (correspondence filing + the
+gated `propose_task`). Those additionally need:
+
+4. **MCP write enabled** — the firm has enabled MCP **write** and the member holds the write capability
+   (distinct from the read capability), under the same POPIA consent. Filing and task-proposals refuse
+   without it. There is **no MCP endpoint to approve** a proposed task — approval happens only in Kazi.
+   Do **not** test this by calling a write tool during onboarding (that would file something); confirm
+   it on the first real `/kazi-legal-za:file-email`.
+
 ## Steps
 
 1. **Config check.** Look for `~/.claude/plugins/config/claude-for-legal/kazi-legal-za/CLAUDE.md`. If it
@@ -63,13 +73,17 @@ Three things must all be true before any other skill should run:
    Also create/update the shared `company-profile.md` one level up if firm-level facts were learned.
 
 8. **Confirm.** Show a summary: "Connected to <tenant> as <member> (<role>). Consent: <state>. Your role
-   can see <scope>." Then offer a first task — usually `/kazi-legal-za:fee-note-run` or
-   `/kazi-legal-za:matter-brief`.
+   can see <scope>." Report **MCP write** state too: if `kazi_ping` surfaces the write capability, show
+   it; otherwise report it as `⚪ not yet confirmed — confirmed on first /kazi-legal-za:file-email`
+   (apply the same "only ✓ if a tool call actually succeeded" rule below — never claim write works from
+   the declaration alone, and never call a write tool to probe). Then offer a first task — usually
+   `/kazi-legal-za:fee-note-run` or `/kazi-legal-za:matter-brief`.
 
 ## `--check-integrations`
 
 Re-probes the connection only (runs `kazi-doctor`, calls `kazi_ping`, re-reads `kazi://firm-profile`)
-and updates `## Available integrations` and the consent line in the config CLAUDE.md. Does not re-onboard.
+and updates `## Available integrations`, the consent line, and the MCP write-enablement line in the
+config CLAUDE.md. Does not re-onboard.
 
 When probing: only report ✓ if an MCP tool call actually **succeeded** this session. A configured but
 untested connection is ⚪ with a one-line how-to. Never report ✓ from the `.mcp.json` declaration alone —
@@ -85,7 +99,10 @@ that misleads the user into thinking data is flowing when it isn't.
 
 ## Boundaries
 
-- Read-only. This skill (and every skill here) never writes to Kazi.
-- Never fabricate a member, role, or consent state — read it from a live tool call or say it's unknown.
+- This skill never writes to Kazi (it only writes the local config CLAUDE.md). Most skills here are
+  read-only; the two correspondence skills (`file-email`, `correspondence-digest`) make bounded,
+  gated writes once MCP write is enabled — connect-kazi only *reports* that state, never exercises it.
+- Never fabricate a member, role, consent, or write-enablement state — read it from a live tool call or
+  say it's unknown.
 - If you can't reach the server or aren't signed in, say so plainly and stop. A broken connection is a
   report-up, not a thing to draft around.
