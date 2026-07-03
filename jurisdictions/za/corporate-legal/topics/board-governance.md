@@ -396,4 +396,11 @@ The King IV Report on Corporate Governance for South Africa (2016) replaces King
 | Key function | Auditor nomination, financial oversight | Social/economic/environmental monitoring | Remuneration policy, director pay |
 | Election | By shareholders at AGM | By board | By board |
 | Statutory basis | Companies Act s94 | Companies Act s72(4), Reg 43 | King IV (no statutory basis) |
-| Reporting | To shareholders at AGM | To shareholders at AGM | To shareholders (non-binding advisory vote) |
+| Reporting | To shareholders at AGM | To shareholders at AGM | Remuneration policy & report now statutory for public/SOC (ss30A/30B) |
+
+> **2026 update — statutory remuneration regime (ss30A, 30B, 30(4)-(6)).** From **22 May 2026** (Companies Amendment Act 16 of 2024, commenced by Proclamation 313 of 2026, GG 54722), remuneration governance for **public and state-owned companies** is no longer a King IV-only, non-binding-vote matter:
+> - **s30A** — the company must table a **remuneration policy** for shareholder approval by **ordinary resolution** at the AGM; once approved it stands for three years, and material amendments need fresh approval.
+> - **s30B** — the company must table an annual **remuneration report** (background statement + policy + implementation report) for approval by ordinary resolution. The implementation report must disclose each director's and prescribed officer's total remuneration, the highest- and lowest-paid employee, the average and median employee remuneration, and the pay gap between the top 5% and bottom 5%. A **two-strike** consequence follows non-approval.
+> - **s30(4)-(6)** — for **any company whose AFS must be audited**, the annual financial statements must now disclose remuneration and benefits of **each individual director and prescribed officer, by name**.
+>
+> See `statutes/companies-act.yaml` → `remuneration_policy`, `remuneration_report`, `director_remuneration_disclosure` for the authoritative scope and references.

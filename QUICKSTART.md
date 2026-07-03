@@ -13,13 +13,13 @@ https://github.com/user-attachments/assets/51394f0a-5277-4fe2-b81c-5c5e9ac876b5
 
 1. **Open Claude Code** (in your terminal) or **Claude Cowork** (the desktop app). Not sure which you have? If you have a terminal window open with Claude in it, that's Claude Code.
 
-2. **Add the marketplace.** In Claude Code, type `/plugin marketplace add ` (with a space at the end), then **drag the unzipped `claude-for-legal` folder onto the terminal window** — it'll fill in the path. Then press Enter.
+2. **Add the marketplace.** In Claude Code, type `/plugin marketplace add ` (with a space at the end), then **drag the unzipped `claude-for-legal-sa` folder onto the terminal window** — it'll fill in the path. Then press Enter.
 
-   (Or type the full path: `/plugin marketplace add /Users/you/Desktop/claude-for-legal`)
+   (Or type the full path: `/plugin marketplace add /Users/you/Desktop/claude-for-legal-sa`)
 
 3. **Install your plugin.** Pick the one that matches your work from the table below, then:
    ```
-   /plugin install privacy-legal@claude-for-legal
+   /plugin install privacy-legal@claude-for-legal-sa
    ```
 
 4. **⚠️ Restart Claude Code.** Close and reopen. This step is not optional — the plugin isn't live until you restart.
@@ -29,7 +29,11 @@ https://github.com/user-attachments/assets/51394f0a-5277-4fe2-b81c-5c5e9ac876b5
    /privacy-legal:cold-start-interview
    ```
 
+5a. **Answer "South Africa" at the jurisdiction prompt.** Every cold-start interview begins with a jurisdiction question. Answer **South Africa** (or **ZA**) to activate the ZA overlay. This writes an SA practice profile from the ZA template, which tells every skill to load the relevant statute and topic overlays.
+
 6. **Connect a research tool.** Citations are flagged unverified without one. In Cowork: Settings → Connectors → add CourtListener. In Claude Code: the plugin already lists the research MCP in its config; you'll be prompted to authorize it the first time a skill needs it.
+
+   > **Note for SA users:** CourtListener is US-only and will not return SA case law. For SA legal research connectors (SAFLII, CCMA, Government Gazette), see [project/mcp-requirements-za.md](project/mcp-requirements-za.md) for the roadmap.
 
 ## Install user-scoped, not project-scoped
 
@@ -37,7 +41,7 @@ When you run `/plugin install`, you may be asked whether to install for this pro
 
 It's counterintuitive: project scope feels safer. But project scope blocks the plugin from reading files outside the project folder — your outlines in Downloads, your contract in Documents, your client file in Dropbox. Most skills need to read your files. User scope doesn't give the plugin any extra access to your files — the plugin can only read files you explicitly point it at or that are in the current directory. It just means the plugin works from any folder instead of one.
 
-If you already installed project-scoped and want to switch: `/plugin uninstall <plugin>`, then `/plugin install <plugin>@claude-for-legal` from your home directory.
+If you already installed project-scoped and want to switch: `/plugin uninstall <plugin>`, then `/plugin install <plugin>@claude-for-legal-sa` from your home directory.
 
 ## Which plugin is for me?
 
@@ -73,3 +77,13 @@ Each plugin learns your playbook through a setup interview, writes it to a pract
 - **Citations flagged `[verify]`** → connect a research tool (step 6). Without one, every cite is from training data, not a current database.
 - **"I can't read [file]"** → most often this means the plugin is project-scoped and the file is outside the project folder. See "Install user-scoped, not project-scoped" above — reinstall user-scoped or move the file into the project folder.
 - **The plugin doesn't do X** → run `/legal-builder-hub:related-skills-surfacer` to find a better match, or check the plugin's README for "What this plugin does not do."
+
+## Verify your ZA setup
+
+**SA-readiness matrix:** Full per-plugin ZA status at [`jurisdictions/za/README.md`](jurisdictions/za/README.md).
+
+After setup, confirm the overlay is active:
+
+- [ ] Your company profile (`~/.claude/plugins/config/claude-for-legal/company-profile.md`) contains `Primary jurisdiction: South Africa`.
+- [ ] Your practice profile (`~/.claude/plugins/config/claude-for-legal/<plugin>/CLAUDE.md`) was written from the ZA template — it should contain an instruction to read the router at `jurisdictions/za/<plugin>/router.md`.
+- [ ] Run `/employment-legal:termination-review` on a test fact pattern and confirm the output cites SA statutes (LRA, BCEA) and CCMA procedure — not FMLA, at-will employment, or US state rules.

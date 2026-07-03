@@ -49,15 +49,15 @@ Instead of rewriting the entire system for SA, we've added a **South African ove
 
 - **SA statutes** instead of US statutes (BCEA instead of FLSA, LRA instead of NLRA, POPIA instead of state privacy laws)
 - **SA procedures** instead of US procedures (CCMA conciliation instead of EEOC charges, s189 consultation instead of WARN Act notice)
-- **SA risk flags** instead of US risk flags (procedural fairness hearing instead of at-will termination, Schedule 8 compliance instead of FMLA interference)
+- **SA risk flags** instead of US risk flags (procedural fairness under the 2025 Code of Good Practice: Dismissal instead of at-will termination, dismissal-code compliance instead of FMLA interference)
 - **SA privilege headers** instead of US headers ("legal professional privilege" instead of "attorney work product")
 
 The US content stays intact underneath — it's not deleted or broken. The SA layer sits on top and activates when the user's jurisdiction is South Africa.
 
-**Currently adapted for SA:**
+**Currently adapted for SA (9 practice areas — see [jurisdictions/za/README.md](README.md) for the full readiness matrix):**
 - Employment law (complete — 7 skills adapted, 11 high-risk dismissal flags, 6 practice guides)
 - Commercial law (complete — 5 skills adapted, 12 high-risk flags, 6 practice guides)
-- Privacy law / POPIA (placeholder — not yet built)
+- Privacy / POPIA, Corporate, Litigation, IP, Product, Regulatory, Legal Clinic (each has a full ZA overlay: router, topic files, statute library, and ZA cold-start interview fork)
 
 ---
 
@@ -74,7 +74,7 @@ Here's what the day-to-day experience looks like for an SA employment lawyer usi
 **Daily use — example: reviewing a proposed termination:**
 1. The lawyer tells the system: "We want to dismiss an employee for misconduct. She's been with us 3 years, earns R180,000, no hearing has been held yet."
 2. The system runs its **11 high-risk flag checklist** against the facts:
-   - Flag 1 fires: **No hearing held** — "Schedule 8 requires notice of allegations, time to prepare, right to representation, and an opportunity to respond before dismissal"
+   - Flag 1 fires: **No opportunity to respond** — "The 2025 Code of Good Practice: Dismissal requires notice of allegations, time to prepare, the right to representation, and a genuine opportunity to respond before dismissal (a formal hearing is not mandatory)"
    - Flag 9 fires: **Earnings below BCEA threshold** — "This employee has full BCEA working-time and overtime protections; adverse changes face higher scrutiny"
 3. The system produces a draft review memo with the flags, the applicable LRA sections, the CCMA referral risk, and a decision tree: "Hold the hearing first. Here's a checklist for procedural fairness."
 4. The lawyer reviews, adjusts, and sends to HR
@@ -82,9 +82,9 @@ Here's what the day-to-day experience looks like for an SA employment lawyer usi
 **The system never acts on its own.** It produces drafts, flags risks, and offers options. The lawyer decides.
 
 **Other common tasks:**
-- "Review this employment contract" → checks restraint of trade (Basson v Chilwan test), probation clause (Schedule 8 Item 8), EEA obligations
+- "Review this employment contract" → checks restraint of trade (Basson v Chilwan test), probation clause (2025 Code of Good Practice: Dismissal; formerly Schedule 8 Item 8), EEA obligations
 - "Can we classify this person as a contractor?" → runs BCEA s213, s200A presumption, dominant impression test
-- "Draft a disciplinary code" → produces a code aligned to Schedule 8 with the company's specific offence categories
+- "Draft a disciplinary code" → produces a code aligned to the 2025 Code of Good Practice: Dismissal with the company's specific offence categories
 - "How much annual leave does this employee have?" → calculates from BCEA s20 entitlements and the company's leave cycle
 
 ---
@@ -112,14 +112,14 @@ These are structured reference files — one per Act — that store **thresholds
 - **When it took effect** and whether it's still current
 - **A plain-English explanation** of what the provision does
 
-**Currently there are 12 statute files:**
+**There are ~50 statute files** (full list: [`jurisdictions/za/statutes/`](statutes/)). The most frequently reviewed are:
 
 | File | Act | What to check |
 |---|---|---|
-| `bcea.yaml` | Basic Conditions of Employment Act 75 of 1997 | Earnings threshold (R254,371.67 — current?), hours, leave entitlements, notice periods |
+| `bcea.yaml` | Basic Conditions of Employment Act 75 of 1997 | Earnings threshold (see `earnings_threshold` — annual, verify against latest Gazette), hours, leave entitlements (note the Van Wyk interim parental-leave regime in `parental_leave_2025`), notice periods |
 | `lra.yaml` | Labour Relations Act 66 of 1995 | Fair dismissal requirements, CCMA timelines (30-day referral, 30-day conciliation), compensation caps, retrenchment thresholds, severance |
 | `eea.yaml` | Employment Equity Act 55 of 1998 | Designated employer threshold (50 employees — still correct after amendments?), protected grounds, EE reporting requirements |
-| `sectoral-determinations.yaml` | Sectoral Determinations under BCEA s55 | National minimum wage (R27.58/hr — current?), sector-specific rates |
+| `sectoral-determinations.yaml` | Sectoral Determinations under BCEA s55 | National minimum wage (see `national_minimum_wage` — annual, verify against latest Gazette), sector-specific and EPWP rates |
 | `cpa.yaml` | Consumer Protection Act 68 of 2008 | Juristic person threshold, fixed-term limits, cooling-off periods, penalties |
 | `ecta.yaml` | Electronic Communications and Transactions Act 25 of 2002 | E-signature recognition, data message rules, contract formation |
 | `popia.yaml` | Protection of Personal Information Act 4 of 2013 | Operator agreement requirements, breach notification (72 hours?), cross-border transfer rules, penalties |
@@ -155,10 +155,10 @@ These are **narrative guides** — the equivalent of a firm's internal know-how 
 | File | Topic | Key content to review |
 |---|---|---|
 | `dismissal.md` | Termination / dismissal | **11 high-risk flags** (the checklist the system runs before concluding a dismissal review). LRA s188 framework, types of dismissal (misconduct, incapacity, operational requirements), CCMA process, notice periods, severance |
-| `hiring.md` | Hiring and onboarding | Restraint of trade (Basson v Chilwan test), probation (Schedule 8 Item 8), EEA obligations at hire (psychometric testing, medical/HIV testing restrictions), employment contract requirements (BCEA s29) |
+| `hiring.md` | Hiring and onboarding | Restraint of trade (Basson v Chilwan test), probation (2025 Code of Good Practice: Dismissal; formerly Schedule 8 Item 8), EEA obligations at hire (psychometric testing, medical/HIV testing restrictions), employment contract requirements (BCEA s29) |
 | `classification.md` | Worker classification | BCEA s213 employee definition, s200A presumption of employment (7 factors), common law "dominant impression" test, deemed employees under s198A (TES/labour broker rules) |
 | `leave-and-conditions.md` | Leave and working conditions | BCEA leave entitlements (annual, sick, family responsibility, maternity, parental), working time rules, overtime, Sunday/public holiday pay, notice periods, deductions |
-| `policy-and-handbook.md` | Workplace policies | Disciplinary code requirements (Schedule 8 alignment), grievance procedure, sexual harassment policy (Code of Good Practice), other recommended policies |
+| `policy-and-handbook.md` | Workplace policies | Disciplinary code requirements (2025 Code of Good Practice: Dismissal alignment), grievance procedure, sexual harassment policy (Code of Good Practice), other recommended policies |
 | `investigation-privilege.md` | Investigations and privilege | SA legal professional privilege (narrower than US), in-house counsel distinction (legal adviser vs. management role), Protected Disclosures Act, POPIA considerations for investigations |
 
 #### Commercial law guides (6 files)
@@ -197,7 +197,7 @@ These are embedded within the practice guides (Layer 2) and are **the most criti
 | 6 | Operational requirements without s189 | Has the consultation process been followed? Sub-check: does s189A (large-scale) apply? |
 | 7 | Probation without Code compliance | Was evaluation, guidance, and counselling provided during probation? |
 | 8 | Fixed-term — reasonable expectation | Has a reasonable expectation of renewal been created? |
-| 9 | Earnings below BCEA threshold | Does the employee earn below R254,371.67/year? (Full BCEA protections apply) |
+| 9 | Earnings below BCEA threshold | Does the employee earn below the BCEA earnings threshold? (See `bcea.yaml` → `earnings_threshold` for the current figure; full BCEA protections apply below it) |
 | 10 | Thin documentation | Is there a progressive discipline record? |
 | 11 | Comparator / inconsistent discipline | Has the disciplinary code been applied consistently? |
 
@@ -254,7 +254,7 @@ In each `practice-profile-template.md`, read the "Outputs" section. Confirm the 
 For anything that's wrong, outdated, or missing, note:
 - **Which file** (e.g., `bcea.yaml`)
 - **Which section** (e.g., `earnings_threshold`)
-- **What's wrong** (e.g., "threshold increased to R261,748.45 effective 1 March 2025")
+- **What's wrong** (e.g., "the earnings threshold was re-gazetted and the open entry no longer matches the current Gazette")
 - **The correct information** with a source if possible
 
 ---

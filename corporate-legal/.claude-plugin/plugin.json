@@ -1,7 +1,7 @@
 {
   "name": "corporate-legal",
   "version": "1.0.2",
-  "description": "Runs M&A diligence at scale with cited tabular review, builds disclosure schedules and closing checklists, drafts board consents and minutes in house format, and tracks entity compliance deadlines across jurisdictions.",
+  "description": "Runs M&A diligence with cited tabular review grounded in South African company law, builds disclosure schedules and closing checklists, drafts board consents and minutes under the Companies Act 71 of 2008, tracks CIPC entity compliance deadlines, and covers B-BBEE and Takeover Regulation Panel requirements.",
   "author": {
     "name": "Anthropic"
   }

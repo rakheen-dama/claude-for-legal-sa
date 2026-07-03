@@ -233,8 +233,9 @@ The log is per-plugin, not per-matter, so a cite verified for one matter doesn't
 ## M&A regulatory landscape
 
 **Competition Commission:** [PLACEHOLDER — typical deal tier: small / intermediate / large]
-- Intermediate: combined ≥R600m AND target ≥R100m → mandatory notification, R165k fee, 20 BD
-- Large: combined ≥R6.6b AND target ≥R190m → mandatory notification, R550k fee, 40 BD + Tribunal
+- Intermediate: combined ≥R1bn AND target ≥R200m → mandatory notification, R220k fee, 20 BD
+- Large: combined ≥R9.5bn AND target ≥R280m → mandatory notification, R735k fee, 40 BD + Tribunal
+  (thresholds/fees from 1 May 2026, GN 7029 GG 54020; see `statutes/competition.yaml`)
 
 **Takeover Regulation Panel (TRP):** [PLACEHOLDER — company is regulated / not regulated / unknown]
 - Regulated if: public company, SOC, or private with >10% shares transferred in 24 months (or MOI opt-in)
@@ -390,8 +391,9 @@ When a skill doesn't know which matter is active and workspaces are enabled, it 
 
 **Competition Commission tier:** [PLACEHOLDER — small / intermediate / large]
 - Small merger: no mandatory notification (voluntary permitted)
-- Intermediate merger: combined ≥R600m AND target ≥R100m → Competition Commission, 20 BD
-- Large merger: combined ≥R6.6b AND target ≥R190m → Competition Commission + Tribunal, 40 BD + hearing
+- Intermediate merger: combined ≥R1bn AND target ≥R200m → Competition Commission, 20 BD
+- Large merger: combined ≥R9.5bn AND target ≥R280m → Competition Commission + Tribunal, 40 BD + hearing
+  (thresholds from 1 May 2026, GN 7029 GG 54020; see `statutes/competition.yaml`)
 
 **TRP compliance certificate:** [PLACEHOLDER — required / not required / to be assessed per deal]
 - Required for affected transactions involving regulated companies (s117-127)

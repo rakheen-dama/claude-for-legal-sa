@@ -14,7 +14,7 @@ expected_flags:
 
 expected_statutes:
   - "LRA s188"
-  - "LRA Schedule 8"
+  - "Code of Good Practice: Dismissal"
   - "BCEA"
 
 must_not_contain:
@@ -25,8 +25,9 @@ must_not_contain:
 notes: |
   The procedural fairness appears sound — proper notice, representation,
   independent chairperson.  The substantive question is whether dismissal
-  is the appropriate sanction given the circumstances.  Schedule 8
-  requires consideration of the nature and seriousness of the misconduct,
+  is the appropriate sanction given the circumstances.  The 2025 Code of
+  Good Practice: Dismissal (which replaced the Schedule 8 Code on
+  4 September 2025) requires consideration of the nature and seriousness of the misconduct,
   the employee's circumstances (5 years' service, clean record), and
   whether the employer has been consistent in its treatment of similar
   offences (comparator problem).  Dishonesty can justify dismissal even

@@ -1,6 +1,7 @@
 statute: "Competition Act 89 of 1998"
 authority: "Competition Commission"
-last_confirmed: "2025-05-01"
+last_confirmed: "2026-07-03"
+volatility: statutory
 source_url: "https://www.compcom.co.za/wp-content/uploads/2021/03/Competition-Act-A6.pdf"
 
 sections:
@@ -37,17 +38,33 @@ sections:
     ref: "Competition Act s11(1), GN 216 GG 44453"
     value: "combined turnover/assets R600m+ and target turnover/assets R100m+"
     effective_from: "2021-04-01"
-    effective_until: null
+    effective_until: "2026-04-30"
     effect: "Intermediate merger: parties must notify Competition Commission and may not implement until approved — combined turnover or asset value at or above R600 million and target at or above R100 million"
-    note: "Thresholds set by regulation — verify current amounts"
+    note: "Superseded by intermediate_merger_threshold_2026 effective 2026-05-01 (GN 7029 GG 54020). Retained for temporal queries about mergers notified before that date."
+
+  intermediate_merger_threshold_2026:
+    ref: "Competition Act s11(1), GN 7029 GG 54020"
+    value: "combined turnover/assets R1bn+ and target turnover/assets R200m+"
+    effective_from: "2026-05-01"
+    effective_until: null
+    effect: "Intermediate merger (current): parties must notify Competition Commission and may not implement until approved — combined turnover or asset value at or above R1 billion and target at or above R200 million."
+    note: "Set by GN 7029 GG 54020, effective 2026-05-01. [Gazette — confirmed] The final gazetted target figure is R200 million (the January 2026 draft had proposed R175 million; the final notice raised it to R200 million). Calculation method per General Notice 1003 of 2017 GG 41124 is unchanged."
 
   large_merger_threshold:
     ref: "Competition Act s13(1), GN 216 GG 44453"
     value: "combined turnover/assets R6.6bn+ and target turnover/assets R190m+"
     effective_from: "2021-04-01"
-    effective_until: null
+    effective_until: "2026-04-30"
     effect: "Large merger: parties must notify Competition Commission and Competition Tribunal must approve — combined turnover or asset value at or above R6.6 billion and target at or above R190 million"
-    note: "Thresholds set by regulation — verify current amounts"
+    note: "Superseded by large_merger_threshold_2026 effective 2026-05-01 (GN 7029 GG 54020). Retained for temporal queries about mergers notified before that date."
+
+  large_merger_threshold_2026:
+    ref: "Competition Act s13(1), GN 7029 GG 54020"
+    value: "combined turnover/assets R9.5bn+ and target turnover/assets R280m+"
+    effective_from: "2026-05-01"
+    effective_until: null
+    effect: "Large merger (current): parties must notify Competition Commission and Competition Tribunal must approve — combined turnover or asset value at or above R9.5 billion and target at or above R280 million."
+    note: "Set by GN 7029 GG 54020, effective 2026-05-01. [Gazette — confirmed]"
 
   investigation_powers:
     ref: "Competition Act s49A-49D"
@@ -69,8 +86,19 @@ sections:
     currency: ZAR
     unit: "per filing"
     effective_from: "2017-10-01"
-    effective_until: null
+    effective_until: "2026-04-30"
     effect: "Filing fee payable for notification of an intermediate merger to the Competition Commission."
+    note: "Superseded by intermediate_merger_filing_fee_2026 (R220,000) effective 2026-05-01 (GN 7029 GG 54020)."
+
+  intermediate_merger_filing_fee_2026:
+    ref: "Competition Commission Rules, GN 7029 GG 54020"
+    value: 220000
+    currency: ZAR
+    unit: "per filing"
+    effective_from: "2026-05-01"
+    effective_until: null
+    effect: "Current filing fee payable for notification of an intermediate merger to the Competition Commission (increased from R165,000)."
+    note: "Set by GN 7029 GG 54020, effective 2026-05-01. [Gazette — confirmed]"
 
   large_merger_filing_fee:
     ref: "Competition Commission Rules"
@@ -78,8 +106,19 @@ sections:
     currency: ZAR
     unit: "per filing"
     effective_from: "2017-10-01"
-    effective_until: null
+    effective_until: "2026-04-30"
     effect: "Filing fee payable for notification of a large merger to the Competition Commission."
+    note: "Superseded by large_merger_filing_fee_2026 (R735,000) effective 2026-05-01 (GN 7029 GG 54020)."
+
+  large_merger_filing_fee_2026:
+    ref: "Competition Commission Rules, GN 7029 GG 54020"
+    value: 735000
+    currency: ZAR
+    unit: "per filing"
+    effective_from: "2026-05-01"
+    effective_until: null
+    effect: "Current filing fee payable for notification of a large merger to the Competition Commission (increased from R550,000). Small mergers remain without a statutory filing fee."
+    note: "Set by GN 7029 GG 54020, effective 2026-05-01. [Gazette — confirmed]"
 
   intermediate_investigation_timeline:
     ref: "Competition Act s14(1)"

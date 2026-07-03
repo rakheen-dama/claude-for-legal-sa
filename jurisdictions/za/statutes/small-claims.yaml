@@ -1,6 +1,6 @@
 statute: "Small Claims Courts Act 61 of 1984"
 authority: "Department of Justice and Constitutional Development"
-last_confirmed: "2026-05-20"
+last_confirmed: "2026-07-03"
 source_url: "https://www.saflii.org/za/legis/consol_act/scca1984214/"
 
 sections:
@@ -34,3 +34,11 @@ sections:
     effective_from: null
     effective_until: null
     effect: "Certain categories of claims are excluded regardless of monetary value, including family law, defamation, and specific performance matters."
+
+  procedural_rules_2025:
+    ref: "Small Claims Courts Rules, GN R.6755 GG 53572 [Perplexity — verify]"
+    value: "New Small Claims Court procedural rules in force from 28 November 2025, replacing previous rules; service and pleading requirements updated [Perplexity — verify]"
+    effective_from: "2025-11-28"
+    effective_until: null
+    effect: "The new Small Claims Court Rules (GN R.6755, GG 53572) commenced 28 November 2025, replacing the previous procedural rules. Service requirements and pleading format are altered. [Perplexity — verify]"
+    gazette_date: "2025-11-28"

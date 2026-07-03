@@ -8,54 +8,61 @@
   "plugins": [
     {
       "name": "commercial-legal",
+      "displayName": "Commercial Legal",
       "source": "./commercial-legal",
-      "description": "Reviews vendor agreements, NDAs, and SaaS subscriptions against your sales-side or purchasing-side playbook, tracks renewals and cancel-by deadlines before they're missed, routes escalations to the right approver, and translates reviews into summaries business stakeholders will actually read.",
+      "description": "Reviews vendor agreements, NDAs, and SaaS subscriptions against your playbook with CPA, VAT, exchange-control, and POPIA operator-clause grounding; tracks renewals and cancel-by deadlines; routes B-BBEE and competition-law escalations; and translates reviews into summaries business stakeholders will actually read.",
       "author": {
         "name": "Anthropic"
       }
     },
     {
       "name": "privacy-legal",
+      "displayName": "Privacy Legal",
       "source": "./privacy-legal",
-      "description": "Triages processing activities, generates PIAs, reviews DPAs as controller or processor, drafts DSAR responses within statutory timelines, and monitors policy drift against practice.",
+      "description": "Triages processing activities under POPIA and PAIA, generates privacy impact assessments, reviews operator agreements, drafts data-subject access request responses within statutory timelines, checks cross-border transfer safeguards, and monitors policy drift against practice — with Information Regulator enforcement context.",
       "author": {
         "name": "Anthropic"
       }
     },
     {
       "name": "product-legal",
+      "displayName": "Product Legal",
       "source": "./product-legal",
-      "description": "Reviews product launches against your risk calibration, answers 'is this a problem?' questions in minutes, checks marketing copy for claims that need substantiation, and flags upcoming launches that need legal eyes before anyone asks.",
+      "description": "Reviews product launches against your risk calibration under the Consumer Protection Act, National Credit Act, and sector-specific rules (FSCA, SARB, ICASA); checks advertising claims for CPA substantiation; answers 'is this a problem?' questions; and flags upcoming launches that need legal eyes.",
       "author": {
         "name": "Anthropic"
       }
     },
     {
       "name": "corporate-legal",
+      "displayName": "Corporate Legal",
       "source": "./corporate-legal",
-      "description": "Runs M&A diligence at scale with cited tabular review, builds disclosure schedules and closing checklists, drafts board consents and minutes in house format, and tracks entity compliance deadlines across jurisdictions.",
+      "description": "Runs M&A diligence with cited tabular review grounded in South African company law, builds disclosure schedules and closing checklists, drafts board consents and minutes under the Companies Act 71 of 2008, tracks CIPC entity compliance deadlines, and covers B-BBEE and Takeover Regulation Panel requirements.",
       "author": {
         "name": "Anthropic"
       }
     },
     {
       "name": "employment-legal",
+      "displayName": "Employment Legal",
       "source": "./employment-legal",
-      "description": "Reviews hires and terminations for jurisdiction-specific risk flags, classifies workers against the controlling state test, tracks leave deadlines before they're missed, runs internal investigations, and drafts policies with state supplements where the law differs.",
+      "description": "Reviews hires and terminations for LRA/BCEA risk flags (CCMA procedure, dismissal fairness, retrenchment consultation), classifies workers under the BCEA common-law control test, tracks leave entitlements, runs internal investigations, and drafts disciplinary codes and employment policies for South African practice.",
       "author": {
         "name": "Anthropic"
       }
     },
     {
       "name": "regulatory-legal",
+      "displayName": "Regulatory Legal",
       "source": "./regulatory-legal",
-      "description": "Watches regulatory feeds, diffs new rules against your policy library, tracks comment deadlines and open gaps, and writes the digest your team reads Monday morning.",
+      "description": "Watches Government Gazette and sector-regulator feeds (FSCA, SARB, ICASA, and others), diffs new rules against your policy library, tracks comment deadlines and open gaps, and writes the digest your team reads Monday morning — grounded in SA regulatory process and rule-status verification.",
       "author": {
         "name": "Anthropic"
       }
     },
     {
       "name": "ai-governance-legal",
+      "displayName": "AI Governance Legal",
       "source": "./ai-governance-legal",
       "description": "Triages proposed AI use cases against your registry, runs impact assessments across the regimes in scope, reviews vendor AI terms for training-on-data and liability gaps, and keeps your AI policy current with practice.",
       "author": {
@@ -64,14 +71,16 @@
     },
     {
       "name": "litigation-legal",
+      "displayName": "Litigation Legal",
       "source": "./litigation-legal",
-      "description": "Manages the litigation portfolio — matters, deadlines, holds, demands, outside counsel — and does the work: claim charts (patent and civil), chronologies, depo prep, privilege logs, brief drafting. Adapts to how you work litigation: in-house, firm, or solo.",
+      "description": "Manages the litigation portfolio — matters, deadlines, holds, demands, outside counsel — grounded in SA court structure (Magistrates' Court, High Court, SCA, CC) and CCMA procedure; handles prescription, privilege, demands, subpoenas, chronologies, brief drafting, and deposition prep for South African practice.",
       "author": {
         "name": "Anthropic"
       }
     },
     {
       "name": "law-student",
+      "displayName": "Law Student",
       "source": "./law-student",
       "description": "Drills Socratically, briefs cases, builds outlines, runs bar prep sessions tuned to your jurisdiction, grades IRAC practice, and plans the study schedule — without ever writing it for you.",
       "author": {
@@ -80,14 +89,16 @@
     },
     {
       "name": "legal-clinic",
+      "displayName": "Legal Clinic",
       "source": "./legal-clinic",
-      "description": "Sets up the clinic, onboards students, runs structured intake, tracks deadlines with malpractice-aware caution, and hands off cases at semester end — built within ABA Formal Op. 512.",
+      "description": "Sets up the clinic under LPC rules and Legal Aid SA frameworks, onboards students, runs structured intake with SA court-system and procedure context, tracks deadlines with malpractice-aware caution, scaffolds research and memo work, and hands off cases at semester end.",
       "author": {
         "name": "Anthropic"
       }
     },
     {
       "name": "legal-builder-hub",
+      "displayName": "Legal Builder Hub",
       "source": "./legal-builder-hub",
       "description": "Finds, evaluates, and installs community legal skills — with a security review gate before anything lands in your environment.",
       "author": {
@@ -96,14 +107,16 @@
     },
     {
       "name": "ip-legal",
+      "displayName": "IP Legal",
       "source": "./ip-legal",
-      "description": "Runs first-pass trademark clearance and freedom-to-operate triage, screens invention disclosures for initial patentability, drafts and triages cease-and-desist letters and DMCA takedowns (send and respond), checks open source compliance, reviews IP clauses, and tracks registrations and renewal deadlines.",
+      "description": "Runs first-pass trade mark clearance and freedom-to-operate triage via the CIPC registry, screens invention disclosures for patentability, drafts and triages cease-and-desist letters, checks open source compliance, reviews IP ownership clauses, and tracks CIPC registrations and renewal deadlines — grounded in SA copyright fair-dealing principles.",
       "author": {
         "name": "Anthropic"
       }
     },
     {
       "name": "kazi-legal-za",
+      "displayName": "Kazi Legal (South Africa)",
       "source": "./kazi-legal-za",
       "description": "Grounds your firm's own Claude in your live Kazi data over MCP: drafts monthly fee notes from unbilled time, runs section 86 trust-reconciliation checks, reviews FICA/KYC gaps, briefs matter status, triages new-matter intake, and closes the correspondence loop — files an email into the right matter and digests what needs a reply. Tuned for South African legal practice. The read-and-draft skills are reviewed and committed in Kazi by hand; the correspondence skills file directly (audited) and only propose follow-up tasks the attorney approves in Kazi. Trust stays read-only.",
       "author": {
@@ -112,6 +125,7 @@
     },
     {
       "name": "cocounsel-legal",
+      "displayName": "CoCounsel Legal",
       "source": "./external_plugins/cocounsel-legal",
       "description": "CoCounsel Legal delivers comprehensive Westlaw Deep Research reports with inline, linked citations to Westlaw and Practical Law sources.",
       "author": {

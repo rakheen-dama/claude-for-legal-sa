@@ -6,6 +6,24 @@ Reference agents, skills, and data connectors for the legal workflows we see mos
 
 Everything here is available **two ways from one source**: install it as a [Claude Cowork](https://claude.com/product/cowork) or [Claude Code](https://claude.com/product/claude-code) plugin, or deploy it through the [Claude Managed Agents API](https://docs.claude.com/en/api/managed-agents) behind your own workflow engine. Same system prompt, same skills — you choose where it runs.
 
+## South African Fork
+
+This is the South African adaptation of [claude-for-legal](https://github.com/anthropics/claude-for-legal) — the upstream legal plugins plus a ZA jurisdiction overlay that grounds each plugin in South African law.
+
+**Who it is for:** South African law firms, in-house legal teams, and legal clinics operating under South African law. If you are a US-based team, use the upstream repository.
+
+**What the ZA overlay provides:**
+- POPIA, PAIA, and Information Regulator compliance grounding for privacy and data work
+- CCMA procedure, LRA/BCEA dismissal fairness, and employment equity (EEA/B-BBEE) for employment work
+- Companies Act 71 of 2008, CIPC, B-BBEE, and Takeover Regulation Panel for corporate work
+- Consumer Protection Act (CPA), VAT Act, exchange-control, and POPIA operator clauses for commercial work
+- Temporally-versioned statute library (~50 YAML files) with staleness windows keyed to Government Gazette volatility
+- SA cold-start interviews for the 9 ZA-ready plugins that write SA practice profiles
+
+**SA-readiness matrix and per-plugin status:** [jurisdictions/za/README.md](jurisdictions/za/README.md)
+
+Volatile employment and commercial statute values re-verified July 2026; per-file `last_confirmed` dates and confidence tags in `jurisdictions/za/statutes/`; see the readiness matrix for per-plugin status and refresh cadence.
+
 ## Getting started in Cowork
 - [Install Claude Desktop](https://claude.com/download)
 - Get access to Claude Cowork
@@ -186,9 +204,9 @@ After install, skills fire automatically when relevant, slash commands are avail
 /plugin marketplace add <path-to-this-repo>
 
 # Install a plugin — pick the ones that match your practice
-/plugin install commercial-legal@claude-for-legal
-/plugin install privacy-legal@claude-for-legal
-/plugin install corporate-legal@claude-for-legal
+/plugin install commercial-legal@claude-for-legal-sa
+/plugin install privacy-legal@claude-for-legal-sa
+/plugin install corporate-legal@claude-for-legal-sa
 
 # Restart Claude Code, then run setup for each plugin you installed.
 # This writes your practice profile to ~/.claude/plugins/config/claude-for-legal/<plugin>/CLAUDE.md

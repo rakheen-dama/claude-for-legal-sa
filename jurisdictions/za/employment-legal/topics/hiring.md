@@ -49,9 +49,9 @@ Non-solicitation clauses (restricting contact with specific clients or employees
 
 ## Probation
 
-### LRA Schedule 8 Item 8
+### 2025 Code of Good Practice: Dismissal (probation)
 
-Probation under South African law is governed by LRA Schedule 8, Item 8 (Code of Good Practice: Dismissal). Probation is **not a free pass** to dismiss without process. The statutory requirements during probation are:
+Probation under South African law is governed by the **2025 Code of Good Practice: Dismissal** (GenN 3470, GG 53294, effective 4 September 2025), which replaced the former LRA Schedule 8 Item 8; verify against the gazetted Code text before advising. The 2025 Code frames probation around both **performance and suitability for employment**. Probation is **not a free pass** to dismiss without process. The requirements during probation are:
 
 1. **Evaluation** — the employer must assess the employee's performance against clear, communicated standards.
 2. **Guidance and instruction** — the employer must provide the employee with the guidance and support necessary to perform.
@@ -62,7 +62,7 @@ Probation under South African law is governed by LRA Schedule 8, Item 8 (Code of
 
 ### Fair procedure during probation
 
-A probationary dismissal must still comply with the requirements of procedural fairness, although the process may be less formal than for a confirmed employee (Schedule 8 Item 8(1)(i)). The employee must be:
+A probationary dismissal must still comply with the requirements of procedural fairness, although the 2025 Code expressly allows the process to be **less formal** than for a confirmed employee (a formal hearing is not mandatory; smaller employers may use simpler procedures provided basic fairness is observed). The employee must be:
 
 - Informed of the performance concerns.
 - Given an opportunity to respond.
@@ -84,7 +84,7 @@ A CCMA commissioner will assess whether the employer met these requirements. Dis
 |---|---|---|
 | No documented evaluation during probation | Procedural unfairness at CCMA | Implement structured check-ins before any dismissal decision |
 | Dismissal without counselling or opportunity to improve | Substantive and procedural unfairness | Provide counselling, set targets, allow time to improve |
-| Probation period expired, employee still working | Employee is now confirmed — probation protections no longer apply, full Schedule 8 process required | Confirm status formally or extend probation in writing before expiry |
+| Probation period expired, employee still working | Employee is now confirmed — probation flexibility no longer applies, the full fair-procedure process under the 2025 Code is required | Confirm status formally or extend probation in writing before expiry |
 | Successive short fixed-term contracts used to avoid probation | CCMA may treat as single continuous employment | Use a proper probation clause in a permanent contract instead |
 
 ---
@@ -95,9 +95,15 @@ A CCMA commissioner will assess whether the employer met these requirements. Dis
 
 Under EEA s1, an employer with **50 or more employees** is a designated employer and must comply with the affirmative action provisions of Chapter III of the Employment Equity Act 55 of 1998.
 
+> **2025 update — designation now turns on headcount alone.** The Employment Equity Amendment Act 4 of 2022 (in force **1 January 2025**) removed the alternative turnover-based leg of the "designated employer" definition. An employer with **fewer than 50 employees** is no longer a designated employer regardless of annual turnover. See `statutes/eea.yaml` → `designated_employer_definition_2025`.
+
+### Sectoral numerical targets (EEA s15A)
+
+Section 15A (inserted by EEAA 4/2022) empowers the Minister to set **five-year numerical targets per national economic sector**. The Sectoral Numerical Targets and General Administrative Regulations were published on **15 April 2025** (GG 52515), setting targets for equitable representation of designated groups at the upper occupational levels across **18 sectors**, with a horizon to **31 August 2030**. Designated employers must prepare EE plans aligned to the applicable sectoral targets (obligation running from **1 September 2025**). A legal challenge by NEASA and Sakeliga was dismissed (Gauteng High Court, 28 August 2025; SCA petition dismissed early 2026), so the targets are in force. Compliance is also a condition for the EEA13 certificate required to contract with organs of state. See `statutes/eea.yaml` → `sectoral_numerical_targets_2025`, `ee_plan_obligation_2025`, `ee_targets_challenge_status`.
+
 ### EE plan targets inform hiring
 
-A designated employer must prepare and implement an employment equity plan (EEA s20). The EE plan sets numerical goals and timetables for achieving equitable representation across occupational levels. Hiring decisions should be informed by the EE plan targets for the relevant occupational category and level.
+A designated employer must prepare and implement an employment equity plan (EEA s20). The EE plan sets numerical goals and timetables — now aligned to the applicable sectoral numerical targets — for achieving equitable representation across occupational levels. Hiring decisions should be informed by the EE plan targets for the relevant occupational category and level.
 
 This does not mean that an underqualified candidate must be appointed, but where two candidates are equally qualified, the EE plan targets are a lawful consideration in the selection decision.
 

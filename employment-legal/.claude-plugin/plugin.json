@@ -1,7 +1,7 @@
 {
   "name": "employment-legal",
   "version": "1.0.2",
-  "description": "Reviews hires and terminations for jurisdiction-specific risk flags, classifies workers against the controlling state test, tracks leave deadlines before they're missed, runs internal investigations, and drafts policies with state supplements where the law differs.",
+  "description": "Reviews hires and terminations for LRA/BCEA risk flags (CCMA procedure, dismissal fairness, retrenchment consultation), classifies workers under the BCEA common-law control test, tracks leave entitlements, runs internal investigations, and drafts disciplinary codes and employment policies for South African practice.",
   "author": {
     "name": "Anthropic"
   }

@@ -10,6 +10,15 @@ properties:
   last_confirmed:
     type: string
     pattern: "^\\d{4}-\\d{2}-\\d{2}$"
+  volatility:
+    type: string
+    enum: [annual, statutory, stable]
+    description: >
+      How often this statute's sections change in practice.
+      annual     — gazette-driven thresholds (e.g. BCEA earnings threshold); staleness window 12 months.
+      statutory  — Act-level amendments; staleness window 18 months.
+      stable     — core constitutional / rarely-amended Acts; staleness window 36 months.
+      Absent     — treated as stable (36-month window).
   source_url:
     type: string
     pattern: "^https?://"

@@ -6,12 +6,12 @@ input: |
   threshold) and has 3 years of service.
 
 expected_flags:
-  - "No hearing held"
+  - "No opportunity to respond"
   - "Earnings below BCEA threshold"
 
 expected_statutes:
   - "LRA s188"
-  - "LRA Schedule 8"
+  - "Code of Good Practice: Dismissal"
   - "BCEA"
 
 must_not_contain:
@@ -20,10 +20,14 @@ must_not_contain:
   - "at-will"
 
 notes: |
-  The dismissal is procedurally unfair because no hearing was held.
-  Schedule 8 of the LRA requires a fair procedure before dismissal for
-  misconduct — the employee must be notified of the allegations, given an
-  opportunity to state a case, and have the right to representation.
+  The dismissal is procedurally unfair because the employee was given no
+  opportunity to respond before dismissal.  The 2025 Code of Good Practice:
+  Dismissal (GenN 3470, GG 53294, effective 4 September 2025 — which
+  replaced the Schedule 8 Code) requires a fair procedure before dismissal
+  for misconduct — the employee must be notified of the allegations, given
+  a genuine opportunity to state a case, and have the right to
+  representation (a formal hearing is not mandatory, but the employee must
+  be heard).
   Because the employee earns below the BCEA threshold, additional BCEA
   protections apply (e.g. notice periods, severance).  The substantive
   fairness of the dismissal (theft) is a separate question; even if the

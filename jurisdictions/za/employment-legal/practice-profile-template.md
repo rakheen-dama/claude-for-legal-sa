@@ -322,7 +322,7 @@ When a skill doesn't know which matter is active and workspaces are enabled, it 
 ## Statutory baseline
 
 **BCEA earnings threshold:** [PLACEHOLDER — above threshold / below threshold / both]
-*(Employees earning above the BCEA earnings threshold (currently R254,371.67 per year) are excluded from certain BCEA protections including ordinary hours, overtime, and meal intervals. This affects which BCEA provisions apply to the workforce.)*
+*(Employees earning above the BCEA earnings threshold (read `jurisdictions/za/statutes/bcea.yaml` → `earnings_threshold` for the current figure) are excluded from certain BCEA protections including ordinary hours, overtime, and meal intervals. This affects which BCEA provisions apply to the workforce.)*
 
 **National minimum wage compliance:** [PLACEHOLDER — all employees at or above NMW / some employees subject to sectoral rate / expanded public works programme rate applies]
 **Sectoral minimum wage rate:** [PLACEHOLDER — if applicable, which sectoral determination and current rate]
@@ -331,8 +331,8 @@ When a skill doesn't know which matter is active and workspaces are enabled, it 
 
 ## Employment equity and BEE
 
-**Designated employer:** [PLACEHOLDER — Yes (50+ employees or meets turnover threshold) / No]
-**EE Plan status:** [PLACEHOLDER — current plan filed / plan due for renewal / no plan required]
+**Designated employer:** [PLACEHOLDER — Yes (50+ employees; turnover-based designation was removed by EEAA 4/2022 from 1 Jan 2025) / No]
+**EE Plan status:** [PLACEHOLDER — current plan aligned to s15A sectoral numerical targets (GG 52515) / plan due for renewal / no plan required]
 **EE reporting obligations:** [PLACEHOLDER — annual report filed / overdue / N/A]
 **Sector-specific BEE codes:** [PLACEHOLDER — generic codes / sector code (specify) / exempted micro-enterprise]
 **BEE level:** [PLACEHOLDER — if known]
@@ -345,7 +345,7 @@ When a skill doesn't know which matter is active and workspaces are enabled, it 
 
 **Employment contract template:** [PLACEHOLDER — location]
 **Restraint of trade policy:** [PLACEHOLDER — standard restraint clause used Y/N, typical duration and geographic scope, enforceability assessment approach]
-**Probation policy:** [PLACEHOLDER — standard probation period, evaluation process, compliance with Schedule 8 Item 8]
+**Probation policy:** [PLACEHOLDER — standard probation period, evaluation process, compliance with the 2025 Code of Good Practice: Dismissal (probation; formerly Schedule 8 Item 8)]
 **EEA obligations on hiring:** [PLACEHOLDER — affirmative action measures, designated group targets, barrier analysis findings]
 **Background check policy:** [PLACEHOLDER]
 
@@ -360,11 +360,11 @@ When a skill doesn't know which matter is active and workspaces are enabled, it 
 
 **High-risk termination flags (auto-escalate):**
 *(See `jurisdictions/za/employment-legal/topics/dismissal.md` for the full 11-flag framework. Summary flags below.)*
-- [PLACEHOLDER — e.g., no hearing held, automatically unfair ground (LRA s187), EEA-protected ground, protected disclosure, recent CCMA/union activity, s189 process not followed, probation without Schedule 8 Item 8 compliance, fixed-term reasonable expectation, earnings below BCEA threshold, thin documentation, comparator / inconsistent discipline]
+- [PLACEHOLDER — e.g., no opportunity to respond, automatically unfair ground (LRA s187), EEA-protected ground, protected disclosure, recent CCMA/union activity, s189 process not followed, probation without 2025 Code compliance, fixed-term reasonable expectation, earnings below BCEA threshold, thin documentation, comparator / inconsistent discipline]
 
 **LRA s188 fairness review — every termination must satisfy:**
 1. Substantive fairness — fair reason (misconduct, incapacity, or operational requirements)
-2. Procedural fairness — fair procedure followed (Schedule 8 Code of Good Practice: Dismissal)
+2. Procedural fairness — fair procedure followed (2025 Code of Good Practice: Dismissal, GenN 3470 GG 53294; replaced the Schedule 8 Code on 4 September 2025)
 
 ---
 

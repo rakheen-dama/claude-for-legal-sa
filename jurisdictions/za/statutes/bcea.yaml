@@ -1,6 +1,7 @@
 statute: "Basic Conditions of Employment Act 75 of 1997"
 authority: "Department of Employment and Labour"
-last_confirmed: "2025-03-01"
+last_confirmed: "2026-07-03"
+volatility: annual
 source_url: "https://www.labour.gov.za/DocumentCenter/Pages/Acts.aspx"
 
 sections:
@@ -10,9 +11,32 @@ sections:
     currency: ZAR
     unit: "per year"
     effective_from: "2024-03-01"
-    effective_until: null
+    effective_until: "2025-03-31"
     effect: "Employees earning above this threshold are excluded from certain BCEA protections including overtime, meal intervals, and compressed working week provisions."
     gazette_date: "2024-02-23"
+    note: "Superseded by the 2025 threshold (earnings_threshold_2025) effective 2025-04-01. Retained for historical/temporal queries."
+
+  earnings_threshold_2025:
+    ref: "BCEA s6(3), GN R.5970 GG 52232"
+    value: 261748.45
+    currency: ZAR
+    unit: "per year"
+    effective_from: "2025-04-01"
+    effective_until: "2026-04-30"
+    effect: "Employees earning above this threshold are excluded from certain BCEA protections including overtime, meal intervals, and compressed working week provisions."
+    gazette_date: "2025-03-07"
+    note: "The earnings threshold is gazetted on its own irregular cycle (this determination took effect 1 April), not the 1-March national minimum wage cycle. Superseded by earnings_threshold_2026 effective 2026-05-01."
+
+  earnings_threshold_2026:
+    ref: "BCEA s6(3), GG 54544"
+    value: 269600.90
+    currency: ZAR
+    unit: "per year"
+    effective_from: "2026-05-01"
+    effective_until: null
+    effect: "Employees earning above this threshold are excluded from certain BCEA protections including overtime, meal intervals, and compressed working week provisions. This is the current threshold."
+    gazette_date: "2026-04-17"
+    note: "The earnings threshold is gazetted on its own irregular cycle (this determination took effect 1 May), not the 1-March national minimum wage cycle."
 
   ordinary_hours:
     ref: "BCEA s9(1)"
@@ -91,8 +115,17 @@ sections:
     value: 4
     unit: "months"
     effective_from: null
+    effective_until: "2025-10-02"
+    effect: "An employee is entitled to at least four consecutive months of unpaid maternity leave, commencing at any time from four weeks before the expected date of birth. This gender-specific maternity-only structure was superseded on 2025-10-03 by the interim gender-neutral parental-leave regime read into the BCEA in Van Wyk v Minister of Employment and Labour."
+    note: "Pre-Van Wyk regime. Retained for temporal queries about leave taken before 2025-10-03. For births/placements from 2025-10-03 onward, see parental_leave_2025."
+
+  parental_leave_2025:
+    ref: "BCEA ss25, 25A, 25B, 25C as read in by Van Wyk and Others v Minister of Employment and Labour [2025] ZACC 20 (3 October 2025)"
+    value: "gender-neutral shared parental leave (interim reading-in)"
+    effective_from: "2025-10-03"
     effective_until: null
-    effect: "An employee is entitled to at least four consecutive months of unpaid maternity leave, commencing at any time from four weeks before the expected date of birth."
+    effect: "Interim regime pending remedial legislation. A single employed parent is entitled to four consecutive months' parental leave. Where both parents are employed, they share an aggregate of four months plus ten days, taken consecutively or concurrently, each parent's portion in a single block; if they cannot agree on the split it must be divided as equally as possible. The framework is gender-neutral and applies to birth, adoptive and commissioning parents. A birth mother retains pregnancy protection: she may begin leave up to four weeks before the expected date of birth and may not work for six weeks after the birth unless medically certified fit, and these periods count towards and are taken from the shared allocation."
+    note: "INTERIM AND UNSETTLED. The Constitutional Court declared BCEA ss25, 25A, 25B, 25C invalid but suspended the declaration for 36 months from 2025-10-03 (to ~2028-10-02) for Parliament to amend the Act; the reading-in above applies immediately in the meantime. The Court did NOT read in a corresponding amendment to the UIF Act, so UIF maternity/parental benefits still follow the old categories pending legislation — a known mismatch. Verify the current position before advising; watch for the BCEA amendment that replaces this reading-in. Source: Van Wyk [2025] ZACC 20 (SAFLII); confirm against gazetted amendment when enacted."
 
   notice_period_less_than_6_months:
     ref: "BCEA s37(1)(a)"
