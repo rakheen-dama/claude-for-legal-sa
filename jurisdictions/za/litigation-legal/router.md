@@ -28,15 +28,15 @@ customize:
 
 demand-draft:
   topics: [demands-and-settlement, elements-and-claims]
-  statutes: [prescription, state-liability]
+  statutes: [prescription, state-liability, prescribed-rate-of-interest]
 
 demand-intake:
   topics: [demands-and-settlement]
-  statutes: [prescription, state-liability]
+  statutes: [prescription, state-liability, prescribed-rate-of-interest]
 
 demand-received:
   topics: [demands-and-settlement, elements-and-claims]
-  statutes: [prescription, arbitration]
+  statutes: [prescription, arbitration, prescribed-rate-of-interest]
 
 deposition-prep:
   topics: [discovery-and-evidence]

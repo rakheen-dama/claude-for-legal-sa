@@ -16,7 +16,7 @@ In SA law, a letter of demand is not just a strategic tool — it can be a **leg
 ### Legal consequences of a demand
 
 1. **Places debtor in mora** — completes the cause of action (if mora ex persona)
-2. **Starts running of interest** as damages for late performance (mora interest)
+2. **Starts running of interest** as damages for late performance (mora interest). Where no contractual rate applies, mora and judgment interest run at the statutory prescribed rate (repo + 3.5%; currently 10.25% p.a. from 1 March 2026) — see `statutes/prescribed-rate-of-interest.yaml` for the current rate and the historical rate path for interest that began running earlier
 3. **Evidence of notice** — demonstrates the creditor attempted amicable resolution
 4. **Prescription awareness** — the demand date is relevant to prescription analysis (though the demand itself does not interrupt prescription — only service of process does under s15)
 

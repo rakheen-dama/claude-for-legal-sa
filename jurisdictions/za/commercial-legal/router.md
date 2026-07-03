@@ -8,11 +8,11 @@ Statute files resolve to: `jurisdictions/za/statutes/{name}.yaml`
 ```yaml
 vendor-agreement-review:
   topics: [contract-fundamentals, liability-and-penalties, data-protection, competition-and-bbbee, confidentiality-and-restraint, dispute-resolution]
-  statutes: [cpa, ecta, popia, conventional-penalties, competition, bbbee, prescription, copyright]
+  statutes: [cpa, vat, ecta, popia, conventional-penalties, competition, bbbee, prescription, copyright]
 
 saas-msa-review:
   topics: [contract-fundamentals, liability-and-penalties, data-protection, competition-and-bbbee, dispute-resolution]
-  statutes: [cpa, ecta, popia, conventional-penalties, competition, bbbee, prescription]
+  statutes: [cpa, vat, ecta, popia, conventional-penalties, competition, bbbee, prescription]
 
 nda-review:
   topics: [contract-fundamentals, data-protection, confidentiality-and-restraint, dispute-resolution]
@@ -20,7 +20,7 @@ nda-review:
 
 cold-start-interview:
   topics: []
-  statutes: [cpa, ecta, popia, conventional-penalties, competition, bbbee, prescription, copyright]
+  statutes: [cpa, vat, ecta, popia, conventional-penalties, competition, bbbee, prescription, copyright]
 
 customize:
   topics: []

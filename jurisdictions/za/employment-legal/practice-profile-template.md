@@ -331,8 +331,8 @@ When a skill doesn't know which matter is active and workspaces are enabled, it 
 
 ## Employment equity and BEE
 
-**Designated employer:** [PLACEHOLDER — Yes (50+ employees or meets turnover threshold) / No]
-**EE Plan status:** [PLACEHOLDER — current plan filed / plan due for renewal / no plan required]
+**Designated employer:** [PLACEHOLDER — Yes (50+ employees; turnover-based designation was removed by EEAA 4/2022 from 1 Jan 2025) / No]
+**EE Plan status:** [PLACEHOLDER — current plan aligned to s15A sectoral numerical targets (GG 52515) / plan due for renewal / no plan required]
 **EE reporting obligations:** [PLACEHOLDER — annual report filed / overdue / N/A]
 **Sector-specific BEE codes:** [PLACEHOLDER — generic codes / sector code (specify) / exempted micro-enterprise]
 **BEE level:** [PLACEHOLDER — if known]

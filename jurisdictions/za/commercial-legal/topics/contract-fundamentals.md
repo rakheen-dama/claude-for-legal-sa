@@ -210,17 +210,15 @@ Where the counterparty is a connected person (group company, common shareholder,
 
 The Value-Added Tax Act 89 of 1991 imposes VAT on electronic services supplied by foreign suppliers to SA recipients.
 
-### Current rates
+### Current rate
 
-| Period | Standard VAT rate |
-|---|---|
-| Before 1 May 2025 | 15% |
-| 1 May 2025 — 31 March 2026 | 15.5% |
-| From 1 April 2026 | 16% |
+The standard VAT rate is **15%** (VAT Act s7(1); see `statutes/vat.yaml` → `standard_rate_2018`). It has been 15% since 1 April 2018.
+
+> **Historical note — the abandoned 2025 increase.** The 2025 Budget announced two staged VAT increases above 15% (effective May 2025 and April 2026). Both were **abandoned before taking effect**: the increase was withdrawn following a Western Cape High Court settlement order (April 2025) and National Treasury's reversal statement of 24 April 2025. VAT never rose above 15%. Do not apply any rate above 15% — confirm the current rate against the latest SARS notice. The specific announced (and withdrawn) rates are recorded in `statutes/vat.yaml` → `standard_rate_2018` note.
 
 ### Registration threshold
 
-A foreign supplier of electronic services must register for SA VAT if the value of electronic services supplied to SA recipients exceeds **R1 million** in any consecutive 12-month period.
+A foreign supplier of electronic services must register for SA VAT if the value of electronic services supplied to SA recipients exceeds **R1 million** in any consecutive 12-month period (VAT Act s23(1A); Electronic Services Regulations GN 429 GG 42316; see `statutes/vat.yaml` → `electronic_services_registration_threshold`).
 
 ### B2B exclusion
 
@@ -237,7 +235,7 @@ Where the foreign supplier is not registered for SA VAT and the SA recipient is 
 - Foreign SaaS vendors supplying to SA above R1m must register and charge SA VAT
 - SA companies purchasing imported electronic services from unregistered foreign vendors must account for reverse charge VAT
 - Contract pricing should specify whether fees are VAT-inclusive or VAT-exclusive, and which party bears the SA VAT cost
-- Automatic price escalation clauses should account for VAT rate changes (15.5% to 16%)
+- Automatic price escalation clauses should be drafted to absorb any future VAT rate change (the rate is a policy variable and has been the subject of announced-then-abandoned increases), rather than hardcoding a specific rate
 
 ### High-risk flag: VAT on imported services misconfigured
 
@@ -246,7 +244,7 @@ Where the foreign supplier is not registered for SA VAT and the SA recipient is 
 | Foreign vendor identified | Vendor is a non-SA entity supplying electronic services |
 | SA VAT registration status | Is the foreign vendor registered for SA VAT? If not, reverse charge applies |
 | B2B exclusion validity | Does the vendor supply solely to SA VAT-registered vendors? One non-registered customer invalidates the exclusion |
-| Correct rate applied | Rate matches the current period (15.5% from May 2025; 16% from April 2026) |
+| Correct rate applied | Rate matches the current standard rate of 15% (confirm against the latest SARS notice; the announced 2025/2026 increases were abandoned) |
 | Pricing clause addresses VAT | Contract specifies VAT treatment, which party bears VAT cost, and adjusts for rate changes |
 
 **Why this matters:** Incorrect VAT treatment on imported services results in under-declaration by the SA recipient (reverse charge obligation) or double taxation. SARS actively audits cross-border electronic services VAT, and penalties for non-compliance include interest, understatement penalties (up to 200% for intentional non-disclosure), and potential criminal prosecution.

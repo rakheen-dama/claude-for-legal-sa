@@ -81,6 +81,18 @@ RETIRED_LITERALS=(
     "254,371\.67"      # same, comma-formatted
     "R27\.58"          # 2024 national minimum wage (per hour)
     "R13\.97"          # 2024 EPWP minimum wage (per hour)
+    # PR 4 (commercial/corporate/litigation refresh) — superseded VAT rate and
+    # pre-1-May-2026 merger thresholds/fees. Precise old figures live only in the
+    # closed YAML entries (statutes/*.yaml, excluded from this scan); prose must
+    # point at the YAML key. The bare "16%" VAT literal is intentionally NOT
+    # listed (too many false positives, e.g. B-BBEE weightings); the withdrawn
+    # 15.5% rate is the unique VAT tell.
+    "15\.5%"           # abandoned 2025 VAT increase (never took effect)
+    "R6\.6 ?b"         # pre-2026 large-merger combined threshold (R6.6bn/R6.6b)
+    "R190 ?m"          # pre-2026 large-merger target threshold (R190m/R190 million)
+    "R600 ?m"          # pre-2026 intermediate-merger combined threshold
+    "R165 ?000|R165,000|R165k"   # pre-2026 intermediate-merger filing fee
+    "R550 ?000|R550,000|R550k"   # pre-2026 large-merger filing fee
 )
 
 # Build the list of files to scan

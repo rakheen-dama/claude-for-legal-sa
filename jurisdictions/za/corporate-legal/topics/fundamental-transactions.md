@@ -210,13 +210,15 @@ Appraisal rights are available to shareholders who dissent from:
 
 ### Three-tier notification system
 
-South African merger control operates under the Competition Act 89 of 1998 with three tiers based on combined annual turnover and asset values:
+South African merger control operates under the Competition Act 89 of 1998 with three tiers based on combined annual turnover and asset values. The thresholds and filing fees below took effect on **1 May 2026** (GN 7029 GG 54020). For the authoritative current figures and the pre-1-May-2026 values (for transactions notified earlier), see `statutes/competition.yaml` → `intermediate_merger_threshold_2026`, `large_merger_threshold_2026`, and the corresponding `*_filing_fee_2026` keys.
 
 | Tier | Combined turnover/assets | Target turnover/assets | Filing fee | Timeline |
 |---|---|---|---|---|
-| **Small merger** | Below R600m combined **or** below R100m target | Below R100m | None (voluntary) | No prescribed period |
-| **Intermediate merger** | ≥R600m combined **and** ≥R100m target | ≥R100m | R165,000 | 20 BD (extendable by 40 BD) |
-| **Large merger** | ≥R6.6b combined **and** ≥R190m target | ≥R190m | R550,000 | 40 BD (extendable by 15 BD per extension) |
+| **Small merger** | Below R1bn combined **or** below R200m target | Below R200m | None (no statutory fee) | No prescribed period |
+| **Intermediate merger** | ≥R1bn combined **and** ≥R200m target | ≥R200m | R220,000 | 20 BD (extendable by 40 BD) |
+| **Large merger** | ≥R9.5bn combined **and** ≥R280m target | ≥R280m | R735,000 | 40 BD (extendable by 15 BD per extension) |
+
+The pre-1-May-2026 thresholds and fees are preserved as closed entries in `statutes/competition.yaml` (`intermediate_merger_threshold`, `large_merger_threshold`, and the `*_filing_fee` keys) for transactions notified before that date.
 
 ### Key principles
 

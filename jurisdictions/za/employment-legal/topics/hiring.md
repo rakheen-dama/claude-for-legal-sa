@@ -95,9 +95,15 @@ A CCMA commissioner will assess whether the employer met these requirements. Dis
 
 Under EEA s1, an employer with **50 or more employees** is a designated employer and must comply with the affirmative action provisions of Chapter III of the Employment Equity Act 55 of 1998.
 
+> **2025 update — designation now turns on headcount alone.** The Employment Equity Amendment Act 4 of 2022 (in force **1 January 2025**) removed the alternative turnover-based leg of the "designated employer" definition. An employer with **fewer than 50 employees** is no longer a designated employer regardless of annual turnover. See `statutes/eea.yaml` → `designated_employer_definition_2025`.
+
+### Sectoral numerical targets (EEA s15A)
+
+Section 15A (inserted by EEAA 4/2022) empowers the Minister to set **five-year numerical targets per national economic sector**. The Sectoral Numerical Targets and General Administrative Regulations were published on **15 April 2025** (GG 52515), setting targets for equitable representation of designated groups at the upper occupational levels across **18 sectors**, with a horizon to **31 August 2030**. Designated employers must prepare EE plans aligned to the applicable sectoral targets (obligation running from **1 September 2025**). A legal challenge by NEASA and Sakeliga was dismissed (Gauteng High Court, 28 August 2025; SCA petition dismissed early 2026), so the targets are in force. Compliance is also a condition for the EEA13 certificate required to contract with organs of state. See `statutes/eea.yaml` → `sectoral_numerical_targets_2025`, `ee_plan_obligation_2025`, `ee_targets_challenge_status`.
+
 ### EE plan targets inform hiring
 
-A designated employer must prepare and implement an employment equity plan (EEA s20). The EE plan sets numerical goals and timetables for achieving equitable representation across occupational levels. Hiring decisions should be informed by the EE plan targets for the relevant occupational category and level.
+A designated employer must prepare and implement an employment equity plan (EEA s20). The EE plan sets numerical goals and timetables — now aligned to the applicable sectoral numerical targets — for achieving equitable representation across occupational levels. Hiring decisions should be informed by the EE plan targets for the relevant occupational category and level.
 
 This does not mean that an underqualified candidate must be appointed, but where two candidates are equally qualified, the EE plan targets are a lawful consideration in the selection decision.
 
