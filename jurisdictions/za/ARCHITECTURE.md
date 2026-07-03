@@ -107,17 +107,18 @@ last_confirmed: "2025-03-01"                                # When values were l
 source_url: "https://www.labour.gov.za/..."                 # Authoritative source for verification
 
 sections:
-  earnings_threshold:                      # Machine-readable key
-    ref: "BCEA s6(3), GN R2316 GG 48928"  # Statute section + Gazette reference
-    value: 254371.67                       # The threshold/limit/amount
+  earnings_threshold:                      # Machine-readable key (illustrative values)
+    ref: "BCEA s6(3), GN Rxxxx GG xxxxx"  # Statute section + Gazette reference
+    value: 250000.00                       # The threshold/limit/amount (illustrative only)
     currency: "ZAR"                        # Currency (if monetary)
     unit: "per_annum"                      # Unit of measurement
     effective_from: "2024-03-01"           # When this value took effect (null = original statute)
     effective_until: null                  # When superseded (null = still current)
     effect: "Employees earning above threshold excluded from ss9-16, 17(2), 18(3)"
     gazette_date: "2024-03-01"            # Gazette publication date (if set by Gazette)
-    note: "Updated annually via Government Gazette"
+    note: "Re-gazetted periodically on its own cycle (not the 1-March NMW cycle); confirm against the latest Gazette"
 ```
+Optionally set `volatility` at the top level (`annual` | `statutory` | `stable`) to tune the staleness window used by `scripts/validate-za-statutes.py` — e.g. `annual` for values re-gazetted roughly yearly (BCEA threshold, minimum wages), `statutory` for values that change by amendment (e.g. a replacement Code).
 
 **Required fields:** `ref`, `value`, `effective_from`, `effective_until`, `effect`
 **Monetary entries also require:** `currency`, `unit`

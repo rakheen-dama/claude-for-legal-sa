@@ -155,7 +155,7 @@ Where notifying the subject of the investigation would **prejudice the purpose o
 
 ### Right to representation
 
-In a disciplinary hearing (as distinct from the investigation stage), the employee has the right to be represented by a **fellow employee** or a **trade union representative** (LRA Schedule 8 Item 4(1)). Key points:
+In a disciplinary process (as distinct from the investigation stage), the employee has the right to be represented by a **fellow employee** or a **trade union representative** (2025 Code of Good Practice: Dismissal; formerly LRA Schedule 8 Item 4(1)). Key points:
 
 | Aspect | SA position |
 |---|---|

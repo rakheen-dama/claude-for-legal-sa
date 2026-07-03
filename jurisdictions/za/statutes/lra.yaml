@@ -1,6 +1,7 @@
 statute: "Labour Relations Act 66 of 1995"
 authority: "Department of Employment and Labour"
-last_confirmed: "2025-03-01"
+last_confirmed: "2026-07-03"
+volatility: statutory
 source_url: "https://www.labour.gov.za/DocumentCenter/Pages/Acts.aspx"
 
 sections:
@@ -96,11 +97,29 @@ sections:
     effect: "In a large-scale retrenchment under s189A, the facilitation process must run for at least 60 days from the date on which notice was given, during which the employer may not issue notices of termination."
 
   probation:
-    ref: "LRA Schedule 8 Item 8"
+    ref: "LRA Schedule 8 Item 8 (repealed Code of Good Practice: Dismissal)"
     value: "fair procedure required during probation"
     effective_from: null
-    effective_until: null
+    effective_until: "2025-09-03"
     effect: "An employer may not dismiss a probationary employee without following a fair procedure. The employer must provide the employee with reasonable evaluation, instruction, training, guidance, and counselling, and allow a reasonable opportunity to improve before dismissal for poor performance."
+    note: "Governed by the Schedule 8 Code, repealed on 2025-09-04 by the 2025 Code of Good Practice: Dismissal. Retained for temporal queries about dismissals effected before 2025-09-04. For probation on/after 2025-09-04, see probation_2025."
+
+  probation_2025:
+    ref: "Code of Good Practice: Dismissal (2025), probation item; GenN 3470 GG 53294 (issued under LRA s203(2A))"
+    value: "fair procedure required during probation"
+    effective_from: "2025-09-04"
+    effective_until: null
+    effect: "An employer may not dismiss a probationary employee without a fair procedure. The 2025 Code frames probation around both performance and suitability for employment, and applies more flexible, less formal procedures than for a confirmed employee: the employee must receive reasonable evaluation, instruction, training, guidance and counselling and a reasonable opportunity to meet the required standard, and be given a chance to respond before dismissal. The former Schedule 8 Item 8 provisions were repealed by this Code on 2025-09-04."
+    gazette_date: "2025-09-04"
+
+  dismissal_code:
+    ref: "Code of Good Practice: Dismissal (2025), GenN 3470 GG 53294 (issued under LRA s203(2A))"
+    value: "2025 Code replaces the LRA Schedule 8 Code of Good Practice: Dismissal"
+    effective_from: "2025-09-04"
+    effective_until: null
+    effect: "The Code of Good Practice: Dismissal published on 2025-09-04 repeals and replaces both the Schedule 8 Code of Good Practice: Dismissal and the 1999 Code of Good Practice on Dismissal Based on Operational Requirements, consolidating misconduct, incapacity (including ill health/injury), poor performance, probation and operational-requirements dismissals into one instrument. Headline changes: it recognises incompatibility as an incapacity ground; permits simpler, less rigid procedures for small employers where basic fairness is observed; does not mandate a formal disciplinary hearing (the requirement is a reasonable opportunity to respond); and reinforces progressive discipline while accepting that warnings are not always required before dismissal (e.g. senior or highly skilled employees). Dismissals effected before 2025-09-04 are assessed under the old Schedule 8 Code."
+    gazette_date: "2025-09-04"
+    note: "Verify the current Code text against the gazetted notice (GenN 3470, GG 53294, 4 September 2025) before advising."
 
   fixed_term_reasonable_expectation:
     ref: "LRA s186(1)(b)"

@@ -32,7 +32,7 @@ South African employment policies operate within a layered statutory framework. 
 
 ### Disciplinary code and procedure (essential)
 
-A well-drafted disciplinary code aligned to **LRA Schedule 8** (Code of Good Practice: Dismissal) is the single most important employment policy for a South African employer. CCMA commissioners measure the fairness of dismissals against the employer's own disciplinary code.
+A well-drafted disciplinary code aligned to the **2025 Code of Good Practice: Dismissal** (GenN 3470, GG 53294, effective 4 September 2025 — which replaced the former LRA Schedule 8 Code) is the single most important employment policy for a South African employer. CCMA commissioners measure the fairness of dismissals against the employer's own disciplinary code. Codes drafted against the old Schedule 8 should be reviewed against the 2025 Code (consolidated misconduct/incapacity/operational-requirements guidance, incompatibility as a ground, small-employer flexibility, no mandatory formal hearing).
 
 #### Structure
 
@@ -102,7 +102,7 @@ The **Code of Good Practice on the Handling of Sexual Harassment Cases in the Wo
 
 Every policy should identify the statute, bargaining council agreement, or sectoral determination it implements. This grounds the policy in law and helps with compliance reviews.
 
-**Example:** *"This Disciplinary Code is issued in terms of, and must be read with, the Labour Relations Act 66 of 1995, Schedule 8 (Code of Good Practice: Dismissal). Where a bargaining council agreement applies to the employer's operations, the provisions of that agreement prevail to the extent of any inconsistency with this code."*
+**Example:** *"This Disciplinary Code is issued in terms of, and must be read with, the Labour Relations Act 66 of 1995 and the Code of Good Practice: Dismissal (GenN 3470, GG 53294, effective 4 September 2025). Where a bargaining council agreement applies to the employer's operations, the provisions of that agreement prevail to the extent of any inconsistency with this code."*
 
 ### Use the BCEA/LRA employee definition
 

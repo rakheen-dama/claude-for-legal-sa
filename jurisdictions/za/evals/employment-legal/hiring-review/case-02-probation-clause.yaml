@@ -8,7 +8,7 @@ input: |
 expected_flags: []
 
 expected_statutes:
-  - "LRA Schedule 8 Item 8"
+  - "Code of Good Practice: Dismissal"
   - "BCEA s37"
 
 must_not_contain:
@@ -19,14 +19,16 @@ must_not_contain:
 notes: |
   South African law does not recognise "at-will" employment.  Even during
   probation, the LRA requires that dismissal be for a fair reason and
-  follow a fair procedure.  Schedule 8 Item 8 provides specific guidance
-  on probation: the employer must give the employee reasonable evaluation,
+  follow a fair procedure.  The 2025 Code of Good Practice: Dismissal
+  (which replaced the Schedule 8 Code on 4 September 2025) provides
+  specific guidance on probation, now framed around performance and
+  suitability: the employer must give the employee reasonable evaluation,
   instruction, training, guidance, or counselling, and an opportunity to
   improve before dismissal.  A clause allowing termination "without
-  reason" is inconsistent with s188 of the LRA and Schedule 8.  The
-  12-month duration is not prohibited but is on the long side — Item 8(1)(d)
-  says the probation period should be "determined in advance" and be
-  "reasonable."  BCEA s37 prescribes minimum notice periods (1 week during
+  reason" is inconsistent with s188 of the LRA and the 2025 Code.  The
+  12-month duration is not prohibited but is on the long side — the
+  probation period should be determined in advance and be reasonable in
+  the circumstances.  BCEA s37 prescribes minimum notice periods (1 week during
   the first 6 months, 2 weeks between 6 months and 1 year).  The contract
   clause meets the minimum for the first 6 months but may be inadequate
   after that.  The review should flag the "without reason" language as

@@ -59,7 +59,7 @@ Once the 36-month cycle entitlement is exhausted, the employer is not obliged to
 - Use annual leave (by agreement).
 - Apply for illness benefits through the **Unemployment Insurance Fund (UIF)** if the incapacity is expected to last more than 14 days.
 
-If the illness constitutes incapacity, the employer must follow the incapacity procedure under **LRA Schedule 8 Items 10-11** before considering dismissal.
+If the illness constitutes incapacity, the employer must follow the incapacity procedure under the **2025 Code of Good Practice: Dismissal** (formerly LRA Schedule 8 Items 10-11) before considering dismissal.
 
 ---
 
@@ -94,7 +94,20 @@ Family responsibility leave that is not taken during the annual leave cycle **la
 
 ---
 
-## Maternity leave (BCEA s25)
+## Parental leave — Van Wyk interim regime (from 3 October 2025)
+
+> **Current position — read first.** In *Van Wyk and Others v Minister of Employment and Labour* [2025] ZACC 20 (3 October 2025) the Constitutional Court declared BCEA ss25, 25A, 25B and 25C (maternity, parental, adoption and commissioning-parental leave) invalid for unfairly differentiating between parents, and **read in** an interim **gender-neutral shared parental-leave** regime that applies **immediately**. The declaration of invalidity is **suspended for 36 months** (to about 2 October 2028) to let Parliament amend the BCEA, but the reading-in governs in the meantime. See `jurisdictions/za/statutes/bcea.yaml` → `parental_leave_2025`.
+>
+> Under the interim regime, for births, adoptions and surrogacy placements **on or after 3 October 2025**:
+> - A **single employed parent** is entitled to **four consecutive months'** parental leave.
+> - Where **both parents are employed**, they share an aggregate of **four months plus ten days**, taken consecutively or concurrently (each parent's portion in a single block); if they cannot agree how to divide it, it is split **as equally as possible**.
+> - The framework is **gender-neutral** and applies to biological, adoptive and commissioning parents alike.
+> - A **birth mother retains pregnancy protection**: she may begin leave up to **4 weeks before** the expected birth and **may not work for 6 weeks after** the birth unless certified fit; these periods count towards and are taken from the shared allocation.
+> - **UIF benefits are NOT yet aligned** — the Court did not read in a matching UIF Act amendment, so UIF maternity/parental benefits still follow the old categories pending legislation. This is a known, unsettled mismatch: **verify the current UIF position before advising.**
+>
+> The pre-Van Wyk entitlements below (4-month maternity leave for the mother; 10-day parental / 10-week adoption and commissioning leave under the Labour Laws Amendment Act 10 of 2018) are **retained for historical/temporal queries** — they govern leave taken for births or placements **before 3 October 2025**.
+
+## Maternity leave (BCEA s25) — pre-Van Wyk regime (before 3 October 2025)
 
 ### Entitlement
 
@@ -121,7 +134,9 @@ Dismissal of an employee on grounds of pregnancy is **automatically unfair** und
 
 ---
 
-## Paternity and parental leave
+## Paternity and parental leave — pre-Van Wyk regime (before 3 October 2025)
+
+> **Superseded for current matters.** The entitlements in this section applied before the Van Wyk interim regime (see the banner under *Parental leave — Van Wyk interim regime* above). They remain the reference for births, adoptions or surrogacy placements **before 3 October 2025**.
 
 ### Labour Laws Amendment Act 10 of 2018
 
@@ -141,7 +156,7 @@ Parental leave (10 days) is **unpaid**, but the employee may claim benefits from
 
 ### Threshold applicability
 
-Working time provisions in BCEA ss9-16 apply **only to employees earning below the BCEA earnings threshold** (currently R254,371.67 per annum). Employees earning above the threshold are excluded from these provisions, though employers may contractually agree to apply them.
+Working time provisions in BCEA ss9-16 apply **only to employees earning below the BCEA earnings threshold** (read `jurisdictions/za/statutes/bcea.yaml` → `earnings_threshold` for the current figure). Employees earning above the threshold are excluded from these provisions, though employers may contractually agree to apply them.
 
 ### Ordinary hours
 

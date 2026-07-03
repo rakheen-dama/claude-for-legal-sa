@@ -22,7 +22,7 @@ The definition explicitly **excludes independent contractors**. The question in 
 
 ### Applicability
 
-The presumption applies to persons earning **below the BCEA earnings threshold** (currently R254,371.67 per annum — see `jurisdictions/za/statutes/bcea.yaml` for the current value). Persons earning above the threshold are not excluded from being employees; the presumption simply does not assist them, and the common law test applies directly.
+The presumption applies to persons earning **below the BCEA earnings threshold** (read `jurisdictions/za/statutes/bcea.yaml` → `earnings_threshold` for the current figure). Persons earning above the threshold are not excluded from being employees; the presumption simply does not assist them, and the common law test applies directly.
 
 ### The seven factors
 
@@ -124,7 +124,7 @@ Apply the following steps in order to classify a worker in South Africa:
 ### Step 1: Earnings check
 
 - What is the worker's annualised earnings?
-- Is the worker above or below the current BCEA earnings threshold (R254,371.67 per annum — verify against `jurisdictions/za/statutes/bcea.yaml` for the current value)?
+- Is the worker above or below the current BCEA earnings threshold (read `jurisdictions/za/statutes/bcea.yaml` → `earnings_threshold` for the current figure)?
 
 ### Step 2: Statutory presumption (s200A)
 

@@ -13,7 +13,9 @@ South African law does not recognise the concept of termination without cause. E
    - Incapacity (poor performance, ill health, or injury)
    - Operational requirements (retrenchment)
 
-2. **Procedural fairness** — the employer must follow a fair procedure before dismissing, with the specific procedure depending on the category of dismissal. The Code of Good Practice: Dismissal (LRA Schedule 8) provides detailed guidance.
+2. **Procedural fairness** — the employer must follow a fair procedure before dismissing, with the specific procedure depending on the category of dismissal. The **2025 Code of Good Practice: Dismissal** provides detailed guidance.
+
+> **Governing Code — temporal note.** The **Code of Good Practice: Dismissal** published in Government Gazette 53294 (GenN 3470, 4 September 2025) is the current Code. It repealed and replaced **both** the old Schedule 8 Code of Good Practice: Dismissal **and** the 1999 Code of Good Practice on Dismissal Based on Operational Requirements, consolidating misconduct, incapacity, poor performance, probation and operational-requirements dismissals into one instrument (see `jurisdictions/za/statutes/lra.yaml` → `dismissal_code`). Headline shifts from the old Code: it recognises **incompatibility** as an incapacity ground; permits **simpler, less rigid procedures for small employers** where basic fairness is observed; does **not** mandate a formal disciplinary hearing (the requirement is a reasonable opportunity to respond to the allegations); frames **probation** around performance *and* suitability; and accepts that a prior warning is not always required (e.g. for senior or highly skilled employees). **Historical carve-out:** a dismissal *effected before 4 September 2025* is assessed under the **old Schedule 8 Code** in force at the time — for those matters the Schedule 8 item references below still apply.
 
 ### Consequences of unfair dismissal
 
@@ -28,7 +30,7 @@ The Labour Court or CCMA arbitrator determines the appropriate remedy. Reinstate
 
 ## 2. Types of dismissal
 
-### 2.1 Misconduct (Schedule 8 Items 3–4)
+### 2.1 Misconduct (2025 Code; formerly Schedule 8 Items 3–4)
 
 #### Substantive fairness
 
@@ -39,22 +41,22 @@ All four elements must be established:
 3. **Consistent application** — the rule or standard has been consistently applied across the workplace. Inconsistent treatment undermines the employer's case.
 4. **Appropriate sanction** — dismissal is an appropriate sanction for the contravention, considering the gravity of the misconduct, the employee's circumstances (length of service, disciplinary record, personal circumstances), and any mitigating factors.
 
-Progressive discipline is the norm (Schedule 8 Item 3(4)). Dismissal for a first offence is appropriate only where the misconduct is so serious that it makes a continued employment relationship intolerable — typically involving dishonesty, gross insubordination, gross negligence, or conduct endangering safety.
+Progressive discipline is the norm under the 2025 Code (formerly Schedule 8 Item 3(4)). Dismissal for a first offence is appropriate only where the misconduct is so serious that it makes a continued employment relationship intolerable — typically involving dishonesty, gross insubordination, gross negligence, or conduct endangering safety. The 2025 Code confirms that a prior warning is not invariably required before dismissal (for example for senior or highly skilled employees who should need no warning).
 
 #### Procedural fairness
 
-The employer must follow a fair procedure before dismissing for misconduct (Schedule 8 Item 4):
+The employer must follow a fair procedure before dismissing for misconduct (2025 Code; formerly Schedule 8 Item 4):
 
 1. **Notify the employee** of the allegations in sufficient detail to allow a meaningful response.
 2. **Allow reasonable time to prepare** a response to the allegations.
-3. **Allow representation** — the employee is entitled to be assisted by a trade union representative or fellow employee at the hearing.
-4. **Conduct a hearing** — the employee must be given an opportunity to state a case, call witnesses, and challenge evidence.
+3. **Allow representation** — the employee is entitled to be assisted by a trade union representative or fellow employee.
+4. **Give an opportunity to respond** — the employee must be given a genuine opportunity to state a case, call witnesses, and challenge evidence. **Under the 2025 Code a formal, court-like disciplinary hearing is not mandatory**: the essential requirement is a reasonable opportunity to respond to the allegations before a decision is taken, and the process may be less rigid for small employers provided basic fairness is observed.
 5. **Communicate the decision** — the employer must communicate the decision in writing, with reasons.
 6. **Inform of rights** — the employee must be informed of the right to refer the dispute to the CCMA or a bargaining council within 30 days (LRA s191).
 
 The procedure need not be as formal as court proceedings, but must give the employee a fair opportunity to be heard.
 
-### 2.2 Incapacity — poor performance (Schedule 8 Items 8–9)
+### 2.2 Incapacity — poor performance (2025 Code; formerly Schedule 8 Items 8–9)
 
 Poor performance dismissal requires the employer to demonstrate:
 
@@ -75,11 +77,11 @@ The procedure mirrors the misconduct hearing in general terms, but the focus is 
 - Whether a reasonable period for improvement was given
 - Whether dismissal is the appropriate step (as opposed to demotion or transfer)
 
-### 2.3 Probation (Schedule 8 Item 8)
+### 2.3 Probation (2025 Code; formerly Schedule 8 Item 8)
 
-Probation is **not** a free pass to dismiss without process. Schedule 8 Item 8 requires:
+Probation is **not** a free pass to dismiss without process. The 2025 Code (see `jurisdictions/za/statutes/lra.yaml` → `probation_2025`) frames probation around both **performance and suitability for employment** and requires:
 
-1. **Purpose of probation** — probation is a trial period to allow the employer to assess whether the employee is suitable for the position.
+1. **Purpose of probation** — probation is a trial period to allow the employer to assess whether the employee is suitable for the position, on both performance and broader suitability grounds.
 2. **Evaluation** — the employer must evaluate the employee's performance during probation.
 3. **Guidance and counselling** — the employer must provide reasonable guidance, instruction, training, and counselling to assist the employee in meeting the required standard.
 4. **Consider extension** — before dismissing, the employer should consider extending the probationary period if there is a reasonable prospect that the employee will improve.
@@ -90,7 +92,9 @@ The procedure for dismissal during probation may be less formal than for a perma
 - Consider alternatives to dismissal (extension, transfer)
 - Communicate the decision
 
-### 2.4 Incapacity — ill health or injury (Schedule 8 Items 10–11)
+### 2.4 Incapacity — ill health or injury and incompatibility (2025 Code; formerly Schedule 8 Items 10–11)
+
+The 2025 Code expressly recognises **incompatibility** — an employee's demonstrated inability to work in harmony with colleagues or within the workplace culture — as a further **incapacity** ground for dismissal, distinct from misconduct and requiring its own fair, remedial process.
 
 Before dismissing for ill health or injury, the employer must:
 
@@ -168,7 +172,7 @@ If conciliation fails, the next step depends on the type of dispute:
 
 ### Con-arb
 
-For dismissal disputes involving conduct or capacity of employees below the BCEA earnings threshold (currently R254,371.67 per year), the CCMA may use **con-arb** — a combined conciliation-arbitration process where the matter proceeds directly to arbitration on the same day if conciliation fails (LRA s191(5A)).
+For dismissal disputes involving conduct or capacity of employees below the BCEA earnings threshold (read `jurisdictions/za/statutes/bcea.yaml` → `earnings_threshold` for the current figure), the CCMA may use **con-arb** — a combined conciliation-arbitration process where the matter proceeds directly to arbitration on the same day if conciliation fails (LRA s191(5A)).
 
 ---
 
@@ -178,15 +182,15 @@ The following table identifies 11 high-risk indicators that should be assessed i
 
 | # | Flag | Why it's high-risk | Check |
 |---|---|---|---|
-| 1 | No hearing held | Procedural unfairness — Schedule 8 requires a hearing before dismissal for misconduct or incapacity | Was a hearing held with adequate notice, time to prepare, and the right to representation? |
+| 1 | No opportunity to respond | Procedural unfairness — the 2025 Code requires a genuine opportunity to respond before dismissal for misconduct or incapacity (a formal hearing is not mandatory, but the employee must be heard) | Was the employee notified of the allegations and given adequate notice, time to prepare, the right to representation, and a real chance to respond? |
 | 2 | Automatically unfair ground | LRA s187 — dismissal for a reason listed in s187 is automatically unfair and attracts up to 24 months' compensation | Is the dismissal connected to pregnancy, union activity, protected disclosure, exercise of a right under the LRA, or refusal to do a striker's work? |
 | 3 | Discrimination / EEA-protected ground | LRA s187(1)(f) read with EEA — dismissal that constitutes unfair discrimination is automatically unfair | Is the dismissal connected to race, gender, sex, pregnancy, marital status, family responsibility, ethnic or social origin, colour, sexual orientation, age, disability, religion, HIV status, conscience, belief, political opinion, culture, language, birth, or any other EEA-listed ground? |
 | 4 | Protected disclosure | Protected Disclosures Act 26 of 2000 — dismissal of an employee who made a protected disclosure is automatically unfair (LRA s187(1)(h)) | Has the employee made a protected disclosure to the employer, a legal adviser, a regulatory body, or the media in accordance with the Act? |
 | 5 | Recent CCMA/union activity | LRA s187(1)(d) — dismissal for participating in lawful union activities or exercising rights under the LRA is automatically unfair | Has the employee recently referred a dispute to the CCMA, participated in union activity, acted as a shop steward, or participated in a lawful strike? |
 | 6 | Operational requirements without s189 process | LRA s189 imposes mandatory consultation procedures; failure to follow them renders the dismissal procedurally unfair | Has the full s189 consultation process been followed? **Sub-check:** does the employer fall into s189A territory (50+ employees and above the applicable threshold)? |
-| 7 | Probation without Code compliance | LRA Schedule 8 Item 8 — probation does not remove the requirement for fair process | Is the employee on probation? Was evaluation, guidance, and counselling provided? Was extension of probation considered before dismissal? |
+| 7 | Probation without Code compliance | 2025 Code of Good Practice: Dismissal (probation item; formerly Schedule 8 Item 8) — probation does not remove the requirement for fair process | Is the employee on probation? Was evaluation, guidance, and counselling provided? Was extension of probation considered before dismissal? |
 | 8 | Fixed-term — reasonable expectation | LRA s186(1)(b) — failure to renew a fixed-term contract where the employee had a reasonable expectation of renewal is treated as a dismissal | Is the employee on a fixed-term contract? Do prior renewals, employer conduct, or representations create a reasonable expectation of renewal? |
-| 9 | Earnings below BCEA threshold | Employees below the BCEA earnings threshold (currently R254,371.67/year) receive full BCEA protections; adverse employment actions attract higher scrutiny | Does the employee earn below the threshold? Are full working-time protections (ordinary hours, overtime, meal intervals) being observed? |
+| 9 | Earnings below BCEA threshold | Employees below the BCEA earnings threshold (read `jurisdictions/za/statutes/bcea.yaml` → `earnings_threshold` for the current figure) receive full BCEA protections; adverse employment actions attract higher scrutiny | Does the employee earn below the threshold? Are full working-time protections (ordinary hours, overtime, meal intervals) being observed? |
 | 10 | Thin documentation | The "why now?" problem — absence of a progressive discipline trail makes the employer's case difficult to sustain at the CCMA | Is there a progressive discipline record? Written warnings? Performance improvement plan? Was the employee given an opportunity to improve before dismissal? |
 | 11 | Comparator problem / inconsistent discipline | Inconsistent application of disciplinary standards undermines the employer's substantive fairness case at the CCMA | Has another employee committed the same or similar misconduct and not been dismissed? Has the disciplinary code been applied consistently across the workforce? |
 

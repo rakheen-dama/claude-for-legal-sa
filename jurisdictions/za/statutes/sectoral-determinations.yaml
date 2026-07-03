@@ -1,6 +1,7 @@
 statute: "Sectoral Determinations under BCEA s55"
 authority: "Department of Employment and Labour"
-last_confirmed: "2025-03-01"
+last_confirmed: "2026-07-03"
+volatility: annual
 source_url: "https://www.labour.gov.za/DocumentCenter/Pages/Legislation/Sectoral-Determinations.aspx"
 
 sections:
@@ -10,8 +11,29 @@ sections:
     currency: ZAR
     unit: "per hour"
     effective_from: "2024-03-01"
-    effective_until: null
+    effective_until: "2025-02-28"
     effect: "Domestic workers are entitled to the national minimum wage of R27.58 per hour. The previous sectoral determination rate has been aligned with the National Minimum Wage Act."
+    note: "Superseded by domestic_workers_minimum_wage_2025 effective 2025-03-01. Retained for temporal queries."
+
+  domestic_workers_minimum_wage_2025:
+    ref: "National Minimum Wage Amendment 2025, GN R.5830 GG 52053"
+    value: 28.79
+    currency: ZAR
+    unit: "per hour"
+    effective_from: "2025-03-01"
+    effective_until: "2026-02-28"
+    effect: "Domestic workers are entitled to the national minimum wage of R28.79 per hour, aligned with the general National Minimum Wage."
+    gazette_date: "2025-02-04"
+
+  domestic_workers_minimum_wage_2026:
+    ref: "National Minimum Wage Amendment 2026, GN 7083 GG 54075"
+    value: 30.23
+    currency: ZAR
+    unit: "per hour"
+    effective_from: "2026-03-01"
+    effective_until: null
+    effect: "Domestic workers are entitled to the national minimum wage of R30.23 per hour, aligned with the general National Minimum Wage. This is the current rate."
+    gazette_date: "2026-02-03"
 
   farm_workers_minimum_wage:
     ref: "SD 13 + National Minimum Wage Act 9 of 2018"
@@ -19,8 +41,29 @@ sections:
     currency: ZAR
     unit: "per hour"
     effective_from: "2024-03-01"
-    effective_until: null
+    effective_until: "2025-02-28"
     effect: "Farm workers are entitled to the national minimum wage of R27.58 per hour. The previous sectoral determination rate has been aligned with the National Minimum Wage Act."
+    note: "Superseded by farm_workers_minimum_wage_2025 effective 2025-03-01. Retained for temporal queries."
+
+  farm_workers_minimum_wage_2025:
+    ref: "National Minimum Wage Amendment 2025, GN R.5830 GG 52053"
+    value: 28.79
+    currency: ZAR
+    unit: "per hour"
+    effective_from: "2025-03-01"
+    effective_until: "2026-02-28"
+    effect: "Farm workers are entitled to the national minimum wage of R28.79 per hour, aligned with the general National Minimum Wage."
+    gazette_date: "2025-02-04"
+
+  farm_workers_minimum_wage_2026:
+    ref: "National Minimum Wage Amendment 2026, GN 7083 GG 54075"
+    value: 30.23
+    currency: ZAR
+    unit: "per hour"
+    effective_from: "2026-03-01"
+    effective_until: null
+    effect: "Farm workers are entitled to the national minimum wage of R30.23 per hour, aligned with the general National Minimum Wage. This is the current rate."
+    gazette_date: "2026-02-03"
 
   hospitality_sector:
     ref: "SD 14"
@@ -28,8 +71,29 @@ sections:
     currency: ZAR
     unit: "per hour"
     effective_from: "2024-03-01"
-    effective_until: null
+    effective_until: "2025-02-28"
     effect: "Employees in the hospitality sector are entitled to the national minimum wage of R27.58 per hour as prescribed by the applicable sectoral determination."
+    note: "Superseded by hospitality_sector_2025 effective 2025-03-01. Retained for temporal queries."
+
+  hospitality_sector_2025:
+    ref: "National Minimum Wage Amendment 2025, GN R.5830 GG 52053"
+    value: 28.79
+    currency: ZAR
+    unit: "per hour"
+    effective_from: "2025-03-01"
+    effective_until: "2026-02-28"
+    effect: "Employees in the hospitality sector are entitled to the national minimum wage of R28.79 per hour."
+    gazette_date: "2025-02-04"
+
+  hospitality_sector_2026:
+    ref: "National Minimum Wage Amendment 2026, GN 7083 GG 54075"
+    value: 30.23
+    currency: ZAR
+    unit: "per hour"
+    effective_from: "2026-03-01"
+    effective_until: null
+    effect: "Employees in the hospitality sector are entitled to the national minimum wage of R30.23 per hour. This is the current rate."
+    gazette_date: "2026-02-03"
 
   national_minimum_wage:
     ref: "National Minimum Wage Act 9 of 2018"
@@ -37,8 +101,29 @@ sections:
     currency: ZAR
     unit: "per hour"
     effective_from: "2024-03-01"
-    effective_until: null
+    effective_until: "2025-02-28"
     effect: "Every worker is entitled to a national minimum wage of not less than R27.58 per ordinary hour worked. The rate is reviewed annually by the National Minimum Wage Commission."
+    note: "Superseded by national_minimum_wage_2025 effective 2025-03-01. Retained for temporal queries."
+
+  national_minimum_wage_2025:
+    ref: "National Minimum Wage Amendment 2025, GN R.5830 GG 52053"
+    value: 28.79
+    currency: ZAR
+    unit: "per hour"
+    effective_from: "2025-03-01"
+    effective_until: "2026-02-28"
+    effect: "Every worker is entitled to a national minimum wage of not less than R28.79 per ordinary hour worked. The rate is reviewed annually by the National Minimum Wage Commission."
+    gazette_date: "2025-02-04"
+
+  national_minimum_wage_2026:
+    ref: "National Minimum Wage Amendment 2026, GN 7083 GG 54075"
+    value: 30.23
+    currency: ZAR
+    unit: "per hour"
+    effective_from: "2026-03-01"
+    effective_until: null
+    effect: "Every worker is entitled to a national minimum wage of not less than R30.23 per ordinary hour worked. This is the current rate, reviewed annually by the National Minimum Wage Commission."
+    gazette_date: "2026-02-03"
 
   expanded_public_works_programme:
     ref: "National Minimum Wage Act s6(6)"
@@ -46,5 +131,26 @@ sections:
     currency: ZAR
     unit: "per hour"
     effective_from: "2024-03-01"
-    effective_until: null
+    effective_until: "2025-02-28"
     effect: "Workers employed in the Expanded Public Works Programme are entitled to a minimum wage of R13.97 per hour, which is a prescribed lower rate under s6(6) of the National Minimum Wage Act."
+    note: "Superseded by expanded_public_works_programme_2025 effective 2025-03-01. Retained for temporal queries."
+
+  expanded_public_works_programme_2025:
+    ref: "National Minimum Wage Act s6(6); National Minimum Wage Amendment 2025, GN R.5830 GG 52053"
+    value: 15.83
+    currency: ZAR
+    unit: "per hour"
+    effective_from: "2025-03-01"
+    effective_until: "2026-02-28"
+    effect: "Workers employed in the Expanded Public Works Programme are entitled to a minimum wage of R15.83 per hour, a prescribed lower rate under s6(6) of the National Minimum Wage Act."
+    gazette_date: "2025-02-04"
+
+  expanded_public_works_programme_2026:
+    ref: "National Minimum Wage Act s6(6); National Minimum Wage Amendment 2026, GN 7083 GG 54075"
+    value: 16.62
+    currency: ZAR
+    unit: "per hour"
+    effective_from: "2026-03-01"
+    effective_until: null
+    effect: "Workers employed in the Expanded Public Works Programme are entitled to a minimum wage of R16.62 per hour, a prescribed lower rate under s6(6) of the National Minimum Wage Act. This is the current rate."
+    gazette_date: "2026-02-03"

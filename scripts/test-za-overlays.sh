@@ -75,8 +75,12 @@ echo "--- 6. Retired-literal check ---"
 #   historical entries legitimately contain old values).
 # To add a retired literal in a later PR, append to RETIRED_LITERALS below.
 RETIRED_LITERALS=(
-    # Example (remove when real entries land):
-    # "EXAMPLE_RETIRED_LITERAL_DO_NOT_USE"
+    # PR 3 (employment refresh) — superseded BCEA earnings threshold and
+    # minimum-wage literals. Prose must point at the YAML key, not the figure.
+    "254371\.67"       # 2024 BCEA earnings threshold (per annum)
+    "254,371\.67"      # same, comma-formatted
+    "R27\.58"          # 2024 national minimum wage (per hour)
+    "R13\.97"          # 2024 EPWP minimum wage (per hour)
 )
 
 # Build the list of files to scan

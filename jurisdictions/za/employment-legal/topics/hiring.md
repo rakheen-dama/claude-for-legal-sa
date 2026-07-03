@@ -49,9 +49,9 @@ Non-solicitation clauses (restricting contact with specific clients or employees
 
 ## Probation
 
-### LRA Schedule 8 Item 8
+### 2025 Code of Good Practice: Dismissal (probation)
 
-Probation under South African law is governed by LRA Schedule 8, Item 8 (Code of Good Practice: Dismissal). Probation is **not a free pass** to dismiss without process. The statutory requirements during probation are:
+Probation under South African law is governed by the **2025 Code of Good Practice: Dismissal** (GenN 3470, GG 53294, effective 4 September 2025), which replaced the former LRA Schedule 8 Item 8. The 2025 Code frames probation around both **performance and suitability for employment**. Probation is **not a free pass** to dismiss without process. The requirements during probation are:
 
 1. **Evaluation** — the employer must assess the employee's performance against clear, communicated standards.
 2. **Guidance and instruction** — the employer must provide the employee with the guidance and support necessary to perform.
@@ -62,7 +62,7 @@ Probation under South African law is governed by LRA Schedule 8, Item 8 (Code of
 
 ### Fair procedure during probation
 
-A probationary dismissal must still comply with the requirements of procedural fairness, although the process may be less formal than for a confirmed employee (Schedule 8 Item 8(1)(i)). The employee must be:
+A probationary dismissal must still comply with the requirements of procedural fairness, although the 2025 Code expressly allows the process to be **less formal** than for a confirmed employee (a formal hearing is not mandatory; smaller employers may use simpler procedures provided basic fairness is observed). The employee must be:
 
 - Informed of the performance concerns.
 - Given an opportunity to respond.
@@ -84,7 +84,7 @@ A CCMA commissioner will assess whether the employer met these requirements. Dis
 |---|---|---|
 | No documented evaluation during probation | Procedural unfairness at CCMA | Implement structured check-ins before any dismissal decision |
 | Dismissal without counselling or opportunity to improve | Substantive and procedural unfairness | Provide counselling, set targets, allow time to improve |
-| Probation period expired, employee still working | Employee is now confirmed — probation protections no longer apply, full Schedule 8 process required | Confirm status formally or extend probation in writing before expiry |
+| Probation period expired, employee still working | Employee is now confirmed — probation flexibility no longer applies, the full fair-procedure process under the 2025 Code is required | Confirm status formally or extend probation in writing before expiry |
 | Successive short fixed-term contracts used to avoid probation | CCMA may treat as single continuous employment | Use a proper probation clause in a permanent contract instead |
 
 ---

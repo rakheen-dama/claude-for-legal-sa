@@ -8,7 +8,7 @@ input: |
 expected_flags: []
 
 expected_statutes:
-  - "LRA Schedule 8"
+  - "Code of Good Practice: Dismissal"
 
 must_not_contain:
   - "state supplements"
@@ -17,8 +17,10 @@ must_not_contain:
   - "right-to-work"
 
 notes: |
-  LRA Schedule 8 (Code of Good Practice: Dismissal) provides the
-  framework for disciplinary codes and procedures.  The code should
+  The 2025 Code of Good Practice: Dismissal (GenN 3470, GG 53294,
+  effective 4 September 2025 — which replaced the Schedule 8 Code and the
+  1999 operational-requirements code) provides the framework for
+  disciplinary codes and procedures.  The code should
   include: (1) a schedule of offences graded by severity with
   corresponding sanctions (verbal warning, written warning, final written
   warning, dismissal); (2) a disciplinary procedure that ensures

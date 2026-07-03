@@ -198,7 +198,7 @@ If the primary jurisdiction is NOT South Africa, continue with the US interview 
 
 **Statutory baseline:**
 
-> 1. **Do you have employees earning above AND below the BCEA earnings threshold?** (Currently R254,371.67/year. Employees below this threshold have full BCEA working-time and overtime protections. Employees above are excluded from some of those provisions but still covered by the LRA for dismissal, discrimination, etc.)
+> 1. **Do you have employees earning above AND below the BCEA earnings threshold?** (For the current figure read `jurisdictions/za/statutes/bcea.yaml` → `earnings_threshold`. Employees below the threshold have full BCEA working-time and overtime protections. Employees above are excluded from some of those provisions but still covered by the LRA for dismissal, discrimination, etc.)
 >    - All above threshold
 >    - All below threshold
 >    - Both — approximately what split?
