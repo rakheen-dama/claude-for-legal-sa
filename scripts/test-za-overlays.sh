@@ -83,7 +83,7 @@ RETIRED_LITERALS=(
 SCAN_FILES=()
 while IFS= read -r -d '' f; do
     SCAN_FILES+=("$f")
-done < <(find "$ROOT/jurisdictions/za" -name "*.md" -not -path "*/statutes/*" -not -path "$ROOT/docs/*" -print0 2>/dev/null)
+done < <(find "$ROOT/jurisdictions/za" -name "*.md" -not -path "*/statutes/*" -not -path "*/docs/*" -print0 2>/dev/null)
 while IFS= read -r -d '' f; do
     SCAN_FILES+=("$f")
 done < <(find "$ROOT" -maxdepth 4 -path "*/skills/cold-start-interview/SKILL.md" -print0 2>/dev/null)
