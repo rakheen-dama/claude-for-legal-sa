@@ -1,7 +1,7 @@
 {
   "name": "privacy-legal",
   "version": "1.0.2",
-  "description": "Triages processing activities, generates PIAs, reviews DPAs as controller or processor, drafts DSAR responses within statutory timelines, and monitors policy drift against practice.",
+  "description": "Triages processing activities under POPIA and PAIA, generates privacy impact assessments, reviews operator agreements, drafts data-subject access request responses within statutory timelines, checks cross-border transfer safeguards, and monitors policy drift against practice — with Information Regulator enforcement context.",
   "author": {
     "name": "Anthropic"
   }

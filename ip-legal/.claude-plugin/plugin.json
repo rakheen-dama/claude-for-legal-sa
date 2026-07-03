@@ -1,7 +1,7 @@
 {
   "name": "ip-legal",
   "version": "1.0.2",
-  "description": "Runs first-pass trademark clearance and freedom-to-operate triage, screens invention disclosures for initial patentability, drafts and triages cease-and-desist letters and DMCA takedowns (send and respond), checks open source compliance, reviews IP clauses, and tracks registrations and renewal deadlines.",
+  "description": "Runs first-pass trade mark clearance and freedom-to-operate triage via the CIPC registry, screens invention disclosures for patentability, drafts and triages cease-and-desist letters, checks open source compliance, reviews IP ownership clauses, and tracks CIPC registrations and renewal deadlines — grounded in SA copyright fair-dealing principles.",
   "author": {
     "name": "Anthropic"
   }

@@ -1,7 +1,7 @@
 {
   "name": "legal-clinic",
   "version": "1.0.2",
-  "description": "Sets up the clinic, onboards students, runs structured intake, tracks deadlines with malpractice-aware caution, and hands off cases at semester end \u2014 built within ABA Formal Op. 512.",
+  "description": "Sets up the clinic under LPC rules and Legal Aid SA frameworks, onboards students, runs structured intake with SA court-system and procedure context, tracks deadlines with malpractice-aware caution, scaffolds research and memo work, and hands off cases at semester end.",
   "author": {
     "name": "Anthropic"
   }

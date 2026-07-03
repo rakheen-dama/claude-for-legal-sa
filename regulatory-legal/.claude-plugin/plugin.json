@@ -1,7 +1,7 @@
 {
   "name": "regulatory-legal",
   "version": "1.0.2",
-  "description": "Watches regulatory feeds, diffs new rules against your policy library, tracks comment deadlines and open gaps, and writes the digest your team reads Monday morning.",
+  "description": "Watches Government Gazette and sector-regulator feeds (FSCA, SARB, ICASA, and others), diffs new rules against your policy library, tracks comment deadlines and open gaps, and writes the digest your team reads Monday morning — grounded in SA regulatory process and rule-status verification.",
   "author": {
     "name": "Anthropic"
   }
