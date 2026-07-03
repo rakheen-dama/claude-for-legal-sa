@@ -1,0 +1,33 @@
+statute: "Value-Added Tax Act 89 of 1991"
+authority: "South African Revenue Service (SARS)"
+last_confirmed: "2026-07-03"
+volatility: annual
+source_url: "https://www.sars.gov.za/types-of-tax/value-added-tax/"
+
+sections:
+  standard_rate:
+    ref: "VAT Act s7(1); Taxation Laws Amendment Act 2018"
+    value: 14
+    unit: "percent"
+    effective_from: "1993-04-07"
+    effective_until: "2018-03-31"
+    effect: "Standard rate of VAT on the supply of goods and services and on imported goods. This 14% rate applied from 1993 until it was increased to 15% on 2018-04-01. Retained as a closed entry for temporal queries about transactions before 2018-04-01."
+    note: "Superseded by standard_rate_2018 (15%) effective 2018-04-01."
+
+  standard_rate_2018:
+    ref: "VAT Act s7(1); Rates and Monetary Amounts and Amendment of Revenue Laws Act; 2018 Budget"
+    value: 15
+    unit: "percent"
+    effective_from: "2018-04-01"
+    effective_until: null
+    effect: "Current standard rate of VAT (15%) on the supply of goods and services and on imported goods. This is the rate in force. Contracts should state whether prices are VAT-inclusive or VAT-exclusive and which party bears the VAT."
+    note: "The 2025 Budget announced increases to 15.5% (from 1 May 2025) and 16% (from 1 April 2026), but BOTH were abandoned before taking effect. The increase was withdrawn following the Western Cape High Court settlement order (April 2025) and National Treasury's reversal statement of 24 April 2025; the standard rate accordingly remained 15% throughout. VAT never rose above 15%. [Gazette — confirmed] Confirm the current rate against the latest SARS notice before advising."
+
+  electronic_services_registration_threshold:
+    ref: "VAT Act s23(1A); Electronic Services Regulations GN 429 GG 42316 (effective 2019-04-01)"
+    value: 1000000
+    currency: ZAR
+    unit: "per any consecutive 12-month period"
+    effective_from: "2019-04-01"
+    effective_until: null
+    effect: "A foreign supplier of electronic services must register for SA VAT if the value of electronic services supplied to SA recipients exceeds R1 million in any consecutive 12-month period. The R1 million threshold replaced the earlier R50,000 threshold from 2019-04-01. A B2B exclusion applies only where every SA recipient is a registered VAT vendor; a single non-registered SA customer invalidates the exclusion."

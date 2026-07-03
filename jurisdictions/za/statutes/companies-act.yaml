@@ -1,6 +1,7 @@
 statute: "Companies Act 71 of 2008"
 authority: "Companies and Intellectual Property Commission"
-last_confirmed: "2026-05-21"
+last_confirmed: "2026-07-03"
+volatility: statutory
 source_url: "https://www.gov.za/documents/companies-act"
 
 sections:
@@ -221,4 +222,28 @@ sections:
     effective_from: "2011-05-01"
     effective_until: null
     effect: "A private company is a regulated company for the purposes of Chapter 5 (fundamental transactions) if more than 10% of its issued securities of any class have been transferred, other than between related or inter-related persons, within the 24-month period before the date of an affected transaction."
-    note: "Threshold changing under Companies Amendment Act 16 of 2024 to: 10+ shareholders AND Minister-determined financial threshold. Not yet in force as of May 2026."
+    note: "Threshold changing under Companies Amendment Act 16 of 2024 to: 10+ shareholders AND Minister-determined financial threshold. This particular change was NOT in the second commencement tranche (Proc 313 of 2026, 22 May 2026, which brought in the remuneration provisions); confirm its commencement separately before relying on it."
+
+  remuneration_policy:
+    ref: "Companies Act s30A (inserted by Companies Amendment Act 16 of 2024); commenced 2026-05-22 (Proc 313 GG 54722)"
+    value: "public and state-owned companies must table a remuneration policy for shareholder approval by ordinary resolution at the AGM"
+    effective_from: "2026-05-22"
+    effective_until: null
+    effect: "A public company or state-owned company must prepare a remuneration policy and present it to shareholders for approval by ordinary resolution at the AGM. If the policy is not approved, it must be presented again at the next AGM or a meeting called for that purpose. Once approved, the policy remains in force for three years; any material amendment before then requires shareholder approval before implementation. Applies to public and state-owned companies only (not private companies)."
+    note: "Inserted by Companies Amendment Act 16 of 2024, commenced 2026-05-22 by Proclamation 313 of 2026 (GG 54722) with no transitional/grace period. [Gazette — confirmed]"
+
+  remuneration_report:
+    ref: "Companies Act s30B (inserted by Companies Amendment Act 16 of 2024); commenced 2026-05-22 (Proc 313 GG 54722)"
+    value: "public and state-owned companies must table an annual remuneration report (background statement, policy, implementation report) for shareholder approval by ordinary resolution"
+    effective_from: "2026-05-22"
+    effective_until: null
+    effect: "A public company or state-owned company must prepare an annual remuneration report comprising a background statement, a copy of the remuneration policy, and an implementation report, and table it at the AGM for approval by ordinary resolution. The implementation report must disclose at least the total remuneration of each director and prescribed officer, the highest-paid and lowest-paid employee, the average and median employee remuneration, and the remuneration gap between the top 5% and bottom 5% of employees. A two-strike consequence applies: if the report is not approved, the remuneration committee must explain at the next AGM how concerns were addressed and affected non-executive members must stand for re-election; a second consecutive rejection can disqualify them from that committee for two years."
+    note: "Inserted by Companies Amendment Act 16 of 2024, commenced 2026-05-22 by Proclamation 313 of 2026 (GG 54722). Applies to public and state-owned companies only. [Gazette — confirmed]"
+
+  director_remuneration_disclosure:
+    ref: "Companies Act s30(4)-(6) (amended by Companies Amendment Act 16 of 2024); commenced 2026-05-22 (Proc 313 GG 54722)"
+    value: "audited companies must disclose remuneration and benefits of each individual director and prescribed officer, by name"
+    effective_from: "2026-05-22"
+    effective_until: null
+    effect: "The amended s30(4)-(6) requires the annual financial statements of any company required by the Act to be audited to disclose the remuneration and benefits received by each individual director and each individual prescribed officer, naming each of them, rather than in aggregated or anonymous form. This audit/AFS disclosure obligation is distinct from and broader than the ss30A/30B remuneration policy and report regime (which is confined to public and state-owned companies) — it applies to every company whose AFS must be audited."
+    note: "Amended by Companies Amendment Act 16 of 2024, commenced 2026-05-22 by Proclamation 313 of 2026 (GG 54722). [Gazette — confirmed]"

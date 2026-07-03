@@ -1,6 +1,7 @@
 statute: "Employment Equity Act 55 of 1998"
 authority: "Department of Employment and Labour"
-last_confirmed: "2025-03-01"
+last_confirmed: "2026-07-03"
+volatility: statutory
 source_url: "https://www.labour.gov.za/DocumentCenter/Pages/Acts.aspx"
 
 sections:
@@ -47,3 +48,35 @@ sections:
     effective_until: null
     effect: "A sector charter or code issued under s9(1) of the Broad-Based Black Economic Empowerment Act 53 of 2003 establishes sector-specific targets for ownership, management control, skills development, enterprise development, and socio-economic development."
     note: "BEE codes are issued under the Broad-Based Black Economic Empowerment Act 53 of 2003, not the EEA. They are included here because employment equity compliance and BEE scorecards are closely interrelated in practice."
+
+  designated_employer_definition_2025:
+    ref: "Employment Equity Amendment Act 4 of 2022; in force 2025-01-01"
+    value: "designation now turns solely on 50+ employees; turnover-based designation removed"
+    effective_from: "2025-01-01"
+    effective_until: null
+    effect: "The Employment Equity Amendment Act 4 of 2022 (commenced 2025-01-01) amended the definition of 'designated employer' so that designation turns solely on employing 50 or more employees. The previous alternative leg — under which an employer with fewer than 50 employees was nonetheless designated if annual turnover exceeded a sectoral threshold in EEA Schedule 4 — was removed. Small employers (fewer than 50 employees) are therefore no longer designated employers regardless of turnover, though the prohibition on unfair discrimination in Chapter II still applies to all employers."
+    note: "EEAA 4/2022 was brought into operation on 2025-01-01. Confirm against the commencement proclamation. The headcount figure itself (50) is unchanged — see designated_employer_headcount."
+
+  sectoral_numerical_targets_2025:
+    ref: "EEA s15A; Employment Equity Regulations & Sectoral Numerical Targets GG 52515 (15 April 2025)"
+    value: "five-year sectoral numerical targets across 18 national economic sectors, to 2030-08-31"
+    effective_from: "2025-04-15"
+    effective_until: null
+    effect: "Section 15A (inserted by EEAA 4/2022) empowers the Minister to set numerical targets per national economic sector. The Sectoral Numerical Targets and General Administrative Regulations were published on 2025-04-15 (GG 52515), setting five-year targets for equitable representation of designated groups at top and senior management, professional and skilled levels across 18 sectors, with a target horizon to 2030-08-31."
+    note: "GG 52515 (15 April 2025). [Gazette — confirmed] Targets are sector- and occupational-level-specific; consult the sector-specific target tables in the regulations for the applicable figures."
+
+  ee_plan_obligation_2025:
+    ref: "EEA s20 read with s15A regulations GG 52515"
+    value: "designated employers must prepare EE plans aligned to sectoral targets from 2025-09-01"
+    effective_from: "2025-09-01"
+    effective_until: null
+    effect: "Following the s15A sectoral numerical targets, designated employers must prepare and implement employment equity plans that set numerical goals aligned to the applicable sectoral targets. The obligation to have compliant plans in place runs from 2025-09-01, feeding the annual EE reporting cycle (EE reports submitted from 1 September to 15 January)."
+    note: "Reporting/plan cycle dates flow from the 2025 regulations; confirm current DEL reporting deadlines each cycle. Compliance with sectoral targets is also a condition for issue of an EEA13 certificate required for state contracts."
+
+  ee_targets_challenge_status:
+    ref: "NEASA & Sakeliga v Minister of Employment and Labour, GP High Court (28 August 2025); SCA petition dismissed early 2026"
+    value: "constitutional/administrative challenge to sectoral targets dismissed; regulations in force"
+    effective_from: "2025-08-28"
+    effective_until: null
+    effect: "NEASA and Sakeliga sought to interdict and set aside the s15A sectoral numerical targets. The Gauteng Division of the High Court dismissed the challenge on 2025-08-28, and a subsequent petition to the Supreme Court of Appeal was dismissed in early 2026. The sectoral numerical target regulations accordingly remain in force."
+    note: "Litigation status; watch for any further appeal to the Constitutional Court. Confirm the latest position before advising. [Perplexity — verify appeal history]"

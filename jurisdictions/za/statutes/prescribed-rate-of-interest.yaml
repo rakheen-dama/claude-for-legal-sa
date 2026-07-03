@@ -1,0 +1,58 @@
+statute: "Prescribed Rate of Interest Act 55 of 1975"
+authority: "Minister of Justice and Constitutional Development"
+last_confirmed: "2026-07-03"
+volatility: annual
+source_url: "https://www.justice.gov.za/legislation/acts/1975-055.pdf"
+
+sections:
+  formula:
+    ref: "Prescribed Rate of Interest Act s1(2)"
+    value: "SARB repurchase (repo) rate + 3.5% per annum"
+    effective_from: "2015-09-01"
+    effective_until: null
+    effect: "Since the 2015 amendment, the prescribed rate of interest is the SARB repo rate plus 3.5% per annum. The Minister publishes the amended rate by notice in the Gazette when the repo rate is adjusted, but the rate changes automatically under s1(2)(c) and takes effect from the first day of the second month following the month in which the repo rate is determined. Practitioners rely on the statutory formula, as Gazette notices are sometimes late, missing, or inconsistent with the granular repo-linked path."
+
+  prescribed_rate_2025_03:
+    ref: "Prescribed Rate of Interest Act s1(2); repo 7.75% + 3.5% [Perplexity — verify GN]"
+    value: 11.25
+    unit: "percent per annum"
+    effective_from: "2025-03-01"
+    effective_until: "2025-04-30"
+    effect: "Prescribed rate of interest (mora/judgment interest) of 11.25% per annum. Closed historical entry for temporal queries about interest running in this window."
+    note: "Intermediate-step determination; exact GN/Gazette not confirmed (the rate changes automatically under s1(2)(c)). [Perplexity — verify]"
+
+  prescribed_rate_2025_05:
+    ref: "Prescribed Rate of Interest Act s1(2); repo 7.50% + 3.5% [Perplexity — verify GN]"
+    value: 11.00
+    unit: "percent per annum"
+    effective_from: "2025-05-01"
+    effective_until: "2025-08-31"
+    effect: "Prescribed rate of interest of 11.00% per annum. Closed historical entry for temporal queries about interest running in this window."
+    note: "Intermediate-step determination; exact GN/Gazette not confirmed. [Perplexity — verify]"
+
+  prescribed_rate_2025_09:
+    ref: "Prescribed Rate of Interest Act s1(2); repo 7.25% + 3.5%; cf GN R6668 GG 53424 (26 Sep 2025) [Perplexity — verify]"
+    value: 10.75
+    unit: "percent per annum"
+    effective_from: "2025-09-01"
+    effective_until: "2025-10-31"
+    effect: "Prescribed rate of interest of 10.75% per annum. Closed historical entry for temporal queries about interest running in this window."
+    note: "The most recent located formal notice, GN R6668 GG 53424 (published 26 Sep 2025), states 10.5% 'as from 1 September 2025', which does not align with the granular repo-linked tracking (10.75% Sep–Oct, 10.50% from Nov). Values here follow the granular path; confirm against the gazetted notice for the exact date interest starts to run. [Perplexity — verify]"
+
+  prescribed_rate_2025_11:
+    ref: "Prescribed Rate of Interest Act s1(2); repo 7.00% + 3.5%; cf GN R6668 GG 53424 [Perplexity — verify]"
+    value: 10.50
+    unit: "percent per annum"
+    effective_from: "2025-11-01"
+    effective_until: "2026-02-28"
+    effect: "Prescribed rate of interest of 10.50% per annum. Closed historical entry for temporal queries about interest running in this window."
+    note: "Intermediate-step determination; see prescribed_rate_2025_09 note on the GN R6668 discrepancy. [Perplexity — verify]"
+
+  prescribed_rate_2026_03:
+    ref: "Prescribed Rate of Interest Act s1(2); repo 6.75% + 3.5%; rate determination GN series [Perplexity — verify]"
+    value: 10.25
+    unit: "percent per annum"
+    effective_from: "2026-03-01"
+    effective_until: null
+    effect: "Current prescribed rate of interest (mora interest under s1 and judgment interest) of 10.25% per annum, based on the SARB repo rate of 6.75% plus 3.5%. This is the rate in force. Applied to unliquidated debts and to judgment debts unless a contract or statute fixes a different rate."
+    note: "Rate derived from the statutory formula (repo 6.75% + 3.5%) and confirmed by independent prescribed-rate tracking; the specific Government Notice/Gazette for the 1 March 2026 determination could not be confirmed from available sources. Confirm the exact GN before relying on it in pleadings. [Perplexity — verify]"
