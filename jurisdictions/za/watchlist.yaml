@@ -1,0 +1,85 @@
+# ZA Pending-Legislation Watchlist
+# Fields: item, type, status, expected_effect, affected_statutes (list of statute file base names),
+#         affected_topics (list), source_url, last_checked (YYYY-MM-DD)
+# Validate with: python3 scripts/validate-za-watchlist.py
+
+items:
+
+  - item: "Labour Law Amendment Bill 2025"
+    type: bill
+    status: "Tabled; before Portfolio Committee on Employment and Labour"
+    expected_effect: >
+      Amendments to parental leave provisions and extension of protection against
+      unfair labour practices to non-standard workers; exact scope subject to
+      committee amendments.
+    affected_statutes:
+      - lra
+      - bcea
+    affected_topics: []
+    source_url: "https://www.parliament.gov.za/bill/3959"
+    last_checked: "2026-07-03"
+
+  - item: "LRA Amendment Bill 2025 (public comment closed Mar 2026)"
+    type: bill
+    status: "Public comment period closed March 2026; committee deliberations ongoing"
+    expected_effect: >
+      Proposed changes to s189A large-scale retrenchment procedures, fixed-term
+      contract regulations, and labour broker provisions under s198.
+    affected_statutes:
+      - lra
+    affected_topics: []
+    source_url: "https://www.labour.gov.za/DocumentCenter/Pages/LRA-Amendment.aspx"
+    last_checked: "2026-07-03"
+
+  - item: "Small Claims Court limit increase (~R50k) consultation + new SCC Rules eff 28 Nov 2025"
+    type: consultation
+    status: >
+      Jurisdictional limit increase to ~R50 000 under consultation; new Small Claims
+      Court Rules effective 28 November 2025 already commenced.
+    expected_effect: >
+      Increase in the monetary jurisdiction of the Small Claims Court from R20 000 to
+      approximately R50 000; new procedural rules already in force alter pleading and
+      service requirements.
+    affected_statutes:
+      - small-claims
+    affected_topics: []
+    source_url: "https://www.justice.gov.za/legislation/rules/rules-small-claims.html"
+    last_checked: "2026-07-03"
+
+  - item: "POPIA/PAIA amendment plans (Information Regulator 2025/26)"
+    type: consultation
+    status: "Information Regulator published proposed amendments for public comment 2025/26"
+    expected_effect: >
+      Proposed clarifications to transborder information flow conditions, expanded
+      direct-marketing consent requirements, and PAIA fee-structure adjustments.
+    affected_statutes:
+      - popia
+      - paia
+    affected_topics: []
+    source_url: "https://www.justice.gov.za/inforeg/"
+    last_checked: "2026-07-03"
+
+  - item: "Expropriation Act 13 of 2024 (assented 23 Jan 2025, not commenced)"
+    type: commencement
+    status: "Assented to 23 January 2025; commencement date not yet proclaimed"
+    expected_effect: >
+      Replaces the Expropriation Act 63 of 1975; introduces nil-compensation
+      expropriation in defined circumstances; significant implications for
+      property transactions, land-use rights, and constitutional litigation.
+    affected_statutes: []
+    affected_topics: []
+    source_url: "https://www.gov.za/sites/default/files/gcis_document/202501/51471act13of2024expropriationact.pdf"
+    last_checked: "2026-07-03"
+
+  - item: "FICA further amendment provisions eff 1 Jan 2026"
+    type: commencement
+    status: "Further amendment provisions of the Financial Intelligence Centre Amendment Act commenced 1 January 2026"
+    expected_effect: >
+      Enhanced beneficial ownership reporting obligations, expanded definition of
+      accountable institutions, and strengthened customer due-diligence requirements
+      now in force. Accountable institutions must update onboarding procedures.
+    affected_statutes:
+      - fica
+    affected_topics: []
+    source_url: "https://www.fic.gov.za/Resources/Pages/Legislation.aspx"
+    last_checked: "2026-07-03"
