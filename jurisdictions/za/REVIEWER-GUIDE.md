@@ -54,10 +54,10 @@ Instead of rewriting the entire system for SA, we've added a **South African ove
 
 The US content stays intact underneath — it's not deleted or broken. The SA layer sits on top and activates when the user's jurisdiction is South Africa.
 
-**Currently adapted for SA:**
+**Currently adapted for SA (9 practice areas — see [jurisdictions/za/README.md](README.md) for the full readiness matrix):**
 - Employment law (complete — 7 skills adapted, 11 high-risk dismissal flags, 6 practice guides)
 - Commercial law (complete — 5 skills adapted, 12 high-risk flags, 6 practice guides)
-- Privacy law / POPIA (placeholder — not yet built)
+- Privacy / POPIA, Corporate, Litigation, IP, Product, Regulatory, Legal Clinic (each has a full ZA overlay: router, topic files, statute library, and ZA cold-start interview fork)
 
 ---
 
@@ -112,7 +112,7 @@ These are structured reference files — one per Act — that store **thresholds
 - **When it took effect** and whether it's still current
 - **A plain-English explanation** of what the provision does
 
-**Currently there are 12 statute files:**
+**There are ~50 statute files** (full list: [`jurisdictions/za/statutes/`](statutes/)). The most frequently reviewed are:
 
 | File | Act | What to check |
 |---|---|---|

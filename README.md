@@ -22,7 +22,7 @@ This is the South African adaptation of [claude-for-legal](https://github.com/an
 
 **SA-readiness matrix and per-plugin status:** [jurisdictions/za/README.md](jurisdictions/za/README.md)
 
-Statute values verified against the Government Gazette as of July 2026; see the readiness matrix for per-plugin status and refresh cadence.
+Volatile employment and commercial statute values re-verified July 2026; per-file `last_confirmed` dates and confidence tags in `jurisdictions/za/statutes/`; see the readiness matrix for per-plugin status and refresh cadence.
 
 ## Getting started in Cowork
 - [Install Claude Desktop](https://claude.com/download)

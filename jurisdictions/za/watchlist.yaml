@@ -31,15 +31,13 @@ items:
     source_url: "https://www.labour.gov.za/DocumentCenter/Pages/LRA-Amendment.aspx"
     last_checked: "2026-07-03"
 
-  - item: "Small Claims Court limit increase (~R50k) consultation + new SCC Rules eff 28 Nov 2025"
+  - item: "Small Claims Court monetary jurisdiction limit increase (~R50 000)"
     type: consultation
-    status: >
-      Jurisdictional limit increase to ~R50 000 under consultation; new Small Claims
-      Court Rules effective 28 November 2025 already commenced.
+    status: "Jurisdictional limit increase from R20 000 to approximately R50 000 under consultation; no commencement date yet proclaimed"
     expected_effect: >
       Increase in the monetary jurisdiction of the Small Claims Court from R20 000 to
-      approximately R50 000; new procedural rules already in force alter pleading and
-      service requirements.
+      approximately R50 000; once proclaimed, will significantly widen access to the court for
+      lower-value disputes currently requiring Magistrates' Court proceedings.
     affected_statutes:
       - small-claims
     affected_topics: []

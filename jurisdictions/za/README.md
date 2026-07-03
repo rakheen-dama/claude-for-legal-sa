@@ -31,7 +31,7 @@ Plugins marked **US defaults** have no ZA overlay. They remain usable — the sk
 
 ## Statute Library
 
-The ~50 YAML files in `statutes/` carry temporally-versioned threshold values (monetary limits, notice periods, rates) sourced from the Government Gazette. Each file has a `volatility` field that sets the staleness window:
+The ~50 YAML files in `statutes/` carry temporally-versioned threshold values (monetary limits, notice periods, rates) sourced from the Government Gazette. Files may carry a `volatility` field that sets the staleness window; absent `volatility` defaults to `stable` (36-month review window):
 
 | Volatility | Window | Examples |
 |---|---|---|

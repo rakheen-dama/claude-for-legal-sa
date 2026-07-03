@@ -96,6 +96,9 @@ RETIRED_LITERALS=(
 )
 
 # Build the list of files to scan
+# Scope: jurisdictions/za/**/*.md (excl. statutes/ and docs/), cold-start-interview SKILL.md,
+#   and jurisdictions/za/evals/**/*.yaml (safe: legitimately-old figures live only in
+#   statutes/*.yaml which is excluded; evals must never carry superseded threshold literals).
 SCAN_FILES=()
 while IFS= read -r -d '' f; do
     SCAN_FILES+=("$f")
@@ -103,6 +106,9 @@ done < <(find "$ROOT/jurisdictions/za" -name "*.md" -not -path "*/statutes/*" -n
 while IFS= read -r -d '' f; do
     SCAN_FILES+=("$f")
 done < <(find "$ROOT" -maxdepth 4 -path "*/skills/cold-start-interview/SKILL.md" -print0 2>/dev/null)
+while IFS= read -r -d '' f; do
+    SCAN_FILES+=("$f")
+done < <(find "$ROOT/jurisdictions/za/evals" -name "*.yaml" -print0 2>/dev/null)
 
 if [ "${#RETIRED_LITERALS[@]}" -eq 0 ]; then
     echo "PASS: retired-literal list is empty (no literals to check)"

@@ -80,6 +80,8 @@ Each plugin learns your playbook through a setup interview, writes it to a pract
 
 ## Verify your ZA setup
 
+**SA-readiness matrix:** Full per-plugin ZA status at [`jurisdictions/za/README.md`](jurisdictions/za/README.md).
+
 After setup, confirm the overlay is active:
 
 - [ ] Your company profile (`~/.claude/plugins/config/claude-for-legal/company-profile.md`) contains `Primary jurisdiction: South Africa`.

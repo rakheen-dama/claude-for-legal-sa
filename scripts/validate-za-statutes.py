@@ -37,8 +37,10 @@ STALENESS_WINDOWS = {
 }
 DEFAULT_STALENESS_WINDOW = STALENESS_WINDOWS["stable"]
 
-# Heuristic: strip trailing _<4-digit-year> or _v<digits> to get the base name
-_BASE_NAME_RE = re.compile(r"_(\d{4}|v\d+)$")
+# Heuristic: strip trailing _<4-digit-year>, _<4-digit-year>_<2-digit-month>,
+# or _v<digits> to get the base name.
+# Examples: prescribed_rate_2026_03 → prescribed_rate; earnings_threshold_2024 → earnings_threshold
+_BASE_NAME_RE = re.compile(r"_(\d{4}(_\d{2})?|v\d+)$")
 
 
 def _section_base_name(key: str) -> str:
@@ -47,16 +49,19 @@ def _section_base_name(key: str) -> str:
 
 
 def _check_duplicate_open_entries(sections: dict, errors: list[str]) -> None:
-    """Hard-fail if two sections share a base name and are both open (effective_until null)
-    with numeric values."""
-    # Group open numeric sections by base name
+    """Hard-fail if two sections share a base name and are both open (effective_until null).
+
+    Two open entries with the same base name mean two current values are in force for the
+    same provision — that is almost always a data error (an old entry was not closed when a
+    new one was added). The check applies to all value types: a stale string-valued open
+    entry is just as problematic as a stale numeric one.
+    """
+    # Group all open sections by base name (regardless of value type)
     open_by_base: dict[str, list[str]] = {}
     for key, section in sections.items():
         if not isinstance(section, dict):
             continue
         if section.get("effective_until") is not None:
-            continue
-        if not isinstance(section.get("value"), (int, float)):
             continue
         base = _section_base_name(key)
         open_by_base.setdefault(base, []).append(key)
