@@ -17,6 +17,8 @@ South African law does not recognise the concept of termination without cause. E
 
 > **Governing Code — temporal note.** The **Code of Good Practice: Dismissal** published in Government Gazette 53294 (GenN 3470, 4 September 2025) is the current Code. It repealed and replaced **both** the old Schedule 8 Code of Good Practice: Dismissal **and** the 1999 Code of Good Practice on Dismissal Based on Operational Requirements, consolidating misconduct, incapacity, poor performance, probation and operational-requirements dismissals into one instrument (see `jurisdictions/za/statutes/lra.yaml` → `dismissal_code`). Headline shifts from the old Code: it recognises **incompatibility** as an incapacity ground; permits **simpler, less rigid procedures for small employers** where basic fairness is observed; does **not** mandate a formal disciplinary hearing (the requirement is a reasonable opportunity to respond to the allegations); frames **probation** around performance *and* suitability; and accepts that a prior warning is not always required (e.g. for senior or highly skilled employees). **Historical carve-out:** a dismissal *effected before 4 September 2025* is assessed under the **old Schedule 8 Code** in force at the time — for those matters the Schedule 8 item references below still apply.
 
+> **Verification caveat:** *The procedural detail below reflects the 2025 Code as reported in professional commentary — verify against the gazetted Code text (GenN 3470, GG 53294) before advising.*
+
 ### Consequences of unfair dismissal
 
 | Type | Remedy | Maximum compensation |

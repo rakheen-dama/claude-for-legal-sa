@@ -32,7 +32,7 @@ South African employment policies operate within a layered statutory framework. 
 
 ### Disciplinary code and procedure (essential)
 
-A well-drafted disciplinary code aligned to the **2025 Code of Good Practice: Dismissal** (GenN 3470, GG 53294, effective 4 September 2025 — which replaced the former LRA Schedule 8 Code) is the single most important employment policy for a South African employer. CCMA commissioners measure the fairness of dismissals against the employer's own disciplinary code. Codes drafted against the old Schedule 8 should be reviewed against the 2025 Code (consolidated misconduct/incapacity/operational-requirements guidance, incompatibility as a ground, small-employer flexibility, no mandatory formal hearing).
+A well-drafted disciplinary code aligned to the **2025 Code of Good Practice: Dismissal** (GenN 3470, GG 53294, effective 4 September 2025 — which replaced the former LRA Schedule 8 Code; verify against the gazetted Code text before drafting) is the single most important employment policy for a South African employer. CCMA commissioners measure the fairness of dismissals against the employer's own disciplinary code. Codes drafted against the old Schedule 8 should be reviewed against the 2025 Code (consolidated misconduct/incapacity/operational-requirements guidance, incompatibility as a ground, small-employer flexibility, no mandatory formal hearing).
 
 #### Structure
 

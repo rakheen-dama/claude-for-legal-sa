@@ -51,7 +51,7 @@ Non-solicitation clauses (restricting contact with specific clients or employees
 
 ### 2025 Code of Good Practice: Dismissal (probation)
 
-Probation under South African law is governed by the **2025 Code of Good Practice: Dismissal** (GenN 3470, GG 53294, effective 4 September 2025), which replaced the former LRA Schedule 8 Item 8. The 2025 Code frames probation around both **performance and suitability for employment**. Probation is **not a free pass** to dismiss without process. The requirements during probation are:
+Probation under South African law is governed by the **2025 Code of Good Practice: Dismissal** (GenN 3470, GG 53294, effective 4 September 2025), which replaced the former LRA Schedule 8 Item 8; verify against the gazetted Code text before advising. The 2025 Code frames probation around both **performance and suitability for employment**. Probation is **not a free pass** to dismiss without process. The requirements during probation are:
 
 1. **Evaluation** — the employer must assess the employee's performance against clear, communicated standards.
 2. **Guidance and instruction** — the employer must provide the employee with the guidance and support necessary to perform.
