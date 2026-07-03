@@ -19,8 +19,9 @@ python3 scripts/validate-za-statutes.py --strict-staleness
 ```
 
 The script prints:
-- `OK: …` — within the staleness window
-- `WARN: …` — stale (demoted to `FAIL:` when `--strict-staleness` is passed)
+- `OK: {file} ({n} sections)` — file passed schema validation
+- `WARN: {file}: last_confirmed {date} is {age} days old (volatility=…, window=…d)` — file's `last_confirmed` is older than the staleness window for its volatility level
+- With `--strict-staleness`: WARN lines remain, and a summary `FAIL: stale files detected and --strict-staleness is set` line is appended; exit code becomes 1
 
 Staleness windows by `volatility` field:
 - `annual` → 12 months (366 days)
