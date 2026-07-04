@@ -1,6 +1,6 @@
 statute: "Prescribed Rate of Interest Act 55 of 1975"
 authority: "Minister of Justice and Constitutional Development"
-last_confirmed: "2026-07-03"
+last_confirmed: "2026-07-04"
 volatility: annual
 source_url: "https://www.justice.gov.za/legislation/acts/1975-055.pdf"
 
@@ -40,19 +40,20 @@ sections:
     note: "The most recent located formal notice, GN R6668 GG 53424 (published 26 Sep 2025), states 10.5% 'as from 1 September 2025', which does not align with the granular repo-linked tracking (10.75% Sep–Oct, 10.50% from Nov). Values here follow the granular path; confirm against the gazetted notice for the exact date interest starts to run. [Perplexity — verify]"
 
   prescribed_rate_2025_11:
-    ref: "Prescribed Rate of Interest Act s1(2); repo 7.00% + 3.5%; cf GN R6668 GG 53424 [Perplexity — verify]"
+    ref: "Prescribed Rate of Interest Act s1(2); repo 7.00% + 3.5%; corroborated by SARS Interest Rates Table 1 (10.50% for 01.11.2025–28.02.2026) [Perplexity — verify]"
     value: 10.50
     unit: "percent per annum"
     effective_from: "2025-11-01"
     effective_until: "2026-02-28"
     effect: "Prescribed rate of interest of 10.50% per annum. Closed historical entry for temporal queries about interest running in this window."
-    note: "Intermediate-step determination; see prescribed_rate_2025_09 note on the GN R6668 discrepancy. [Perplexity — verify]"
+    note: "Intermediate-step determination; see prescribed_rate_2025_09 note on the GN R6668 discrepancy. Note that GenN 3887 GG 54520 (17 Apr 2026) formally withdrew GN R6668. Window corroborated by SARS Interest Rates Table 1. [Perplexity — verify]"
 
   prescribed_rate_2026_03:
-    ref: "Prescribed Rate of Interest Act s1(2); repo 6.75% + 3.5%; rate determination GN series [Perplexity — verify]"
+    ref: "Prescribed Rate of Interest Act s1(1); GenN 3887 GG 54520 (17 Apr 2026) [Gazette — confirmed]"
     value: 10.25
     unit: "percent per annum"
     effective_from: "2026-03-01"
     effective_until: null
     effect: "Current prescribed rate of interest (mora interest under s1 and judgment interest) of 10.25% per annum, based on the SARB repo rate of 6.75% plus 3.5%. This is the rate in force. Applied to unliquidated debts and to judgment debts unless a contract or statute fixes a different rate."
-    note: "Rate derived from the statutory formula (repo 6.75% + 3.5%) and confirmed by independent prescribed-rate tracking; the specific Government Notice/Gazette for the 1 March 2026 determination could not be confirmed from available sources. Confirm the exact GN before relying on it in pleadings. [Perplexity — verify]"
+    gazette_date: "2026-04-17"
+    note: "Gazetted: General Notice 3887 of 2026, GG 54520 (17 Apr 2026) — Minister of Justice publishes 10.25% per annum as from 1 March 2026 under s1(2)(b), and formally withdraws GN R.6668 of 26 Sep 2025 (the notice whose 10.5%-from-1-September wording conflicted with the repo-linked path). Corroborated by SARS Interest Rates Table 1 (10.25% from 01.03.2026). [Gazette — confirmed]"
